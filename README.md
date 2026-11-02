@@ -66,25 +66,3 @@ flowchart LR
 | [models/](models/README.md)、[data/](data/README.md) | 实际模型大小/哈希、数据划分与训练复现说明；不含二进制 |
 | [results/](results/README.md) | 软件测试、原有训练评估与仿真记录；实车动态证据仍待补 |
 | [tools/check_jetson_env.py](tools/check_jetson_env.py) | 已有的 Jetson 软件环境盘点脚本 |
-
-## 从另一台机器继续
-
-克隆后在 `software/jetson/` 运行算法；继续开发时另建分支。
-
-```bash
-git clone https://github.com/Lurk0526/autonomous-water-transport-robot.git
-cd autonomous-water-transport-robot
-git switch -c codex/import-runtime-code
-```
-
-按 [代码上传指南](docs/upload-code.md) 放入已有工程，保留原目录与构建文件。Jetson 工程现位于 `software/jetson/`；STM32 团队工程与未实现模块继续按实际进度补充。
-
-在 Jetson 的目标 Python 环境中可运行：
-
-```bash
-python3 tools/check_jetson_env.py | tee jetson_check.txt
-```
-
-脚本不安装软件、不打开串口、不发送执行器命令；会做小型 CUDA 运算及依赖导入检查。本次只做静态校验，没有在真实 Jetson 上运行。
-
-优先补充材料见 [待补清单](docs/missing-materials.md)。来源及归属见 [材料索引](docs/source-index.md)；仓库尚未选择开源许可证。
