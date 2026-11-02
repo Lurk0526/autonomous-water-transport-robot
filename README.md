@@ -55,6 +55,8 @@ flowchart LR
 
 ## 从另一台机器继续
 
+以下克隆命令用于远端创建并完成首次上传之后。
+
 ```bash
 git clone https://github.com/Lurk0526/AstraGO.git
 cd AstraGO
