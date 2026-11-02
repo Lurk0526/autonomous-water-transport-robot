@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "parameter_provenance": "所有车辆、传感器和控制数值均为可替换的仿真假设，不是本车实测值。",
+  "measured_vehicle_parameters": null,
+  "vehicle": {
+    "wheelbase_m": 0.32,
+    "width_m": 0.30,
+    "front_overhang_m": 0.10,
+    "rear_overhang_m": 0.09,
+    "max_steer_rad": 0.50,
+    "steer_rate_rad_s": 0.65,
+    "steer_time_constant_s": 0.15,
+    "max_speed_m_s": 0.55,
+    "max_accel_m_s2": 0.22,
+    "max_decel_m_s2": 0.30,
+    "max_jerk_m_s3": 0.60,
+    "emergency_decel_m_s2": 0.65,
+    "speed_response_rad_s": 1.6
+  },
+  "navigation": {
+    "dt_s": 0.05,
+    "lookahead_base_m": 0.48,
+    "lookahead_speed_gain_s": 0.65,
+    "lateral_accel_limit_m_s2": 0.20,
+    "footprint_margin_m": 0.08,
+    "stop_latency_budget_s": 0.45,
+    "stop_buffer_m": 0.18,
+    "sensor_range_m": 4.0,
+    "localization_max_age_s": 0.40,
+    "obstacle_max_age_s": 0.40,
+    "max_pose_sigma_m": 0.15,
+    "startup_grace_s": 1.0,
+    "clear_dwell_s": 0.60,
+    "goal_tolerance_m": 0.10,
+    "stopped_speed_m_s": 0.005,
+    "max_time_s": 100.0
+  },
+  "scope": {
+    "line_markings_required": false,
+    "route_and_localization_required": true,
+    "synthetic_localization_and_obstacles": true,
+    "camera_rendering": false,
+    "suspension_or_tire_dynamics": false,
+    "joint_or_gripper_physics": false,
+    "liquid_or_spill_mass": false,
+    "hardware_io": false
+  }
+}
