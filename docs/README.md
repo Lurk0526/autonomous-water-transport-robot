@@ -2,6 +2,8 @@
 
 整理日期：2026-11-02。旧报告反映各自汇报日期；当前状态按较新的直接确认覆盖旧记录，未收到的新进展不自动推断。
 
+- [2026-11-02 Jetson 运行工程接入记录](runtime-import-20261102.md)
+- [软件运行入口](../software/jetson/START_HERE.md)
 - [项目状态与证据边界](project-status.md)
 - [任务约束](requirements.md)
 - [控制架构和接口](architecture.md)
