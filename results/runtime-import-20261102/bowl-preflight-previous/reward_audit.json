@@ -1,0 +1,38 @@
+{
+  "kind": "candidate_reward_math_audit_not_training_or_physics",
+  "calibration_status": "uncalibrated_candidates",
+  "all_passed": true,
+  "checks": {
+    "failure_cannot_beat_success": true,
+    "delaying_failure_does_not_improve_return": true,
+    "idle_timeout_fails": true,
+    "waiting_without_benefit_loses": true,
+    "phase_cycles_do_not_farm_shaping": true,
+    "lost_water_never_improves_return": true,
+    "repeat_terminal_reward_rejected": true,
+    "unknown_spill_is_not_zero": true,
+    "lower_fill_comparison_rejected": true,
+    "spill_constraint_overrides_success_event": true,
+    "missing_acceptance_limit_blocks_success": true
+  },
+  "synthetic_fixture_only": {
+    "initial_water_g": 300,
+    "empty_bowl_g": 350,
+    "filled_total_g": 650
+  },
+  "returns": {
+    "success_fast": 0.959895507410734,
+    "success_slow": 0.920605467674507,
+    "success_with_phase_cycles": 0.9598955074107338,
+    "failure": -2.000499871788686,
+    "idle_timeout": -2.0487393143655592,
+    "success_with_loss": -2.1031295561888292,
+    "spill_unknown": null
+  },
+  "limits": [
+    "No simulation, training, or measured spill performance is certified.",
+    "Weighted reward cannot establish water-loss acceptance; use matched metrics and explicit constraints.",
+    "PBRS equivalence requires this discount and zero terminal potential; do not clip or keep only positive shaping.",
+    "An external rollout truncation must bootstrap the final pre-reset state; it is not a task timeout."
+  ]
+}

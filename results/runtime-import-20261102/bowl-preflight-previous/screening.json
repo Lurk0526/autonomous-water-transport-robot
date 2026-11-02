@@ -1,0 +1,313 @@
+{
+  "kind": "uncalibrated_single_mode_sensitivity_screening",
+  "checks": {
+    "zero_input_stays_zero": true,
+    "constant_input_not_double_counted": true,
+    "time_step_convergence": true,
+    "signed_tilt_compensation_not_penalized_twice": true,
+    "quintic_acceleration_endpoints_zero": true,
+    "overlap_not_assumed_better": true
+  },
+  "all_checks_passed": true,
+  "scenarios": [
+    {
+      "frequency_hz": 0.6,
+      "damping": 0.05,
+      "arm_duration_s": 1.0,
+      "simultaneous_mm": 6.709149309713691,
+      "after_braking_mm": 9.932436450493089,
+      "simultaneous_worse": false
+    },
+    {
+      "frequency_hz": 0.6,
+      "damping": 0.05,
+      "arm_duration_s": 2.0,
+      "simultaneous_mm": 3.8271716475770257,
+      "after_braking_mm": 4.080894261949255,
+      "simultaneous_worse": false
+    },
+    {
+      "frequency_hz": 0.6,
+      "damping": 0.05,
+      "arm_duration_s": 4.0,
+      "simultaneous_mm": 2.8733429694405133,
+      "after_braking_mm": 2.348303305737545,
+      "simultaneous_worse": true
+    },
+    {
+      "frequency_hz": 0.6,
+      "damping": 0.12,
+      "arm_duration_s": 1.0,
+      "simultaneous_mm": 5.915447626271742,
+      "after_braking_mm": 7.667172764808621,
+      "simultaneous_worse": false
+    },
+    {
+      "frequency_hz": 0.6,
+      "damping": 0.12,
+      "arm_duration_s": 2.0,
+      "simultaneous_mm": 3.4785113674456776,
+      "after_braking_mm": 3.2750665825530145,
+      "simultaneous_worse": true
+    },
+    {
+      "frequency_hz": 0.6,
+      "damping": 0.12,
+      "arm_duration_s": 4.0,
+      "simultaneous_mm": 2.6554599504976677,
+      "after_braking_mm": 2.167125691753137,
+      "simultaneous_worse": true
+    },
+    {
+      "frequency_hz": 0.6,
+      "damping": 0.3,
+      "arm_duration_s": 1.0,
+      "simultaneous_mm": 4.751533548281586,
+      "after_braking_mm": 4.552785283812385,
+      "simultaneous_worse": true
+    },
+    {
+      "frequency_hz": 0.6,
+      "damping": 0.3,
+      "arm_duration_s": 2.0,
+      "simultaneous_mm": 2.841178144754567,
+      "after_braking_mm": 2.1313569115552213,
+      "simultaneous_worse": true
+    },
+    {
+      "frequency_hz": 0.6,
+      "damping": 0.3,
+      "arm_duration_s": 4.0,
+      "simultaneous_mm": 2.2496082042583696,
+      "after_braking_mm": 1.8281141456056442,
+      "simultaneous_worse": true
+    },
+    {
+      "frequency_hz": 1.2,
+      "damping": 0.05,
+      "arm_duration_s": 1.0,
+      "simultaneous_mm": 13.670662572670748,
+      "after_braking_mm": 14.617220487047483,
+      "simultaneous_worse": false
+    },
+    {
+      "frequency_hz": 1.2,
+      "damping": 0.05,
+      "arm_duration_s": 2.0,
+      "simultaneous_mm": 3.331923793655706,
+      "after_braking_mm": 2.221118386291831,
+      "simultaneous_worse": true
+    },
+    {
+      "frequency_hz": 1.2,
+      "damping": 0.05,
+      "arm_duration_s": 4.0,
+      "simultaneous_mm": 2.016297811341294,
+      "after_braking_mm": 1.6793715187697522,
+      "simultaneous_worse": true
+    },
+    {
+      "frequency_hz": 1.2,
+      "damping": 0.12,
+      "arm_duration_s": 1.0,
+      "simultaneous_mm": 10.651146642784433,
+      "after_braking_mm": 12.090071043965052,
+      "simultaneous_worse": false
+    },
+    {
+      "frequency_hz": 1.2,
+      "damping": 0.12,
+      "arm_duration_s": 2.0,
+      "simultaneous_mm": 3.1028226209495116,
+      "after_braking_mm": 2.052971513318804,
+      "simultaneous_worse": true
+    },
+    {
+      "frequency_hz": 1.2,
+      "damping": 0.12,
+      "arm_duration_s": 4.0,
+      "simultaneous_mm": 1.978203887209674,
+      "after_braking_mm": 1.642479640527478,
+      "simultaneous_worse": true
+    },
+    {
+      "frequency_hz": 1.2,
+      "damping": 0.3,
+      "arm_duration_s": 1.0,
+      "simultaneous_mm": 7.17663761769232,
+      "after_braking_mm": 8.13421765689523,
+      "simultaneous_worse": false
+    },
+    {
+      "frequency_hz": 1.2,
+      "damping": 0.3,
+      "arm_duration_s": 2.0,
+      "simultaneous_mm": 2.709854911198137,
+      "after_braking_mm": 1.7535969004771252,
+      "simultaneous_worse": true
+    },
+    {
+      "frequency_hz": 1.2,
+      "damping": 0.3,
+      "arm_duration_s": 4.0,
+      "simultaneous_mm": 1.9451894706633963,
+      "after_braking_mm": 1.5965646569749439,
+      "simultaneous_worse": true
+    },
+    {
+      "frequency_hz": 2.4,
+      "damping": 0.05,
+      "arm_duration_s": 1.0,
+      "simultaneous_mm": 10.005858724261884,
+      "after_braking_mm": 9.680967742947324,
+      "simultaneous_worse": true
+    },
+    {
+      "frequency_hz": 2.4,
+      "damping": 0.05,
+      "arm_duration_s": 2.0,
+      "simultaneous_mm": 2.5539090419938595,
+      "after_braking_mm": 1.7388164200474958,
+      "simultaneous_worse": true
+    },
+    {
+      "frequency_hz": 2.4,
+      "damping": 0.05,
+      "arm_duration_s": 4.0,
+      "simultaneous_mm": 1.8320616495612418,
+      "after_braking_mm": 1.5021930302639939,
+      "simultaneous_worse": true
+    },
+    {
+      "frequency_hz": 2.4,
+      "damping": 0.12,
+      "arm_duration_s": 1.0,
+      "simultaneous_mm": 9.20785536342651,
+      "after_braking_mm": 8.91037809547215,
+      "simultaneous_worse": true
+    },
+    {
+      "frequency_hz": 2.4,
+      "damping": 0.12,
+      "arm_duration_s": 2.0,
+      "simultaneous_mm": 2.411733931420989,
+      "after_braking_mm": 1.647409661133299,
+      "simultaneous_worse": true
+    },
+    {
+      "frequency_hz": 2.4,
+      "damping": 0.12,
+      "arm_duration_s": 4.0,
+      "simultaneous_mm": 1.8511748191309398,
+      "after_braking_mm": 1.5105879798231245,
+      "simultaneous_worse": true
+    },
+    {
+      "frequency_hz": 2.4,
+      "damping": 0.3,
+      "arm_duration_s": 1.0,
+      "simultaneous_mm": 7.746023149260221,
+      "after_braking_mm": 7.476341608294096,
+      "simultaneous_worse": true
+    },
+    {
+      "frequency_hz": 2.4,
+      "damping": 0.3,
+      "arm_duration_s": 2.0,
+      "simultaneous_mm": 2.3232806871622462,
+      "after_braking_mm": 1.5126322799972605,
+      "simultaneous_worse": true
+    },
+    {
+      "frequency_hz": 2.4,
+      "damping": 0.3,
+      "arm_duration_s": 4.0,
+      "simultaneous_mm": 1.8590593180949102,
+      "after_braking_mm": 1.5126322799972605,
+      "simultaneous_worse": true
+    },
+    {
+      "frequency_hz": 3.5,
+      "damping": 0.05,
+      "arm_duration_s": 1.0,
+      "simultaneous_mm": 8.82858190005975,
+      "after_braking_mm": 8.63518579050816,
+      "simultaneous_worse": true
+    },
+    {
+      "frequency_hz": 3.5,
+      "damping": 0.05,
+      "arm_duration_s": 2.0,
+      "simultaneous_mm": 2.4377107330680947,
+      "after_braking_mm": 1.5957933532801234,
+      "simultaneous_worse": true
+    },
+    {
+      "frequency_hz": 3.5,
+      "damping": 0.05,
+      "arm_duration_s": 4.0,
+      "simultaneous_mm": 1.8438701478654218,
+      "after_braking_mm": 1.495072469503963,
+      "simultaneous_worse": true
+    },
+    {
+      "frequency_hz": 3.5,
+      "damping": 0.12,
+      "arm_duration_s": 1.0,
+      "simultaneous_mm": 8.21592473502947,
+      "after_braking_mm": 8.02838288776742,
+      "simultaneous_worse": true
+    },
+    {
+      "frequency_hz": 3.5,
+      "damping": 0.12,
+      "arm_duration_s": 2.0,
+      "simultaneous_mm": 2.3436088868829414,
+      "after_braking_mm": 1.5012003985054543,
+      "simultaneous_worse": true
+    },
+    {
+      "frequency_hz": 3.5,
+      "damping": 0.12,
+      "arm_duration_s": 4.0,
+      "simultaneous_mm": 1.845935708154061,
+      "after_braking_mm": 1.5012003985054543,
+      "simultaneous_worse": true
+    },
+    {
+      "frequency_hz": 3.5,
+      "damping": 0.3,
+      "arm_duration_s": 1.0,
+      "simultaneous_mm": 7.205962455908204,
+      "after_braking_mm": 7.003305413901294,
+      "simultaneous_worse": true
+    },
+    {
+      "frequency_hz": 3.5,
+      "damping": 0.3,
+      "arm_duration_s": 2.0,
+      "simultaneous_mm": 2.310358340324426,
+      "after_braking_mm": 1.5009858658706081,
+      "simultaneous_worse": true
+    },
+    {
+      "frequency_hz": 3.5,
+      "damping": 0.3,
+      "arm_duration_s": 4.0,
+      "simultaneous_mm": 1.8465038081246892,
+      "after_braking_mm": 1.5009858658706081,
+      "simultaneous_worse": true
+    }
+  ],
+  "overlap_worse_count": 30,
+  "scenario_count": 36,
+  "dt_convergence_m": {
+    "0.02": 0.0021340714584922884,
+    "0.01": 0.0021340561713295556,
+    "0.005": 0.002134494960318314
+  },
+  "fine_step_difference_m": 4.3878898875818195e-07,
+  "spilled_mass_g": null,
+  "robot_dynamics_validated": false,
+  "warning": "Total response may exceed zero freeboard; overflow and mass loss are not modeled. No runtime tilt-compensation recommendation follows from this idealized model."
+}
