@@ -1,0 +1,15 @@
+-c constraints-jetson.txt
+-r requirements-cuda129.txt
+torch @ https://pypi.jetson-ai-lab.io/jp6/cu129/+f/f36/0db283b1249b3/torch-2.8.0-cp312-cp312-linux_aarch64.whl#sha256=f360db283b1249b36a97b332bf8688917d9c7dbde4bc5120a03ae7a7e5a5d32c
+torchvision @ https://pypi.jetson-ai-lab.io/jp6/cu129/+f/255/341cb5beb4673/torchvision-0.23.0-cp312-cp312-linux_aarch64.whl#sha256=255341cb5beb4673f0f1a26061105623f17a2b32188478c68b3f2e1a897d49a2
+ultralytics==8.4.178
+onnx
+onnxruntime
+onnxslim
+pyorbbecsdk2==2.0.18
+pyserial
+pyyaml
+scipy
+matplotlib
+cuda-python>=13.2,<13.3
+cffi

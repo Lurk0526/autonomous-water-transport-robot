@@ -1,0 +1,4 @@
+# Optional CPU line-image simulation; no ROS, Torch, CUDA or robot I/O.
+# Versions match the project's recorded NumPy/OpenCV environment.
+numpy==1.26.4
+opencv-python==4.11.0.86

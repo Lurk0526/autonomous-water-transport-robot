@@ -1,0 +1,11 @@
+# Install x86 CUDA PyTorch separately using the commands in RTX4060训练指南.md.
+numpy==1.26.4
+Pillow==10.4.0
+PyYAML==6.0.2
+transformers==4.57.1
+huggingface-hub==0.35.3
+safetensors==0.6.2
+tokenizers==0.22.1
+tqdm==4.67.1
+onnx==1.19.1
+onnxruntime==1.22.1

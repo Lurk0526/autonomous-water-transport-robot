@@ -1,0 +1,6 @@
+-c constraints-jetson.txt
+transformers==4.57.1
+huggingface-hub==0.35.3
+safetensors==0.6.2
+tokenizers==0.22.1
+tqdm==4.67.1
