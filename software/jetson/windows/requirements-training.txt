@@ -1,0 +1,11 @@
+# Install the matched torch/torchvision pair first using setup_training.cmd.
+torch==2.8.0
+torchvision==0.23.0
+ultralytics==8.4.178
+numpy==1.26.4
+opencv-python==4.11.0.86
+Pillow>=10,<13
+PyYAML>=6,<7
+matplotlib>=3.8,<3.11
+scipy>=1.11,<1.18
+
