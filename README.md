@@ -1,8 +1,8 @@
-# AstraGO
+# Autonomous Water-Transport Robot
 
 **面向复杂路面的视觉自主运水机器人 · Autonomous water-transport robot**
 
-AstraGO 是正在开发的课程机器人项目，目标是在混合路面、坡道和障碍环境中，完成敞口水碗的识别、自动夹取、自主运输和定点放置。运输期间，机械臂持续夹持碗，不使用车载碗托。
+本项目代号 AstraGO，是正在开发的课程机器人项目，目标是在混合路面、坡道和障碍环境中，完成敞口水碗的识别、自动夹取、自主运输和定点放置。运输期间，机械臂持续夹持碗，不使用车载碗托。
 
 本仓库于 **2026-11-02** 整理，收录第二版机械文件、阶段汇报、原始照片、设计计算和已有工具。运行代码将由另一台机器补充；当前仓库尚不能启动整车任务。
 
@@ -58,8 +58,8 @@ flowchart LR
 以下克隆命令用于远端创建并完成首次上传之后。
 
 ```bash
-git clone https://github.com/Lurk0526/AstraGO.git
-cd AstraGO
+git clone https://github.com/Lurk0526/autonomous-water-transport-robot.git
+cd autonomous-water-transport-robot
 git switch -c codex/import-runtime-code
 ```
 

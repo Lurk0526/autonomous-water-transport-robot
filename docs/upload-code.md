@@ -3,8 +3,8 @@
 远端创建并完成首次推送后，先克隆这个仓库，再复制已有工程。不要在另一台机器另建一个同名空仓库。
 
 ```bash
-git clone https://github.com/Lurk0526/AstraGO.git
-cd AstraGO
+git clone https://github.com/Lurk0526/autonomous-water-transport-robot.git
+cd autonomous-water-transport-robot
 git switch -c codex/import-runtime-code
 ```
 
