@@ -1,0 +1,4 @@
+# SDK v1 reads depth via libusb; RGB uses the kernel UVC driver.
+SUBSYSTEM=="usb", ATTR{idVendor}=="2bc5", ATTR{idProduct}=="0614", MODE="0660", GROUP="video", TAG+="uaccess"
+SUBSYSTEM=="usb", ATTR{idVendor}=="2bc5", ATTR{idProduct}=="0511", MODE="0660", GROUP="video", TAG+="uaccess"
+SUBSYSTEM=="video4linux", ATTRS{idVendor}=="2bc5", ATTRS{idProduct}=="0511", ATTR{index}=="0", SYMLINK+="gemini-color", GROUP="video", MODE="0660"

@@ -1,0 +1,97 @@
+Panels:
+  - Class: rviz_common/Displays
+    Name: Displays
+  - Class: rviz_common/Views
+    Name: Views
+Visualization Manager:
+  Class: ""
+  Global Options:
+    Fixed Frame: camera_link
+    Background Color: 35; 35; 35
+    Frame Rate: 15
+  Displays:
+    - Class: rviz_default_plugins/Grid
+      Name: Grid
+      Enabled: true
+      Plane: XY
+      Cell Size: 1
+      Plane Cell Count: 10
+    - Class: rviz_default_plugins/TF
+      Name: TF
+      Enabled: true
+      Show Names: true
+      Marker Scale: 0.3
+    - Class: rviz_default_plugins/PointCloud2
+      Name: Depth Points
+      Enabled: true
+      Topic:
+        Value: /camera/depth/points
+        Reliability Policy: Best Effort
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Depth: 1
+      Size (Pixels): 2
+      Style: Points
+      Color Transformer: AxisColor
+      Axis: X
+      Decay Time: 0
+    - Class: rviz_default_plugins/LaserScan
+      Name: Obstacle Scan
+      Enabled: true
+      Topic:
+        Value: /camera/scan
+        Reliability Policy: Best Effort
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Depth: 1
+      Size (Pixels): 4
+      Style: Points
+      Color: 255; 60; 60
+      Color Transformer: FlatColor
+    - Class: rviz_default_plugins/Image
+      Name: RGB
+      Enabled: true
+      Topic:
+        Value: /camera/color/image_raw
+        Reliability Policy: Best Effort
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Depth: 1
+      Transport Hint: raw
+      Min Value: 0
+      Max Value: 1
+      Normalize Range: true
+    - Class: rviz_default_plugins/Image
+      Name: Depth - distance
+      Enabled: true
+      Topic:
+        Value: /camera/depth/image_raw
+        Reliability Policy: Best Effort
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Depth: 1
+      Transport Hint: raw
+      Min Value: 300
+      Max Value: 5000
+      Normalize Range: false
+  Tools:
+    - Class: rviz_default_plugins/Interact
+    - Class: rviz_default_plugins/MoveCamera
+    - Class: rviz_default_plugins/Select
+    - Class: rviz_default_plugins/FocusCamera
+    - Class: rviz_default_plugins/Measure
+  Views:
+    Current:
+      Class: rviz_default_plugins/Orbit
+      Distance: 6
+      Pitch: 0.45
+      Yaw: 3.9
+      Focal Point:
+        X: 2
+        Y: 0
+        Z: 0
+Window Geometry:
+  Width: 1380
+  Height: 850
+  X: 40
+  Y: 40

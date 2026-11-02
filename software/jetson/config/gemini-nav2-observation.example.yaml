@@ -1,0 +1,23 @@
+# Merge this into the robot's existing Nav2 local_costmap after measuring base_link -> camera_link.
+# This is a camera observation source, not a complete Nav2 configuration.
+# min/max_obstacle_height are in the costmap frame, so a calibrated robot TF is required.
+local_costmap:
+  local_costmap:
+    ros__parameters:
+      voxel_layer:
+        plugin: nav2_costmap_2d::VoxelLayer
+        enabled: true
+        observation_sources: gemini_depth
+        gemini_depth:
+          topic: /camera/depth/points
+          data_type: PointCloud2
+          marking: true
+          clearing: true
+          min_obstacle_height: 0.08
+          max_obstacle_height: 1.5
+          obstacle_min_range: 0.3
+          obstacle_max_range: 4.0
+          raytrace_min_range: 0.3
+          raytrace_max_range: 5.0
+          observation_persistence: 0.0
+          expected_update_rate: 0.2

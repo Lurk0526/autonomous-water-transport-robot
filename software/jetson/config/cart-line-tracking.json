@@ -1,0 +1,14 @@
+{
+  "primary_navigation": "track_line",
+  "backup_navigation": "line_free_route_following",
+  "line_color": "auto_black_white_yellow",
+  "input_rotation_degrees": 180,
+  "scene_profile_validated": false,
+  "measured_steering_sign": null,
+  "minimum_confidence": 0.75,
+  "line_max_age_s": 0.25,
+  "lost_line_slow_window_s": 0.25,
+  "stable_line_frames": 3,
+  "startup_line_grace_s": 1.0,
+  "note": "颜色尚未确定，三色检测并行，候选冲突时拒绝选线。阈值及转向映射需现场验证，当前只输出观测和模式意图。"
+}

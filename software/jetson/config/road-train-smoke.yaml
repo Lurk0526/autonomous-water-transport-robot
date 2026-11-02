@@ -1,0 +1,21 @@
+seed: 42
+device: cuda:0
+amp: true
+initial_model: work/models/road/segformer-b0-cityscapes
+train_manifest: datasets/public_road/prepared/camvid-train.jsonl
+val_manifest: datasets/public_road/prepared/camvid-val.jsonl
+output: work/road_training/runs/camvid-smoke
+size: [256, 320]
+batch: 1
+accumulation: 2
+workers: 0
+freeze_encoder: true
+encoder_lr: 0.00001
+head_lr: 0.0001
+weight_decay: 0.01
+epochs: 1
+max_steps: 12
+max_train_samples: 24
+max_val_samples: 8
+log_every: 2
+smoke_only: true

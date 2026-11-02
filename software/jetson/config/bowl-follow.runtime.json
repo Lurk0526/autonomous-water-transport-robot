@@ -1,0 +1,11 @@
+{
+  "profile_version": "1.2.0",
+  "response_profile": "responsive-v1",
+  "motion_range_policy": "operator_confirmed_full_range",
+  "range_authorization": {
+    "source": "user",
+    "date": "2026-10-25",
+    "statement": "我要求全部关节范围可启动，我确认安全",
+    "position_range_p": [500, 2500]
+  }
+}

@@ -1,0 +1,24 @@
+/camera/color/image_raw:
+  reliability: best_effort
+  durability: volatile
+  history: keep_last
+  depth: 5
+/camera/depth/image_rect_raw:
+  reliability: best_effort
+  durability: volatile
+  history: keep_last
+  depth: 5
+/camera/color/camera_info:
+  reliability: best_effort
+  durability: volatile
+  history: keep_last
+  depth: 5
+/camera/depth/camera_info:
+  reliability: best_effort
+  durability: volatile
+  history: keep_last
+  depth: 5
+/tf_static:
+  reliability: reliable
+  durability: transient_local
+  history: keep_all

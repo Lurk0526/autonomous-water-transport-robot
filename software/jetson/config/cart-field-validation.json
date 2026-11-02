@@ -1,0 +1,10 @@
+{
+  "status": "not_tested",
+  "field_dataset": null,
+  "independent_labels": null,
+  "distance_reference": null,
+  "localization_reference": null,
+  "acceptance_thresholds": null,
+  "evidence": null,
+  "note": "本文件仅记录真正完成的现场精度验收；相机数据有效率与仿真通过不能替代现场精度。"
+}

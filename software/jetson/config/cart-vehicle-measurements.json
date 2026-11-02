@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "record_kind": "vehicle_measurement_register",
+  "note": "未知项保留null。现有SolidWorks文件没有已核验的尺寸/运动学输出，不能用预览图或仿真假设填写实车值。",
+  "parameters": {
+    "wheelbase_m": {"value": null, "unit": "m", "status": "unknown", "evidence": null},
+    "width_m": {"value": null, "unit": "m", "status": "unknown", "evidence": null},
+    "front_overhang_m": {"value": null, "unit": "m", "status": "unknown", "evidence": null},
+    "rear_overhang_m": {"value": null, "unit": "m", "status": "unknown", "evidence": null},
+    "max_steer_rad": {"value": null, "unit": "rad", "status": "unknown", "evidence": null},
+    "steer_rate_rad_s": {"value": null, "unit": "rad/s", "status": "unknown", "evidence": null},
+    "steer_time_constant_s": {"value": null, "unit": "s", "status": "unknown", "evidence": null},
+    "max_accel_m_s2": {"value": null, "unit": "m/s^2", "status": "unknown", "evidence": null},
+    "max_decel_m_s2": {"value": null, "unit": "m/s^2", "status": "unknown", "evidence": null},
+    "emergency_decel_m_s2": {"value": null, "unit": "m/s^2", "status": "unknown", "evidence": null},
+    "stop_latency_budget_s": {"value": null, "unit": "s", "status": "unknown", "evidence": null}
+  }
+}

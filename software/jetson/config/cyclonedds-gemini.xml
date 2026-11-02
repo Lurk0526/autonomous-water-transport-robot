@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Local Jetson RGB-D and PointCloud2 transport. Loopback MTU is 65536. -->
+<CycloneDDS xmlns="https://cdds.io/config">
+  <Domain Id="any">
+    <General>
+      <Interfaces><NetworkInterface name="lo" multicast="false" /></Interfaces>
+      <AllowMulticast>false</AllowMulticast>
+      <MaxMessageSize>65000B</MaxMessageSize>
+      <FragmentSize>60000B</FragmentSize>
+    </General>
+    <Discovery>
+      <ParticipantIndex>auto</ParticipantIndex>
+      <MaxAutoParticipantIndex>32</MaxAutoParticipantIndex>
+      <Peers><Peer Address="127.0.0.1" /></Peers>
+    </Discovery>
+    <Internal>
+      <SocketReceiveBufferSize min="8MB" max="16MB" />
+      <SocketSendBufferSize min="8MB" max="16MB" />
+    </Internal>
+  </Domain>
+</CycloneDDS>

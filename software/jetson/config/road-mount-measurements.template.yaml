@@ -1,0 +1,26 @@
+# Record only after installation. These are not runtime defaults.
+stage: not_installed
+units:
+  translation: metres
+  rotation: radians
+base_link_description: null
+camera_link_in_base_link:
+  x: null
+  y: null
+  z: null
+  roll: null
+  pitch: null
+  yaw: null
+ground_z_in_base_link_m: null
+vehicle:
+  wheelbase_m: null
+  footprint_xy_m: null
+  steering_angle_limits_rad: null
+  odometry_source: null
+  measured_stop_distance_m: null
+  measured_sensor_to_actuator_latency_s: null
+notes:
+  - Keep the camera internal optical transforms supplied by its driver.
+  - Publish base_link to camera_link from one measured source only.
+  - Camera height above ground is camera z minus ground z in the same base frame.
+  - Do not infer braking or driving speed from camera frame rate.

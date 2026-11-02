@@ -1,0 +1,23 @@
+# Bench configuration. Installation geometry is deliberately unset.
+deployment: work/models/road/road-4060-v1
+backend: auto
+input_rotation_degrees: 180
+max_rate_hz: 8.0
+max_age_seconds: 0.75
+sync_slop_seconds: 0.06
+confidence_min: 0.65
+camera_prefix: /camera
+output_prefix: /road_perception
+runtime_dir: work/road_perception/live
+depth:
+  min_m: 0.3
+  max_m: 5.0
+  occlusion_tolerance_m: 0.02
+  cloud_max_points: 50000
+mount:
+  enabled: false
+  target_frame: base_link
+  ground_z_m: null
+  ground_tolerance_m: 0.06
+  min_obstacle_height_m: 0.10
+  max_obstacle_height_m: 1.5

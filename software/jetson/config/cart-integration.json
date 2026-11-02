@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "vehicle_measurements": "config/cart-vehicle-measurements.json",
+  "mount_measurements": "config/road-mount-measurements.template.yaml",
+  "ros": {
+    "odometry_topic": "/odom",
+    "imu_topic": "/imu/data",
+    "measured_steering_topic": null,
+    "steering_joint_name": null,
+    "steering_is_measured_feedback": false,
+    "perception_status_topic": "/road_perception/status",
+    "obstacle_points_topic": "/road_perception/obstacle_points",
+    "odometry_frame": "odom",
+    "body_frame": "base_link",
+    "odom_frame_semantics": "unconfirmed_until_rear_axle_transform_is_measured"
+  },
+  "serial": {
+    "device": null,
+    "baud": null,
+    "protocol": null,
+    "status": "firmware_and_protocol_not_provided"
+  },
+  "checks": {
+    "feedback_max_age_s": 0.25,
+    "imu_max_age_s": 0.25,
+    "perception_max_age_s": 0.75,
+    "max_future_s": 0.05,
+    "max_speed_m_s": 2.0,
+    "max_yaw_rate_rad_s": 3.0,
+    "max_pose_sigma_m": 0.15,
+    "max_yaw_sigma_rad": 0.15,
+    "max_localization_step_slack_m": 0.1,
+    "slip_yaw_rate_difference_rad_s": 0.15,
+    "imu_odom_sync_slop_s": 0.06
+  },
+  "deployment": {
+    "motion_output_enabled": false,
+    "field_validated": false
+  }
+}
