@@ -1,0 +1,291 @@
+{
+  "schema_version": 1,
+  "received_date": "2026-11-02",
+  "version_label": "v2 (user-provided label)",
+  "validation": {
+    "zip_crc": "passed",
+    "native_file_hash_copy": "passed",
+    "solidworks_open_or_rebuild": "not_performed",
+    "assembly_dependencies": "not_resolved",
+    "geometry_and_dimensions": "not_measured"
+  },
+  "originals": [
+    {
+      "path": "hardware/cad/v2/native/成品车.SLDASM",
+      "source": "Desktop/成品车.SLDASM",
+      "kind": "user_supplied_v2_assembly",
+      "bytes": 7135052,
+      "sha256": "19a990c5e24474a5fac80aaeccd2978d310a98aa6853f18f9dda84726c8a5163"
+    },
+    {
+      "path": "hardware/cad/v2/source_archives/机械臂配件.zip",
+      "source": "Desktop/机械臂配件.zip",
+      "kind": "user_supplied_v2_archive",
+      "bytes": 8310997,
+      "sha256": "debb9832315ee1fec9b4428739e4d23ac321a7775b1ba654ceaca6cde263fee7"
+    }
+  ],
+  "extracted_file_count": 32,
+  "extracted_extension_counts": {
+    ".SLDPRT": 25,
+    ".SLDASM": 7
+  },
+  "extracted": [
+    {
+      "path": "hardware/cad/v2/arm_parts/机械臂配件/GB6170-M3_________STEP.SLDPRT",
+      "archive_entry": "机械臂配件/GB6170-M3_________STEP.SLDPRT",
+      "filename_encoding": "cp437",
+      "bytes": 66826,
+      "sha256": "406de88272298f590fcd0837c2b9b37151556e8cbe241a1060df675bbb49851a",
+      "crc32": "a299e8d9"
+    },
+    {
+      "path": "hardware/cad/v2/arm_parts/机械臂配件/J1DB001.SLDPRT",
+      "archive_entry": "机械臂配件/J1DB001.SLDPRT",
+      "filename_encoding": "cp437",
+      "bytes": 101693,
+      "sha256": "79071a2d1b2af4a3baf189dcf5004e5a100994f1393f6a5932c414f2df1d5cb2",
+      "crc32": "cb0fa5af"
+    },
+    {
+      "path": "hardware/cad/v2/arm_parts/机械臂配件/KSZ001_ASM.SLDASM",
+      "archive_entry": "机械臂配件/KSZ001_ASM.SLDASM",
+      "filename_encoding": "cp437",
+      "bytes": 40236,
+      "sha256": "3db18e5ecc8f24731117c59546a0c3cc8f8c8f88e8d8cab7b1a5b2aa2c3c346a",
+      "crc32": "ac889e1a"
+    },
+    {
+      "path": "hardware/cad/v2/arm_parts/机械臂配件/M2Z001.SLDPRT",
+      "archive_entry": "机械臂配件/M2Z001.SLDPRT",
+      "filename_encoding": "cp437",
+      "bytes": 72791,
+      "sha256": "812678ccfa5a96e37f9d9cb5054663d69777b8bd60a439ed7a0ae3e8255e51e0",
+      "crc32": "e1b592c0"
+    },
+    {
+      "path": "hardware/cad/v2/arm_parts/机械臂配件/M3X8001.SLDPRT",
+      "archive_entry": "机械臂配件/M3X8001.SLDPRT",
+      "filename_encoding": "cp437",
+      "bytes": 99713,
+      "sha256": "4b6832e2ba37000d6b44b7a269268eef410d8b51276c45a6c31caa2699fa960d",
+      "crc32": "329f671d"
+    },
+    {
+      "path": "hardware/cad/v2/arm_parts/机械臂配件/M4X18001.SLDPRT",
+      "archive_entry": "机械臂配件/M4X18001.SLDPRT",
+      "filename_encoding": "cp437",
+      "bytes": 234181,
+      "sha256": "b15a4658fa1bd012891db202bcbb23d1c8bae552b91a0106082e58618b00a50b",
+      "crc32": "18ec5276"
+    },
+    {
+      "path": "hardware/cad/v2/arm_parts/机械臂配件/M4X40________.SLDPRT",
+      "archive_entry": "机械臂配件/M4X40________.SLDPRT",
+      "filename_encoding": "cp437",
+      "bytes": 111085,
+      "sha256": "30b686c8fb0651fbc3d51318e4b79832b13f2332d808a438974c9cdbf7fa048f",
+      "crc32": "24316fb5"
+    },
+    {
+      "path": "hardware/cad/v2/arm_parts/机械臂配件/MD002.SLDPRT",
+      "archive_entry": "机械臂配件/MD002.SLDPRT",
+      "filename_encoding": "cp437",
+      "bytes": 46901,
+      "sha256": "90f0209914ece6804657ea855da71fdfed7f6491a691116759e55059f849ee8d",
+      "crc32": "d68539a1"
+    },
+    {
+      "path": "hardware/cad/v2/arm_parts/机械臂配件/PRODUCT_10168.SLDPRT",
+      "archive_entry": "机械臂配件/PRODUCT_10168.SLDPRT",
+      "filename_encoding": "cp437",
+      "bytes": 208600,
+      "sha256": "70f292cbbfb2059ba7100eb01b9fafabf27abed49ce7f029851a016b443c5fec",
+      "crc32": "ec76dd0f"
+    },
+    {
+      "path": "hardware/cad/v2/arm_parts/机械臂配件/PRODUCT_21630.SLDPRT",
+      "archive_entry": "机械臂配件/PRODUCT_21630.SLDPRT",
+      "filename_encoding": "cp437",
+      "bytes": 241130,
+      "sha256": "f8bc52e0f50b2fb3d5e5bad29f36f111d3afc866dfa6dcf2cfad8ecea34c123c",
+      "crc32": "c65ffadf"
+    },
+    {
+      "path": "hardware/cad/v2/arm_parts/机械臂配件/PRODUCT_49810_ASM.SLDASM",
+      "archive_entry": "机械臂配件/PRODUCT_49810_ASM.SLDASM",
+      "filename_encoding": "cp437",
+      "bytes": 38134,
+      "sha256": "db6f4009510618690c7c4f4b920334a4a174362982210d0a5fb794d3d6cf3ab8",
+      "crc32": "1bb927f0"
+    },
+    {
+      "path": "hardware/cad/v2/arm_parts/机械臂配件/PRODUCT_68796.SLDPRT",
+      "archive_entry": "机械臂配件/PRODUCT_68796.SLDPRT",
+      "filename_encoding": "cp437",
+      "bytes": 105780,
+      "sha256": "a1f08b9324194ecb3135d8b50db1117459a2e5b6177745e1e885e8ae9aa572a8",
+      "crc32": "98b27db4"
+    },
+    {
+      "path": "hardware/cad/v2/arm_parts/机械臂配件/PRODUCT_7387.SLDPRT",
+      "archive_entry": "机械臂配件/PRODUCT_7387.SLDPRT",
+      "filename_encoding": "cp437",
+      "bytes": 47029,
+      "sha256": "37586fa7708fbd9e22f2337d56e0ccadfb3c9299ff2075e7702321aed6e27dff",
+      "crc32": "c7d2560f"
+    },
+    {
+      "path": "hardware/cad/v2/arm_parts/机械臂配件/SBJS001.SLDPRT",
+      "archive_entry": "机械臂配件/SBJS001.SLDPRT",
+      "filename_encoding": "cp437",
+      "bytes": 231491,
+      "sha256": "d7f8c369d12befc7ecd604b42d023828319898d789a35bd46199af4024d48d6c",
+      "crc32": "0e63479f"
+    },
+    {
+      "path": "hardware/cad/v2/arm_parts/机械臂配件/TM3S8S.SLDPRT",
+      "archive_entry": "机械臂配件/TM3S8S.SLDPRT",
+      "filename_encoding": "cp437",
+      "bytes": 46776,
+      "sha256": "375017f3b8e675c33f30bb0941434b021d38dc043deddbe4aa3ffa2e343531f5",
+      "crc32": "fed77fcb"
+    },
+    {
+      "path": "hardware/cad/v2/arm_parts/机械臂配件/TM3X8D001.SLDPRT",
+      "archive_entry": "机械臂配件/TM3X8D001.SLDPRT",
+      "filename_encoding": "cp437",
+      "bytes": 48269,
+      "sha256": "fb1fe93071f5f6244bb321d13d97012144746b964d2d74854e49f8bf7534e6c5",
+      "crc32": "6b95e66c"
+    },
+    {
+      "path": "hardware/cad/v2/arm_parts/机械臂配件/XP001.SLDPRT",
+      "archive_entry": "机械臂配件/XP001.SLDPRT",
+      "filename_encoding": "cp437",
+      "bytes": 47197,
+      "sha256": "5ec9561a6c0a7f4bf8a5d0e78a6874d975cf989be818d144aad9d57addd71877",
+      "crc32": "93724efa"
+    },
+    {
+      "path": "hardware/cad/v2/arm_parts/机械臂配件/ZPK001.SLDPRT",
+      "archive_entry": "机械臂配件/ZPK001.SLDPRT",
+      "filename_encoding": "cp437",
+      "bytes": 1457201,
+      "sha256": "89d722fcef395ba4aba0f9314ca2d023810baae2f5b71b2ea7f07696b8360aac",
+      "crc32": "47ccc34c"
+    },
+    {
+      "path": "hardware/cad/v2/arm_parts/机械臂配件/__C____.SLDPRT",
+      "archive_entry": "机械臂配件/__C____.SLDPRT",
+      "filename_encoding": "cp437",
+      "bytes": 85949,
+      "sha256": "2cd7edb2d75afed74c81abb8e4ac1b0dd65550bc7a20b357e5fa23d78a28bf05",
+      "crc32": "dddb38d8"
+    },
+    {
+      "path": "hardware/cad/v2/arm_parts/机械臂配件/__U____-22069.SLDPRT",
+      "archive_entry": "机械臂配件/__U____-22069.SLDPRT",
+      "filename_encoding": "cp437",
+      "bytes": 93965,
+      "sha256": "0a9fc97d700ef144d89d6c2bf13ecf5fb49d4f2b6ab23e3c2ee8c6138b86c47e",
+      "crc32": "3e3063c1"
+    },
+    {
+      "path": "hardware/cad/v2/arm_parts/机械臂配件/__U____-42848.SLDPRT",
+      "archive_entry": "机械臂配件/__U____-42848.SLDPRT",
+      "filename_encoding": "cp437",
+      "bytes": 113608,
+      "sha256": "a38162588ec126e6a97216c6a7ffbc34a80a394204f9266c3a928b720b95ade3",
+      "crc32": "2611f321"
+    },
+    {
+      "path": "hardware/cad/v2/arm_parts/机械臂配件/__U____-55436.SLDPRT",
+      "archive_entry": "机械臂配件/__U____-55436.SLDPRT",
+      "filename_encoding": "cp437",
+      "bytes": 82319,
+      "sha256": "4a0f951a4aaad2cc5190e6d4ab26ceedf5ad9482938a6355a2391df914c66d20",
+      "crc32": "8f06c431"
+    },
+    {
+      "path": "hardware/cad/v2/arm_parts/机械臂配件/________1.SLDPRT",
+      "archive_entry": "机械臂配件/________1.SLDPRT",
+      "filename_encoding": "cp437",
+      "bytes": 69870,
+      "sha256": "8236ed84d2712fb9727225d4acb93288480bf396ad2db198db20c8a7ff41ac4e",
+      "crc32": "1f0eaab9"
+    },
+    {
+      "path": "hardware/cad/v2/arm_parts/机械臂配件/________2.SLDPRT",
+      "archive_entry": "机械臂配件/________2.SLDPRT",
+      "filename_encoding": "cp437",
+      "bytes": 58204,
+      "sha256": "10deb2cebe735176a7a791731e6f02db39d8f530387b1321a088004ac97d6324",
+      "crc32": "0cce67eb"
+    },
+    {
+      "path": "hardware/cad/v2/arm_parts/机械臂配件/________3.SLDPRT",
+      "archive_entry": "机械臂配件/________3.SLDPRT",
+      "filename_encoding": "cp437",
+      "bytes": 54034,
+      "sha256": "9aa9121fb1c899adf46c9304ff9e3593d4252573156e046bbcbcaaffe3604e9f",
+      "crc32": "44e5af97"
+    },
+    {
+      "path": "hardware/cad/v2/arm_parts/机械臂配件/________JIBOT1__-221125_ASM.SLDASM",
+      "archive_entry": "机械臂配件/________JIBOT1__-221125_ASM.SLDASM",
+      "filename_encoding": "cp437",
+      "bytes": 677069,
+      "sha256": "660f686e7af8938f666e04abd3377a62b248982bd8056cc332266608ea1650d4",
+      "crc32": "dd3c2f47"
+    },
+    {
+      "path": "hardware/cad/v2/arm_parts/机械臂配件/___________STEP_ASM.SLDASM",
+      "archive_entry": "机械臂配件/___________STEP_ASM.SLDASM",
+      "filename_encoding": "cp437",
+      "bytes": 36218,
+      "sha256": "622848cecaa18eca8abe229eadce6341ac0c6be719ed4d068c9fb89fda86c189",
+      "crc32": "b83e9c4e"
+    },
+    {
+      "path": "hardware/cad/v2/arm_parts/机械臂配件/jibot1-240103_asm(2).SLDASM",
+      "archive_entry": "机械臂配件/jibot1-240103_asm(2).SLDASM",
+      "filename_encoding": "cp437",
+      "bytes": 57696,
+      "sha256": "95df0ccdb02162c0719fe44afa9cd42060e348b35e9e1a84ed648ccc031067b2",
+      "crc32": "65a1c5da"
+    },
+    {
+      "path": "hardware/cad/v2/arm_parts/机械臂配件/jibot1-240103_asm.SLDASM",
+      "archive_entry": "机械臂配件/jibot1-240103_asm.SLDASM",
+      "filename_encoding": "cp437",
+      "bytes": 2378574,
+      "sha256": "523a1ac0be4b43558019758cc591d63107bd3074b1d37501cbbf57ab371abe59",
+      "crc32": "6b379bf4"
+    },
+    {
+      "path": "hardware/cad/v2/arm_parts/机械臂配件/装配体1.SLDASM",
+      "archive_entry": "机械臂配件/装配体1.SLDASM",
+      "filename_encoding": "cp437",
+      "bytes": 877165,
+      "sha256": "06505903d63b3253db70d62e441c1caef261d5bd64cdbb147c12a115b42a9867",
+      "crc32": "d6b0b922"
+    },
+    {
+      "path": "hardware/cad/v2/arm_parts/机械臂配件/钣金件1(1).SLDPRT",
+      "archive_entry": "机械臂配件/钣金件1(1).SLDPRT",
+      "filename_encoding": "cp437",
+      "bytes": 381752,
+      "sha256": "4386d8f97f381669209253e6652bc8d2bc45fdea366a995eb08093d6e5587436",
+      "crc32": "5703b264"
+    },
+    {
+      "path": "hardware/cad/v2/arm_parts/机械臂配件/钣金件2(1).SLDPRT",
+      "archive_entry": "机械臂配件/钣金件2(1).SLDPRT",
+      "filename_encoding": "cp437",
+      "bytes": 455404,
+      "sha256": "7509110b054847604090961d210b1e25a92bca53cc3dbb9a5783e402ee9c7527",
+      "crc32": "3f1e5e1b"
+    }
+  ]
+}

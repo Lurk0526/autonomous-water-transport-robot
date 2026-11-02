@@ -1,0 +1,17 @@
+* text=auto
+*.md text eol=lf
+*.py text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.json text eol=lf
+*.SLDASM binary
+*.SLDPRT binary
+*.SLDDRW binary
+*.sldasm binary
+*.sldprt binary
+*.slddrw binary
+*.zip binary
+*.pptx binary
+*.png binary
+*.jpg binary
+*.jpeg binary

@@ -1,0 +1,168 @@
+{
+  "schema_version": 1,
+  "import_date": "2026-11-02",
+  "note": "Original source bytes preserved. Source paths are provenance labels, not repository links. Historical materials may contain superseded facts or past work instructions.",
+  "files": [
+    {
+      "path": "hardware/cad/v2/native/成品车.SLDASM",
+      "source": "Desktop/成品车.SLDASM",
+      "kind": "user_supplied_v2_assembly",
+      "bytes": 7135052,
+      "sha256": "19a990c5e24474a5fac80aaeccd2978d310a98aa6853f18f9dda84726c8a5163"
+    },
+    {
+      "path": "hardware/cad/v2/source_archives/机械臂配件.zip",
+      "source": "Desktop/机械臂配件.zip",
+      "kind": "user_supplied_v2_archive",
+      "bytes": 8310997,
+      "sha256": "debb9832315ee1fec9b4428739e4d23ac321a7775b1ba654ceaca6cde263fee7"
+    },
+    {
+      "path": "assets/images/vehicle_cad_reference.png",
+      "source": "output/p5/AstraGO_P5_Presentation_20261025/images/04_arm_gripper_assembly.png",
+      "kind": "historical_CAD_reference_not_v2_validation",
+      "bytes": 569323,
+      "sha256": "750f19041cf3ae6da95f147df3e5b765ec67ed1771310f339360cf146bee97eb"
+    },
+    {
+      "path": "assets/images/gripper_prototype.jpg",
+      "source": "output/p5/AstraGO_P5_Presentation_20261025/images/06_gripper_prototype.jpg",
+      "kind": "prototype_photo_no_load_test",
+      "bytes": 133387,
+      "sha256": "c726af17a64f670f0b99d525d1f0b5df8a4b4bfb1be5e44751c49e300488885a"
+    },
+    {
+      "path": "assets/images/vision_bench.jpg",
+      "source": "output/p4/sources/vision_bench.jpg",
+      "kind": "user_bench_photo",
+      "bytes": 8524577,
+      "sha256": "1ab1181fbe04f02a0391c87ebb7400917e7646c203e28ae18e1d81e484f89729"
+    },
+    {
+      "path": "assets/images/vision_tracking.jpg",
+      "source": "output/p4/sources/vision_tracking.jpg",
+      "kind": "user_bench_photo",
+      "bytes": 11104061,
+      "sha256": "3214808805757c770eca989a68b3860cc2645fbedfdb0d272de8fb151da8924c"
+    },
+    {
+      "path": "docs/sources/p4/content_basis.md",
+      "source": "output/p4/sources/content_basis.md",
+      "kind": "historical_fact_basis",
+      "bytes": 2196,
+      "sha256": "f659fd1fa04247e785bcbdb469a68b6cd16caabbc42d7acc84508530fbc7118f"
+    },
+    {
+      "path": "docs/sources/p5/content_basis_v2.md",
+      "source": "output/p5/AstraGO_P5_Presentation_20261025/sources/content_basis_v2.md",
+      "kind": "historical_fact_basis_partly_superseded",
+      "bytes": 7289,
+      "sha256": "953889ede6898a03a8214c284e645e661f9822eec0ce43db096a227fbce4eb62"
+    },
+    {
+      "path": "docs/sources/p5/user_update.md",
+      "source": "output/p5/AstraGO_P5_Presentation_20261025/sources/user_update.md",
+      "kind": "historical_user_confirmations",
+      "bytes": 2398,
+      "sha256": "fbab6eea5e02dcf1a5006d98022b611a5dd9c15698414033f450fb422df88325"
+    },
+    {
+      "path": "docs/sources/p5/revision_v4_current_basis.md",
+      "source": "output/p5/AstraGO_P5_Presentation_20261025/sources/revision_v4_current_basis.md",
+      "kind": "newer_dimensions_and_design_choices",
+      "bytes": 1680,
+      "sha256": "cb01fdaf265bff94180ee5423056dec974a78c9bf94a266551ad5a8cede6ef9d"
+    },
+    {
+      "path": "docs/sources/p5/frame_mass_recalculation_confirmed.md",
+      "source": "output/p5/AstraGO_P5_Presentation_20261025/sources/frame_mass_recalculation_confirmed.md",
+      "kind": "confirmed_inputs_calculation_not_measurement",
+      "bytes": 2010,
+      "sha256": "b52fc40e56383c7d6897bb379044d09e540008ab50a378f48cff01bf181fe5b4"
+    },
+    {
+      "path": "docs/sources/p5/suspension_preliminary_choice_6Nmm.md",
+      "source": "output/p5/AstraGO_P5_Presentation_20261025/sources/suspension_preliminary_choice_6Nmm.md",
+      "kind": "preliminary_assumptions_not_installed_parameters",
+      "bytes": 1464,
+      "sha256": "0f034f5da025cea5db025d4c25ed37c862f7f2e37c405fcce0f990c4dc1ef39a"
+    },
+    {
+      "path": "reports/p1/P1_AquaGo_V6.pptx",
+      "source": "output/p1_v6/P1_AquaGo_V6.pptx",
+      "kind": "selected_historical_presentation",
+      "bytes": 397119,
+      "sha256": "85c7d845f6ee3f8b6c537943a83f9fa21a5ac33d439ac724c3815066fec86de6"
+    },
+    {
+      "path": "reports/p1/speaker-script.md",
+      "source": "output/p1_v6/presenter_pack/P1_Bilingual_Script.md",
+      "kind": "historical_script",
+      "bytes": 12598,
+      "sha256": "f8ffe8f95a82f0771647220eafcd41dc87c370fbefbe14561211e4747d108a04"
+    },
+    {
+      "path": "reports/p2/AstraGO_P2_20260920.pptx",
+      "source": "output/p2/AstraGO_P2_20260920/exports/AstraGO_P2_20260920_215336_native_charts_tables.pptx",
+      "kind": "selected_historical_presentation",
+      "bytes": 1802139,
+      "sha256": "dd940827cea54885adfe3cd989fe6f53d2e781ac395ec65a2fed7399dea10568"
+    },
+    {
+      "path": "reports/p2/speaker-script.md",
+      "source": "output/p2/AstraGO_P2_中英文批注演讲稿.md",
+      "kind": "historical_script",
+      "bytes": 18257,
+      "sha256": "ac8d4d9d33550fa1745ca1593920a411505f6adc80f80c6cb2a5e054f94aa0d9"
+    },
+    {
+      "path": "reports/p3/AstraGO_P3_20261010.pptx",
+      "source": "output/p3/AstraGO_P3_ppt169_20261010/exports/AstraGO_P3_20261010_221149.pptx",
+      "kind": "selected_historical_presentation",
+      "bytes": 1220743,
+      "sha256": "d51825e8ca4da681cf49000a6c985fc8611029cfcafeaf30c96b72f46eef19d7"
+    },
+    {
+      "path": "reports/p3/speaker-script.md",
+      "source": "output/p3/AstraGO_P3_7分钟中英讲稿_V3.md",
+      "kind": "historical_script",
+      "bytes": 11304,
+      "sha256": "f2a3b7127226e7ad5cbcee2848abc4d163ea2fca700e1173e15f1ddc7f5a0344"
+    },
+    {
+      "path": "reports/p4/AstraGO_P4_annotated_revision.pptx",
+      "source": "output/p4/AstraGO_P4_批注修订版.pptx",
+      "kind": "selected_historical_presentation",
+      "bytes": 21409739,
+      "sha256": "898f6e30997993309b2c9e386370e5fef41ff2f56e24162955bd90e493a9fcd4"
+    },
+    {
+      "path": "reports/p4/speaker-script.md",
+      "source": "output/p4/AstraGO_P4_批注修订版_中英讲稿.md",
+      "kind": "historical_script",
+      "bytes": 11008,
+      "sha256": "2e45edd83b72c1a3d1e3631c7cb66d61890d37d6899cf8ba692c4255aca464b5"
+    },
+    {
+      "path": "reports/p5/AstraGO_P5_UserEdit_20261026.pptx",
+      "source": "output/p5/AstraGO_P5_UserEdit_20261026/exports/AstraGO_P5_案例合并修改版.pptx",
+      "kind": "latest_user_edited_p5_export",
+      "bytes": 2893997,
+      "sha256": "11489379e25eff6adad042c49b80ac1c6c4013ea9a1b793ac703d3dc3d98829d"
+    },
+    {
+      "path": "reports/p5/speaker-script.md",
+      "source": "output/p5/AstraGO_P5_UserEdit_20261026/AstraGO_P5_5分半中英讲稿_案例合并版.md",
+      "kind": "latest_p5_script",
+      "bytes": 7774,
+      "sha256": "26a46079b4c7ae5c6fe8076167dbeeff377922484e4ebc964025085ca66d33de"
+    },
+    {
+      "path": "reports/p5/calculations-and-qa.md",
+      "source": "output/p5/AstraGO_P5_Presentation_20261025/AstraGO_P5_V5_讲稿与计算依据.md",
+      "kind": "calculation_and_design_rationale",
+      "bytes": 11195,
+      "sha256": "6659585a378509f42b7f83c58531d75af0d3b2b6567ec00a4202ca28b8c93b08"
+    }
+  ]
+}
