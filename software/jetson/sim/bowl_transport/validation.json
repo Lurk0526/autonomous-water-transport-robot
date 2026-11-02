@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-23",
+  "local_host": "Jetson Orin Nano aarch64",
+  "offline_rehearsal_final_state": "DONE",
+  "usd_parsed": true,
+  "usd_units_m": 1,
+  "usd_up_axis": "Z",
+  "bowl_total_lumped_mass_kg": 0.65,
+  "convex_wall_colliders": 128,
+  "mesh_topologies_valid": true,
+  "cloud_runtime_executed": false,
+  "robot_articulation_present": false,
+  "fluid_simulated": false,
+  "rl_task_implemented": false,
+  "physical_grasp_validated": false,
+  "notes": [
+    "Preview dimensions other than rim diameter and height are assumptions.",
+    "A completed mocked sequence is not a physical success result."
+  ],
+  "schema_version": 2,
+  "local_test_methods_passed": 52,
+  "local_checks_passed": true,
+  "training_rental_ready": false,
+  "current_validation_report": "output/preflight.json",
+  "usd_check_scope": "Prior USD structure check only; no dynamic robot or fluid validation"
+}

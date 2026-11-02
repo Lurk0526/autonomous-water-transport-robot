@@ -1,0 +1,9 @@
+{
+  "isaac_lab_repository": "https://github.com/isaac-sim/IsaacLab.git",
+  "isaac_lab_commit": "961760bcb91e3af48e7d116292e57e8ecaefc31e",
+  "isaac_sim_package": "6.2.0.0",
+  "python": "3.12",
+  "rsl_rl": "5.5.1",
+  "verification": "upstream pyproject inspected; runtime untested on current Jetson",
+  "retrieved_on": "2026-10-23"
+}

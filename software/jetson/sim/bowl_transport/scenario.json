@@ -1,0 +1,108 @@
+{
+  "schema_version": 2,
+  "units": "SI: m, kg, s, rad",
+  "confirmed": {
+    "rim_outer_diameter_m": 0.156,
+    "height_m": 0.06,
+    "filled_total_mass_kg": 0.65,
+    "fill_condition": "to_rim",
+    "nominal_freeboard_m": 0.0,
+    "contact_only_with_base_stopped": true
+  },
+  "unmeasured": {
+    "empty_bowl_mass_kg": null,
+    "water_mass_kg": null,
+    "inner_profile": null,
+    "platform_top_size_m": null,
+    "gripper_opening_range_m": null,
+    "joint_axes_limits_and_torque": null,
+    "camera_intrinsics_and_hand_eye": null,
+    "road_profile_and_base_dynamics": null
+  },
+  "preview_assumptions_not_measurements": {
+    "platform_height_m": 0.35,
+    "platform_height_sweep_m": [
+      0.3,
+      0.35,
+      0.4
+    ],
+    "platform_side_m": 0.4,
+    "platform_separation_m": 2.0,
+    "wall_thickness_m": 0.003,
+    "bottom_thickness_m": 0.006,
+    "outer_profile_r_z_m": [
+      [
+        0.03,
+        0.0
+      ],
+      [
+        0.038,
+        0.008
+      ],
+      [
+        0.055,
+        0.027
+      ],
+      [
+        0.07,
+        0.047
+      ],
+      [
+        0.078,
+        0.06
+      ]
+    ],
+    "carry_bowl_bottom_height_m": 0.23,
+    "demo_peak_speed_m_s": 0.2,
+    "demo_roll_amplitude_deg": 0.6,
+    "slosh_frequency_hz": 2.4,
+    "slosh_damping_ratio": 0.12
+  },
+  "initial_gate_thresholds_require_calibration": {
+    "linear_speed_m_s": 0.005,
+    "angular_speed_rad_s": 0.01745,
+    "acceleration_m_s2": 0.05,
+    "target_age_s": 0.2,
+    "settle_s": 0.5,
+    "phase_timeout_s": 30.0,
+    "max_sample_interval_s": 0.1,
+    "telemetry_age_s": 0.1,
+    "path_age_s": 0.2,
+    "evidence_age_s": 0.1,
+    "pose_error_m": 0.005,
+    "pose_sigma_m": 0.003,
+    "tracking_error_rad": 0.035,
+    "slip_m": 0.003,
+    "carrying_tilt_rad": 0.035,
+    "overlap_speed_m_s": 0.08,
+    "overlap_angular_speed_rad_s": 0.02,
+    "overlap_acceleration_m_s2": 0.04,
+    "overlap_tilt_rad": 0.01745,
+    "evidence_dwell_s": 0.25,
+    "min_evidence_samples": 3
+  },
+  "training_design": {
+    "algorithm_candidate": "No RL until deterministic baseline fails a measured criterion; bounded residual PPO remains optional.",
+    "initial_num_envs": 16,
+    "scale_num_envs_after_profiling": [
+      64,
+      256,
+      512
+    ],
+    "physics_dt_s": 0.004166666666666667,
+    "policy_dt_s": 0.05,
+    "mass_domain_randomization_kg": [
+      0.6,
+      0.7
+    ],
+    "freeboard_curriculum_m": [
+      0.015,
+      0.01,
+      0.005,
+      0.0
+    ],
+    "note": "Thresholds and surrogate parameters are uncalibrated. Local logic/math checks are not a grasp or fluid pass. Unknown measurements block training-rental readiness.",
+    "moving_preparation_enabled_by_default": false,
+    "training_rental_ready": false
+  }
+}
