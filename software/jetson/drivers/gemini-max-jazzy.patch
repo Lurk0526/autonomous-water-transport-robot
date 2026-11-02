@@ -1,0 +1,249 @@
+--- a/gemini_camera/CMakeLists.txt
++++ b/gemini_camera/CMakeLists.txt
+@@ -57,6 +57,9 @@
+ 
+ set(ORBBEC_LIBS ${CMAKE_CURRENT_SOURCE_DIR}/SDK/lib/${HOST_PLATFORM})
+ set(ORBBEC_INCLUDE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/SDK/include/)
++# SDK v1 headers must precede the system's installed SDK v2 headers.
++include_directories(BEFORE ${ORBBEC_INCLUDE_DIR})
++set(CMAKE_INSTALL_RPATH "$ORIGIN;$ORIGIN/..")
+ 
+ add_library(${PROJECT_NAME} SHARED
+   src/d2c_viewer.cpp
+@@ -107,8 +110,7 @@
+   ${OpenCV_LIBS}
+   Eigen3::Eigen
+   ${GLOG_LIBRARIES}
+-  -lOrbbecSDK
+-  -L${ORBBEC_LIBS}
++  ${ORBBEC_LIBS}/libOrbbecSDK.so
+   )
+ 
+ add_executable(${PROJECT_NAME}_node
+@@ -130,8 +132,7 @@
+   ${OpenCV_LIBS}
+   Eigen3::Eigen
+   ${GLOG_LIBRARIES}
+-  -lOrbbecSDK
+-  -L${ORBBEC_LIBS}
++  ${ORBBEC_LIBS}/libOrbbecSDK.so
+   ${PROJECT_NAME}
+   )
+ 
+@@ -157,8 +158,7 @@
+   ${OpenCV_LIBS}
+   Eigen3::Eigen
+   ${GLOG_LIBRARIES}
+-  -lOrbbecSDK
+-  -L${ORBBEC_LIBS}
++  ${ORBBEC_LIBS}/libOrbbecSDK.so
+   ${PROJECT_NAME}
+   )
+ 
+@@ -185,8 +185,7 @@
+   ${OpenCV_LIBS}
+   Eigen3::Eigen
+   ${GLOG_LIBRARIES}
+-  -lOrbbecSDK
+-  -L${ORBBEC_LIBS}
++  ${ORBBEC_LIBS}/libOrbbecSDK.so
+   ${PROJECT_NAME}
+   )
+ 
+@@ -212,8 +211,7 @@
+   ${OpenCV_LIBS}
+   Eigen3::Eigen
+   ${GLOG_LIBRARIES}
+-  -lOrbbecSDK
+-  -L${ORBBEC_LIBS}
++  ${ORBBEC_LIBS}/libOrbbecSDK.so
+   ${PROJECT_NAME}
+   )
+ 
+--- a/gemini_camera/include/gemini_camera/ros_param_backend.h
++++ b/gemini_camera/include/gemini_camera/ros_param_backend.h
+@@ -19,7 +19,7 @@
+   explicit ParametersBackend(rclcpp::Node* node);
+   ~ParametersBackend();
+   void addOnSetParametersCallback(
+-      rclcpp::node_interfaces::NodeParametersInterface::OnParametersSetCallbackType callback);
++      rclcpp::node_interfaces::NodeParametersInterface::OnSetParametersCallbackType callback);
+ 
+  private:
+   rclcpp::Node* node_;
+--- a/gemini_camera/src/ob_camera_node_driver.cpp
++++ b/gemini_camera/src/ob_camera_node_driver.cpp
+@@ -158,6 +158,7 @@
+         continue;
+       }
+       onDeviceConnected(device_list);
++      std::this_thread::sleep_for(std::chrono::milliseconds(100));
+     } else {
+       std::this_thread::sleep_for(std::chrono::milliseconds(1000));
+     }
+@@ -226,7 +227,7 @@
+     const std::shared_ptr<ob::DeviceList> &list) {
+   if (device_num_ == 1) {
+     RCLCPP_INFO_STREAM(logger_, "Connecting to the default device");
+-    return list->getDevice(0);
++    return serial_number_.empty() ? list->getDevice(0) : selectDeviceBySerialNumber(list, serial_number_);
+   }
+   sem_t *device_sem = sem_open(DEFAULT_SEM_NAME.c_str(), O_CREAT, 0644, 1);
+   if (device_sem == SEM_FAILED) {
+@@ -299,13 +300,9 @@
+ }
+ 
+ void OBCameraNodeDriver::initializeDevice(const std::shared_ptr<ob::Device> &device) {
++  auto camera_node = std::make_unique<OBCameraNode>(this, device, parameters_);
+   device_ = device;
+-  CHECK_NOTNULL(device_);
+-  CHECK_NOTNULL(device_.get());
+-  if (ob_camera_node_) {
+-    ob_camera_node_.reset();
+-  }
+-  ob_camera_node_ = std::make_unique<OBCameraNode>(this, device_, parameters_);
++  ob_camera_node_ = std::move(camera_node);
+   device_connected_ = true;
+   device_info_ = device_->getDeviceInfo();
+   CHECK_NOTNULL(device_info_.get());
+--- a/gemini_camera/src/utils.cpp
++++ b/gemini_camera/src/utils.cpp
+@@ -16,14 +16,14 @@
+                                                  OBCameraDistortion distortion, int width) {
+   sensor_msgs::msg::CameraInfo info;
+   info.distortion_model = sensor_msgs::distortion_models::PLUMB_BOB;
+-  info.width = intrinsic.width;
+-  info.height = intrinsic.height;
++  info.width = width;
++  info.height = intrinsic.height * width / intrinsic.width;
+   info.d.resize(5, 0.0);
+   info.d[0] = distortion.k1;
+   info.d[1] = distortion.k2;
+-  info.d[2] = distortion.k3;
+-  info.d[3] = distortion.k4;
+-  info.d[4] = distortion.k5;
++  info.d[2] = distortion.p1;
++  info.d[3] = distortion.p2;
++  info.d[4] = distortion.k3;
+ 
+   info.k.fill(0.0);
+   info.k[0] = intrinsic.fx;
+@@ -43,7 +43,7 @@
+   info.p[5] = info.k[4];
+   info.p[6] = info.k[5];
+   info.p[10] = 1.0;
+-  double scaling = static_cast<double>(width) / 640;
++  double scaling = static_cast<double>(width) / intrinsic.width;
+   info.k[0] *= scaling;  // fx
+   info.k[2] *= scaling;  // cx
+   info.k[4] *= scaling;  // fy
+--- a/gemini_camera/src/ros_param_backend.cpp
++++ b/gemini_camera/src/ros_param_backend.cpp
+@@ -24,7 +24,7 @@
+ }
+ 
+ void ParametersBackend::addOnSetParametersCallback(
+-    rclcpp::node_interfaces::NodeParametersInterface::OnParametersSetCallbackType callback) {
++    rclcpp::node_interfaces::NodeParametersInterface::OnSetParametersCallbackType callback) {
+   ros_callback_ = node_->add_on_set_parameters_callback(callback);
+ }
+ 
+--- a/gemini_camera/src/ob_camera_node.cpp
++++ b/gemini_camera/src/ob_camera_node.cpp
+@@ -72,7 +72,7 @@
+     save_image_thread_->join();
+   }
+   is_running_.store(false);
+-  if (tf_thread_->joinable()) {
++  if (tf_thread_ && tf_thread_->joinable()) {
+     tf_thread_->join();
+   }
+   RCLCPP_WARN_STREAM(logger_, "stop streams");
+@@ -83,6 +83,12 @@
+ void OBCameraNode::setupDevices() {
+   auto sensor_list = device_->getSensorList();
+   for (size_t i = 0; i < sensor_list->count(); i++) {
++    auto sensor_type = sensor_list->type(i);
++    if ((sensor_type == OB_SENSOR_COLOR && !enable_stream_[COLOR]) ||
++        (sensor_type == OB_SENSOR_DEPTH && !enable_stream_[DEPTH]) ||
++        (sensor_type == OB_SENSOR_IR && !enable_stream_[INFRA0])) {
++      continue;
++    }
+     auto sensor = sensor_list->getSensor(i);
+     auto profiles = sensor->getStreamProfileList();
+     for (size_t j = 0; j < profiles->count(); j++) {
+@@ -130,9 +136,15 @@
+       }
+     }
+ 
+-    device_->setBoolProperty(OB_PROP_DEPTH_SOFT_FILTER_BOOL, enable_soft_filter_);
+-    device_->setBoolProperty(OB_PROP_COLOR_AUTO_EXPOSURE_BOOL, enable_color_auto_exposure_);
+-    device_->setBoolProperty(OB_PROP_IR_AUTO_EXPOSURE_BOOL, enable_ir_auto_exposure_);
++    if (device_->isPropertySupported(OB_PROP_DEPTH_SOFT_FILTER_BOOL, OB_PERMISSION_WRITE)) {
++      device_->setBoolProperty(OB_PROP_DEPTH_SOFT_FILTER_BOOL, enable_soft_filter_);
++    }
++    if (enable_stream_[COLOR] && device_->isPropertySupported(OB_PROP_COLOR_AUTO_EXPOSURE_BOOL, OB_PERMISSION_WRITE)) {
++      device_->setBoolProperty(OB_PROP_COLOR_AUTO_EXPOSURE_BOOL, enable_color_auto_exposure_);
++    }
++    if (enable_stream_[INFRA0] && device_->isPropertySupported(OB_PROP_IR_AUTO_EXPOSURE_BOOL, OB_PERMISSION_WRITE)) {
++      device_->setBoolProperty(OB_PROP_IR_AUTO_EXPOSURE_BOOL, enable_ir_auto_exposure_);
++    }
+   } catch (const ob::Error& e) {
+     RCLCPP_ERROR_STREAM(logger_, "Failed to setup devices: " << e.getMessage());
+   } catch (const std::exception& e) {
+@@ -634,6 +646,9 @@
+       stream_index == COLOR ? camera_param_->rgbDistortion : camera_param_->depthDistortion;
+   auto camera_info = convertToCameraInfo(intrinsic, distortion, width);
+   CHECK(camera_info_publishers_.count(stream_index) > 0);
++  camera_info.header.stamp = timestamp;
++  camera_info.header.frame_id =
++      depth_registration_ ? optical_frame_id_[COLOR] : optical_frame_id_[stream_index];
+   camera_info_publishers_[stream_index]->publish(camera_info);
+   auto image_msg =
+       cv_bridge::CvImage(std_msgs::msg::Header(), encoding_[stream_index], image).toImageMsg();
+@@ -641,7 +656,7 @@
+   image_msg->is_bigendian = false;
+   image_msg->step = width * unit_step_size_[stream_index];
+   image_msg->header.frame_id =
+-      depth_registration_ ? depth_aligned_frame_id_[stream_index] : optical_frame_id_[stream_index];
++      depth_registration_ ? optical_frame_id_[COLOR] : optical_frame_id_[stream_index];
+   CHECK(image_publishers_.count(stream_index) > 0);
+   image_publishers_[stream_index].publish(image_msg);
+   auto hardware_timestamp = frame->timeStamp();
+@@ -778,11 +793,16 @@
+   quaternion_optical.setRPY(-M_PI / 2, 0.0, -M_PI / 2);
+   std::vector<float> zero_trans = {0, 0, 0};
+   auto camera_param = findDefaultCameraParam();
+-  if (enable_publish_extrinsic_ && extrinsics_publisher_ && camera_param.has_value()) {
++  if (camera_param.has_value()) {
+     auto ex = camera_param->transform;
+-    Q = rotationMatrixToQuaternion(ex.rot);
++    // SDK stores depth-to-color R,t. TF needs the inverse: color pose in depth.
++    Q = rotationMatrixToQuaternion(ex.rot);  // helper transposes row-major SDK R
++    auto inverse_translation = tf2::quatRotate(Q, tf2::Vector3(-ex.trans[0], -ex.trans[1], -ex.trans[2]));
++    trans = {float(inverse_translation.x()), float(inverse_translation.y()), float(inverse_translation.z())};
+     Q = quaternion_optical * Q * quaternion_optical.inverse();
+-    extrinsics_publisher_->publish(obExtrinsicsToMsg(ex, "depth_to_color_extrinsics"));
++    if (enable_publish_extrinsic_ && extrinsics_publisher_) {
++      extrinsics_publisher_->publish(obExtrinsicsToMsg(ex, "depth_to_color_extrinsics"));
++    }
+   } else {
+     Q.setRPY(0, 0, 0);
+   }
+--- a/gemini_camera/config/OrbbecSDKConfig_v1.0.xml
++++ b/gemini_camera/config/OrbbecSDKConfig_v1.0.xml
+@@ -12,11 +12,11 @@
+ 
+ 	<Memory>
+ 		<!--数据帧最大缓存空间大小，int类型，单位MB，最小100MB, 所有帧共用-->
+-		<MaxFrameBufferSize> 2048 </MaxFrameBufferSize>
++		<MaxFrameBufferSize> 256 </MaxFrameBufferSize>
+ 		<!--高级模式下帧缓存队列的大小-->
+-        <PipelineFrameQueueSize>10</PipelineFrameQueueSize>
++        <PipelineFrameQueueSize>3</PipelineFrameQueueSize>
+         <!--内部处理单元帧缓存队列的大小-->
+-        <FrameProcessingBlockQueueSize>10</FrameProcessingBlockQueueSize>
++        <FrameProcessingBlockQueueSize>3</FrameProcessingBlockQueueSize>
+ 	</Memory>
+ 
+     <!--高级模式Pipeline默认工作配置-->
