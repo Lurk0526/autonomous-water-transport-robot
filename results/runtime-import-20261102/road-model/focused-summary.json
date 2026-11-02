@@ -1,0 +1,16 @@
+{
+  "scope": "User expects no water in operation; averages exclude water IoU from existing full-test metrics. Test images still include water scenes.",
+  "validation_six_class_mIoU": 0.8095404011750166,
+  "test_six_class_mIoU": 0.7961642822556326,
+  "test_per_class_IoU": {
+    "paved_ground": 0.9441412873523555,
+    "unpaved_ground": 0.8002563789415857,
+    "vegetation": 0.9104547994419178,
+    "rigid_obstacle": 0.684039692543415,
+    "person_or_vehicle": 0.6053673225885874,
+    "sky": 0.832726212665935
+  },
+  "test_paved_precision": 0.9630194656132169,
+  "test_paved_recall": 0.9796594285494176,
+  "test_rugd_paved_precision": 0.8970772983003352
+}
