@@ -1,0 +1,46 @@
+/camera/camera:
+  ros__parameters:
+    camera_name: camera
+    serial_number: AY2816200M0
+    device_num: 1
+    color_width: 640
+    color_height: 480
+    color_fps: 30
+    color_format: MJPG
+    enable_color: false
+    depth_width: 640
+    depth_height: 400
+    depth_fps: 30
+    depth_format: Y11
+    enable_depth: true
+    enable_ir: false
+    depth_registration: false
+    enable_point_cloud: true
+    enable_colored_point_cloud: false
+    enable_soft_filter: true
+    publish_tf: true
+    tf_publish_rate: 0.0
+    enable_publish_extrinsic: true
+    color_qos: sensor_data
+    depth_qos: sensor_data
+    point_cloud_qos: sensor_data
+    color_camera_info_qos: default
+    depth_camera_info_qos: default
+    log_level: warn
+
+/camera/color/uvc_color:
+  ros__parameters:
+    video_device: /dev/gemini-color
+    pixel_format: YUYV
+    output_encoding: rgb8
+    image_size: [640, 480]
+    time_per_frame: [1, 30]
+    camera_frame_id: camera_color_optical_frame
+
+/camera/depth_to_scan:
+  ros__parameters:
+    scan_time: 0.033333333
+    range_min: 0.3
+    range_max: 5.0
+    scan_height: 10
+    output_frame: camera_depth_frame

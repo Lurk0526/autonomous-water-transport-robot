@@ -1,0 +1,20 @@
+{
+  "kind": "synthetic_actuator_interface_screening",
+  "checks": {
+    "no_response_before_delayed_command": true,
+    "command_frequency_does_not_remove_delay": true,
+    "slew_limit_enforced": true,
+    "deadband_leaves_nonzero_tracking_error": true
+  },
+  "all_checks_passed": true,
+  "assumptions": {
+    "delay_s": 0.2,
+    "lag_tau_s": 0.25,
+    "slew_rad_s": 0.6,
+    "deadband_rad": 0.01
+  },
+  "max_tracking_error_rad_20hz": 0.2,
+  "max_tracking_error_rad_100hz": 0.2,
+  "hardware_identification_completed": false,
+  "warning": "These values are test stimuli, not measured servo parameters. Command rate is not mechanical tracking bandwidth."
+}

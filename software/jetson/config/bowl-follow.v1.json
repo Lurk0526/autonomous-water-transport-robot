@@ -1,0 +1,101 @@
+{
+  "camera_rigid_on_arm": true,
+  "directions_and_limits_verified": true,
+  "serial_open_reset_resolved": true,
+  "perception_validated": false,
+  "supervised_trial": true,
+  "port": "/dev/ttyUSB0",
+  "tracking_axes": [
+    0,
+    2,
+    3
+  ],
+  "enabled_axes": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "bounded_allocation": true,
+  "fresh_frame_after_feedback": true,
+  "adaptive_servo_bias": true,
+  "bounded_stop_feedback": true,
+  "adaptive_bias_tolerance_p": 25,
+  "allow_settling_drift": true,
+  "selective_stop": true,
+  "planning_period_s": 0.08,
+  "filter_alpha": 0.8,
+  "hold_hysteresis": 1.5,
+  "center_tolerance_px": 6,
+  "settle_seconds": 0.2,
+  "joint_weights": [
+    1,
+    1.35,
+    1
+  ],
+  "session_seconds": 900,
+  "allow_clipped_tracking": true,
+  "tracking_confidence": 0.75,
+  "max_step_p": 100,
+  "min_step_p": 1,
+  "duration_ms": 500,
+  "session_travel_p": 12000,
+  "session_window_p": 90,
+  "feedback_tolerance_p": 10,
+  "axes": {
+    "0": {
+      "min_p": 1100,
+      "max_p": 1900,
+      "direction": -1
+    },
+    "2": {
+      "min_p": 1437,
+      "max_p": 2447,
+      "direction": -1
+    },
+    "3": {
+      "min_p": 650,
+      "max_p": 1800,
+      "direction": -1
+    }
+  },
+  "startup_pose_policy": "measure_current_pose",
+  "gain_near": 0.55,
+  "gain_far": 0.92,
+  "gain_scale_px": 30,
+  "relax_priority_at_limits": true,
+  "continuous_follow": true,
+  "retarget_period_s": 0.22,
+  "retarget_min_error_px": 30,
+  "locked_tracking_confidence": 0.6,
+  "confidence_grace_s": 0.35,
+  "command_step_limits_p": {
+    "0": 100,
+    "2": 65,
+    "3": 100
+  },
+  "handoff_weights": [
+    1,
+    2,
+    1
+  ],
+  "bounded_settling_feedback": true,
+  "tracking_profile": "continuous-fast-20261022",
+  "smooth_coordination": true,
+  "coordinated_retarget": true,
+  "negative_command_step_limits_p": {
+    "2": 100
+  },
+  "actual_step_limits_p": {
+    "2": 65
+  },
+  "settling_allowance_p": {
+    "2": 25
+  },
+  "profile_version": "1.0.0",
+  "operator_target_lock": {
+    "weights_sha256": "c402769dabe8f46fd69e01f76054622b15677862fd34e1825618fedc4b9073a6"
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "parameter_provenance": {
+    "kind": "simulation_assumptions_only",
+    "applied": {},
+    "missing": [
+      "wheelbase_m",
+      "width_m",
+      "front_overhang_m",
+      "rear_overhang_m",
+      "max_steer_rad",
+      "steer_rate_rad_s",
+      "steer_time_constant_s",
+      "max_accel_m_s2",
+      "max_decel_m_s2",
+      "emergency_decel_m_s2",
+      "stop_latency_budget_s"
+    ],
+    "rejected": {},
+    "all_required_measurements_present": false,
+    "note": "文件/单位/哈希通过不等于已独立核验实测精度；软件速度与jerk设定仍需整车验收。"
+  },
+  "measured_vehicle_parameters": null,
+  "vehicle": {
+    "wheelbase_m": 0.32,
+    "width_m": 0.3,
+    "front_overhang_m": 0.1,
+    "rear_overhang_m": 0.09,
+    "max_steer_rad": 0.5,
+    "steer_rate_rad_s": 0.65,
+    "steer_time_constant_s": 0.15,
+    "max_speed_m_s": 0.55,
+    "max_accel_m_s2": 0.22,
+    "max_decel_m_s2": 0.3,
+    "max_jerk_m_s3": 0.6,
+    "emergency_decel_m_s2": 0.65,
+    "speed_response_rad_s": 1.6
+  },
+  "navigation": {
+    "dt_s": 0.05,
+    "lookahead_base_m": 0.48,
+    "lookahead_speed_gain_s": 0.65,
+    "lateral_accel_limit_m_s2": 0.2,
+    "footprint_margin_m": 0.08,
+    "stop_latency_budget_s": 0.45,
+    "stop_buffer_m": 0.18,
+    "sensor_range_m": 4.0,
+    "localization_max_age_s": 0.4,
+    "obstacle_max_age_s": 0.4,
+    "max_pose_sigma_m": 0.15,
+    "startup_grace_s": 1.0,
+    "clear_dwell_s": 0.6,
+    "goal_tolerance_m": 0.1,
+    "stopped_speed_m_s": 0.005,
+    "max_time_s": 100.0
+  },
+  "scope": {
+    "line_markings_required": false,
+    "route_and_localization_required": true,
+    "synthetic_localization_and_obstacles": true,
+    "camera_rendering": false,
+    "suspension_or_tire_dynamics": false,
+    "joint_or_gripper_physics": false,
+    "liquid_or_spill_mass": false,
+    "hardware_io": false
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "config": {
+    "seed": 42,
+    "device": "cuda:0",
+    "amp": true,
+    "initial_model": "work/road_training/runs/camvid-warmup/best/model",
+    "train_manifest": "datasets/public_road/prepared/camvid-rugd-train.jsonl",
+    "val_manifest": "datasets/public_road/prepared/camvid-rugd-val.jsonl",
+    "output": "work/road_training/runs/road-4060-v1",
+    "size": [
+      384,
+      512
+    ],
+    "batch": 2,
+    "accumulation": 2,
+    "workers": 0,
+    "freeze_encoder": false,
+    "encoder_lr": 6e-06,
+    "head_lr": 6e-05,
+    "weight_decay": 0.01,
+    "epochs": 20,
+    "dataset_sampling_weights": {
+      "camvid": 0.25,
+      "rugd": 0.75
+    },
+    "log_every": 100,
+    "smoke_only": false
+  },
+  "torch": "2.8.0+cu128",
+  "cuda": "12.8",
+  "train_images": 5185,
+  "val_images": 857,
+  "class_weights": [
+    1.2210310697555542,
+    0.6840564012527466,
+    0.38277438282966614,
+    1.2210310697555542,
+    1.2210310697555542,
+    1.2210310697555542,
+    1.0490448474884033
+  ],
+  "label_sha256": "56db3b3651cfc71618642dcb9e3aefbce806b45fb193b44332f7451ecc4200ae",
+  "train_manifest_sha256": "37cd381cff0d8f608ef6995e0198d65ff3b45bf976ddf3ddfb992b2360b6c87e",
+  "val_manifest_sha256": "913ea54737d1cacd164a6c23091416efe46d4e0163d179896150ec66aa9027ec",
+  "status": "completed",
+  "smoke_only": false,
+  "steps": 51860,
+  "optimizer_updates": 25934,
+  "elapsed_seconds": 4034.688,
+  "best_validation_selection_score": 0.7006265284529438,
+  "elapsed_scope": "current invocation; earlier completed epochs remain in history.jsonl",
+  "resumed_from": "work\\road_training\\runs\\road-4060-v1\\last",
+  "amp_skipped_updates_this_invocation": 6,
+  "final_amp_scale": 16384.0,
+  "first_loss": 0.07170753180980682,
+  "last_loss": 0.08197976648807526,
+  "peak_cuda_allocated_mb": 613.8623046875,
+  "deployment_ready": false
+}

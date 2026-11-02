@@ -1,0 +1,7 @@
+{
+  "python": "3.12.3",
+  "architecture": "aarch64",
+  "numpy": "1.26.4",
+  "opencv": "4.6.0",
+  "gpu_required_for_simulation": false
+}

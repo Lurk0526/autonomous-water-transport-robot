@@ -1,0 +1,12 @@
+auto_save: true
+with_image_data: false
+keep_prev: false
+language: zh_CN
+labels:
+  - target_bowl
+validate_label: exact
+flags:
+  negative: false
+canvas:
+  double_click: close
+  allow_out_of_bounds_points: false

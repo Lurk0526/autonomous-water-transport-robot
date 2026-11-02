@@ -1,0 +1,56 @@
+# Factory calibration read from Gemini MAX AY2816200M0 at 640x480.
+image_width: 640
+image_height: 480
+camera_name: usb_2.0_camera:_usb_camera
+camera_matrix:
+  rows: 3
+  cols: 3
+  data:
+  - 453.55706787109375
+  - 0.0
+  - 327.75897216796875
+  - 0.0
+  - 453.55706787109375
+  - 243.1293487548828
+  - 0.0
+  - 0.0
+  - 1.0
+distortion_model: plumb_bob
+distortion_coefficients:
+  rows: 1
+  cols: 5
+  data:
+  - 0.047206755727529526
+  - -0.06331536918878555
+  - 0.0003893800312653184
+  - -0.00042002100963145494
+  - 0.0
+rectification_matrix:
+  rows: 3
+  cols: 3
+  data:
+  - 1.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+projection_matrix:
+  rows: 3
+  cols: 4
+  data:
+  - 453.55706787109375
+  - 0.0
+  - 327.75897216796875
+  - 0.0
+  - 0.0
+  - 453.55706787109375
+  - 243.1293487548828
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  - 0.0

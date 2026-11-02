@@ -1,0 +1,393 @@
+{
+  "archive_sha256": "fce0b2f743815a682f114f75699aff49ad919141e95103cc48b88ff364e5366d",
+  "files": [
+    {
+      "path": "00 3 point faded.p2s",
+      "bytes": 1092,
+      "sha256": "9f35fbbf579b62566392f3630d73f4392983a6cbb0e6c53f7c4c293fd124ef47"
+    },
+    {
+      "path": "3 point beige.hdr",
+      "bytes": 5572159,
+      "sha256": "6a63851b47447e4196347e142a0e5a22a755a9bb4f06bd6bf305b16c18bbf96c"
+    },
+    {
+      "path": "J1DB001.SLDPRT",
+      "bytes": 101693,
+      "sha256": "79071a2d1b2af4a3baf189dcf5004e5a100994f1393f6a5932c414f2df1d5cb2"
+    },
+    {
+      "path": "KSZ001_ASM.SLDASM",
+      "bytes": 40488,
+      "sha256": "cd1b029c32e48b8da2d389075388496805cdf78df08dc6903f36a0548c78f525"
+    },
+    {
+      "path": "M2Z001.SLDPRT",
+      "bytes": 72791,
+      "sha256": "812678ccfa5a96e37f9d9cb5054663d69777b8bd60a439ed7a0ae3e8255e51e0"
+    },
+    {
+      "path": "M3X8001.SLDPRT",
+      "bytes": 99713,
+      "sha256": "4b6832e2ba37000d6b44b7a269268eef410d8b51276c45a6c31caa2699fa960d"
+    },
+    {
+      "path": "M4X18001.SLDPRT",
+      "bytes": 234181,
+      "sha256": "b15a4658fa1bd012891db202bcbb23d1c8bae552b91a0106082e58618b00a50b"
+    },
+    {
+      "path": "M4X40________.SLDPRT",
+      "bytes": 46422,
+      "sha256": "fe89e362e044f31129accd4268482fe9f2bf9e52e8d9f19fe71af8e03e9b19ba"
+    },
+    {
+      "path": "MD002.SLDPRT",
+      "bytes": 46901,
+      "sha256": "90f0209914ece6804657ea855da71fdfed7f6491a691116759e55059f849ee8d"
+    },
+    {
+      "path": "MG23基座.SLDPRT",
+      "bytes": 1604573,
+      "sha256": "5c1c3d198a9ee87b2673412339fbec8a9c86f4c528e7ce9a15f343dc3844a5f5"
+    },
+    {
+      "path": "MG995舵机.SLDPRT",
+      "bytes": 504602,
+      "sha256": "42c0754a44af0ec59bd9935485aa3b710a75e9a875b10caf95b2a11a9a68c1e8"
+    },
+    {
+      "path": "PRODUCT_10168.SLDPRT",
+      "bytes": 208600,
+      "sha256": "70f292cbbfb2059ba7100eb01b9fafabf27abed49ce7f029851a016b443c5fec"
+    },
+    {
+      "path": "PRODUCT_21630.SLDPRT",
+      "bytes": 241130,
+      "sha256": "f8bc52e0f50b2fb3d5e5bad29f36f111d3afc866dfa6dcf2cfad8ecea34c123c"
+    },
+    {
+      "path": "PRODUCT_49810_ASM.SLDASM",
+      "bytes": 38619,
+      "sha256": "54292e89608f8697e476e70276d933b7dd69e216daf62de4f47b51fa656c8b8a"
+    },
+    {
+      "path": "PRODUCT_68796.SLDPRT",
+      "bytes": 105780,
+      "sha256": "a1f08b9324194ecb3135d8b50db1117459a2e5b6177745e1e885e8ae9aa572a8"
+    },
+    {
+      "path": "PRODUCT_7387.SLDPRT",
+      "bytes": 47029,
+      "sha256": "37586fa7708fbd9e22f2337d56e0ccadfb3c9299ff2075e7702321aed6e27dff"
+    },
+    {
+      "path": "SBJS001.SLDPRT",
+      "bytes": 231491,
+      "sha256": "d7f8c369d12befc7ecd604b42d023828319898d789a35bd46199af4024d48d6c"
+    },
+    {
+      "path": "TM3S8S.SLDPRT",
+      "bytes": 46776,
+      "sha256": "375017f3b8e675c33f30bb0941434b021d38dc043deddbe4aa3ffa2e343531f5"
+    },
+    {
+      "path": "TM3X8D001.SLDPRT",
+      "bytes": 48269,
+      "sha256": "fb1fe93071f5f6244bb321d13d97012144746b964d2d74854e49f8bf7534e6c5"
+    },
+    {
+      "path": "TPGY-4510-4545.SLDPRT",
+      "bytes": 70182,
+      "sha256": "c9a2742deaf050260f940d03f77f4849d49f9c6e9f229b07d780a8b54c1692c2"
+    },
+    {
+      "path": "ZPK001.SLDPRT",
+      "bytes": 1457201,
+      "sha256": "89d722fcef395ba4aba0f9314ca2d023810baae2f5b71b2ea7f07696b8360aac"
+    },
+    {
+      "path": "ZXLG零件1.SLDPRT",
+      "bytes": 88203,
+      "sha256": "6e6d7ecd98756f43633d3befc992c6b3cd98f50e98ba063ca3d38c834439fd3f"
+    },
+    {
+      "path": "ZXLG零件2.SLDPRT",
+      "bytes": 114145,
+      "sha256": "46c8e3d078829d6444067c027f321e59970fa469d121e4015bf23a24bfbb3b5f"
+    },
+    {
+      "path": "__C____.SLDPRT",
+      "bytes": 85949,
+      "sha256": "2cd7edb2d75afed74c81abb8e4ac1b0dd65550bc7a20b357e5fa23d78a28bf05"
+    },
+    {
+      "path": "__U____-22069.SLDPRT",
+      "bytes": 93965,
+      "sha256": "0a9fc97d700ef144d89d6c2bf13ecf5fb49d4f2b6ab23e3c2ee8c6138b86c47e"
+    },
+    {
+      "path": "__U____-42848.SLDPRT",
+      "bytes": 113608,
+      "sha256": "a38162588ec126e6a97216c6a7ffbc34a80a394204f9266c3a928b720b95ade3"
+    },
+    {
+      "path": "__U____-55436.SLDPRT",
+      "bytes": 82319,
+      "sha256": "4a0f951a4aaad2cc5190e6d4ab26ceedf5ad9482938a6355a2391df914c66d20"
+    },
+    {
+      "path": "________1.SLDPRT",
+      "bytes": 69870,
+      "sha256": "8236ed84d2712fb9727225d4acb93288480bf396ad2db198db20c8a7ff41ac4e"
+    },
+    {
+      "path": "________2.SLDPRT",
+      "bytes": 58204,
+      "sha256": "10deb2cebe735176a7a791731e6f02db39d8f530387b1321a088004ac97d6324"
+    },
+    {
+      "path": "________3.SLDPRT",
+      "bytes": 54034,
+      "sha256": "9aa9121fb1c899adf46c9304ff9e3593d4252573156e046bbcbcaaffe3604e9f"
+    },
+    {
+      "path": "________JIBOT1__-221125_ASM.SLDASM",
+      "bytes": 46266,
+      "sha256": "f14608ca34a5d6c3075b6a56f4a0aebdec9907fe53fdcbca3583232ffdad4a60"
+    },
+    {
+      "path": "___________STEP_ASM.SLDASM",
+      "bytes": 36218,
+      "sha256": "622848cecaa18eca8abe229eadce6341ac0c6be719ed4d068c9fb89fda86c189"
+    },
+    {
+      "path": "brushed nickel.p2m",
+      "bytes": 501,
+      "sha256": "5578a814623c7729668ad1b47ff7f54e48bee09c1af39cc094998beaf101b74f"
+    },
+    {
+      "path": "color.p2m",
+      "bytes": 265,
+      "sha256": "5201b5db02a136f9659378cdce8bfc724730a9ff25f0310df16fd0c9aa9b3d9b"
+    },
+    {
+      "path": "jibot1-240103_asm(2).SLDASM",
+      "bytes": 54491,
+      "sha256": "c983b01f37702317bcbb53ff07ce981a652db83ef852e09a412a9d8bce9a5201"
+    },
+    {
+      "path": "matte rubber.p2m",
+      "bytes": 280,
+      "sha256": "9936e60890686d5c4240e6b62423d889ef0c15891a2e9eb3cb2a8f56333cf322"
+    },
+    {
+      "path": "matte steel.p2m",
+      "bytes": 440,
+      "sha256": "72e92e05692d26950a722485ac7076daa84f2bcb9db48ce146de217d57d7e7c4"
+    },
+    {
+      "path": "plasticpolystyrene_normalmap.dds",
+      "bytes": 1398228,
+      "sha256": "205e6b4670570fe181e2e3ec3fb485cd618e9b8fb53e14370fb2ca32624640fd"
+    },
+    {
+      "path": "polished copper.p2m",
+      "bytes": 547,
+      "sha256": "cce76de0799ba68f50f3ef303bcf49e5542681414e7740d3024f20a97d5b8ef6"
+    },
+    {
+      "path": "polished steel.p2m",
+      "bytes": 546,
+      "sha256": "c6e61d7e79e4023aa477808babaccef844f4e9894f364fd15f1b6f69e05cf9a5"
+    },
+    {
+      "path": "reflective shadow floor.p2m",
+      "bytes": 159,
+      "sha256": "48fb745f2a3138c31cfa74cb48937f40500149b5353f72cbcf3b63433f382e63"
+    },
+    {
+      "path": "satin finish stainless steel.p2m",
+      "bytes": 553,
+      "sha256": "d22989d07608469e01c3fc67a723df49b389cb078e7666e4122e86031b65a4f4"
+    },
+    {
+      "path": "softbox.png",
+      "bytes": 70839,
+      "sha256": "b8abd4eb93bd7dc0d09200ed49dda8939c9b65e699c594879d4f0adaa31af790"
+    },
+    {
+      "path": "white-pw-mt11050.p2m",
+      "bytes": 636,
+      "sha256": "bcf8a41022686f61547c8dddec0487cd5ac19e60122003e19972f3f8c19a1830"
+    },
+    {
+      "path": "【MG23】装配体.SLDASM",
+      "bytes": 1212178,
+      "sha256": "97884d3f3d6832f1e7dbd797d66f2f5f401d10db0261e66472f84a9eac17f537"
+    },
+    {
+      "path": "主动-圆柱齿轮18×2.SLDPRT",
+      "bytes": 463483,
+      "sha256": "9a1ca43dddf6c8ab469f94da5de34ae15583e439813982215b6ab739a48f7844"
+    },
+    {
+      "path": "亚克力板.SLDPRT",
+      "bytes": 99393,
+      "sha256": "3ffd12cbf56be2e493700b9702e07768aa4a1fa31c41a242acf52acf0192dcb2"
+    },
+    {
+      "path": "减震器.SLDPRT",
+      "bytes": 3216392,
+      "sha256": "47d118ed7ccde7746767f07ef42eee361bbccfdd2e5ddde1dfc2bbb7c537182d"
+    },
+    {
+      "path": "减震零件1.SLDPRT",
+      "bytes": 273468,
+      "sha256": "c2b74534d0bf16fb0c056285111bf2298a186bfb5c3404cba2e6e58ebb0ca5ef"
+    },
+    {
+      "path": "卡丁车车轮.SLDPRT",
+      "bytes": 2660167,
+      "sha256": "8ad58681890be5383d79a9d71653b214ed0b9f9f0311cc9e55e3480441ff8b7d"
+    },
+    {
+      "path": "双连杆.SLDPRT",
+      "bytes": 103156,
+      "sha256": "362ff7d2d8990edda89bfd9d250fd67ab82ac517eb2096e35babf7093b5fde6f"
+    },
+    {
+      "path": "夹爪与机械臂连接件.SLDPRT",
+      "bytes": 107991,
+      "sha256": "03186058e1eafb315ab52d1cfc1201642f71ec894dd0a9546ed53d3909dff298"
+    },
+    {
+      "path": "悬架带车轮装配体1.SLDASM",
+      "bytes": 3543109,
+      "sha256": "e125b6975e9b272c0e71a8faadd774a3eee7aaa422a84acc1af04809232c5daa"
+    },
+    {
+      "path": "悬架带车轮装配体2.SLDASM",
+      "bytes": 3545589,
+      "sha256": "df6cfd1a66bbac0ad9f54cabab78ae904321c9a8adc1a66ab99a3da3c970111b"
+    },
+    {
+      "path": "悬架带车轮装配体无拉杆.SLDASM",
+      "bytes": 3505835,
+      "sha256": "3e82c4ae6be07d25ef3d061c4c9475cf2d93f3d390f259acecfb450f6abfd08e"
+    },
+    {
+      "path": "拉杆1.SLDPRT",
+      "bytes": 109354,
+      "sha256": "b7074dd128dd446549cfca6783290592901ea8320977cf1fcaf72dd37894447c"
+    },
+    {
+      "path": "拉杆2.SLDPRT",
+      "bytes": 215887,
+      "sha256": "54af6e92ab0f3ef8d7d281d72b765e6a6e70b8dc321f70eed610c21e32508ef8"
+    },
+    {
+      "path": "拉杆3.SLDPRT",
+      "bytes": 142319,
+      "sha256": "ab6c55e56c02b3dd98ffced96f4b650a0d03d16b7ddedc6d107413979c08775f"
+    },
+    {
+      "path": "拉杆4.SLDPRT",
+      "bytes": 135113,
+      "sha256": "47c7700960260504d89942b7df146887094d0209db99b06c06e271fe3f68071e"
+    },
+    {
+      "path": "拉杆5.SLDPRT",
+      "bytes": 149670,
+      "sha256": "695853716ce9bb9a22874839d124938e273437aa2894b8fd9c8405d9d4fe1ef8"
+    },
+    {
+      "path": "指1.SLDPRT",
+      "bytes": 308183,
+      "sha256": "57e8c9c8e11f285e4341f8c6fb1e3bfaff6af34a434cbd894465df9067c45d34"
+    },
+    {
+      "path": "指2.SLDPRT",
+      "bytes": 497996,
+      "sha256": "a5d7e67b7ec70b6bdb47803be4c16bf240721110c3c7f3f1b10d4424b07ae822"
+    },
+    {
+      "path": "指3.SLDPRT",
+      "bytes": 429015,
+      "sha256": "d13debe41f7b6a6bbab4098a14210fa10ac27307c703b0918c0096cc133e8b22"
+    },
+    {
+      "path": "新机械臂.SLDASM",
+      "bytes": 3326339,
+      "sha256": "a3e430b72faacbcf0d7bb78722172cfcd4803aea2c2c55c9aafaae613ab198cd"
+    },
+    {
+      "path": "新车架第三版.SLDPRT",
+      "bytes": 1319538,
+      "sha256": "ce84ae693a8f759d7d3ab866547c64c769f975f3239604e63da80b4b0c0e0ba8"
+    },
+    {
+      "path": "机械臂主体.SLDASM",
+      "bytes": 2470376,
+      "sha256": "fc9ed222e7c4bfa230de98ae640893124c5603487c8067be582ae18cf1c9d5df"
+    },
+    {
+      "path": "杆件.SLDPRT",
+      "bytes": 131051,
+      "sha256": "55e54eb38f608e26692c401a4fc6b09c147b80f91dda814a514e32375b387bd4"
+    },
+    {
+      "path": "第三版底盘.SLDASM",
+      "bytes": 7105117,
+      "sha256": "a90bbf2b03547c51fda4b2601eb061fccf6413426da6b305aa353c38d517c79a"
+    },
+    {
+      "path": "舵机法兰.SLDPRT",
+      "bytes": 153385,
+      "sha256": "13c6c52da378443dd72fde1a6e1b95d935720f4123bb4b1b1b85acdb09e9594e"
+    },
+    {
+      "path": "螺丝.SLDPRT",
+      "bytes": 120356,
+      "sha256": "23e9fcab2b2e4103d4b4f5e688d6ff5a132c11ad0785525b10e075be1e39ce50"
+    },
+    {
+      "path": "轮子杆.SLDPRT",
+      "bytes": 68125,
+      "sha256": "ec455906a6a6138f3ea8e19ffd25c73ce8a5603b9e50f9d2bd89c175db602319"
+    },
+    {
+      "path": "连接铁片2.SLDPRT",
+      "bytes": 193075,
+      "sha256": "43f1e3edded3b267d11c51d57a50330ee414e7c57ee133b92d5644e26a0ff79c"
+    },
+    {
+      "path": "连轮子的片子.SLDPRT",
+      "bytes": 90373,
+      "sha256": "6963aa212c666e4e08ed6cfd16e5acb5fefd619ae85a468b8b5367571080b2e7"
+    },
+    {
+      "path": "钣金1.SLDPRT",
+      "bytes": 148163,
+      "sha256": "aa70146497ec2205b2da3c276b7e86d67a3755769b3713d0642a83cf4835a712"
+    },
+    {
+      "path": "防撞缓冲垫.SLDPRT",
+      "bytes": 73964,
+      "sha256": "7dfb67697c58910dfca13566e28926f833c375f2b14b5c76d9161b38dcbeaeec"
+    },
+    {
+      "path": "零件4.SLDPRT",
+      "bytes": 110487,
+      "sha256": "87c8dac214b42dbb52e5302189e51416f4d855d94381491741f09e8c4370997c"
+    },
+    {
+      "path": "齿条30×2.SLDPRT",
+      "bytes": 624389,
+      "sha256": "e279026417765f4098be44babe47b12c36ed9c2493cc362088e3ec01a201c532"
+    }
+  ],
+  "previous_assembly_reference_count": 64,
+  "missing_by_basename": [],
+  "note": "Basename coverage only; does not validate saved absolute paths, joint frames or geometry."
+}

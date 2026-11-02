@@ -1,0 +1,88 @@
+Panels:
+  - Class: rviz_common/Displays
+    Name: Displays
+  - Class: rviz_common/Views
+    Name: Views
+Visualization Manager:
+  Class: ""
+  Global Options:
+    Fixed Frame: camera_link
+    Background Color: 25; 31; 42
+    Frame Rate: 15
+  Displays:
+    - Class: rviz_default_plugins/TF
+      Name: Camera Coordinate Frames
+      Enabled: true
+      Show Names: true
+      Marker Scale: 0.15
+    - Class: rviz_default_plugins/PointCloud2
+      Name: 语义点云（灰色未知）
+      Enabled: true
+      Topic:
+        Value: /road_perception/labeled_points
+        Reliability Policy: Best Effort
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Depth: 1
+      Size (Pixels): 2
+      Style: Points
+      Color Transformer: RGB8
+      Decay Time: 1
+    - Class: rviz_default_plugins/Image
+      Name: 道路识别叠加图
+      Enabled: true
+      Topic:
+        Value: /road_perception/overlay
+        Reliability Policy: Best Effort
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Depth: 1
+      Transport Hint: raw
+      Normalize Range: true
+    - Class: rviz_default_plugins/Image
+      Name: 距离伪彩色（黑色无效）
+      Enabled: true
+      Topic:
+        Value: /road_perception/depth_preview
+        Reliability Policy: Best Effort
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Depth: 1
+      Transport Hint: raw
+      Min Value: 0.3
+      Max Value: 5
+      Normalize Range: false
+    - Class: rviz_default_plugins/Image
+      Name: 铺装候选（需要进一步判断）
+      Enabled: true
+      Topic:
+        Value: /road_perception/paved_candidate
+        Reliability Policy: Best Effort
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Depth: 1
+      Transport Hint: raw
+      Min Value: 0
+      Max Value: 255
+      Normalize Range: false
+  Tools:
+    - Class: rviz_default_plugins/Interact
+    - Class: rviz_default_plugins/MoveCamera
+    - Class: rviz_default_plugins/Select
+    - Class: rviz_default_plugins/FocusCamera
+    - Class: rviz_default_plugins/Measure
+  Views:
+    Current:
+      Class: rviz_default_plugins/Orbit
+      Distance: 3
+      Pitch: 0.35
+      Yaw: 3.9
+      Focal Point:
+        X: 1
+        Y: 0
+        Z: 0
+Window Geometry:
+  Width: 1460
+  Height: 900
+  X: 40
+  Y: 40

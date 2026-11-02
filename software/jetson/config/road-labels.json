@@ -1,0 +1,20 @@
+{
+  "ignore_index": 255,
+  "names": ["paved_ground", "unpaved_ground", "vegetation", "water", "rigid_obstacle", "person_or_vehicle", "sky"],
+  "names_zh": ["铺装地面", "松散或粗糙地面", "植被", "水面", "固定障碍物", "人或车辆", "天空"],
+  "palette": [[60,180,75],[180,120,60],[30,100,30],[0,130,220],[220,60,60],[240,180,30],[120,190,250]],
+  "camvid_id_to_target": {"0":6,"1":4,"2":4,"3":0,"4":0,"5":2,"6":4,"7":4,"8":5,"9":5,"10":5,"11":255},
+  "rugd_id_to_target": {"0":255,"1":1,"2":1,"3":2,"4":2,"5":4,"6":3,"7":6,"8":5,"9":4,"10":0,"11":1,"12":4,"13":1,"14":1,"15":4,"16":5,"17":5,"18":4,"19":2,"20":4,"21":4,"22":4,"23":0,"24":4},
+  "cityscapes_groups_for_initialization": [[0,1],[9],[8],[],[2,3,4,5,6,7],[11,12,13,14,15,16,17,18],[10]],
+  "rugd_val_sequences": ["park-8", "trail-5"],
+  "rugd_test_sequences": ["creek", "park-1", "trail-7", "trail-13"],
+  "camvid_val_sequences": ["0001TP"],
+  "camvid_test_sequences": ["Seq05VD"],
+  "notes": [
+    "These are appearance classes, not permission to drive. Paved ground includes sidewalk; route boundaries and depth geometry are separate.",
+    "Water, vegetation, unpaved terrain and unknown predictions are not automatically free space.",
+    "CamVid is regrouped by complete source video to prevent train/validation/test sharing a video. Original split is retained in the manifest.",
+    "RUGD uses the complete-video split in Table I of its IROS 2019 paper.",
+    "RUGD bridge is conservatively treated as a structure; the annotation does not distinguish a drivable bridge deck from the structure."
+  ]
+}

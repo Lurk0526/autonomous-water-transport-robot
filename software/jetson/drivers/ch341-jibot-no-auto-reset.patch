@@ -1,0 +1,45 @@
+--- a/ch341.c
++++ b/ch341.c
+@@ -24,6 +24,22 @@
+ #define DEFAULT_BAUD_RATE 9600
+ #define DEFAULT_TIMEOUT   1000
+ 
++/* Jibot STM32 board wires CH340 modem outputs to reset/boot selection.
++ * Opt-in: keep both physical lines inactive during normal arm communication.
++ * Other USB IDs keep upstream behaviour. Disable for firmware downloading.
++ */
++static bool jibot_no_auto_reset;
++module_param(jibot_no_auto_reset, bool, 0444);
++MODULE_PARM_DESC(jibot_no_auto_reset,
++        "Keep DTR/RTS inactive on 1a86:7523 Jibot arm connections");
++
++static bool ch341_jibot_guard(struct usb_device *dev)
++{
++    return jibot_no_auto_reset &&
++        le16_to_cpu(dev->descriptor.idVendor) == 0x1a86 &&
++        le16_to_cpu(dev->descriptor.idProduct) == 0x7523;
++}
++
+ /* flags for IO-Bits */
+ #define CH341_BIT_RTS (1 << 6)
+ #define CH341_BIT_DTR (1 << 5)
+@@ -285,6 +301,9 @@
+ 
+ static int ch341_set_handshake(struct usb_device *dev, u8 control)
+ {
++	if (ch341_jibot_guard(dev)) {
++		control &= ~(CH341_BIT_DTR | CH341_BIT_RTS);
++	}
+ 	return ch341_control_out(dev, CH341_REQ_MODEM_CTRL, ~control, 0);
+ }
+ 
+@@ -789,6 +808,9 @@
+ 
+ 	spin_lock_irqsave(&priv->lock, flags);
+ 	mcr = priv->mcr;
++	if (ch341_jibot_guard(port->serial->dev)) {
++		mcr &= ~(CH341_BIT_DTR | CH341_BIT_RTS);
++	}
+ 	status = priv->msr;
+ 	spin_unlock_irqrestore(&priv->lock, flags);
+ 

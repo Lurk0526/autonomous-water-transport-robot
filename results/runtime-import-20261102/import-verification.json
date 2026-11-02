@@ -1,0 +1,45 @@
+{
+  "date": "2026-11-02",
+  "python": "3.12.3",
+  "scope": "File import and hardware-free software checks; no actuator commands or camera services",
+  "syntax": {
+    "python_files": 130,
+    "shell_files": 23,
+    "passed": true
+  },
+  "unittest": {
+    "command": "python -m unittest discover -s tests -v",
+    "discovered": 293,
+    "passed": 289,
+    "skipped": 4,
+    "failures": 0,
+    "errors": 0,
+    "environment": "Original Jetson project environment activated before running copied source; no venv included",
+    "skip_reasons": [
+      "3 project activation integration checks need a local .venv in the imported project",
+      "1 full-data leakage check needs separately stored road dataset"
+    ],
+    "retry_note": "Initial direct-Python run lacked CUDA loader paths; corrected by activating the original project environment. A later run overlapped the navigation simulation and hit a rate-limit timing assertion; rerun after simulation completed passed."
+  },
+  "navigation": {
+    "command": "python -m sim.line_free_cart.run --out <temporary-output>",
+    "all_requested_local_checks_passed": true,
+    "primary_line_scenarios": 10,
+    "backup_navigation_scenarios": 38,
+    "mission_scenarios": 4,
+    "sensitivity_combinations": 27,
+    "regression_methods": 72,
+    "negative_control": "Expected collision counterexample retained"
+  },
+  "bowl_preflight": {
+    "command": "python3 sim/bowl_transport/preflight.py --out <temporary-output>",
+    "local_checks_passed": true,
+    "test_methods": 52,
+    "numerical_checks": 6,
+    "actuator_checks": 4,
+    "reward_attack_checks": 11,
+    "training_rental_ready": false
+  },
+  "models_reevaluated": false,
+  "hardware_io": false
+}

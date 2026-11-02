@@ -1,0 +1,21 @@
+seed: 42
+device: cuda:0
+amp: true
+initial_model: work/road_training/runs/camvid-warmup/best/model
+train_manifest: datasets/public_road/prepared/camvid-rugd-train.jsonl
+val_manifest: datasets/public_road/prepared/camvid-rugd-val.jsonl
+output: work/road_training/runs/road-4060-v1
+size: [384, 512]
+batch: 2
+accumulation: 2
+workers: 0
+freeze_encoder: false
+encoder_lr: 0.000006
+head_lr: 0.00006
+weight_decay: 0.01
+epochs: 20
+dataset_sampling_weights:
+  camvid: 0.25
+  rugd: 0.75
+log_every: 100
+smoke_only: false

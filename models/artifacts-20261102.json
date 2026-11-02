@@ -1,0 +1,47 @@
+{
+  "date": "2026-11-02",
+  "storage": "Original Jetson project and offline training delivery; no hosted download added",
+  "code_location": "software/jetson",
+  "files": [
+    {
+      "path_in_original_project": "work/models/target-bowl-20261021/best.pt",
+      "bytes": 6034020,
+      "sha256": "c402769dabe8f46fd69e01f76054622b15677862fd34e1825618fedc4b9073a6",
+      "binary_in_repository": false
+    },
+    {
+      "path_in_original_project": "work/models/road/road-4060-v1/model/model.safetensors",
+      "bytes": 14889924,
+      "sha256": "0d1bf26b326f46525749228c9dd80b6b01fcb9e872df015f8c9f81c4a026d18c",
+      "binary_in_repository": false
+    },
+    {
+      "path_in_original_project": "work/models/road/road-4060-v1/model/config.json",
+      "bytes": 1393,
+      "sha256": "5e1a893ff5d8b1c378dc201bceb72265536ff0ac8e299b4358782c5dddfd56c3",
+      "binary_in_repository": false
+    },
+    {
+      "path_in_original_project": "work/models/road/road-4060-v1/labels.json",
+      "bytes": 1590,
+      "sha256": "56db3b3651cfc71618642dcb9e3aefbce806b45fb193b44332f7451ecc4200ae",
+      "binary_in_repository": false
+    },
+    {
+      "path_in_original_project": "work/models/road/road-4060-v1/accelerator/model.onnx",
+      "bytes": 15025751,
+      "sha256": "5758171f26e50447eff6ceb2cdf931a59561d1afed0dffda25e1d1b9f5015ad6",
+      "binary_in_repository": false
+    },
+    {
+      "path_in_original_project": "work/models/road/road-4060-v1/accelerator/model.plan",
+      "bytes": 9265340,
+      "sha256": "5be88c63e066e6f186f5f74a08e3da5ec96c40387290aed4241c84defd738b0a",
+      "binary_in_repository": false
+    }
+  ],
+  "notes": [
+    "TensorRT plan is specific to the recorded target GPU/TensorRT stack.",
+    "Original runtime project has no Git commit; content hashes are recorded in the import manifest."
+  ]
+}

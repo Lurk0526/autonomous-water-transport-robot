@@ -70,3 +70,12 @@ wandb/
 *.sldbak
 *.SLDBAK
 *.sldrecover
+
+# Imported Jetson runtime: local caches, captures, models and generated outputs
+/software/jetson/.venv*
+/software/jetson/work/
+/software/jetson/Log/
+/software/jetson/deliverables/
+/software/jetson/releases/
+/software/jetson/datasets/
+/software/jetson/sim/*/output/

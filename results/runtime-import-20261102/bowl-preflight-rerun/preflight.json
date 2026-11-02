@@ -1,0 +1,68 @@
+{
+  "schema_version": 2,
+  "kind": "local_logic_numerical_reward_preflight",
+  "local_checks_passed": true,
+  "test_methods_run": 52,
+  "test_failures": 0,
+  "test_errors": 0,
+  "numerical_checks": 6,
+  "actuator_checks": 4,
+  "reward_attack_checks": 11,
+  "training_rental_ready": false,
+  "physical_grasp_validated": false,
+  "fluid_simulated": false,
+  "hardware_command_sent": false,
+  "blockers": [
+    {
+      "id": "robot_asset",
+      "status": "not_verified",
+      "detail": "关节轴、限位、驱动、夹爪耦合及真实碰撞资产未验证"
+    },
+    {
+      "id": "grasp_and_payload",
+      "status": "not_verified",
+      "detail": "156 mm 包络、湿碗夹持、650 g 持续承载与回差未实测"
+    },
+    {
+      "id": "observability",
+      "status": "not_verified",
+      "detail": "相机/手眼、时间对齐、底盘制动、夹持/承托证据链未验收"
+    },
+    {
+      "id": "fluid",
+      "status": "not_verified",
+      "detail": "空碗质量、内腔、溢流模型与称重误差未测；实际洒水量未知"
+    },
+    {
+      "id": "scoring",
+      "status": "not_verified",
+      "detail": "赛事洒水容忍度及时间/洒水评分规则未确认"
+    },
+    {
+      "id": "baseline",
+      "status": "not_verified",
+      "detail": "未证明确定性控制不足，也没有真实抓放基线和留出工况结果"
+    }
+  ],
+  "screening_counterexamples": {
+    "simultaneous_worse": 30,
+    "total": 36,
+    "meaning": "Hypothetical single-mode sensitivity only; NOT observed spill or evidence to select a real trajectory."
+  },
+  "source_sha256": {
+    "sim/bowl_transport/actuator_screening.py": "5db09d9ba18d3846b2a9b7d64e51be012435456569f310ef201b46dd60c67cf8",
+    "sim/bowl_transport/build_bundle.py": "d723ceaa4d6badbe52f6affbd828f3dcba8cc8722e5ce1a2faf0ee6baf873419",
+    "sim/bowl_transport/build_scene.py": "a5d98b22b62bc8ea5c8578ffcc354a7ad4cd7f7b3b4c58c5220f923df0d3493e",
+    "sim/bowl_transport/demo.py": "71e1b1cecb2a17e07d0fb11bdf75b7ea8108602fca723756329da3cfef2fab63",
+    "sim/bowl_transport/flow.py": "cea33fe36d7ac1361e52200c8b59edc9d48fa66e6ca36b4fa6c571371dd6ab4f",
+    "sim/bowl_transport/preflight.py": "0a7a70c71c3977dafc63c0157d80643fc6f284282d7d6379050650d150782297",
+    "sim/bowl_transport/reward_audit.py": "69c4c9153ae8c3614b584180fb38997b4aef989e780716a8cf2929775b898ffb",
+    "sim/bowl_transport/screening.py": "1a41a6aca6de939eae5d085660d1ba5ce7eeb8a2890cc729f41593f77ae179c0",
+    "sim/bowl_transport/view_in_isaac.py": "219b37bac1d2c1fa36c01844d87c8a786db9a40e9126c7dd95e9fbc2c8cdcb60",
+    "tests/test_bowl_transport_faults.py": "406af55dc8d3f6053d4018cc86567d23d137827ab63cef268f61393d1e9802bb",
+    "tests/test_bowl_transport_rewards.py": "6d7dbab52f5cd43ce8e783d305a902e1950cd3d3f09c217ad529866286c3cf68",
+    "tests/test_bowl_transport_screening.py": "274292c2e7e4b22020235448ecb94b5d8031747a4af634d599487dacd2041886",
+    "tests/test_bowl_transport_sim.py": "ca2174a47a7ef9a3514a11671c4a8a5bdbf817093a8ab727f01f8f94eeb2d685",
+    "sim/bowl_transport/scenario.json": "14e7d438400583b2d178e0395b451791e0c5f01d3201501f392bf887268525a3"
+  }
+}

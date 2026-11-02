@@ -1,0 +1,1778 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-02",
+  "runtime_directory": "software/jetson",
+  "original_project_has_git_commit": false,
+  "files": [
+    {
+      "path": "results/runtime-import-20261102/bowl-preflight-previous/actuator-screening.json",
+      "bytes": 654,
+      "sha256": "d037cf6d21637e11fa82649c196936e27c3fcd4a9156d5763aa3a2db5efc2a97"
+    },
+    {
+      "path": "results/runtime-import-20261102/bowl-preflight-previous/preflight.json",
+      "bytes": 3142,
+      "sha256": "caafa522c9a9abed98d60714b2e2e47e250037c02f86d573c4088ee01a32438c"
+    },
+    {
+      "path": "results/runtime-import-20261102/bowl-preflight-previous/reward_audit.json",
+      "bytes": 1496,
+      "sha256": "3e1dd89b6aabb92f1b65817a1ce75bd43ab781848ec04447dec03aef769d47ab"
+    },
+    {
+      "path": "results/runtime-import-20261102/bowl-preflight-previous/screening.json",
+      "bytes": 8599,
+      "sha256": "b765be0bcb742aa4508f698e4ec77655c95054697119e1c1a028956f8c77d321"
+    },
+    {
+      "path": "results/runtime-import-20261102/bowl-preflight-previous/test-results.txt",
+      "bytes": 8310,
+      "sha256": "9f94b17b6de4d2aad3bb673dcc78d2fb6a5f53062585516fd213829c75af826e"
+    },
+    {
+      "path": "results/runtime-import-20261102/bowl-preflight-rerun/actuator-screening.json",
+      "bytes": 654,
+      "sha256": "d037cf6d21637e11fa82649c196936e27c3fcd4a9156d5763aa3a2db5efc2a97"
+    },
+    {
+      "path": "results/runtime-import-20261102/bowl-preflight-rerun/preflight.json",
+      "bytes": 3142,
+      "sha256": "caafa522c9a9abed98d60714b2e2e47e250037c02f86d573c4088ee01a32438c"
+    },
+    {
+      "path": "results/runtime-import-20261102/bowl-preflight-rerun/reward_audit.json",
+      "bytes": 1496,
+      "sha256": "3e1dd89b6aabb92f1b65817a1ce75bd43ab781848ec04447dec03aef769d47ab"
+    },
+    {
+      "path": "results/runtime-import-20261102/bowl-preflight-rerun/screening.json",
+      "bytes": 8599,
+      "sha256": "b765be0bcb742aa4508f698e4ec77655c95054697119e1c1a028956f8c77d321"
+    },
+    {
+      "path": "results/runtime-import-20261102/bowl-preflight-rerun/test-results.txt",
+      "bytes": 8310,
+      "sha256": "e520dfffd99e8f80d81d1f0a15326c49fc7d1087b5a1634db7357c1c0d42f061"
+    },
+    {
+      "path": "results/runtime-import-20261102/import-verification.json",
+      "bytes": 1701,
+      "sha256": "794eafbbb34489a6d9f5ed47b4a889912610a4c5398a7354eb389187d883024b"
+    },
+    {
+      "path": "results/runtime-import-20261102/navigation-20261101/config.snapshot.json",
+      "bytes": 1864,
+      "sha256": "37aaff6a15a67e20978fcebead136130a7733261e1c1182d326f9655305b46cd"
+    },
+    {
+      "path": "results/runtime-import-20261102/navigation-20261101/environment.json",
+      "bytes": 135,
+      "sha256": "64d111a1efc65967ba61a654a89dc04443b56619db4fba3956d2691e8d94cd1e"
+    },
+    {
+      "path": "results/runtime-import-20261102/navigation-20261101/summary.json",
+      "bytes": 1654727,
+      "sha256": "888e06b36d15b630026bd72021e45420ebea36744ca0fa0bdc401797da227850"
+    },
+    {
+      "path": "results/runtime-import-20261102/navigation-20261101/tests.txt",
+      "bytes": 12046,
+      "sha256": "c847ed1eb03c529ac495b4287e08c72fc2f05bb36c31b7db670400bbafcf27bc"
+    },
+    {
+      "path": "results/runtime-import-20261102/navigation-rerun/config.snapshot.json",
+      "bytes": 1864,
+      "sha256": "37aaff6a15a67e20978fcebead136130a7733261e1c1182d326f9655305b46cd"
+    },
+    {
+      "path": "results/runtime-import-20261102/navigation-rerun/summary.json",
+      "bytes": 1627014,
+      "sha256": "2edf55847c2fa0d306e78da4663067ddbf99d3d8621cce08b587df4d7e2ccceb"
+    },
+    {
+      "path": "results/runtime-import-20261102/navigation-rerun/tests.txt",
+      "bytes": 12046,
+      "sha256": "3e68e4058b198641ee7c9218386d0c972f9e581afea04af28e0bca78801da15d"
+    },
+    {
+      "path": "results/runtime-import-20261102/portable-tests.txt",
+      "bytes": 49098,
+      "sha256": "34bcf2a6b926cd986307f786808c22c46166e85e6ba6da119edabe81eb34b237"
+    },
+    {
+      "path": "results/runtime-import-20261102/road-model/focused-summary.json",
+      "bytes": 655,
+      "sha256": "95253051048b92146512f8a0921d7d0e1003c8850c0d74695e3bc25c1c26588c"
+    },
+    {
+      "path": "results/runtime-import-20261102/road-model/result.json",
+      "bytes": 1826,
+      "sha256": "3345e0f721d8f902dc3ef88235edb5e528538b2ff8105662caf9753561986abf"
+    },
+    {
+      "path": "results/runtime-import-20261102/road-model/run.json",
+      "bytes": 1310,
+      "sha256": "430bd8531bc2b8e97d3c973c01ad72386ea1b43fbc54b4b270d3fc7f8229aed5"
+    },
+    {
+      "path": "results/runtime-import-20261102/road-model/test-evaluation.json",
+      "bytes": 6018,
+      "sha256": "a51350f624b6a3db19673479e5b048dc9de8c002a6280eb79f715eb8ee4dc079"
+    },
+    {
+      "path": "results/runtime-import-20261102/road-model/training-audit.json",
+      "bytes": 13311,
+      "sha256": "6a6a5f4b87335e27867aedd95a1ff7243904e110495df81c6fa57540d46d35c0"
+    },
+    {
+      "path": "software/jetson/.gitignore",
+      "bytes": 250,
+      "sha256": "fc962526543c4c0149bac6d26737a9bc0e6166c7c4a6f87afb0b3f9a2c9f378d"
+    },
+    {
+      "path": "software/jetson/CHANGELOG.md",
+      "bytes": 5434,
+      "sha256": "4567461b692a5cf3b9cce36d4609201bf7335d83a8348505779a97ed2575e09a"
+    },
+    {
+      "path": "software/jetson/INSTALL_4060_WINDOWS.bat",
+      "bytes": 659,
+      "sha256": "feb61897266f1f5a1731a06c1074c181981478416203ddc3ec44ce506cc7fef3"
+    },
+    {
+      "path": "software/jetson/README.md",
+      "bytes": 10064,
+      "sha256": "41d47dca8e61789d5e4c3fba0483880f73e67fa906e1ceecaf2228ccf9284568"
+    },
+    {
+      "path": "software/jetson/README_WINDOWS.md",
+      "bytes": 7147,
+      "sha256": "18197658497b4eb039d6bff4b4db1559230189d1c7c4ec2e28ea2c4074cb6272"
+    },
+    {
+      "path": "software/jetson/START_HERE.md",
+      "bytes": 2846,
+      "sha256": "d0eb6b1b8420c8944247fcdba27f2de8f54f7d7d944b08cee02d0a271fd66ddc"
+    },
+    {
+      "path": "software/jetson/activate_gemini.sh",
+      "bytes": 496,
+      "sha256": "14dde9f5a5ec972b729aeeb268b2992fba24bd2edb4fb8cc758bc6adeb02bd8b"
+    },
+    {
+      "path": "software/jetson/activate_project.sh",
+      "bytes": 968,
+      "sha256": "96c45afd05414af6511ed05bb6b168ec27cdf9056708e75199bbe7c8f8b9c6fb"
+    },
+    {
+      "path": "software/jetson/annotation/labelme-bowl.yaml",
+      "bytes": 209,
+      "sha256": "404e6f8c0290b81cd6f6a3b747ef1b26ea40a1b589f43c9e33fe33aac3d98171"
+    },
+    {
+      "path": "software/jetson/assets/cad/bowl-reference.jpg",
+      "bytes": 50177,
+      "sha256": "735c641d92799f32b3fe2c7c027b2d0c14fa8c545f684869180da764abd3738d"
+    },
+    {
+      "path": "software/jetson/assets/cad/chassis-v3/00 3 point faded.p2s",
+      "bytes": 1092,
+      "sha256": "9f35fbbf579b62566392f3630d73f4392983a6cbb0e6c53f7c4c293fd124ef47"
+    },
+    {
+      "path": "software/jetson/assets/cad/chassis-v3/3 point beige.hdr",
+      "bytes": 5572159,
+      "sha256": "6a63851b47447e4196347e142a0e5a22a755a9bb4f06bd6bf305b16c18bbf96c"
+    },
+    {
+      "path": "software/jetson/assets/cad/chassis-v3/J1DB001.SLDPRT",
+      "bytes": 101693,
+      "sha256": "79071a2d1b2af4a3baf189dcf5004e5a100994f1393f6a5932c414f2df1d5cb2"
+    },
+    {
+      "path": "software/jetson/assets/cad/chassis-v3/KSZ001_ASM.SLDASM",
+      "bytes": 40488,
+      "sha256": "cd1b029c32e48b8da2d389075388496805cdf78df08dc6903f36a0548c78f525"
+    },
+    {
+      "path": "software/jetson/assets/cad/chassis-v3/M2Z001.SLDPRT",
+      "bytes": 72791,
+      "sha256": "812678ccfa5a96e37f9d9cb5054663d69777b8bd60a439ed7a0ae3e8255e51e0"
+    },
+    {
+      "path": "software/jetson/assets/cad/chassis-v3/M3X8001.SLDPRT",
+      "bytes": 99713,
+      "sha256": "4b6832e2ba37000d6b44b7a269268eef410d8b51276c45a6c31caa2699fa960d"
+    },
+    {
+      "path": "software/jetson/assets/cad/chassis-v3/M4X18001.SLDPRT",
+      "bytes": 234181,
+      "sha256": "b15a4658fa1bd012891db202bcbb23d1c8bae552b91a0106082e58618b00a50b"
+    },
+    {
+      "path": "software/jetson/assets/cad/chassis-v3/M4X40________.SLDPRT",
+      "bytes": 46422,
+      "sha256": "fe89e362e044f31129accd4268482fe9f2bf9e52e8d9f19fe71af8e03e9b19ba"
+    },
+    {
+      "path": "software/jetson/assets/cad/chassis-v3/MD002.SLDPRT",
+      "bytes": 46901,
+      "sha256": "90f0209914ece6804657ea855da71fdfed7f6491a691116759e55059f849ee8d"
+    },
+    {
+      "path": "software/jetson/assets/cad/chassis-v3/MG23基座.SLDPRT",
+      "bytes": 1604573,
+      "sha256": "5c1c3d198a9ee87b2673412339fbec8a9c86f4c528e7ce9a15f343dc3844a5f5"
+    },
+    {
+      "path": "software/jetson/assets/cad/chassis-v3/MG995舵机.SLDPRT",
+      "bytes": 504602,
+      "sha256": "42c0754a44af0ec59bd9935485aa3b710a75e9a875b10caf95b2a11a9a68c1e8"
+    },
+    {
+      "path": "software/jetson/assets/cad/chassis-v3/PRODUCT_10168.SLDPRT",
+      "bytes": 208600,
+      "sha256": "70f292cbbfb2059ba7100eb01b9fafabf27abed49ce7f029851a016b443c5fec"
+    },
+    {
+      "path": "software/jetson/assets/cad/chassis-v3/PRODUCT_21630.SLDPRT",
+      "bytes": 241130,
+      "sha256": "f8bc52e0f50b2fb3d5e5bad29f36f111d3afc866dfa6dcf2cfad8ecea34c123c"
+    },
+    {
+      "path": "software/jetson/assets/cad/chassis-v3/PRODUCT_49810_ASM.SLDASM",
+      "bytes": 38619,
+      "sha256": "54292e89608f8697e476e70276d933b7dd69e216daf62de4f47b51fa656c8b8a"
+    },
+    {
+      "path": "software/jetson/assets/cad/chassis-v3/PRODUCT_68796.SLDPRT",
+      "bytes": 105780,
+      "sha256": "a1f08b9324194ecb3135d8b50db1117459a2e5b6177745e1e885e8ae9aa572a8"
+    },
+    {
+      "path": "software/jetson/assets/cad/chassis-v3/PRODUCT_7387.SLDPRT",
+      "bytes": 47029,
+      "sha256": "37586fa7708fbd9e22f2337d56e0ccadfb3c9299ff2075e7702321aed6e27dff"
+    },
+    {
+      "path": "software/jetson/assets/cad/chassis-v3/SBJS001.SLDPRT",
+      "bytes": 231491,
+      "sha256": "d7f8c369d12befc7ecd604b42d023828319898d789a35bd46199af4024d48d6c"
+    },
+    {
+      "path": "software/jetson/assets/cad/chassis-v3/TM3S8S.SLDPRT",
+      "bytes": 46776,
+      "sha256": "375017f3b8e675c33f30bb0941434b021d38dc043deddbe4aa3ffa2e343531f5"
+    },
+    {
+      "path": "software/jetson/assets/cad/chassis-v3/TM3X8D001.SLDPRT",
+      "bytes": 48269,
+      "sha256": "fb1fe93071f5f6244bb321d13d97012144746b964d2d74854e49f8bf7534e6c5"
+    },
+    {
+      "path": "software/jetson/assets/cad/chassis-v3/TPGY-4510-4545.SLDPRT",
+      "bytes": 70182,
+      "sha256": "c9a2742deaf050260f940d03f77f4849d49f9c6e9f229b07d780a8b54c1692c2"
+    },
+    {
+      "path": "software/jetson/assets/cad/chassis-v3/ZPK001.SLDPRT",
+      "bytes": 1457201,
+      "sha256": "89d722fcef395ba4aba0f9314ca2d023810baae2f5b71b2ea7f07696b8360aac"
+    },
+    {
+      "path": "software/jetson/assets/cad/chassis-v3/ZXLG零件1.SLDPRT",
+      "bytes": 88203,
+      "sha256": "6e6d7ecd98756f43633d3befc992c6b3cd98f50e98ba063ca3d38c834439fd3f"
+    },
+    {
+      "path": "software/jetson/assets/cad/chassis-v3/ZXLG零件2.SLDPRT",
+      "bytes": 114145,
+      "sha256": "46c8e3d078829d6444067c027f321e59970fa469d121e4015bf23a24bfbb3b5f"
+    },
+    {
+      "path": "software/jetson/assets/cad/chassis-v3/__C____.SLDPRT",
+      "bytes": 85949,
+      "sha256": "2cd7edb2d75afed74c81abb8e4ac1b0dd65550bc7a20b357e5fa23d78a28bf05"
+    },
+    {
+      "path": "software/jetson/assets/cad/chassis-v3/__U____-22069.SLDPRT",
+      "bytes": 93965,
+      "sha256": "0a9fc97d700ef144d89d6c2bf13ecf5fb49d4f2b6ab23e3c2ee8c6138b86c47e"
+    },
+    {
+      "path": "software/jetson/assets/cad/chassis-v3/__U____-42848.SLDPRT",
+      "bytes": 113608,
+      "sha256": "a38162588ec126e6a97216c6a7ffbc34a80a394204f9266c3a928b720b95ade3"
+    },
+    {
+      "path": "software/jetson/assets/cad/chassis-v3/__U____-55436.SLDPRT",
+      "bytes": 82319,
+      "sha256": "4a0f951a4aaad2cc5190e6d4ab26ceedf5ad9482938a6355a2391df914c66d20"
+    },
+    {
+      "path": "software/jetson/assets/cad/chassis-v3/________1.SLDPRT",
+      "bytes": 69870,
+      "sha256": "8236ed84d2712fb9727225d4acb93288480bf396ad2db198db20c8a7ff41ac4e"
+    },
+    {
+      "path": "software/jetson/assets/cad/chassis-v3/________2.SLDPRT",
+      "bytes": 58204,
+      "sha256": "10deb2cebe735176a7a791731e6f02db39d8f530387b1321a088004ac97d6324"
+    },
+    {
+      "path": "software/jetson/assets/cad/chassis-v3/________3.SLDPRT",
+      "bytes": 54034,
+      "sha256": "9aa9121fb1c899adf46c9304ff9e3593d4252573156e046bbcbcaaffe3604e9f"
+    },
+    {
+      "path": "software/jetson/assets/cad/chassis-v3/________JIBOT1__-221125_ASM.SLDASM",
+      "bytes": 46266,
+      "sha256": "f14608ca34a5d6c3075b6a56f4a0aebdec9907fe53fdcbca3583232ffdad4a60"
+    },
+    {
+      "path": "software/jetson/assets/cad/chassis-v3/___________STEP_ASM.SLDASM",
+      "bytes": 36218,
+      "sha256": "622848cecaa18eca8abe229eadce6341ac0c6be719ed4d068c9fb89fda86c189"
+    },
+    {
+      "path": "software/jetson/assets/cad/chassis-v3/brushed nickel.p2m",
+      "bytes": 501,
+      "sha256": "5578a814623c7729668ad1b47ff7f54e48bee09c1af39cc094998beaf101b74f"
+    },
+    {
+      "path": "software/jetson/assets/cad/chassis-v3/color.p2m",
+      "bytes": 265,
+      "sha256": "5201b5db02a136f9659378cdce8bfc724730a9ff25f0310df16fd0c9aa9b3d9b"
+    },
+    {
+      "path": "software/jetson/assets/cad/chassis-v3/jibot1-240103_asm(2).SLDASM",
+      "bytes": 54491,
+      "sha256": "c983b01f37702317bcbb53ff07ce981a652db83ef852e09a412a9d8bce9a5201"
+    },
+    {
+      "path": "software/jetson/assets/cad/chassis-v3/manifest.json",
+      "bytes": 12263,
+      "sha256": "7a7945b277585c179fa7cde8b7080c006a7f7ddd0443888094b34f6d678f0ee3"
+    },
+    {
+      "path": "software/jetson/assets/cad/chassis-v3/matte rubber.p2m",
+      "bytes": 280,
+      "sha256": "9936e60890686d5c4240e6b62423d889ef0c15891a2e9eb3cb2a8f56333cf322"
+    },
+    {
+      "path": "software/jetson/assets/cad/chassis-v3/matte steel.p2m",
+      "bytes": 440,
+      "sha256": "72e92e05692d26950a722485ac7076daa84f2bcb9db48ce146de217d57d7e7c4"
+    },
+    {
+      "path": "software/jetson/assets/cad/chassis-v3/plasticpolystyrene_normalmap.dds",
+      "bytes": 1398228,
+      "sha256": "205e6b4670570fe181e2e3ec3fb485cd618e9b8fb53e14370fb2ca32624640fd"
+    },
+    {
+      "path": "software/jetson/assets/cad/chassis-v3/polished copper.p2m",
+      "bytes": 547,
+      "sha256": "cce76de0799ba68f50f3ef303bcf49e5542681414e7740d3024f20a97d5b8ef6"
+    },
+    {
+      "path": "software/jetson/assets/cad/chassis-v3/polished steel.p2m",
+      "bytes": 546,
+      "sha256": "c6e61d7e79e4023aa477808babaccef844f4e9894f364fd15f1b6f69e05cf9a5"
+    },
+    {
+      "path": "software/jetson/assets/cad/chassis-v3/reflective shadow floor.p2m",
+      "bytes": 159,
+      "sha256": "48fb745f2a3138c31cfa74cb48937f40500149b5353f72cbcf3b63433f382e63"
+    },
+    {
+      "path": "software/jetson/assets/cad/chassis-v3/satin finish stainless steel.p2m",
+      "bytes": 553,
+      "sha256": "d22989d07608469e01c3fc67a723df49b389cb078e7666e4122e86031b65a4f4"
+    },
+    {
+      "path": "software/jetson/assets/cad/chassis-v3/softbox.png",
+      "bytes": 70839,
+      "sha256": "b8abd4eb93bd7dc0d09200ed49dda8939c9b65e699c594879d4f0adaa31af790"
+    },
+    {
+      "path": "software/jetson/assets/cad/chassis-v3/white-pw-mt11050.p2m",
+      "bytes": 636,
+      "sha256": "bcf8a41022686f61547c8dddec0487cd5ac19e60122003e19972f3f8c19a1830"
+    },
+    {
+      "path": "software/jetson/assets/cad/chassis-v3/【MG23】装配体.SLDASM",
+      "bytes": 1212178,
+      "sha256": "97884d3f3d6832f1e7dbd797d66f2f5f401d10db0261e66472f84a9eac17f537"
+    },
+    {
+      "path": "software/jetson/assets/cad/chassis-v3/主动-圆柱齿轮18×2.SLDPRT",
+      "bytes": 463483,
+      "sha256": "9a1ca43dddf6c8ab469f94da5de34ae15583e439813982215b6ab739a48f7844"
+    },
+    {
+      "path": "software/jetson/assets/cad/chassis-v3/亚克力板.SLDPRT",
+      "bytes": 99393,
+      "sha256": "3ffd12cbf56be2e493700b9702e07768aa4a1fa31c41a242acf52acf0192dcb2"
+    },
+    {
+      "path": "software/jetson/assets/cad/chassis-v3/减震器.SLDPRT",
+      "bytes": 3216392,
+      "sha256": "47d118ed7ccde7746767f07ef42eee361bbccfdd2e5ddde1dfc2bbb7c537182d"
+    },
+    {
+      "path": "software/jetson/assets/cad/chassis-v3/减震零件1.SLDPRT",
+      "bytes": 273468,
+      "sha256": "c2b74534d0bf16fb0c056285111bf2298a186bfb5c3404cba2e6e58ebb0ca5ef"
+    },
+    {
+      "path": "software/jetson/assets/cad/chassis-v3/卡丁车车轮.SLDPRT",
+      "bytes": 2660167,
+      "sha256": "8ad58681890be5383d79a9d71653b214ed0b9f9f0311cc9e55e3480441ff8b7d"
+    },
+    {
+      "path": "software/jetson/assets/cad/chassis-v3/双连杆.SLDPRT",
+      "bytes": 103156,
+      "sha256": "362ff7d2d8990edda89bfd9d250fd67ab82ac517eb2096e35babf7093b5fde6f"
+    },
+    {
+      "path": "software/jetson/assets/cad/chassis-v3/夹爪与机械臂连接件.SLDPRT",
+      "bytes": 107991,
+      "sha256": "03186058e1eafb315ab52d1cfc1201642f71ec894dd0a9546ed53d3909dff298"
+    },
+    {
+      "path": "software/jetson/assets/cad/chassis-v3/悬架带车轮装配体1.SLDASM",
+      "bytes": 3543109,
+      "sha256": "e125b6975e9b272c0e71a8faadd774a3eee7aaa422a84acc1af04809232c5daa"
+    },
+    {
+      "path": "software/jetson/assets/cad/chassis-v3/悬架带车轮装配体2.SLDASM",
+      "bytes": 3545589,
+      "sha256": "df6cfd1a66bbac0ad9f54cabab78ae904321c9a8adc1a66ab99a3da3c970111b"
+    },
+    {
+      "path": "software/jetson/assets/cad/chassis-v3/悬架带车轮装配体无拉杆.SLDASM",
+      "bytes": 3505835,
+      "sha256": "3e82c4ae6be07d25ef3d061c4c9475cf2d93f3d390f259acecfb450f6abfd08e"
+    },
+    {
+      "path": "software/jetson/assets/cad/chassis-v3/拉杆1.SLDPRT",
+      "bytes": 109354,
+      "sha256": "b7074dd128dd446549cfca6783290592901ea8320977cf1fcaf72dd37894447c"
+    },
+    {
+      "path": "software/jetson/assets/cad/chassis-v3/拉杆2.SLDPRT",
+      "bytes": 215887,
+      "sha256": "54af6e92ab0f3ef8d7d281d72b765e6a6e70b8dc321f70eed610c21e32508ef8"
+    },
+    {
+      "path": "software/jetson/assets/cad/chassis-v3/拉杆3.SLDPRT",
+      "bytes": 142319,
+      "sha256": "ab6c55e56c02b3dd98ffced96f4b650a0d03d16b7ddedc6d107413979c08775f"
+    },
+    {
+      "path": "software/jetson/assets/cad/chassis-v3/拉杆4.SLDPRT",
+      "bytes": 135113,
+      "sha256": "47c7700960260504d89942b7df146887094d0209db99b06c06e271fe3f68071e"
+    },
+    {
+      "path": "software/jetson/assets/cad/chassis-v3/拉杆5.SLDPRT",
+      "bytes": 149670,
+      "sha256": "695853716ce9bb9a22874839d124938e273437aa2894b8fd9c8405d9d4fe1ef8"
+    },
+    {
+      "path": "software/jetson/assets/cad/chassis-v3/指1.SLDPRT",
+      "bytes": 308183,
+      "sha256": "57e8c9c8e11f285e4341f8c6fb1e3bfaff6af34a434cbd894465df9067c45d34"
+    },
+    {
+      "path": "software/jetson/assets/cad/chassis-v3/指2.SLDPRT",
+      "bytes": 497996,
+      "sha256": "a5d7e67b7ec70b6bdb47803be4c16bf240721110c3c7f3f1b10d4424b07ae822"
+    },
+    {
+      "path": "software/jetson/assets/cad/chassis-v3/指3.SLDPRT",
+      "bytes": 429015,
+      "sha256": "d13debe41f7b6a6bbab4098a14210fa10ac27307c703b0918c0096cc133e8b22"
+    },
+    {
+      "path": "software/jetson/assets/cad/chassis-v3/新机械臂.SLDASM",
+      "bytes": 3326339,
+      "sha256": "a3e430b72faacbcf0d7bb78722172cfcd4803aea2c2c55c9aafaae613ab198cd"
+    },
+    {
+      "path": "software/jetson/assets/cad/chassis-v3/新车架第三版.SLDPRT",
+      "bytes": 1319538,
+      "sha256": "ce84ae693a8f759d7d3ab866547c64c769f975f3239604e63da80b4b0c0e0ba8"
+    },
+    {
+      "path": "software/jetson/assets/cad/chassis-v3/机械臂主体.SLDASM",
+      "bytes": 2470376,
+      "sha256": "fc9ed222e7c4bfa230de98ae640893124c5603487c8067be582ae18cf1c9d5df"
+    },
+    {
+      "path": "software/jetson/assets/cad/chassis-v3/杆件.SLDPRT",
+      "bytes": 131051,
+      "sha256": "55e54eb38f608e26692c401a4fc6b09c147b80f91dda814a514e32375b387bd4"
+    },
+    {
+      "path": "software/jetson/assets/cad/chassis-v3/第三版底盘.SLDASM",
+      "bytes": 7105117,
+      "sha256": "a90bbf2b03547c51fda4b2601eb061fccf6413426da6b305aa353c38d517c79a"
+    },
+    {
+      "path": "software/jetson/assets/cad/chassis-v3/舵机法兰.SLDPRT",
+      "bytes": 153385,
+      "sha256": "13c6c52da378443dd72fde1a6e1b95d935720f4123bb4b1b1b85acdb09e9594e"
+    },
+    {
+      "path": "software/jetson/assets/cad/chassis-v3/螺丝.SLDPRT",
+      "bytes": 120356,
+      "sha256": "23e9fcab2b2e4103d4b4f5e688d6ff5a132c11ad0785525b10e075be1e39ce50"
+    },
+    {
+      "path": "software/jetson/assets/cad/chassis-v3/轮子杆.SLDPRT",
+      "bytes": 68125,
+      "sha256": "ec455906a6a6138f3ea8e19ffd25c73ce8a5603b9e50f9d2bd89c175db602319"
+    },
+    {
+      "path": "software/jetson/assets/cad/chassis-v3/连接铁片2.SLDPRT",
+      "bytes": 193075,
+      "sha256": "43f1e3edded3b267d11c51d57a50330ee414e7c57ee133b92d5644e26a0ff79c"
+    },
+    {
+      "path": "software/jetson/assets/cad/chassis-v3/连轮子的片子.SLDPRT",
+      "bytes": 90373,
+      "sha256": "6963aa212c666e4e08ed6cfd16e5acb5fefd619ae85a468b8b5367571080b2e7"
+    },
+    {
+      "path": "software/jetson/assets/cad/chassis-v3/钣金1.SLDPRT",
+      "bytes": 148163,
+      "sha256": "aa70146497ec2205b2da3c276b7e86d67a3755769b3713d0642a83cf4835a712"
+    },
+    {
+      "path": "software/jetson/assets/cad/chassis-v3/防撞缓冲垫.SLDPRT",
+      "bytes": 73964,
+      "sha256": "7dfb67697c58910dfca13566e28926f833c375f2b14b5c76d9161b38dcbeaeec"
+    },
+    {
+      "path": "software/jetson/assets/cad/chassis-v3/零件4.SLDPRT",
+      "bytes": 110487,
+      "sha256": "87c8dac214b42dbb52e5302189e51416f4d855d94381491741f09e8c4370997c"
+    },
+    {
+      "path": "software/jetson/assets/cad/chassis-v3/齿条30×2.SLDPRT",
+      "bytes": 624389,
+      "sha256": "e279026417765f4098be44babe47b12c36ed9c2493cc362088e3ec01a201c532"
+    },
+    {
+      "path": "software/jetson/assets/cad/course-reference.jpg",
+      "bytes": 27513,
+      "sha256": "213f8b1e1cd8832e9db037534dc81568289df41c3ee0d38e000ac77e84b5dc7a"
+    },
+    {
+      "path": "software/jetson/assets/jibot-bowl.svg",
+      "bytes": 865,
+      "sha256": "d788756c251d8f2153ef282e8dbb8b4410e38c130af977b3320e2b61ef938a3f"
+    },
+    {
+      "path": "software/jetson/cart/README.md",
+      "bytes": 7877,
+      "sha256": "bee2ef5bd65e08f09bd63a5bae24aff856562627c6ead403b301e136eef3516a"
+    },
+    {
+      "path": "software/jetson/cart/__init__.py",
+      "bytes": 78,
+      "sha256": "74672d6ffaf593213101aab982964d4ad52ec2a7d4a2d2440e962e9aa5820318"
+    },
+    {
+      "path": "software/jetson/cart/calibration.py",
+      "bytes": 3613,
+      "sha256": "ee86abad6cb1c9ddff2eb93ecf83262d59cb80ae832adf235f3d3c090a185070"
+    },
+    {
+      "path": "software/jetson/cart/capture.py",
+      "bytes": 4211,
+      "sha256": "7912ad2aed2f92e08519cc1637293aa15b2808b78819398f62eb55cdde92e4ec"
+    },
+    {
+      "path": "software/jetson/cart/feedback.py",
+      "bytes": 9590,
+      "sha256": "a89bce5e73cf9b34694769ca6d4f19691c7146ddc686d11b2ed9e157fbfe782b"
+    },
+    {
+      "path": "software/jetson/cart/line_preview.py",
+      "bytes": 2775,
+      "sha256": "61f14f59dac9f2ba07234041154954b71f6c16c8d964165e40a94c38246e3d63"
+    },
+    {
+      "path": "software/jetson/cart/line_tracking.py",
+      "bytes": 8278,
+      "sha256": "7204595df686b208d8f1b04434a4b713af8462ec7e0eac65e05d99d05dae106f"
+    },
+    {
+      "path": "software/jetson/cart/localization.py",
+      "bytes": 4776,
+      "sha256": "d79e9564801b14b78927346d48c618d1c3ef0ef81c9255f1156d4b463ab04940"
+    },
+    {
+      "path": "software/jetson/cart/obstacles.py",
+      "bytes": 2098,
+      "sha256": "87d4ab5347425a4a01bc94f494659fdfa6212ca71ff346ce18c41b2f9a13c016"
+    },
+    {
+      "path": "software/jetson/cart/parameters.py",
+      "bytes": 2928,
+      "sha256": "1db871e8d8dc95feee2d9519f0afc99c83d61d4fdead607dc35c46378a48a208"
+    },
+    {
+      "path": "software/jetson/cart/preflight.py",
+      "bytes": 11479,
+      "sha256": "09c05080d880c4ad870d8c387d423fe8ff9b12be708ae380a4e0c0ab5747b53c"
+    },
+    {
+      "path": "software/jetson/cart/rgbd_audit.py",
+      "bytes": 10798,
+      "sha256": "0ab764d999c5ba0ee32e98a73466b9e78800c3ba79a7a96b1cb49654e8c6784c"
+    },
+    {
+      "path": "software/jetson/cart/ros_monitor.py",
+      "bytes": 8378,
+      "sha256": "eee3f8305bce1156adab54336cbac918feef3a74b84440f60639ef7d7562996f"
+    },
+    {
+      "path": "software/jetson/cart/vision_checks.py",
+      "bytes": 4145,
+      "sha256": "1b28c4a797411301442bf211798662fd592ea1a48b08211a1b547a28feda3281"
+    },
+    {
+      "path": "software/jetson/cart_capture.sh",
+      "bytes": 205,
+      "sha256": "3e78bb86506b1e0588e972d8b081fadfe62bda5a17dd23748b83840090f84189"
+    },
+    {
+      "path": "software/jetson/cart_preflight.sh",
+      "bytes": 207,
+      "sha256": "4c07fd4610863f0e295123804ee043d4ff56ab24075c1e677ce53a690c243326"
+    },
+    {
+      "path": "software/jetson/config/90-gemini-dds.conf",
+      "bytes": 148,
+      "sha256": "18bc332c687d7e12c7743d158cd0579e43f82699b3e2d17d4f9900ccdcb63516"
+    },
+    {
+      "path": "software/jetson/config/99-gemini-max.rules",
+      "bytes": 432,
+      "sha256": "6e9b04715694fe9b2ab1be4e2676809a46ba6646b5f090bfdf10011ab221631a"
+    },
+    {
+      "path": "software/jetson/config/bowl-follow.example.json",
+      "bytes": 395,
+      "sha256": "349dbac01e89f2de6a8561dc5dddb01ba443b693c83d5b73ff62627abb519e17"
+    },
+    {
+      "path": "software/jetson/config/bowl-follow.runtime.json",
+      "bytes": 321,
+      "sha256": "7875f8829ddca6bcf8e8159328667b9d7f81a04c89e21704458f09056bd8243f"
+    },
+    {
+      "path": "software/jetson/config/bowl-follow.v1.json",
+      "bytes": 2091,
+      "sha256": "68f2c325fe98068247180f3471bd1780822421f70ca48b7572efbe85e25c454f"
+    },
+    {
+      "path": "software/jetson/config/cart-field-validation.json",
+      "bytes": 332,
+      "sha256": "42b7ac732758c3d6b86eb8ef3f8d286ccab51843ec7dfe7f5ae67343f8ec687c"
+    },
+    {
+      "path": "software/jetson/config/cart-integration.json",
+      "bytes": 1213,
+      "sha256": "c8b84155dfe2b4b59f055666157057e9ce001bdc95e592c3c1858404c03004da"
+    },
+    {
+      "path": "software/jetson/config/cart-line-tracking.json",
+      "bytes": 552,
+      "sha256": "0acb70f87fcf8e73d66c6c00a3ed9de65517c1d75bed9e8b41079e636b7aa784"
+    },
+    {
+      "path": "software/jetson/config/cart-vehicle-measurements.json",
+      "bytes": 1282,
+      "sha256": "018e1850f8f93458b12f9a7d30f38cccfd4599b386778dc18f55e08585bc247f"
+    },
+    {
+      "path": "software/jetson/config/cyclonedds-gemini.xml",
+      "bytes": 778,
+      "sha256": "d01fa7236756d444040d14b6cba269421fa1ea9ae1681e5ecc8cec68692f6506"
+    },
+    {
+      "path": "software/jetson/config/cyclonedds-local.xml",
+      "bytes": 584,
+      "sha256": "358a160b84556d0c701108ee3ce8c864894f48dccd043b6c393c8bd40901dc78"
+    },
+    {
+      "path": "software/jetson/config/gemini-max-color-calibration.yaml",
+      "bytes": 833,
+      "sha256": "1cfd5bf5fe8e5f6a75285d47d9a16aa11de8f319cc4cb743d64bb60c3a2b1c37"
+    },
+    {
+      "path": "software/jetson/config/gemini-max.rviz",
+      "bytes": 2418,
+      "sha256": "1433e797551ef160066802dc9ed86ca7682c309c091102e740881f15e3beb531"
+    },
+    {
+      "path": "software/jetson/config/gemini-max.service",
+      "bytes": 323,
+      "sha256": "9f68d4386c88b2ac10aa31968eed95ef1ed9be43e74996acae87c3a0c2485bf8"
+    },
+    {
+      "path": "software/jetson/config/gemini-max.yaml",
+      "bytes": 1125,
+      "sha256": "3c208d9b0ff59ac5e2bc68a25bf51279d02e88e9829dd811d7a04cc05fc48a06"
+    },
+    {
+      "path": "software/jetson/config/gemini-nav2-observation.example.yaml",
+      "bytes": 868,
+      "sha256": "be43a70a76b67f0fa624398d8893ff3db12483c2053df4151cfe7267070ff712"
+    },
+    {
+      "path": "software/jetson/config/pose-response-library.v1.json",
+      "bytes": 64343,
+      "sha256": "8a766b96a3f7cbbfe537f4ebc8d5d0fb0ffdad9a0887e9a26fddb54ab75ebc84"
+    },
+    {
+      "path": "software/jetson/config/road-bag-qos.yaml",
+      "bytes": 523,
+      "sha256": "7c7017b1f878ebe300e8045abbd19e2a2ca157fc00a817576c75515fdbb32b12"
+    },
+    {
+      "path": "software/jetson/config/road-labels.json",
+      "bytes": 1590,
+      "sha256": "56db3b3651cfc71618642dcb9e3aefbce806b45fb193b44332f7451ecc4200ae"
+    },
+    {
+      "path": "software/jetson/config/road-mount-measurements.template.yaml",
+      "bytes": 773,
+      "sha256": "64548f0c1d4bcd438502094c049b2cfd958f5904dd716e53f0f64c39e74525c1"
+    },
+    {
+      "path": "software/jetson/config/road-perception.rviz",
+      "bytes": 2349,
+      "sha256": "2ea94ff06d8ecbfa35341f6b1908e9e71d418d8781df3a00fc09f4f65013ba2d"
+    },
+    {
+      "path": "software/jetson/config/road-perception.yaml",
+      "bytes": 574,
+      "sha256": "a13b80ad66631a26fc23e604285387ff1d954505910d7bb3dbc7ae46619efeaf"
+    },
+    {
+      "path": "software/jetson/config/road-train-4060-smoke.yaml",
+      "bytes": 563,
+      "sha256": "3c801fb6937ed8b31e7ab8252fd446a71509f99da8630d6bd5567f615e8ffdd6"
+    },
+    {
+      "path": "software/jetson/config/road-train-4060.yaml",
+      "bytes": 509,
+      "sha256": "595f4588f632e0bca5b82fc1f25e27df040cd394ab205d4e2c1c841df059779e"
+    },
+    {
+      "path": "software/jetson/config/road-train-joint-smoke.yaml",
+      "bytes": 552,
+      "sha256": "1aa806bacf3276f6ec03075740f84aa6189746287fe9c599313c75f91df7297c"
+    },
+    {
+      "path": "software/jetson/config/road-train-joint.yaml",
+      "bytes": 510,
+      "sha256": "0c78e3b0a9d56a9413a450143c771b0ca5e01d763cf80e2a4e75a01e5e7d7cd4"
+    },
+    {
+      "path": "software/jetson/config/road-train-smoke.yaml",
+      "bytes": 485,
+      "sha256": "7d670bf054382ab9344ccc40ba0632adaf68e452c8e5b9ea9132a7fb74bfa867"
+    },
+    {
+      "path": "software/jetson/config/road-train-warmup.yaml",
+      "bytes": 433,
+      "sha256": "f0b93d43b41c3a92d7d257a8663a0a7c3f3f41a0a42567b45d298d7a3f1cd4e9"
+    },
+    {
+      "path": "software/jetson/config/ros-transport.sh",
+      "bytes": 495,
+      "sha256": "66b66921fdd19d6a7aa85c5673ea089d9e19ff2c35b3d7dfc810861fd4dda14b"
+    },
+    {
+      "path": "software/jetson/constraints-jetson.txt",
+      "bytes": 189,
+      "sha256": "9e4a6084c20e57b3b1ab8c56c77a91719972f41f48d3ef0fef8d3a018b7d958e"
+    },
+    {
+      "path": "software/jetson/docs/RTX4060训练指南.md",
+      "bytes": 10323,
+      "sha256": "350f72a8d0e1d66d3171682c9bd2f144539a4745090af69c908a31fab17a92c6"
+    },
+    {
+      "path": "software/jetson/docs/annotation-guide.md",
+      "bytes": 4362,
+      "sha256": "10754d6a880474736b699b578a6b808bbb4e721e5875558a7886f46e4cea6e12"
+    },
+    {
+      "path": "software/jetson/docs/arm-control-repair-20261023.md",
+      "bytes": 3213,
+      "sha256": "5f0d9ffc22d7f56626306366d967bb89805e2d59558a2abf2b00f81505ce66f7"
+    },
+    {
+      "path": "software/jetson/docs/arm-serial-fix-20261021.md",
+      "bytes": 6923,
+      "sha256": "0ff2cbd8378030fc85ad6f291f5e0f288e96689e516730fd02bc5bb0de0ca7b0"
+    },
+    {
+      "path": "software/jetson/docs/bowl-deployment-20261021.md",
+      "bytes": 5920,
+      "sha256": "1319ff0588dcf192a8d04d6e7559392b80ee6755360eb0f08526da0d75ecef55"
+    },
+    {
+      "path": "software/jetson/docs/bowl-follow-20261022.md",
+      "bytes": 8593,
+      "sha256": "3af321bc511fd4d325ccda406189d0bd0083191d5cb52a60e01cfe6cb29fc050"
+    },
+    {
+      "path": "software/jetson/docs/bowl-follow-fast-20261022.md",
+      "bytes": 7523,
+      "sha256": "410cccf0fc0d03704060b50f607a80056a64ae9a609caedfd323cfee6254becb"
+    },
+    {
+      "path": "software/jetson/docs/bowl-follow.md",
+      "bytes": 8468,
+      "sha256": "5bd5578180b4fe832bdaecc655172e6c6cdb5ce84eb75ef191a7942d07853114"
+    },
+    {
+      "path": "software/jetson/docs/bowl-transport-review-v0.2.md",
+      "bytes": 7761,
+      "sha256": "8e734369b7f2791b4f6f75b45105bf09e88718ccaf9ca85ed4bae4b184f45c58"
+    },
+    {
+      "path": "software/jetson/docs/bowl-transport-simulation-20261023.md",
+      "bytes": 18005,
+      "sha256": "ed031d7f777b2f3fff870052c64c05f05fa4094f0207188c345743a743ebd3d3"
+    },
+    {
+      "path": "software/jetson/docs/current-pose-follow-20261023.md",
+      "bytes": 6464,
+      "sha256": "db1a9d68c6f9a905f4a90a66e1f574c8b5fe98297deaa2d6fb67f111b90d00f7"
+    },
+    {
+      "path": "software/jetson/docs/follow-repair-20261025.md",
+      "bytes": 3866,
+      "sha256": "f370f6feab97f82b612e59bb652b28ca0e0e6facd45f5c323e6d7eaee8ecec48"
+    },
+    {
+      "path": "software/jetson/docs/full-range-follow-20261025.md",
+      "bytes": 3463,
+      "sha256": "d09a355c986922af29462d7c0a07b5d2633a72e2c6e802cb9b8ecd8dd54e442a"
+    },
+    {
+      "path": "software/jetson/docs/gemini-max-ros2.md",
+      "bytes": 8101,
+      "sha256": "33d10156ff42a5fbb86fe67c0fa36f0451cdadfc7224c341266c20eacdb1f52b"
+    },
+    {
+      "path": "software/jetson/docs/gemini-max-setup-report-20261029.md",
+      "bytes": 1628,
+      "sha256": "be58d4b5c8a34cddb94162e244bf27553788d8bf9ef68fd99eaaf347069e0d92"
+    },
+    {
+      "path": "software/jetson/docs/grasp-sim-plan-20261023.md",
+      "bytes": 4611,
+      "sha256": "fdcfed54187915068e066b78b0a7bac108ca670e7d2c658c41b88d462793093b"
+    },
+    {
+      "path": "software/jetson/docs/jibot1-control-and-vision.md",
+      "bytes": 8964,
+      "sha256": "141dd5b3f4762f8dc3e3d5a4d15ebf981928f63618d9e8cdaa5e776805134684"
+    },
+    {
+      "path": "software/jetson/docs/measurement-tasks-20261025/01_关节与夹爪记录.csv",
+      "bytes": 423,
+      "sha256": "4d489bfdad78b5abde6b05260d268e9cb5067d17ff0c7eafda57094fc1b714c2"
+    },
+    {
+      "path": "software/jetson/docs/measurement-tasks-20261025/02_关节运动采样.csv",
+      "bytes": 389,
+      "sha256": "b41687bd97e99989596100de5c988dcbee39cbd07c5ab26f28e33dec67bdffec"
+    },
+    {
+      "path": "software/jetson/docs/measurement-tasks-20261025/03_抓放关键姿态.csv",
+      "bytes": 295,
+      "sha256": "2135f21640c2804be1f32b5ad0a0e8071bf969847e5d63ccb98f9565e3d31500"
+    },
+    {
+      "path": "software/jetson/docs/measurement-tasks-20261025/04_遥控抓放试验.csv",
+      "bytes": 894,
+      "sha256": "4628c7e194e75323148b583aacca2101caf45594370a705fb439112b5a624b83"
+    },
+    {
+      "path": "software/jetson/docs/measurement-tasks-20261025/测定任务清单.md",
+      "bytes": 8527,
+      "sha256": "202b5a4e74819564a2db552ed07c5a2f39f52fdb7d13fe76e125cc949164c447"
+    },
+    {
+      "path": "software/jetson/docs/openmv-isaac.md",
+      "bytes": 5785,
+      "sha256": "ccb0661d27eb03e8483312b641778d566365bbeda46f24bd47e6c623ec62c16c"
+    },
+    {
+      "path": "software/jetson/docs/responsive-follow-20261025.md",
+      "bytes": 6066,
+      "sha256": "65ae3bc14a980bc5f442d6cd12089f357332cee5f7c67a1f65ecba7d3b85a2c8"
+    },
+    {
+      "path": "software/jetson/docs/road-perception-preinstall.md",
+      "bytes": 9415,
+      "sha256": "fc148e7df1b016774b8e0e16551bd9938c980bd5c214a25c2f656f1aa06573b3"
+    },
+    {
+      "path": "software/jetson/docs/road-training-plan.md",
+      "bytes": 9754,
+      "sha256": "49bfcc98872aff345aafbbad5f415fea33a2b6c8718228765e6bba13fc2a569c"
+    },
+    {
+      "path": "software/jetson/docs/ros2-first-steps.md",
+      "bytes": 5863,
+      "sha256": "673f63c8e282d287914b031d80f818682d929a82aeaa918364f4d8b4c0ad21ea"
+    },
+    {
+      "path": "software/jetson/docs/smooth-current-pose-follow-20261023.md",
+      "bytes": 4119,
+      "sha256": "7eb1942098fe838e744cda2f3b7cf1cc7743b0dc53845b8c6fe2034034a8aa43"
+    },
+    {
+      "path": "software/jetson/docs/target-bowl-training.md",
+      "bytes": 4636,
+      "sha256": "9c9969c0f60125118a63aac64f3c9d5711fdaaac9119b5ef87660284b702e361"
+    },
+    {
+      "path": "software/jetson/docs/water-cart-project-context.md",
+      "bytes": 5311,
+      "sha256": "eb1da7d554c4eec81aa23a90f0f3067db8e14b0cc5cadf110b07fc6a00f4a932"
+    },
+    {
+      "path": "software/jetson/drivers/ch341-jibot-no-auto-reset.patch",
+      "bytes": 1342,
+      "sha256": "02c9d50b728718ffea4f992615682a9535e3c45d7510109f4d6966227c0674f4"
+    },
+    {
+      "path": "software/jetson/drivers/gemini-max-jazzy.patch",
+      "bytes": 9651,
+      "sha256": "e7af51c8e69c065e4777d1c0fdc357d51d56612beb818240eb9a98d79032074e"
+    },
+    {
+      "path": "software/jetson/install_4060_linux.sh",
+      "bytes": 368,
+      "sha256": "64ae5b5e0f7e40a800b93ab150ebcfafd2e4b58333a844b0eeba93b81c44260e"
+    },
+    {
+      "path": "software/jetson/launch/gemini_max.launch.py",
+      "bytes": 2865,
+      "sha256": "d91124c043e722727fa1d8fb646969dc2db91b3f539339f0bb0bb4264c7de78c"
+    },
+    {
+      "path": "software/jetson/launch/openmv_isaac.launch.py",
+      "bytes": 1088,
+      "sha256": "795baf37717c54cc588a85d3714b063f8fb40090be4b01b9ae70fa7e9d240d25"
+    },
+    {
+      "path": "software/jetson/open_bowl_workbench.sh",
+      "bytes": 446,
+      "sha256": "0be0ff3cf6ae5b95c79bd1c1bc55b5459c2a886fa569761f265a984b7913ea58"
+    },
+    {
+      "path": "software/jetson/open_gemini_rviz.sh",
+      "bytes": 1131,
+      "sha256": "435689ddfb75e08ca5c4cce46651abb3666278d0dbd444242bf113bd82ca4b1f"
+    },
+    {
+      "path": "software/jetson/open_road_perception.sh",
+      "bytes": 183,
+      "sha256": "499a27df09bbb64c08a7809182d5529b40e1cf77e2b7cfe49bdcdcdb7c71c495"
+    },
+    {
+      "path": "software/jetson/requirements-cuda129.txt",
+      "bytes": 422,
+      "sha256": "88b3d595a208fef2368299c3564dc6f7d37c1eb5066fd4d56c5e271c4f7b2446"
+    },
+    {
+      "path": "software/jetson/requirements-jetson.lock.txt",
+      "bytes": 1311,
+      "sha256": "87af6fd9e778d08d59b8a7b15e2a9624e1a6e0c250ff1004191aee49e26f1dfe"
+    },
+    {
+      "path": "software/jetson/requirements-jetson.txt",
+      "bytes": 563,
+      "sha256": "c8aaa7c6d0109e462cc8f2cacd254ee84c8f55380dc3688c531048b8cb9db57f"
+    },
+    {
+      "path": "software/jetson/requirements-labelme.lock.txt",
+      "bytes": 903,
+      "sha256": "3f7fe486253d0b04cd3c5f29efbec578cc7b6fe490ffbee39220fce0dee33c00"
+    },
+    {
+      "path": "software/jetson/requirements-labelme.txt",
+      "bytes": 96,
+      "sha256": "ef8a7ff055a0f61ee08298ebbba7e6267768f44476e4b54e36eae3d2adf2a092"
+    },
+    {
+      "path": "software/jetson/requirements-road-4060.txt",
+      "bytes": 256,
+      "sha256": "030f2baa7b5c72c370af3aabccce8fd963bac0d5c74028a7140d2ddc08065164"
+    },
+    {
+      "path": "software/jetson/requirements-road.txt",
+      "bytes": 122,
+      "sha256": "f23306f952a20ec37c4c4bc800549f9e32b2b578513e483f94248e24800e4ad8"
+    },
+    {
+      "path": "software/jetson/requirements-sim.txt",
+      "bytes": 177,
+      "sha256": "7ee966d289cef4512729b11d1b2c4a8fe06320d1448961d8785d9c15dd273a6b"
+    },
+    {
+      "path": "software/jetson/road_perception.sh",
+      "bytes": 1694,
+      "sha256": "f44f76a21f1d43f19cfa84a8f169caef975dd879b81f1747b94a1932e1b1c929"
+    },
+    {
+      "path": "software/jetson/ros-packages.txt",
+      "bytes": 674,
+      "sha256": "ad7c13c3b0b9468ab001d51bd36a868cc25724e76776a6cf589688bdc4e118a4"
+    },
+    {
+      "path": "software/jetson/run_cart_sim.sh",
+      "bytes": 179,
+      "sha256": "a61ea8a5660d585ea3d4560b7f4175858bb409a9aaac337ef982f93b8b4dc9ed"
+    },
+    {
+      "path": "software/jetson/run_line_free_sim.sh",
+      "bytes": 169,
+      "sha256": "43343a8e89b8d14978f6f375e09bc9082e0b1ead99b127d38c71557b77bd9a38"
+    },
+    {
+      "path": "software/jetson/sim/bowl_transport/RUN.md",
+      "bytes": 5960,
+      "sha256": "ee1917ba6851cdfed845d17b1f20f60174ed1beca758fac342a0660ffd64c9e3"
+    },
+    {
+      "path": "software/jetson/sim/bowl_transport/actuator_screening.py",
+      "bytes": 1791,
+      "sha256": "5db09d9ba18d3846b2a9b7d64e51be012435456569f310ef201b46dd60c67cf8"
+    },
+    {
+      "path": "software/jetson/sim/bowl_transport/build_bundle.py",
+      "bytes": 2243,
+      "sha256": "d723ceaa4d6badbe52f6affbd828f3dcba8cc8722e5ce1a2faf0ee6baf873419"
+    },
+    {
+      "path": "software/jetson/sim/bowl_transport/build_scene.py",
+      "bytes": 5381,
+      "sha256": "a5d98b22b62bc8ea5c8578ffcc354a7ad4cd7f7b3b4c58c5220f923df0d3493e"
+    },
+    {
+      "path": "software/jetson/sim/bowl_transport/cloud_setup.sh",
+      "bytes": 1380,
+      "sha256": "3dc9a810c858f7ae1bb08dc40f83368eb710b42e57a997d72c85a1b9436deaee"
+    },
+    {
+      "path": "software/jetson/sim/bowl_transport/demo.py",
+      "bytes": 4828,
+      "sha256": "71e1b1cecb2a17e07d0fb11bdf75b7ea8108602fca723756329da3cfef2fab63"
+    },
+    {
+      "path": "software/jetson/sim/bowl_transport/flow.py",
+      "bytes": 9829,
+      "sha256": "cea33fe36d7ac1361e52200c8b59edc9d48fa66e6ca36b4fa6c571371dd6ab4f"
+    },
+    {
+      "path": "software/jetson/sim/bowl_transport/preflight.py",
+      "bytes": 9621,
+      "sha256": "0a7a70c71c3977dafc63c0157d80643fc6f284282d7d6379050650d150782297"
+    },
+    {
+      "path": "software/jetson/sim/bowl_transport/reward_audit.py",
+      "bytes": 15220,
+      "sha256": "69c4c9153ae8c3614b584180fb38997b4aef989e780716a8cf2929775b898ffb"
+    },
+    {
+      "path": "software/jetson/sim/bowl_transport/scenario.json",
+      "bytes": 2732,
+      "sha256": "14e7d438400583b2d178e0395b451791e0c5f01d3201501f392bf887268525a3"
+    },
+    {
+      "path": "software/jetson/sim/bowl_transport/screening.py",
+      "bytes": 4750,
+      "sha256": "1a41a6aca6de939eae5d085660d1ba5ce7eeb8a2890cc729f41593f77ae179c0"
+    },
+    {
+      "path": "software/jetson/sim/bowl_transport/validation.json",
+      "bytes": 886,
+      "sha256": "c762dfaced33ff9c224a9f3addd811b1174fc8f32611005c1fa7103d7d8ada39"
+    },
+    {
+      "path": "software/jetson/sim/bowl_transport/versions.json",
+      "bytes": 332,
+      "sha256": "ebc439620fa747e898945b7d2840aad4029398e8e8edec34b28eee6e1a537de8"
+    },
+    {
+      "path": "software/jetson/sim/bowl_transport/view_in_isaac.py",
+      "bytes": 1904,
+      "sha256": "219b37bac1d2c1fa36c01844d87c8a786db9a40e9126c7dd95e9fbc2c8cdcb60"
+    },
+    {
+      "path": "software/jetson/sim/line_free_cart/INTERFACES.md",
+      "bytes": 2531,
+      "sha256": "cfcb4d0d22c7caf220a94f30d9fee3b203dfa2f90cbc82c42745c17d0b1910a3"
+    },
+    {
+      "path": "software/jetson/sim/line_free_cart/RUN.md",
+      "bytes": 6476,
+      "sha256": "a2ef42250a2c8a7b4807a5bd05d6c105338489902f35b20d01a61a3c630c90ee"
+    },
+    {
+      "path": "software/jetson/sim/line_free_cart/__init__.py",
+      "bytes": 80,
+      "sha256": "9fe58543c256a679c5a4e3bd8bc34a8186f079324f58d466d1f09a4a6d7f10c2"
+    },
+    {
+      "path": "software/jetson/sim/line_free_cart/config.json",
+      "bytes": 1411,
+      "sha256": "89c702a757c9ea613031521d290fe7321e4ae7c87f385f752993d51411ac5edc"
+    },
+    {
+      "path": "software/jetson/sim/line_free_cart/line_primary.py",
+      "bytes": 6651,
+      "sha256": "fecd9e1cee1d54e5d143892dacb82ee2770fa28febf5be227eb12481d3abc9f1"
+    },
+    {
+      "path": "software/jetson/sim/line_free_cart/mission.py",
+      "bytes": 7026,
+      "sha256": "d9a6b767b25512b0d033e652dc2faef7aece5fdab594c1409923f7c39ee18105"
+    },
+    {
+      "path": "software/jetson/sim/line_free_cart/model.py",
+      "bytes": 6980,
+      "sha256": "ba089de3e7e4466bd3257ae5028a8a1186a89504aae9f246d4af457ff5e84b83"
+    },
+    {
+      "path": "software/jetson/sim/line_free_cart/navigation.py",
+      "bytes": 18227,
+      "sha256": "bed044572b7609b413aae10a36b1bbda5bf90e6d1071d677f45e1a4046b29d19"
+    },
+    {
+      "path": "software/jetson/sim/line_free_cart/planning.py",
+      "bytes": 4040,
+      "sha256": "f78a784b8c4aaf58ec05eecbe17097f018be945a2428cfcefbb527b62fbee824"
+    },
+    {
+      "path": "software/jetson/sim/line_free_cart/report.py",
+      "bytes": 1388,
+      "sha256": "385b444613af08e46d212fbc9daf32f0986fe34788cf6311aec3743f9bd036ea"
+    },
+    {
+      "path": "software/jetson/sim/line_free_cart/report_template.html",
+      "bytes": 27378,
+      "sha256": "82cb18091de33a6b285fada641d4c7efc5c4bb08fa37de1bf5d5ba45686c0fef"
+    },
+    {
+      "path": "software/jetson/sim/line_free_cart/run.py",
+      "bytes": 9356,
+      "sha256": "2c7e2c59a698c3dfcf6fe7cbf76435022eafcaab84f00c48bbce08cf551c1d6c"
+    },
+    {
+      "path": "software/jetson/sim/line_free_cart/scenarios.py",
+      "bytes": 7791,
+      "sha256": "6492c47f365eda0cae541b94d3d0be113598471d6ce0b8ed36a23ea3fa2ba999"
+    },
+    {
+      "path": "software/jetson/sim/line_free_cart/speed_profiles.py",
+      "bytes": 2070,
+      "sha256": "e851a864461360aa784798154a508300d58e70536d0b953698f602a7f71a17af"
+    },
+    {
+      "path": "software/jetson/start_annotation.sh",
+      "bytes": 416,
+      "sha256": "5b5284ea0df65ed935fd2fca5e13236edbe2ea0fe3a92016854551f84198649c"
+    },
+    {
+      "path": "software/jetson/start_bowl_detection.sh",
+      "bytes": 188,
+      "sha256": "44cf0c26a5f0546327b840571d93e0a30bd704dad72fc82b6f0675be5cbf41ce"
+    },
+    {
+      "path": "software/jetson/start_bowl_follow.sh",
+      "bytes": 190,
+      "sha256": "0432fc7c75bbdf90666277b1aa770c1541914131969a3c7ba193778c393b3691"
+    },
+    {
+      "path": "software/jetson/start_bowl_tracking.sh",
+      "bytes": 1496,
+      "sha256": "71dba32d48859c4871e1bfaad8282153cc7b9ab573deb3efdcb0bb89f3446028"
+    },
+    {
+      "path": "software/jetson/start_bowl_vision.sh",
+      "bytes": 1056,
+      "sha256": "e24f3ba4cc8f9d7ce5878fe99fc5062051ca1ddb341b27606f0b78d1c3252da6"
+    },
+    {
+      "path": "software/jetson/start_gemini_camera.sh",
+      "bytes": 941,
+      "sha256": "9eab37ea7973623b6baabc3b5312b5d02785983cc0b66bb6c157e47e1ae374bc"
+    },
+    {
+      "path": "software/jetson/start_isaac_vision.sh",
+      "bytes": 362,
+      "sha256": "d880273563319055edc46d3b457ff653515568bf4ecc8e68e30b60387404bc40"
+    },
+    {
+      "path": "software/jetson/start_road_perception.sh",
+      "bytes": 740,
+      "sha256": "a11ca934955be0ec3f06d045d8cbfb4a1ef67cbe1e9a0408376b6fc8fa9ea96d"
+    },
+    {
+      "path": "software/jetson/start_road_training.sh",
+      "bytes": 285,
+      "sha256": "08d5a0f2ebe9e4bdd37d18be200cc28be193668166a5250c7688fbd4464a3996"
+    },
+    {
+      "path": "software/jetson/start_vision_gui.sh",
+      "bytes": 189,
+      "sha256": "36ad4efccfceab55ea61db5cbf09ee4c11585e21c4b4bde36597b448d6bd3644"
+    },
+    {
+      "path": "software/jetson/tests/test_annotation_export.py",
+      "bytes": 4620,
+      "sha256": "be44e6348f0184bcab5a778035a5b6ef1286440a719d04eed8cb22b536766531"
+    },
+    {
+      "path": "software/jetson/tests/test_arm_connection.py",
+      "bytes": 3379,
+      "sha256": "22e569f5844bd9d18302e53ec426ec5f608d7481437e80141e7b984b5fb721f9"
+    },
+    {
+      "path": "software/jetson/tests/test_arm_control_lines.py",
+      "bytes": 2290,
+      "sha256": "bea43e0f5537b895a4737a230e76fdef07aaf9c5c1ea4cf9db7cc6dcdf35e07e"
+    },
+    {
+      "path": "software/jetson/tests/test_arm_test_profiles.py",
+      "bytes": 1507,
+      "sha256": "1ed826b89874ef903d865996d4d8cc589ea0fc205945fc8167245eefe447173c"
+    },
+    {
+      "path": "software/jetson/tests/test_bowl_follow.py",
+      "bytes": 8705,
+      "sha256": "3be4f70b8b0261ae9ba0322871ef5c1340d73de12e81893b145badda0b027786"
+    },
+    {
+      "path": "software/jetson/tests/test_bowl_transport_faults.py",
+      "bytes": 14020,
+      "sha256": "406af55dc8d3f6053d4018cc86567d23d137827ab63cef268f61393d1e9802bb"
+    },
+    {
+      "path": "software/jetson/tests/test_bowl_transport_rewards.py",
+      "bytes": 6899,
+      "sha256": "6d7dbab52f5cd43ce8e783d305a902e1950cd3d3f09c217ad529866286c3cf68"
+    },
+    {
+      "path": "software/jetson/tests/test_bowl_transport_screening.py",
+      "bytes": 1551,
+      "sha256": "274292c2e7e4b22020235448ecb94b5d8031747a4af634d599487dacd2041886"
+    },
+    {
+      "path": "software/jetson/tests/test_bowl_transport_sim.py",
+      "bytes": 2579,
+      "sha256": "ca2174a47a7ef9a3514a11671c4a8a5bdbf817093a8ab727f01f8f94eeb2d685"
+    },
+    {
+      "path": "software/jetson/tests/test_cart_runtime.py",
+      "bytes": 11104,
+      "sha256": "ac5e2a94e67878b5c052c834d236a4cab528179eb37f37fb70eb1fb07c610437"
+    },
+    {
+      "path": "software/jetson/tests/test_cart_vision.py",
+      "bytes": 2586,
+      "sha256": "22703a85d4350756e9f015712984d46060f472de95b0506c0ec33964e10f4ceb"
+    },
+    {
+      "path": "software/jetson/tests/test_continuous_follow.py",
+      "bytes": 3659,
+      "sha256": "b0c8a948ef4ae1b9eefa81270ce7671754d1f58b2101a662984dbd4ed9a8e560"
+    },
+    {
+      "path": "software/jetson/tests/test_current_pose_start.py",
+      "bytes": 15505,
+      "sha256": "4b600e1eb8dccc0957a8c2f061986ce7b35b42c5332d814e27a453479af9fce9"
+    },
+    {
+      "path": "software/jetson/tests/test_elbow_handoff.py",
+      "bytes": 4110,
+      "sha256": "bbf99d1cbd7a3075bc698dc7a71c3dd6896a2217b356e49d53401cd1e3c2d39c"
+    },
+    {
+      "path": "software/jetson/tests/test_follow_calibration.py",
+      "bytes": 5665,
+      "sha256": "01a274b21ead5a6a11016f4d7ce7f7660388e3abc06d2c84c7f2ca2ffcf7205c"
+    },
+    {
+      "path": "software/jetson/tests/test_follow_gui.py",
+      "bytes": 4170,
+      "sha256": "19b2a5a8d59a7288b9228f669339df1e8ae289840a33d220c5e5e23a0ff7c753"
+    },
+    {
+      "path": "software/jetson/tests/test_follow_service.py",
+      "bytes": 1489,
+      "sha256": "c7f56e078fc7a33655acce1930ffe1810fb42c58997cce25d504e898544f034a"
+    },
+    {
+      "path": "software/jetson/tests/test_follow_session.py",
+      "bytes": 3402,
+      "sha256": "e24fdf61d8ee0db1aa9cac746fba07bcf1eee4101b8ac599239f774787b34cd6"
+    },
+    {
+      "path": "software/jetson/tests/test_full_range_start.py",
+      "bytes": 8770,
+      "sha256": "8c105954ce34611e257bc35b54ccf98502c4a4dbbbdb865d82afe7dd14f55f9a"
+    },
+    {
+      "path": "software/jetson/tests/test_line_free_cart.py",
+      "bytes": 13809,
+      "sha256": "102e14360362c83ff5399a976c7bc82f95ce4d8d7de71dc8efcd9ac2c487b1ef"
+    },
+    {
+      "path": "software/jetson/tests/test_line_primary.py",
+      "bytes": 5578,
+      "sha256": "e6a0b5bf9ccb6b79e0fd5ed59b3f94e0d7385bb396ba7f436a705a20562e6e82"
+    },
+    {
+      "path": "software/jetson/tests/test_multijoint_follow.py",
+      "bytes": 2217,
+      "sha256": "622bc68efd1c3536411b23d5c88493ff57cfb5f92ec30843e2dba64b05ed734e"
+    },
+    {
+      "path": "software/jetson/tests/test_openmv_protocol.py",
+      "bytes": 3740,
+      "sha256": "8aed20cf14d69f4f10a481fb5ba635a30a50270f10ecf742bd2c3c71029edf27"
+    },
+    {
+      "path": "software/jetson/tests/test_pitch_extension.py",
+      "bytes": 2657,
+      "sha256": "3401dcac1c0a2e1845ec7e50cd33f5bb717b2764a976a8efbfe90ca1e88a4a82"
+    },
+    {
+      "path": "software/jetson/tests/test_portable_training.py",
+      "bytes": 2729,
+      "sha256": "c40950db4770f25894b0bf0a58ada14e338b7c5806f747bcd134e63349526cc1"
+    },
+    {
+      "path": "software/jetson/tests/test_pose_response.py",
+      "bytes": 1724,
+      "sha256": "53ed2f665ff01fb0b6d195aa47c761e4715576e2519402fa126e8522a27bb094"
+    },
+    {
+      "path": "software/jetson/tests/test_project_activation.py",
+      "bytes": 1857,
+      "sha256": "9ec706e4ec320ccb96c0f0773528d33cacceb6323610a15e1caa7299687437d3"
+    },
+    {
+      "path": "software/jetson/tests/test_responsive_follow.py",
+      "bytes": 14330,
+      "sha256": "e22a4b520961a9f31254cec9ae0f8915d9d1359008c5ac3b6a988e7019ba49c1"
+    },
+    {
+      "path": "software/jetson/tests/test_road_perception.py",
+      "bytes": 4889,
+      "sha256": "13f59e88481e38b20ba902233e3614d83a3503ea4dc7cc63393615568965f8e7"
+    },
+    {
+      "path": "software/jetson/tests/test_road_pipeline.py",
+      "bytes": 2936,
+      "sha256": "8daddddbea9be6e0c78b7e01f35d5de4d6d4d4a18f3d740ac6558e07b259a3e7"
+    },
+    {
+      "path": "software/jetson/tests/test_servo_speed.py",
+      "bytes": 11081,
+      "sha256": "aad8a124bc234ed51fd3dcdfb94875a8bb613ee283f829282d006c02f0d32b3b"
+    },
+    {
+      "path": "software/jetson/tests/test_smooth_coordination.py",
+      "bytes": 5640,
+      "sha256": "a93aff9c88021041d912d7b8af61ab9b5684679122d2b39956ce70bf6a5d1697"
+    },
+    {
+      "path": "software/jetson/tests/test_target_continuity.py",
+      "bytes": 2080,
+      "sha256": "ac0c4fdcbb58d4d61b40ef379ef3371183ea0e7f1437d314b326b6998473b035"
+    },
+    {
+      "path": "software/jetson/tests/test_target_reacquisition.py",
+      "bytes": 4981,
+      "sha256": "12bab7e554136d5893a38bcdf07b5d491cae714acf62820907c765a1fac573c1"
+    },
+    {
+      "path": "software/jetson/tests/test_upward_tracking.py",
+      "bytes": 5018,
+      "sha256": "384fe927bb7e4416d4b05bacfb9983404823750e27a27c317cadf4161b69dc6d"
+    },
+    {
+      "path": "software/jetson/tools/arm_nod_test.py",
+      "bytes": 4118,
+      "sha256": "7f7c199df9b049ef78adb50720c8d601fcf06b4b47c93271d9648d8c296e315f"
+    },
+    {
+      "path": "software/jetson/tools/arm_pitch_session.py",
+      "bytes": 7137,
+      "sha256": "be7d12c6fad3d6b0b89343093255bfd870324c17a2562affa8fc3a4c40fbe93b"
+    },
+    {
+      "path": "software/jetson/tools/arm_small_test.py",
+      "bytes": 8561,
+      "sha256": "678742d20076641354a7e071ad46ce21932415cd2e9a717c71723fc822065bb7"
+    },
+    {
+      "path": "software/jetson/tools/benchmark_bowl_follow.py",
+      "bytes": 4980,
+      "sha256": "e785baa66fed36fd126af4a2d7f07e871c6a051b0e1ec709f2b741ec8d0b6f33"
+    },
+    {
+      "path": "software/jetson/tools/bowl_follow.py",
+      "bytes": 6949,
+      "sha256": "f46d1cb55b8c1290075ab4e6bbe053c79f3631e7a5167c78ac32fc7e53d7a869"
+    },
+    {
+      "path": "software/jetson/tools/bowl_live.py",
+      "bytes": 7145,
+      "sha256": "98ecab796106aa84140b25e5ee1781e7604ff7c2a83b667cb4efe48faff847d9"
+    },
+    {
+      "path": "software/jetson/tools/bowl_model.py",
+      "bytes": 6306,
+      "sha256": "43a401364b1ce2a2b5c535cf4125dcdaae99735ef2b152da0273666c528ac4f7"
+    },
+    {
+      "path": "software/jetson/tools/build_road_engine.py",
+      "bytes": 5614,
+      "sha256": "6130228642613b6de5151ee52a1c3dd0a7228497e7a52d25247899ab6fbad50d"
+    },
+    {
+      "path": "software/jetson/tools/build_road_training_bundle.py",
+      "bytes": 9277,
+      "sha256": "e6e9ee97f5439c928cc77a4731ba7118ef428a9f21692f66e0bcb4279d37b139"
+    },
+    {
+      "path": "software/jetson/tools/build_windows_bundle.py",
+      "bytes": 7921,
+      "sha256": "d542e41cbd340da541a030ff255dbad4b98400bb0e6a18a178575d9c369b5333"
+    },
+    {
+      "path": "software/jetson/tools/calibrate_bowl_follow.py",
+      "bytes": 17516,
+      "sha256": "f338b127eba6bf81335b32bb87107a3ad1d2d0d59334d8e87d372aa2313ede00"
+    },
+    {
+      "path": "software/jetson/tools/check_arm_connection.py",
+      "bytes": 2662,
+      "sha256": "a55cc97a94f2ba4a1127684f0b67b0e2323f6e3c98e33228a3c7e1f74305ecdf"
+    },
+    {
+      "path": "software/jetson/tools/check_gemini_camera.py",
+      "bytes": 6544,
+      "sha256": "23b4edae4daa2e2afa7d071f6a3ce26929810340a42d7d95a0eed3f20814d5c1"
+    },
+    {
+      "path": "software/jetson/tools/check_jetson_env.py",
+      "bytes": 20611,
+      "sha256": "f2d6a7f3846841e35debd31568097bd6ecb67915999e1654b7465b163b8385af"
+    },
+    {
+      "path": "software/jetson/tools/check_road_perception.py",
+      "bytes": 6880,
+      "sha256": "ccb94c098a19e78cd5b8388a71569098b50e1939c6202442554163582a4b87d6"
+    },
+    {
+      "path": "software/jetson/tools/check_training_bundle.py",
+      "bytes": 2874,
+      "sha256": "25b9fd358913e43526cc42217c35148260d4499ef807ffacb25b42a78d9a2d25"
+    },
+    {
+      "path": "software/jetson/tools/check_training_env.py",
+      "bytes": 2031,
+      "sha256": "075f0dcf194d1723a5b8dba088d76c5cd639b24b433efbef9d8d15ea50bdaa86"
+    },
+    {
+      "path": "software/jetson/tools/configure_cuda_runtime.py",
+      "bytes": 2013,
+      "sha256": "2206db108df437cbc8953535be98b74f887ab31b7f69a74c6da632721573ca2b"
+    },
+    {
+      "path": "software/jetson/tools/download_public_asset.py",
+      "bytes": 4771,
+      "sha256": "4255593fef191566546ee1c6d71a828f06aa93abc979e3a64f37efa42c3739a1"
+    },
+    {
+      "path": "software/jetson/tools/evaluate_road_model.py",
+      "bytes": 1293,
+      "sha256": "54476095de8d52775bfac7304dcb03492dfc32b66612005f5cabc2fea3c05e42"
+    },
+    {
+      "path": "software/jetson/tools/export_bowl_dataset.py",
+      "bytes": 8462,
+      "sha256": "7d3869045aa40365d3e54c4f1c33af22f9a774c8eb44b7f0db6c632363eb5517"
+    },
+    {
+      "path": "software/jetson/tools/export_road_model.py",
+      "bytes": 2758,
+      "sha256": "188960c3d9ba6c50cfc4e584f13a3ec3d3a53d80fb04e75b15d4465d2941f5fb"
+    },
+    {
+      "path": "software/jetson/tools/follow_service.py",
+      "bytes": 2607,
+      "sha256": "c51e98363d1cfdb6381e4b7254fbf6895d3fa30ffe5203a15bd5d4adbd9ea34b"
+    },
+    {
+      "path": "software/jetson/tools/install_road_model.py",
+      "bytes": 3811,
+      "sha256": "5534f542b8680c8f2958b0dc35b02d08ebb8bfd4d45c1f86f72492f51abd75df"
+    },
+    {
+      "path": "software/jetson/tools/openmv_gui.py",
+      "bytes": 23889,
+      "sha256": "d61a3f04fb288e8234bb102dbd44484570825ff88a07bdabc0c2be9111954065"
+    },
+    {
+      "path": "software/jetson/tools/prepare_follow_trial.py",
+      "bytes": 10707,
+      "sha256": "d67ab393c8fe27acf970db9bec9d7f2462eb7ce9386baa3aaabe2db63ef0bacf"
+    },
+    {
+      "path": "software/jetson/tools/prepare_gemini_driver.py",
+      "bytes": 3841,
+      "sha256": "6d0937ec64783992f38fe639f38073c947a50be34befcb0e21fdeee0b34394de"
+    },
+    {
+      "path": "software/jetson/tools/prepare_road_datasets.py",
+      "bytes": 6619,
+      "sha256": "967950c4d71e4ae932d59cf8b231c1545beea087b93f11cea499cc4301eed14e"
+    },
+    {
+      "path": "software/jetson/tools/preview_road_model.py",
+      "bytes": 4020,
+      "sha256": "f87442be7e36f49e222d54c2bb7a8caac05c43014aed911be5ddfcd7a6acea6d"
+    },
+    {
+      "path": "software/jetson/tools/record_road_session.py",
+      "bytes": 3933,
+      "sha256": "712fae34f4c897ecd56405ff201a3396cd4d4d88cb2907849df8abf0c466586f"
+    },
+    {
+      "path": "software/jetson/tools/replay_road_session.py",
+      "bytes": 4932,
+      "sha256": "17c31d00079b48f0346086d03fda8339541d1764aa3e0924c91b43534130f8ca"
+    },
+    {
+      "path": "software/jetson/tools/road_perception.py",
+      "bytes": 21041,
+      "sha256": "141a367a40a234866f60b107fd347d617d75a5ac90dc1ea0fc55c7628ea04b5a"
+    },
+    {
+      "path": "software/jetson/tools/show_road_status.py",
+      "bytes": 1270,
+      "sha256": "c3f5f530b8e89a941b3b2aeb6df039b06364c09c4aead6b04c908f57db6d90e6"
+    },
+    {
+      "path": "software/jetson/tools/test_road_faults.py",
+      "bytes": 6482,
+      "sha256": "ce1acae16e3d56f1221fee217079667cd18b461939164e04a1fcc2a37a5c8841"
+    },
+    {
+      "path": "software/jetson/tools/train_road_model.py",
+      "bytes": 12265,
+      "sha256": "a19dcf095380e29bf7ca2cad4edc46d7219b7d063a3cd6fdbc6a1a416325ed68"
+    },
+    {
+      "path": "software/jetson/tools/verify_elbow_extension.py",
+      "bytes": 5798,
+      "sha256": "7cfcb55bd69c6ec18c25d6f0d733532bd3dd2fedb1ca006c1b709a6980806cde"
+    },
+    {
+      "path": "software/jetson/tools/verify_isaac_vision.py",
+      "bytes": 2928,
+      "sha256": "926e4ae5803d2907e56068212bfb97475c1dec78ddfbc61bb414c4c7359c9147"
+    },
+    {
+      "path": "software/jetson/tools/verify_pitch_extension.py",
+      "bytes": 5789,
+      "sha256": "08949f19689acf58289b237cad207cf686db4e58593bc96e0a5f0eb0ea516f3c"
+    },
+    {
+      "path": "software/jetson/tools/verify_project_env.py",
+      "bytes": 8122,
+      "sha256": "f50bea35018c99cba892f2d406659bb4990d96bfb92ba246dc4ee49f22f7dfce"
+    },
+    {
+      "path": "software/jetson/tools/verify_road_deployment.py",
+      "bytes": 2356,
+      "sha256": "743c5066c5d583f52dc5b3453208adf2f1d83bd7588330269fb31960652bc65f"
+    },
+    {
+      "path": "software/jetson/tools/verify_ros_env.py",
+      "bytes": 3902,
+      "sha256": "9a727910398f74c9655e1bbc4d753182703a7b85b3912e41567819736e8c9a0b"
+    },
+    {
+      "path": "software/jetson/tools/verify_torch_tensorrt.py",
+      "bytes": 2150,
+      "sha256": "a1aca3431203854e41a23661c1381cc8319fbb421d151d64a8bf4edc69b43480"
+    },
+    {
+      "path": "software/jetson/tools/verify_warning_fix.py",
+      "bytes": 1543,
+      "sha256": "7a1965321e30c7db215124ce3322454d8fd8b201292eb8d42f7c6e1c6c16cf1b"
+    },
+    {
+      "path": "software/jetson/tools/wait_road_ready.py",
+      "bytes": 1390,
+      "sha256": "528bb3ee56c4caaef1c99601a3ff4d1562af2c73c7bc48eb97d864f39cf6c59e"
+    },
+    {
+      "path": "software/jetson/vision/__init__.py",
+      "bytes": 50,
+      "sha256": "8a9c4b6d9a590adabaffc69ab7779556809aab978dda5c0be12d63853e13165c"
+    },
+    {
+      "path": "software/jetson/vision/arm_serial.py",
+      "bytes": 8076,
+      "sha256": "45a54c5ec8b0529c4b8a962c810c7fcaad6d468e4454956f19f2451b496f2d0c"
+    },
+    {
+      "path": "software/jetson/vision/bowl_detector.py",
+      "bytes": 3768,
+      "sha256": "e37fb2c5e72d09dbff2e708c1e6883fa5ca7e1aa0a2fb56233ae39ed51659bc3"
+    },
+    {
+      "path": "software/jetson/vision/bowl_follow.py",
+      "bytes": 40962,
+      "sha256": "b887bb8309060f58ab086a9b6ba6b231f51d6074cd7f1b2fca74b809869fd9b1"
+    },
+    {
+      "path": "software/jetson/vision/follow_calibration.py",
+      "bytes": 8018,
+      "sha256": "a94543ad41f16c0c036c66d1fee39c366acd1311443719c8f59bec0cb7f63146"
+    },
+    {
+      "path": "software/jetson/vision/follow_session.py",
+      "bytes": 3637,
+      "sha256": "bdc566d64e0959a0c249a562aa8719322f8ab9c736938becae458a46d19d961a"
+    },
+    {
+      "path": "software/jetson/vision/follow_worker.py",
+      "bytes": 9366,
+      "sha256": "8a1ea3553e24efc1d58a5c9452c85cf449a82209308478075d73f5bc6aa69165"
+    },
+    {
+      "path": "software/jetson/vision/motion_limits.py",
+      "bytes": 2584,
+      "sha256": "e44a54cc9892a16bcc500c94347c49e112cec60917613b8bce9b8084474b653a"
+    },
+    {
+      "path": "software/jetson/vision/openmv_client.py",
+      "bytes": 5427,
+      "sha256": "01972369cb8098a6b14b3c11d0935e5367242a0ecf046b9ba3b5e4c9d4843c5b"
+    },
+    {
+      "path": "software/jetson/vision/pose_response.py",
+      "bytes": 1866,
+      "sha256": "f230f39b021c1f05b2f29408da211910096538b02158b1e3a63b2754be98d3e2"
+    },
+    {
+      "path": "software/jetson/vision/road_geometry.py",
+      "bytes": 8331,
+      "sha256": "891153f50a1cafcdd9223c3314fd15ff7adaf00d330d9fae0db8ee7ad523f99f"
+    },
+    {
+      "path": "software/jetson/vision/road_inference.py",
+      "bytes": 6056,
+      "sha256": "c527afbf6957d123bbba59814a66b3d268a6daec464e21b5db3def98a0da24a1"
+    },
+    {
+      "path": "software/jetson/vision/road_model.py",
+      "bytes": 6478,
+      "sha256": "13af33215c803138a9fba0c927ffdf74043a4c95d3e6b1497ae7157c1d85bcde"
+    },
+    {
+      "path": "software/jetson/vision/ros_bridge.py",
+      "bytes": 4717,
+      "sha256": "2641a1a9252ec6c2a0b17cd2483e2cac91bae322903b00081995b8af349d97df"
+    },
+    {
+      "path": "software/jetson/vision/servo_allocation.py",
+      "bytes": 2028,
+      "sha256": "a7ffc59c654c3974dbd0c26e774712fdb409b5b2dccfcc337f7280505596e510"
+    },
+    {
+      "path": "software/jetson/vision/target_association.py",
+      "bytes": 4302,
+      "sha256": "d8c8a38ed1fc5bdd6b4e7e087cd517484b39bcd6f8f7825ce2b24d8797d6be33"
+    },
+    {
+      "path": "software/jetson/vision/tracking_profile.py",
+      "bytes": 8803,
+      "sha256": "2f05340bba8b50e05b7f2f4ee068df85b6a5c67fb98ba9ff81e4e6161e76a7eb"
+    },
+    {
+      "path": "software/jetson/windows/export_dataset.cmd",
+      "bytes": 297,
+      "sha256": "81aea244998dfb8c7eafaa0ae4d4d958bdbbf6d0105c95170dc7de67e3ce475f"
+    },
+    {
+      "path": "software/jetson/windows/export_onnx.cmd",
+      "bytes": 417,
+      "sha256": "9ba460181d9a957c277f94cb0f8978a224bac2e4e79bec2dc50c0fa056ebb4f1"
+    },
+    {
+      "path": "software/jetson/windows/predict.cmd",
+      "bytes": 290,
+      "sha256": "76858012ec36dbc33d945d801e2ef14c59ccaef637df543d9608cb61c3ae3dbb"
+    },
+    {
+      "path": "software/jetson/windows/requirements-export.txt",
+      "bytes": 63,
+      "sha256": "6b04e52f7beed32652c8f39d45892325f3865f28606055011ebdf3bed2c5623a"
+    },
+    {
+      "path": "software/jetson/windows/requirements-training.txt",
+      "bytes": 239,
+      "sha256": "e88214fc3d95c6730a5cea477acba917340c518f94524b0b3d791cd7f100c23e"
+    },
+    {
+      "path": "software/jetson/windows/setup_annotation.cmd",
+      "bytes": 738,
+      "sha256": "1649f3efe4f94a2adaea0f4f8ba3983046ed0c12c0270db9723279172f7bc99f"
+    },
+    {
+      "path": "software/jetson/windows/setup_training.cmd",
+      "bytes": 1213,
+      "sha256": "db7855ba602891e37303543bab92ca52302eaa57bb8ffbfb8e3eeabced001a25"
+    },
+    {
+      "path": "software/jetson/windows/start_annotation.cmd",
+      "bytes": 404,
+      "sha256": "c8f1625441ae0f71291d92ad6844b38e21b47c1552fc44ce7cf4b307bff562d3"
+    },
+    {
+      "path": "software/jetson/windows/train.cmd",
+      "bytes": 288,
+      "sha256": "ace651d2fddd700edf5a872c8f60433f64ece0382bfa80c797ed21d1f1e1a825"
+    },
+    {
+      "path": "software/jetson/windows/validate.cmd",
+      "bytes": 291,
+      "sha256": "350ee6b725b0f01f7d00c13e12fa2fe79ee351a37b378be7a439f23ac363a99c"
+    }
+  ]
+}
