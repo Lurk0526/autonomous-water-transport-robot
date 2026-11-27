@@ -1,0 +1,530 @@
+[
+  {
+    "seed": 112002,
+    "phase": "lift",
+    "failure_reason": "waypoint_unreachable",
+    "parking_xy_yaw": [
+      -0.008653750498071905,
+      0.0061114797162040435,
+      -0.22283708158829518
+    ],
+    "scenario": {
+      "delay_s": 0.15937959945520885,
+      "initial_target_error_m": [
+        0.0004571995543366514,
+        -0.0009825393804948832,
+        -0.0026852247011096564
+      ],
+      "foam_friction": 0.8732196109159476
+    },
+    "clearance_m": 0.06188904581682653,
+    "tilt_rad": 0.0019727605601323117,
+    "hold_verified": false
+  },
+  {
+    "seed": 112008,
+    "phase": "lift",
+    "failure_reason": "waypoint_unreachable",
+    "parking_xy_yaw": [
+      -0.01982713032359422,
+      0.011693586161239763,
+      0.04522019412340052
+    ],
+    "scenario": {
+      "delay_s": 0.11608215055602542,
+      "initial_target_error_m": [
+        -0.0013949960403257244,
+        0.00033183911540922775,
+        -0.0006374870872188354
+      ],
+      "foam_friction": 0.8918885924058315
+    },
+    "clearance_m": 0.05781744728384319,
+    "tilt_rad": 0.001771760970838043,
+    "hold_verified": false
+  },
+  {
+    "seed": 112017,
+    "phase": "lift",
+    "failure_reason": "waypoint_unreachable",
+    "parking_xy_yaw": [
+      -0.014429300433504079,
+      0.005979049689668586,
+      -0.2110651410793301
+    ],
+    "scenario": {
+      "delay_s": 0.13848346955056057,
+      "initial_target_error_m": [
+        -0.0009258599535366951,
+        -0.0004437097426023273,
+        0.0002393554789438812
+      ],
+      "foam_friction": 0.7438132009193416
+    },
+    "clearance_m": 0.0613193174083384,
+    "tilt_rad": 0.002250632357026092,
+    "hold_verified": false
+  },
+  {
+    "seed": 112021,
+    "phase": "lift",
+    "failure_reason": "waypoint_unreachable",
+    "parking_xy_yaw": [
+      -0.013439026656521037,
+      -0.016980017217100324,
+      -0.04131261252558429
+    ],
+    "scenario": {
+      "delay_s": 0.10634790643686573,
+      "initial_target_error_m": [
+        -0.0002598665869825434,
+        -0.0005153804506551375,
+        -0.0007092344946758589
+      ],
+      "foam_friction": 0.7974353931583018
+    },
+    "clearance_m": 0.061162895643335824,
+    "tilt_rad": 0.0015787173539490791,
+    "hold_verified": false
+  },
+  {
+    "seed": 112034,
+    "phase": "lift",
+    "failure_reason": "waypoint_unreachable",
+    "parking_xy_yaw": [
+      0.002741028722865236,
+      -0.017506774499584765,
+      0.15196099724267265
+    ],
+    "scenario": {
+      "delay_s": 0.09794330511729213,
+      "initial_target_error_m": [
+        -0.0007352990680146165,
+        -0.0017533924649755107,
+        -0.0023083850940081585
+      ],
+      "foam_friction": 0.7971217193701052
+    },
+    "clearance_m": 0.059830359449240034,
+    "tilt_rad": 0.001678830806457188,
+    "hold_verified": false
+  },
+  {
+    "seed": 112052,
+    "phase": "lift",
+    "failure_reason": "waypoint_unreachable",
+    "parking_xy_yaw": [
+      -0.007307637876048056,
+      -0.012572381316925924,
+      0.15099430440468783
+    ],
+    "scenario": {
+      "delay_s": 0.1741051295402607,
+      "initial_target_error_m": [
+        -0.0005762060250641965,
+        0.0011821932477160506,
+        -0.00085011209780117
+      ],
+      "foam_friction": 0.5213236719235339
+    },
+    "clearance_m": 0.06115468465512447,
+    "tilt_rad": 0.005552680828807123,
+    "hold_verified": false
+  },
+  {
+    "seed": 112071,
+    "phase": "lift",
+    "failure_reason": "waypoint_unreachable",
+    "parking_xy_yaw": [
+      -0.02225807716794701,
+      -0.008007580029280783,
+      0.020269354275856175
+    ],
+    "scenario": {
+      "delay_s": 0.17917730751941854,
+      "initial_target_error_m": [
+        9.517035001885277e-05,
+        -0.0009152150854594338,
+        -0.0015305532010064793
+      ],
+      "foam_friction": 0.8586604331961627
+    },
+    "clearance_m": 0.06233896383036308,
+    "tilt_rad": 0.003068083941891253,
+    "hold_verified": false
+  },
+  {
+    "seed": 113002,
+    "phase": "lift",
+    "failure_reason": "waypoint_unreachable",
+    "parking_xy_yaw": [
+      -0.003688185228408386,
+      -0.023012399491276425,
+      0.05520676092666718
+    ],
+    "scenario": {
+      "delay_s": 0.17974127585681018,
+      "initial_target_error_m": [
+        -0.0005226057480297308,
+        -0.0006722172841736127,
+        -0.0011715234897806126
+      ],
+      "foam_friction": 0.7455778924254153
+    },
+    "clearance_m": 0.05969458522737925,
+    "tilt_rad": 0.002123623837627553,
+    "hold_verified": false
+  },
+  {
+    "seed": 113013,
+    "phase": "lift",
+    "failure_reason": "waypoint_unreachable",
+    "parking_xy_yaw": [
+      -0.008554710549968304,
+      0.02310515832260998,
+      -0.11544563704777666
+    ],
+    "scenario": {
+      "delay_s": 0.10241790159376478,
+      "initial_target_error_m": [
+        -0.0014754239627728094,
+        0.002089499801335287,
+        0.0002888133204048682
+      ],
+      "foam_friction": 0.5144000836653447
+    },
+    "clearance_m": 0.05801088299398732,
+    "tilt_rad": 0.007491866904937725,
+    "hold_verified": false
+  },
+  {
+    "seed": 113016,
+    "phase": "lift",
+    "failure_reason": "waypoint_unreachable",
+    "parking_xy_yaw": [
+      -0.010333398154080714,
+      0.022516351999250638,
+      -0.15994873741323232
+    ],
+    "scenario": {
+      "delay_s": 0.15371141930739907,
+      "initial_target_error_m": [
+        -0.0018820105514128493,
+        0.001754126693048112,
+        0.0006876637185537215
+      ],
+      "foam_friction": 0.8330449523497662
+    },
+    "clearance_m": 0.05844071069820683,
+    "tilt_rad": 0.001868129578847877,
+    "hold_verified": false
+  },
+  {
+    "seed": 113021,
+    "phase": "lift",
+    "failure_reason": "waypoint_unreachable",
+    "parking_xy_yaw": [
+      -0.024372837176351025,
+      0.003783401020304944,
+      -0.10524231916025556
+    ],
+    "scenario": {
+      "delay_s": 0.12055048835605353,
+      "initial_target_error_m": [
+        -0.0029453452003682934,
+        -0.0007778572098867155,
+        -0.00011499092537037292
+      ],
+      "foam_friction": 0.682816691666418
+    },
+    "clearance_m": 0.05409152493769859,
+    "tilt_rad": 0.003915864141001919,
+    "hold_verified": false
+  },
+  {
+    "seed": 113023,
+    "phase": "lift",
+    "failure_reason": "waypoint_unreachable",
+    "parking_xy_yaw": [
+      -0.016654703405469755,
+      0.009408461258706043,
+      0.0902904894910325
+    ],
+    "scenario": {
+      "delay_s": 0.13659883829683234,
+      "initial_target_error_m": [
+        -0.002728961178265016,
+        0.0014234516643287995,
+        3.905491502453895e-05
+      ],
+      "foam_friction": 0.6454423180294404
+    },
+    "clearance_m": 0.055376754345371315,
+    "tilt_rad": 0.004057165469187611,
+    "hold_verified": false
+  },
+  {
+    "seed": 113046,
+    "phase": "lift",
+    "failure_reason": "waypoint_unreachable",
+    "parking_xy_yaw": [
+      -0.0003893089743035212,
+      -0.019319331760270942,
+      0.09259129008466252
+    ],
+    "scenario": {
+      "delay_s": 0.1666202767914708,
+      "initial_target_error_m": [
+        -0.0019564475519989744,
+        -8.160041028953849e-05,
+        0.0011176255458593132
+      ],
+      "foam_friction": 0.6711004484016867
+    },
+    "clearance_m": 0.05999005197968499,
+    "tilt_rad": 0.003789748513854206,
+    "hold_verified": false
+  },
+  {
+    "seed": 113049,
+    "phase": "lift",
+    "failure_reason": "waypoint_unreachable",
+    "parking_xy_yaw": [
+      -0.01774870446151068,
+      -0.0033349557100234746,
+      -0.038735925964348744
+    ],
+    "scenario": {
+      "delay_s": 0.1310945192747356,
+      "initial_target_error_m": [
+        -0.00045706079362994867,
+        0.0015469474331477901,
+        -0.0023174677739251637
+      ],
+      "foam_friction": 0.7080958133423911
+    },
+    "clearance_m": 0.05798250441377645,
+    "tilt_rad": 0.002907156929352537,
+    "hold_verified": false
+  },
+  {
+    "seed": 113054,
+    "phase": "lift",
+    "failure_reason": "waypoint_unreachable",
+    "parking_xy_yaw": [
+      -0.024599188045877952,
+      -0.012017961998490334,
+      -0.1976321114580768
+    ],
+    "scenario": {
+      "delay_s": 0.08807353912525125,
+      "initial_target_error_m": [
+        -0.0013644562437843955,
+        0.0036176196731430924,
+        -0.0016572193504231225
+      ],
+      "foam_friction": 0.5355764939370228
+    },
+    "clearance_m": 0.05848314191585391,
+    "tilt_rad": 0.0064434910294960636,
+    "hold_verified": false
+  },
+  {
+    "seed": 113065,
+    "phase": "lift",
+    "failure_reason": "waypoint_unreachable",
+    "parking_xy_yaw": [
+      -0.015258619110416505,
+      -0.012674238615434253,
+      0.1270780787562428
+    ],
+    "scenario": {
+      "delay_s": 0.14754164645651008,
+      "initial_target_error_m": [
+        -0.0016601684881212275,
+        -0.0010032476277654235,
+        0.0008208828712298888
+      ],
+      "foam_friction": 0.847803493193792
+    },
+    "clearance_m": 0.06053333107079961,
+    "tilt_rad": 0.0009849248210231812,
+    "hold_verified": false
+  },
+  {
+    "seed": 113100,
+    "phase": "lift",
+    "failure_reason": "waypoint_unreachable",
+    "parking_xy_yaw": [
+      -0.00804624607278387,
+      -0.0019571386969849114,
+      0.10113229186940308
+    ],
+    "scenario": {
+      "delay_s": 0.09889571156285835,
+      "initial_target_error_m": [
+        0.00013135232623900928,
+        -0.0003109533676294643,
+        -0.0017500908040950502
+      ],
+      "foam_friction": 0.7477502181985564
+    },
+    "clearance_m": 0.06225711072638901,
+    "tilt_rad": 0.0030651841147724154,
+    "hold_verified": false
+  },
+  {
+    "seed": 113119,
+    "phase": "lift",
+    "failure_reason": "waypoint_unreachable",
+    "parking_xy_yaw": [
+      -0.01414458964094258,
+      -0.0012081061188512002,
+      -0.2422167481423894
+    ],
+    "scenario": {
+      "delay_s": 0.08184174938558016,
+      "initial_target_error_m": [
+        -0.001076124022912045,
+        -0.0008884358552913724,
+        -0.0004014839124344971
+      ],
+      "foam_friction": 0.7707352056767633
+    },
+    "clearance_m": 0.06119870037870356,
+    "tilt_rad": 0.0023463124752866106,
+    "hold_verified": false
+  },
+  {
+    "seed": 113127,
+    "phase": "lift",
+    "failure_reason": "waypoint_unreachable",
+    "parking_xy_yaw": [
+      -0.017952310968556554,
+      0.00716164604446088,
+      -0.19876892935244334
+    ],
+    "scenario": {
+      "delay_s": 0.16516651781932462,
+      "initial_target_error_m": [
+        -0.00221017266023138,
+        -0.0012396508073876725,
+        -0.001019283852472519
+      ],
+      "foam_friction": 0.6284568011011535
+    },
+    "clearance_m": 0.054111976824356756,
+    "tilt_rad": 0.0037644145126386414,
+    "hold_verified": false
+  },
+  {
+    "seed": 113145,
+    "phase": "lift",
+    "failure_reason": "waypoint_unreachable",
+    "parking_xy_yaw": [
+      -0.012142943064428285,
+      0.013711681371501284,
+      -0.08850380354450771
+    ],
+    "scenario": {
+      "delay_s": 0.17130415145669411,
+      "initial_target_error_m": [
+        -0.0017551141721969532,
+        -0.0004285195166572461,
+        -0.00010847600369046084
+      ],
+      "foam_friction": 0.5357248615039898
+    },
+    "clearance_m": 0.057040644760754655,
+    "tilt_rad": 0.004563245984178728,
+    "hold_verified": false
+  },
+  {
+    "seed": 113157,
+    "phase": "lift",
+    "failure_reason": "waypoint_unreachable",
+    "parking_xy_yaw": [
+      -0.01620961784186742,
+      0.023966187543665904,
+      -0.010092628265771252
+    ],
+    "scenario": {
+      "delay_s": 0.17939860951272693,
+      "initial_target_error_m": [
+        -9.433963178193117e-05,
+        -0.0006251823529005197,
+        -0.0016244962850980316
+      ],
+      "foam_friction": 0.690909977506814
+    },
+    "clearance_m": 0.060026337657803686,
+    "tilt_rad": 0.003765927826123784,
+    "hold_verified": false
+  },
+  {
+    "seed": 113167,
+    "phase": "lift",
+    "failure_reason": "waypoint_unreachable",
+    "parking_xy_yaw": [
+      -0.015346666405445158,
+      -0.02281169418701642,
+      0.1798631267906345
+    ],
+    "scenario": {
+      "delay_s": 0.17650378180209383,
+      "initial_target_error_m": [
+        -0.00043452664316934175,
+        0.0005481014118261501,
+        -0.0007436017259355721
+      ],
+      "foam_friction": 0.7650968746028761
+    },
+    "clearance_m": 0.06036739012178699,
+    "tilt_rad": 0.002197962546319873,
+    "hold_verified": false
+  },
+  {
+    "seed": 113168,
+    "phase": "lift",
+    "failure_reason": "waypoint_unreachable",
+    "parking_xy_yaw": [
+      -0.009866002191008817,
+      -0.021437792106646026,
+      0.1031666578081262
+    ],
+    "scenario": {
+      "delay_s": 0.08694386618630685,
+      "initial_target_error_m": [
+        -0.0010139559825440014,
+        0.001954709608358691,
+        -0.0007923027751588485
+      ],
+      "foam_friction": 0.8163082624193592
+    },
+    "clearance_m": 0.06037765570721959,
+    "tilt_rad": 0.0019999902864242304,
+    "hold_verified": false
+  },
+  {
+    "seed": 113191,
+    "phase": "lift",
+    "failure_reason": "waypoint_unreachable",
+    "parking_xy_yaw": [
+      -0.013346569194435715,
+      -0.024192454486303736,
+      0.1041560314612616
+    ],
+    "scenario": {
+      "delay_s": 0.10013515684617946,
+      "initial_target_error_m": [
+        -0.0018472861620612013,
+        1.2742086757421825e-05,
+        0.0007770202331852105
+      ],
+      "foam_friction": 0.8453144648382194
+    },
+    "clearance_m": 0.05989771088358592,
+    "tilt_rad": 0.0008764919252495241,
+    "hold_verified": false
+  }
+]
