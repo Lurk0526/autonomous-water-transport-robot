@@ -15,3 +15,9 @@
 *.png binary
 *.jpg binary
 *.jpeg binary
+*.docx binary
+*.pdf binary
+*.STEP binary
+/simulation/gazebo-ring-v3/gazebo-ring-v1/references/deepracer-oval/bundle/models/Oval_track/Oval_track_model.sdf -text
+/simulation/gazebo-ring-v3/gazebo-ring-v1/references/deepracer-oval/bundle/models/Oval_track/model.config -text
+/simulation/gazebo-ring-v3/gazebo-ring-v1/worlds/ring-waypoints.csv -text

@@ -24,6 +24,12 @@ python3 sim/bowl_transport/preflight.py
 
 道路模型既有独立测试为 2,095 张，排除水类别后的六类 mIoU 为 79.62%，铺装 IoU 为 94.41%；这些是离线结果。循迹主方案、无标线备用和抓放监督器已具备软件实现，真实底盘协议/反馈、装车外参、自动抓放、整车避障与满水运输仍待联调。详情及与旧资料的差异见 [本次接入记录](docs/runtime-import-20261102.md)。
 
+## 11 月后续工作
+
+- [机械臂仿真与训练](training/README.md)收录 v1、v2、v3、v4 和 v4.2 的源码、配置与 CAD 资源。[v4.2 仿真盲测](results/arm-v4.2/README.md)中，规则基线和冻结 PPO 均通过 200 个配对场景。
+- [Gazebo 一米环道](simulation/gazebo-ring-v3/gazebo-ring-v1/README.md)收录车模、赛道、采集与训练代码。[Mac 仿真结果](results/gazebo-ring-v3/README.md)记录了 16 圈采集和 4 圈独立闭环。
+- [后续汇报和报告](reports/README.md#11-月后续汇报与报告)收录结构稳定性、风阻和车辆稳定性分析材料。
+
 ## 已有进展（机械与历史团队记录）
 
 | 内容 | 已有记录 | 证据边界 |

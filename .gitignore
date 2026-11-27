@@ -79,3 +79,6 @@ wandb/
 /software/jetson/releases/
 /software/jetson/datasets/
 /software/jetson/sim/*/output/
+
+# Wavefront meshes used by the Gazebo ring world
+!/simulation/gazebo-ring-v3/gazebo-ring-v1/worlds/ring_assets/*.obj

@@ -13,3 +13,11 @@
 P2 保存的是选定的 9 月导出，后续其他架构修订未自动合并进去。P4 的较大演示保留一次，避免把所有迭代版本重复上传。P5 的计算材料与最终讲稿分别标明用途，旧数值以最新确认输入为准。
 
 PPTX 仅归档并检查压缩包完整性，没有重排、渲染或修改。各文件来源和 SHA-256 见 [导入清单](../docs/import-manifest.json)。
+
+## 11 月后续汇报与报告
+
+| 主题 | 文件 | 补充 |
+| --- | --- | --- |
+| 结构稳定性 | [汇报](structural-stability/AstraGO_Vehicle_Stability_Analysis_Group4.pptx) | [双语讲稿](structural-stability/AstraGO_Group4_六分钟中英讲稿.md)、[碰撞仿真说明](structural-stability/AstraGO_碰撞仿真上下文.md) |
+| 风阻 | [汇报定稿](wind-resistance/AstraGO_Group2_Wind_Resistance_Final.pptx) | [逐页双语讲解](wind-resistance/AstraGO_Group2_主讲人逐页讲解_中英版.pdf)、[六分钟讲稿定稿](wind-resistance/AstraGO_Group2_风阻六分钟中英讲稿_定稿.pdf) |
+| 车辆稳定性分析 | [报告修订稿](vehicle-stability/AstraGO_Group2_VSA_Report_Revised.docx) | |
