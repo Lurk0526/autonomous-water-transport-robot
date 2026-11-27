@@ -1,0 +1,21 @@
+{
+  "paired_episodes": 200,
+  "candidate_only_success": 0,
+  "reference_only_success": 0,
+  "success_rate_difference": 0.0,
+  "exact_two_sided_p": 1.0,
+  "interpretation": "Paired independent simulation results for the frozen v4.2 rule controller and checkpoint.",
+  "baseline_successes": 200,
+  "ppo_successes": 200,
+  "baseline_serious_events": [],
+  "ppo_serious_events": [],
+  "baseline_wilson95": [
+    0.9811539940816791,
+    1.0
+  ],
+  "ppo_wilson95": [
+    0.9811539940816791,
+    1.0
+  ],
+  "ppo_improvement_on_this_holdout": false
+}

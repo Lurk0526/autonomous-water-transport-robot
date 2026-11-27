@@ -1,0 +1,102 @@
+{
+  "zip": "同步四爪抓水碗-算法与复测.zip",
+  "scope": "Independent review, prescribed-position FK comparison, one recreated failed seed 88000 with original v4 code. No training or hardware I/O.",
+  "original_dynamic_results": {
+    "linked": {
+      "successes": 0,
+      "episodes": 40,
+      "failures": {
+        "grasp_contact_missing": 33,
+        "gripper_single_contact_blocked": 7
+      }
+    },
+    "retry": {
+      "successes": 0,
+      "episodes": 40,
+      "failures": {
+        "single_pad_after_retries": 33,
+        "gripper_contact_not_sustained": 7
+      }
+    },
+    "feedback": {
+      "successes": 0,
+      "episodes": 40,
+      "failures": {
+        "single_pad_after_retries": 33,
+        "gripper_contact_not_sustained": 7
+      }
+    }
+  },
+  "fk_equivalence": {
+    "laws": [
+      [
+        0,
+        0
+      ],
+      [
+        -0.25,
+        -0.25
+      ]
+    ],
+    "strokes_m": [
+      0,
+      0.003,
+      0.0055,
+      0.007
+    ],
+    "maximum_foam_position_disagreement_m": 7.263663831652296e-06,
+    "interpretation": "No large sign/frame mismatch found between V4 static screen and polynomial linked model when the same arm pose and rack coordinate are supplied."
+  },
+  "planning_mismatch_seed88000": {
+    "law": [
+      0,
+      0
+    ],
+    "stroke_m": 0.00565,
+    "static_screen_arm_q": [
+      0.00284234,
+      0.08167982,
+      0.01919182,
+      -0.11682035,
+      0.00060275
+    ],
+    "actual_arm_q": [
+      -0.04754668006900995,
+      -0.4353040643773171,
+      1.123827614533849,
+      -0.7047552981302151,
+      -0.2750702173782212
+    ],
+    "static_distal_foam_separation_m": [
+      -0.0004454,
+      -0.0004537,
+      -0.0004447,
+      -0.0004586
+    ],
+    "actual_pose_distal_foam_separation_m": [
+      0.0006828,
+      0.0005477,
+      0.0006865,
+      0.0005453
+    ],
+    "interpretation": "The rack band is planned at a fixed nominal IK pose but applied to randomized parking/IK pose. Changing the free tool roll against a 16-sided bowl changes the narrow contact band."
+  },
+  "circle_polygon_radial_error_m": {
+    "16": 0.0014987481285480264,
+    "32": 0.00037559131956863955,
+    "64": 9.39544159965524e-05,
+    "96": 4.176217684347661e-05
+  },
+  "controller_issues": [
+    "Zero preload and early single-pad stop prevents closing through a compliant contact to an opposed grasp. Existing preload starts only after confirmed opposed contact, creating a startup deadlock.",
+    "Retry uses the dummy rack slide world axis for lateral correction rather than the actual tip-motion/contact Jacobian.",
+    "Shared polynomial laws remove two passive shape degrees of freedom per branch; this is an uncertain reduced mechanism, not identified loaded closed-chain dynamics."
+  ],
+  "recommended_order": [
+    "Refine bowl circle sectors and verify contact-band convergence without changing physical diameter, mass, friction or collisions.",
+    "Plan at the actual parked arm pose and estimated bowl pose, including free-roll orientation.",
+    "Use bounded common-rack preload and complete approach/contact/centering state transitions; retain a single actuator.",
+    "Validate small contact trials and final hold/place before training.",
+    "For higher physical fidelity, model actual rods and passive closed-chain constraints, preserving a common drive rather than adding independent finger controls."
+  ]
+}

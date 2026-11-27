@@ -1,0 +1,99 @@
+[
+  {
+    "label": "round9-0",
+    "max_clearance_m": -4.466989617091244e-08,
+    "max_total_foam_n": 0.0,
+    "is_success": false,
+    "failure_reason": "sustained_hard_contact",
+    "phase": "close",
+    "elapsed_s": 7.194999999999983,
+    "synchronous_control": {
+      "state": "stopped",
+      "events": [
+        {
+          "time_s": 7.1950000000007375,
+          "kind": "stop",
+          "reason": "sustained_hard_contact"
+        }
+      ],
+      "common_command_m": 0.005626508690747007,
+      "independent_finger_actuators": 0,
+      "maximum_loop_error_m": 0.0001564160529987185,
+      "force_inputs": "simulation_supervision_not_real_force_sensing"
+    }
+  },
+  {
+    "label": "round9-1",
+    "max_clearance_m": 0.04324407378390305,
+    "max_total_foam_n": 10.623426030630522,
+    "is_success": false,
+    "failure_reason": "hard_contact_peak_limit",
+    "phase": "lift",
+    "elapsed_s": 13.877000000000063,
+    "synchronous_control": {
+      "state": "stopped",
+      "events": [
+        {
+          "time_s": 6.349000000000455,
+          "kind": "first_foam_contact",
+          "digit": 2,
+          "rack_m": 0.004368593874192158
+        },
+        {
+          "time_s": 8.241000000000872,
+          "kind": "opposed_contact_confirmed",
+          "rack_m": 0.006470103435460075,
+          "total_raw_foam_n": 8.540541699422182,
+          "required_total_foam_n": 8.0,
+          "required_opposed_finger_n": 0.5
+        },
+        {
+          "time_s": 13.876999999997748,
+          "kind": "stop",
+          "reason": "hard_contact_peak_limit"
+        }
+      ],
+      "common_command_m": 0.0056310855079017555,
+      "independent_finger_actuators": 0,
+      "maximum_loop_error_m": 0.0005010507416680207,
+      "force_inputs": "simulation_supervision_not_real_force_sensing"
+    }
+  },
+  {
+    "label": "round9-2",
+    "max_clearance_m": 0.007293927140634204,
+    "max_total_foam_n": 9.798108614157591,
+    "is_success": false,
+    "failure_reason": "hard_contact_above_micro_tolerance",
+    "phase": "lift",
+    "elapsed_s": 12.785000000000048,
+    "synchronous_control": {
+      "state": "stopped",
+      "events": [
+        {
+          "time_s": 6.299000000000438,
+          "kind": "first_foam_contact",
+          "digit": 2,
+          "rack_m": 0.004064335842731411
+        },
+        {
+          "time_s": 8.105000000000947,
+          "kind": "opposed_contact_confirmed",
+          "rack_m": 0.0059298501127763616,
+          "total_raw_foam_n": 8.49589974366457,
+          "required_total_foam_n": 8.0,
+          "required_opposed_finger_n": 0.5
+        },
+        {
+          "time_s": 12.784999999998353,
+          "kind": "stop",
+          "reason": "hard_contact_above_micro_tolerance"
+        }
+      ],
+      "common_command_m": 0.005402655708813987,
+      "independent_finger_actuators": 0,
+      "maximum_loop_error_m": 0.0005038605774948585,
+      "force_inputs": "simulation_supervision_not_real_force_sensing"
+    }
+  }
+]

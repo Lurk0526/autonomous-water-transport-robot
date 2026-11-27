@@ -1,0 +1,15 @@
+{
+  "larger_training_started": true,
+  "stage2_started": true,
+  "execution": {
+    "device": "cpu",
+    "envs": 6,
+    "policy_network": "64x64 MLP",
+    "physics_device": "cpu",
+    "benchmark_ready": true,
+    "benchmark_skipped_explicitly": false,
+    "reason": "Use MPS only if measured sampling+updates throughput is at least 10% better; a failed comparison blocks training rather than silently falling back."
+  },
+  "final_holdout_114000_to_114199": "untouched",
+  "end_to_end_mobile_policy_training": false
+}

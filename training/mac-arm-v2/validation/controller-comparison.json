@@ -1,0 +1,283 @@
+{
+  "scenarios": {
+    "seed_start": 40000,
+    "episodes": 200,
+    "parking_x_y_m": [
+      -0.025,
+      0.025
+    ],
+    "parking_yaw_deg": [
+      -15,
+      15
+    ],
+    "measured_parking_distribution": false,
+    "protocol": "one-time controller comparison; later policy holdout must use new seeds"
+  },
+  "v1": {
+    "episodes": 200,
+    "successes": 143,
+    "success_rate": 0.715,
+    "success_rate_wilson95": [
+      0.648845269187895,
+      0.773050948267227
+    ],
+    "failures": {
+      "joint_tracking_limit": 8,
+      "lift_hold_not_verified": 10,
+      "unexpected_collision": 24,
+      "final_placement_not_verified": 5,
+      "dropped_bowl": 2,
+      "grasp_contact_missing": 6,
+      "support_missing_release_inhibited": 2
+    },
+    "wall_s": 287.93969763600035
+  },
+  "synchronized_only": {
+    "episodes": 200,
+    "successes": 183,
+    "success_rate": 0.915,
+    "success_rate_wilson95": [
+      0.8681031145576462,
+      0.9462547005301477
+    ],
+    "failures": {
+      "joint_tracking_limit": 11,
+      "dropped_bowl": 1,
+      "grasp_contact_missing": 2,
+      "support_missing_release_inhibited": 1,
+      "lift_hold_not_verified": 1,
+      "final_placement_not_verified": 1
+    },
+    "wall_s": 325.62494498399974
+  },
+  "v2": {
+    "episodes": 200,
+    "successes": 186,
+    "success_rate": 0.93,
+    "success_rate_wilson95": [
+      0.8859442178331628,
+      0.9578482170770813
+    ],
+    "failures": {
+      "unexpected_collision": 6,
+      "support_missing_after_lower": 1,
+      "joint_tracking_limit": 7
+    },
+    "wall_s": 457.97500489400045
+  },
+  "isolated_joint_limiter_paired": {
+    "paired_episodes": 200,
+    "candidate_only_success": 48,
+    "reference_only_success": 8,
+    "success_rate_difference": 0.2,
+    "exact_two_sided_p": 4.688184102041859e-08,
+    "interpretation": "Exploratory development comparison unless both results are from untouched holdout scenarios."
+  },
+  "v2_criteria_differ": "Added substep collision detection, phase evidence gates and stable placement checks. Do not attribute all differences to policy learning.",
+  "v2_failure_phases": {
+    "lower": 3,
+    "close": 8,
+    "release": 1,
+    "lift": 2
+  },
+  "v2_collision_pairs": {
+    "platform vs instance_148_hard": 4,
+    "platform vs instance_161_hard": 2
+  },
+  "v2_provenance": {
+    "config": {
+      "schema_version": 2,
+      "seed": 42,
+      "model_status": "cad_geometry_candidate_kinematics_uncalibrated_contact",
+      "arm": {
+        "base_height_m": 0.55,
+        "joint_range_rad": [
+          -2.3,
+          2.3
+        ],
+        "torque_limits_nm": [
+          8.0,
+          8.0,
+          6.0,
+          4.0,
+          2.0
+        ],
+        "masses_kg": [
+          0.12,
+          0.18,
+          0.15,
+          0.12,
+          0.22
+        ],
+        "kp": 400.0,
+        "kv": 12.0,
+        "actuator_delay_s": [
+          0.08,
+          0.18
+        ],
+        "max_joint_velocity_rad_s": 0.7
+      },
+      "gripper": {
+        "approximation": "coupled_radial_rigid_finger_envelopes",
+        "close_m": 0.032,
+        "force_limit_n": 40.0,
+        "foam_friction": [
+          0.5,
+          0.9
+        ],
+        "foam_time_constant_s": 0.004,
+        "foam_damping_ratio": 1.0,
+        "opening_calibrated": false
+      },
+      "bowl": {
+        "total_mass_kg": 0.65,
+        "height_m": 0.06,
+        "rim_radius_m": 0.078,
+        "wall_thickness_m": 0.002,
+        "radial_profile_m": [
+          [
+            0.03,
+            0.0
+          ],
+          [
+            0.036,
+            0.008
+          ],
+          [
+            0.055,
+            0.028
+          ],
+          [
+            0.069,
+            0.047
+          ],
+          [
+            0.078,
+            0.06
+          ]
+        ],
+        "shape_status": "approximate_from_diagram_and_photos",
+        "sectors": 16
+      },
+      "fixture": {
+        "top_height_m": 0.35,
+        "bowl_world_xy_m": [
+          0.2,
+          0.0
+        ],
+        "half_size_m": [
+          0.18,
+          0.18
+        ],
+        "grasp_height_above_table_m": 0.035
+      },
+      "parking": {
+        "status": "experiment_ranges_not_measured",
+        "x_m": [
+          -0.025,
+          0.025
+        ],
+        "y_m": [
+          -0.025,
+          0.025
+        ],
+        "yaw_deg": [
+          -15.0,
+          15.0
+        ],
+        "evaluate_full_grid": true
+      },
+      "sensor": {
+        "pose_estimate_model": "noisy_base_frame_target_pose_not_rgb_camera",
+        "initial_error_std_m": 0.003,
+        "observation_noise_std_m": 0.001,
+        "latency_s": 0.05,
+        "camera_parent": "wrist_before_servo_004",
+        "calibrated": false
+      },
+      "task": {
+        "durations_s": [
+          0.3,
+          1.5,
+          0.8,
+          1.6,
+          2.2,
+          1.6,
+          0.5,
+          0.6,
+          1.0,
+          0.5
+        ],
+        "approach_clearance_m": 0.06,
+        "lift_m": 0.06,
+        "minimum_hold_clearance_m": 0.03,
+        "hold_s": 2.0,
+        "place_tolerance_m": 0.01,
+        "bilateral_force_n": 0.1,
+        "tilt_limit_rad": 0.2,
+        "joint_tracking_limit_rad": 0.25,
+        "timeout_s": 32.0,
+        "controller": "synchronized_joint_rate_and_evidence_gates",
+        "gate_wait_s": 2.0,
+        "gate_tracking_rad": 0.06,
+        "gate_joint_speed_rad_s": 0.12,
+        "gate_stable_s": 0.15,
+        "support_stable_s": 0.2,
+        "place_stable_s": 0.5,
+        "require_foam_grasp": false
+      },
+      "simulation": {
+        "dt_s": 0.001,
+        "control_dt_s": 0.05,
+        "residual_limit_m": 0.005,
+        "residual_rate_m_s": 0.03,
+        "phase_residual_limits_m": [
+          0,
+          0.005,
+          0.003,
+          0.003,
+          0.003,
+          0.002,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "ppo": {
+        "n_envs": 2,
+        "total_timesteps": 300000,
+        "learning_rate": 0.0001,
+        "n_steps": 256,
+        "batch_size": 64,
+        "n_epochs": 5,
+        "gamma": 0.995,
+        "gae_lambda": 0.95,
+        "hidden_sizes": [
+          64,
+          64
+        ],
+        "checkpoint_frequency": 10000,
+        "evaluation_frequency": 10000,
+        "log_std_init": -2.0,
+        "target_kl": 0.02,
+        "evaluation_episodes": 100,
+        "evaluation_seed": 30000
+      },
+      "deployment": {
+        "hardware_ready": false,
+        "position_interface": "bounded_joint_position_targets_no_torque_output",
+        "servo_radian_to_pulse_calibration": null,
+        "fluid_simulated": false
+      }
+    },
+    "config_sha256": "ab568d17c1c0167b2b89b29902ca54e5315bbac7e4c8ae2a1e8a183b408bbf8c",
+    "model_sha256": "185200d3278bc0ada42f7aa6d0c3f7592ffd4ed72ae60c540962ebbf5b66bf2b",
+    "source_sha256": "05f297502632fa5978cfd8f8d2333bdca3c5c7e50e615ed24efc8532e1abe8a7",
+    "platform": "Linux-6.8.12-1021-tegra-aarch64-with-glibc2.39",
+    "machine": "aarch64",
+    "hardware_ready": false,
+    "scope": "User STEP visual geometry; candidate arm grouping and single-command four-finger radial contact envelope. Not validated MG23 linkage or hardware dynamics."
+  },
+  "hardware_ready": false
+}

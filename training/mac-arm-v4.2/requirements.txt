@@ -1,0 +1,18 @@
+numpy==1.26.4
+scipy==1.14.1
+mujoco==3.3.7
+torch==2.8.0
+gymnasium==1.2.1
+stable-baselines3==2.7.0
+PyYAML==6.0.2
+matplotlib==3.9.4
+pandas==2.2.3
+tensorboard==2.19.0
+
+# TensorBoard 2.19 CLI imports pkg_resources.
+setuptools==80.9.0
+
+# Match the existing custom YOLO11n-seg checkpoint; CPU/MPS on Apple Silicon.
+ultralytics==8.4.178
+torchvision==0.23.0
+opencv-python==4.11.0.86

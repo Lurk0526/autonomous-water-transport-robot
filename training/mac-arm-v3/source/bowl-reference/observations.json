@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "received_date": "2026-11-17",
+  "user_confirmed": {
+    "bowl_material": "plastic",
+    "gripper_contact_padding": "foam cushioning pad",
+    "bowl_plus_water_full_load_kg": 0.65,
+    "camera_rotates_with_servo_004": false
+  },
+  "diagram_approximate_dimensions": {
+    "rim_outer_diameter_m": 0.156,
+    "height_m": 0.06,
+    "platform_height_range_m": [
+      0.3,
+      0.4
+    ],
+    "source": "objective-reference.jpg; approximate diagram labels, not fresh metrology"
+  },
+  "photo_observations": {
+    "appearance": "black glossy bowl",
+    "outer_profile": "widens toward rim, curved/tapered wall",
+    "rim": "outward projecting rim visible",
+    "base": "small ring foot visible",
+    "external_surface": "circumferential contours visible; not certified load-bearing ledges",
+    "ruler_present": false
+  },
+  "proposed_grasp_not_yet_validated": {
+    "mode": "external enveloping contact through existing foam-padded coupled fingers",
+    "candidate_region": "search upper-to-middle outer wall below rim, subject to real finger geometry and reachability",
+    "closing": "bounded closure with effective foam compression; verify short lift before the full lift"
+  },
+  "unmeasured": {
+    "empty_bowl_mass_kg": null,
+    "water_mass_kg": null,
+    "wall_thickness_m": null,
+    "rim_cross_section": null,
+    "external_radial_profile": null,
+    "foot_outer_diameter_m": null,
+    "foam_thickness_m": null,
+    "foam_force_compression_and_damping": null,
+    "dry_and_wet_contact_friction": null,
+    "available_jaw_opening_m": null
+  },
+  "interpretation": "650 g is the combined full load. Do not assign it all to water or infer foam stiffness/friction from the photographs.",
+  "fluid_model_validated": false,
+  "grasp_feasibility_validated": false,
+  "mac_training_plan_status": "discussion; final training package and tuning guide await plan agreement"
+}

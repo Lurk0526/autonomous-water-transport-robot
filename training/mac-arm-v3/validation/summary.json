@@ -1,0 +1,30 @@
+{
+  "version": "0.3.0",
+  "package_status": "configured_for_Mac_execution_not_effect_validated",
+  "user_requirement": "No local simulation, training, inference, benchmark or test execution; run on receiving Mac.",
+  "local_runtime_tests_executed": false,
+  "local_inference_executed": false,
+  "local_simulation_executed": false,
+  "local_training_or_benchmark_executed": false,
+  "test_suite_status": "written_but_not_executed_for_v3",
+  "static_ast_parsed_files": 29,
+  "shell_syntax_checked_files": 7,
+  "dependencies": {
+    "wheels": 60,
+    "old_base_versions_preserved": 42,
+    "applicable_dependency_edges": 96,
+    "official_PyPI_hashes_and_zip_crc_verified": true
+  },
+  "prior_Mac_v2_evidence": {
+    "baseline_dev": "93/100",
+    "baseline_replication": "179/200",
+    "is_v3_result": false,
+    "internal_file_records_verified": 82
+  },
+  "dual_camera_scene": "YOLO predictions and measured synthetic optical geometry; known platform map; no ground-truth pose fallback",
+  "vehicle": "unmeasured front-steered planar surrogate, stationary handoff to MuJoCo arm",
+  "camera_calibration": "simulation_assumptions_not_real_camera_extrinsics",
+  "gripper": "unvalidated_radial_proxy_with_new_contact_supervision",
+  "hardware_ready": false,
+  "fluid_simulated": false
+}

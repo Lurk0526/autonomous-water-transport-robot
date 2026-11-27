@@ -1,0 +1,44 @@
+[
+  {
+    "source": "original-share/机械臂带爪子.STEP",
+    "path": "assets/cad/arm-step-20261117/机械臂带爪子.STEP",
+    "bytes": 26553562,
+    "sha256": "6321054db0b0bfe43dbdf761cdafc57571cf02f82ac78df9c28b137206682876",
+    "edited": false
+  },
+  {
+    "source": "original-share/1ccdc7d853fa296371d85af5f8bfdabd.jpg",
+    "path": "assets/reference/bowl-20261117/objective-reference.jpg",
+    "bytes": 186766,
+    "sha256": "b4287dfc805af2c7521edff7d0796d6a3ad3a05776bfc97256d24d72daf67ee5",
+    "edited": false
+  },
+  {
+    "source": "original-share/0dc32c0f6ec04a2577611be98499a08d.jpg",
+    "path": "assets/reference/bowl-20261117/bowl-oblique-top-1.jpg",
+    "bytes": 125547,
+    "sha256": "82a4a49f9d527758cee9fbfdbac7bfd57d1c7c4f7c158fa5e4a6bbb71ab18199",
+    "edited": false
+  },
+  {
+    "source": "original-share/75f158972baa018c7a511670644cd554.jpg",
+    "path": "assets/reference/bowl-20261117/bowl-oblique-top-2.jpg",
+    "bytes": 117289,
+    "sha256": "971189101937802b4068122f22331694b4dca0dc9955c640fc1f3e6ca5b8d72f",
+    "edited": false
+  },
+  {
+    "source": "original-share/b74c5af64eba0ee0f76dbb49cc9a69b8.jpg",
+    "path": "assets/reference/bowl-20261117/bowl-oblique-side.jpg",
+    "bytes": 117950,
+    "sha256": "bf7db0cb68c3d60d3305c5c9d5309f0aeffe2cd73945e91d3be202fcfd27c5f8",
+    "edited": false
+  },
+  {
+    "source": "original-share/b074e2ce8250ce055517474c65bcaef2.jpg",
+    "path": "assets/reference/bowl-20261117/bowl-overhead.jpg",
+    "bytes": 131724,
+    "sha256": "8759528a0ad907653d414ae108fb42c04fa7a49910ef5660cbfea42835073e2e",
+    "edited": false
+  }
+]

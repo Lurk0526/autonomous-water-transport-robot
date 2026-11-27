@@ -1,0 +1,11 @@
+{
+  "source": "existing_user_weights_20261021",
+  "file": "target-bowl.pt",
+  "sha256": "c402769dabe8f46fd69e01f76054622b15677862fd34e1825618fedc4b9073a6",
+  "bytes": 6034020,
+  "task": "YOLO11n single-class target_bowl segmentation",
+  "main_camera_calibration": "simulation_only",
+  "wrist_camera_calibration": "simulation_only_not_real_OpenMV_calibration",
+  "mac_v4_evidence": "Mac v4 reported learned wrist localization and complete pick/place on smoke 3/3 and development 20/20 simulated episodes. The v4 return did not capture runtime weight SHA256. See validation/mac-audit.json.",
+  "weights_retrained_for_v4_1": false
+}

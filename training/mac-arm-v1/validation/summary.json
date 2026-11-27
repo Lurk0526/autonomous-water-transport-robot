@@ -1,0 +1,43 @@
+{
+  "version": "0.1.0",
+  "date": "2026-11-17",
+  "target": "M2 Pro, 16GB, macOS 27 arm64",
+  "local_runtime_tested": "Linux aarch64 / CPU; Mac binaries not executed on this host",
+  "cad_unique_parts": 41,
+  "cad_instances": 171,
+  "all_brep_valid": true,
+  "tests_passed": 11,
+  "gymnasium_sb3_env_check": "passed",
+  "linux_gui_start_check": "passed",
+  "ppo_training": "1024-step two-process smoke + 256-step resume verified",
+  "baseline_200": {
+    "successes": 114,
+    "episodes": 200,
+    "success_rate": 0.57,
+    "failures": {
+      "unexpected_collision": 33,
+      "joint_tracking_limit": 10,
+      "grasp_contact_missing": 5,
+      "lift_hold_not_verified": 23,
+      "support_missing_release_inhibited": 4,
+      "final_placement_not_verified": 11
+    },
+    "passes_provisional_simulation_goal": false
+  },
+  "smoke_policy": {
+    "successes": 11,
+    "episodes": 20,
+    "success_rate": 0.55,
+    "failures": {
+      "lift_hold_not_verified": 1,
+      "final_placement_not_verified": 2,
+      "unexpected_collision": 4,
+      "grasp_contact_missing": 1,
+      "joint_tracking_limit": 1
+    }
+  },
+  "actual_MG23_linkage_validated": false,
+  "hardware_ready": false,
+  "mac_runtime_executed": false,
+  "model_status": "Real STEP geometry with candidate arm grouping and coupled radial finger-envelope approximation; requires kinematic/contact calibration."
+}

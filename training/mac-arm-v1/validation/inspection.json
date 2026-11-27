@@ -1,0 +1,190 @@
+{
+  "config": {
+    "schema_version": 1,
+    "seed": 42,
+    "model_status": "cad_geometry_candidate_kinematics_uncalibrated_contact",
+    "arm": {
+      "base_height_m": 0.55,
+      "joint_range_rad": [
+        -2.3,
+        2.3
+      ],
+      "torque_limits_nm": [
+        8.0,
+        8.0,
+        6.0,
+        4.0,
+        2.0
+      ],
+      "masses_kg": [
+        0.12,
+        0.18,
+        0.15,
+        0.12,
+        0.22
+      ],
+      "kp": 400.0,
+      "kv": 12.0,
+      "actuator_delay_s": [
+        0.08,
+        0.18
+      ],
+      "max_joint_velocity_rad_s": 0.7
+    },
+    "gripper": {
+      "approximation": "coupled_radial_rigid_finger_envelopes",
+      "close_m": 0.032,
+      "force_limit_n": 40.0,
+      "foam_friction": [
+        0.5,
+        0.9
+      ],
+      "foam_time_constant_s": 0.004,
+      "foam_damping_ratio": 1.0,
+      "opening_calibrated": false
+    },
+    "bowl": {
+      "total_mass_kg": 0.65,
+      "height_m": 0.06,
+      "rim_radius_m": 0.078,
+      "wall_thickness_m": 0.002,
+      "radial_profile_m": [
+        [
+          0.03,
+          0.0
+        ],
+        [
+          0.036,
+          0.008
+        ],
+        [
+          0.055,
+          0.028
+        ],
+        [
+          0.069,
+          0.047
+        ],
+        [
+          0.078,
+          0.06
+        ]
+      ],
+      "shape_status": "approximate_from_diagram_and_photos",
+      "sectors": 16
+    },
+    "fixture": {
+      "top_height_m": 0.35,
+      "bowl_world_xy_m": [
+        0.2,
+        0.0
+      ],
+      "half_size_m": [
+        0.18,
+        0.18
+      ],
+      "grasp_height_above_table_m": 0.035
+    },
+    "parking": {
+      "status": "experiment_ranges_not_measured",
+      "x_m": [
+        -0.025,
+        0.025
+      ],
+      "y_m": [
+        -0.025,
+        0.025
+      ],
+      "yaw_deg": [
+        -15.0,
+        15.0
+      ],
+      "evaluate_full_grid": true
+    },
+    "sensor": {
+      "pose_estimate_model": "noisy_base_frame_target_pose_not_rgb_camera",
+      "initial_error_std_m": 0.003,
+      "observation_noise_std_m": 0.001,
+      "latency_s": 0.05,
+      "camera_parent": "wrist_before_servo_004",
+      "calibrated": false
+    },
+    "task": {
+      "durations_s": [
+        0.3,
+        1.5,
+        0.8,
+        1.6,
+        2.2,
+        1.6,
+        0.5,
+        0.6,
+        1.0,
+        0.5
+      ],
+      "approach_clearance_m": 0.06,
+      "lift_m": 0.06,
+      "minimum_hold_clearance_m": 0.03,
+      "hold_s": 2.0,
+      "place_tolerance_m": 0.01,
+      "bilateral_force_n": 0.1,
+      "tilt_limit_rad": 0.2,
+      "joint_tracking_limit_rad": 0.25,
+      "timeout_s": 20.0
+    },
+    "simulation": {
+      "dt_s": 0.001,
+      "control_dt_s": 0.05,
+      "residual_limit_m": 0.01,
+      "residual_rate_m_s": 0.03
+    },
+    "ppo": {
+      "n_envs": 2,
+      "total_timesteps": 300000,
+      "learning_rate": 0.0003,
+      "n_steps": 256,
+      "batch_size": 64,
+      "n_epochs": 5,
+      "gamma": 0.99,
+      "gae_lambda": 0.95,
+      "hidden_sizes": [
+        64,
+        64
+      ],
+      "checkpoint_frequency": 10000,
+      "evaluation_frequency": 10000,
+      "log_std_init": -2.0
+    },
+    "deployment": {
+      "hardware_ready": false,
+      "position_interface": "bounded_joint_position_targets_no_torque_output",
+      "servo_radian_to_pulse_calibration": null,
+      "fluid_simulated": false
+    }
+  },
+  "config_sha256": "cb9d5405d544328fa7aa4c53ebb1da4dbcf41e2c781b89e3770bda1b4504e24c",
+  "model_sha256": "185200d3278bc0ada42f7aa6d0c3f7592ffd4ed72ae60c540962ebbf5b66bf2b",
+  "platform": "Linux-6.8.12-1021-tegra-aarch64-with-glibc2.39",
+  "machine": "aarch64",
+  "hardware_ready": false,
+  "scope": "User STEP visual geometry; candidate arm grouping and single-command four-finger radial contact envelope. Not validated MG23 linkage or hardware dynamics.",
+  "model_status": {
+    "cad_geometry_valid": true,
+    "joint_axes": "candidate axes derived from CAD servo-shaft cylinders; sign/zero/range require hardware calibration",
+    "rigid_group_assignment": "motor cases/horns and camera assigned explicitly; remaining arm pieces assigned by nearest bone and require review",
+    "gripper": "four rigid finger envelopes with a single coupled radial closure; actual linkage and compliant finger motion NOT validated",
+    "mass_and_actuators": "provisional simulation parameters, not measurements",
+    "hardware_deployment_ready": false
+  },
+  "dimensions": {
+    "nq": 16,
+    "nu": 6,
+    "geoms": 265,
+    "meshes": 105
+  },
+  "cad_parts": 41,
+  "cad_occurrences": 171,
+  "all_brep_valid": true,
+  "parking_ranges_are_measured": false,
+  "camera_rendering_or_hand_eye_calibration_included": false
+}

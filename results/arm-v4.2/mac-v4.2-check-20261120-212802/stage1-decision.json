@@ -1,0 +1,727 @@
+{
+  "advance_to_100k": true,
+  "no_more_than_2pp_development_regression": true,
+  "guard_check": {
+    "schema_version": 1,
+    "package_generation": "mac-arm-v4",
+    "created_utc": "2026-11-20T17:27:18+00:00",
+    "arm_residual_training_allowed": true,
+    "mobile_learning_allowed": true,
+    "end_to_end_policy_training_allowed": false,
+    "training_schedule_if_allowed": [
+      20000,
+      100000
+    ],
+    "checks": {
+      "tests": {
+        "valid": true,
+        "test_count": 137,
+        "completed_ok": true,
+        "failure_marker_seen": false,
+        "skipped_tests_seen": false,
+        "log_sha256": "e6ea5317e911b7ae3cc5ec61af851a2d3a408445df31856b93eda9fa1198d737"
+      },
+      "baseline_provenance": {
+        "valid": true,
+        "record": {
+          "package_generation": "mac-arm-v4",
+          "config_sha256": "bcf242d0f6a29ab2f713b881f169bdc275582ea78775b209ced0e9576ca8678e",
+          "source_sha256": "a3f4c562b8f683ef28bab3c4aa2b1036f01b6c33fa3fdcbf656a772395d82ed7",
+          "model_sha256": "9f15bb7c008a886461f88e7f544b6c98c82b8d595e5688ea1e7f9c977cf90733"
+        }
+      },
+      "mobile_provenance": {
+        "valid": true,
+        "record": {
+          "package_generation": "mac-arm-v4",
+          "config_sha256": "bcf242d0f6a29ab2f713b881f169bdc275582ea78775b209ced0e9576ca8678e",
+          "source_sha256": "a3f4c562b8f683ef28bab3c4aa2b1036f01b6c33fa3fdcbf656a772395d82ed7",
+          "model_sha256": "9f15bb7c008a886461f88e7f544b6c98c82b8d595e5688ea1e7f9c977cf90733"
+        }
+      },
+      "baseline": {
+        "valid": true,
+        "episodes": 100,
+        "successes_from_trials": 100,
+        "success_rate_from_trials": 1.0,
+        "minimum_episodes": 100,
+        "minimum_success_rate": 0.95,
+        "serious_event_count": 0,
+        "serious_events": [],
+        "guard_evidence_complete": true,
+        "statistical_note": "An observed-rate gate is not a guarantee that population success is at least 95%."
+      },
+      "mobile": {
+        "valid": true,
+        "episodes": 20,
+        "learned_vision": true,
+        "vision_backend": "ultralytics_yolo_segmenter",
+        "metric_successes": {
+          "recognition_success": 19,
+          "parking_success": 19,
+          "precise_localization_success": 19
+        },
+        "metric_rates": {
+          "recognition_success": 0.95,
+          "parking_success": 0.95,
+          "precise_localization_success": 0.95,
+          "full_pick_place": 0.95
+        },
+        "minimum_episodes": 20,
+        "minimum_metric_rate": 0.95,
+        "serious_event_count": 0,
+        "serious_events": [],
+        "planning_mode": "deterministic_parking_and_forward_path_search"
+      }
+    },
+    "expected_provenance": {
+      "package_generation": "mac-arm-v4",
+      "package_version": "0.4.2",
+      "config": {
+        "schema_version": 4,
+        "seed": 42,
+        "model_status": "CAD_closed_chain_one_rack_unmeasured_physical_parameters",
+        "arm": {
+          "base_height_m": 0.55,
+          "joint_range_rad": [
+            -2.3,
+            2.3
+          ],
+          "torque_limits_nm": [
+            8.0,
+            8.0,
+            6.0,
+            4.0,
+            2.0
+          ],
+          "masses_kg": [
+            0.12,
+            0.18,
+            0.15,
+            0.12,
+            0.22
+          ],
+          "kp": 400.0,
+          "kv": 12.0,
+          "actuator_delay_s": [
+            0.08,
+            0.18
+          ],
+          "max_joint_velocity_rad_s": 0.7
+        },
+        "gripper": {
+          "approximation": "cad_pin_closed_chain",
+          "close_m": 0.008,
+          "force_limit_n": 40.0,
+          "foam_friction": [
+            0.5,
+            0.9
+          ],
+          "foam_time_constant_s": 0.004,
+          "foam_damping_ratio": 1.0,
+          "opening_calibrated": false,
+          "contact_preload_m": 0.0,
+          "single_contact_stop_force_n": 0.5,
+          "closure_limit_tolerance_m": 0.001,
+          "closure_sync_tolerance_m": 0.003,
+          "open_m": -0.003
+        },
+        "bowl": {
+          "total_mass_kg": 0.65,
+          "height_m": 0.06,
+          "rim_radius_m": 0.078,
+          "wall_thickness_m": 0.002,
+          "radial_profile_m": [
+            [
+              0.03,
+              0.0
+            ],
+            [
+              0.036,
+              0.008
+            ],
+            [
+              0.055,
+              0.028
+            ],
+            [
+              0.069,
+              0.047
+            ],
+            [
+              0.078,
+              0.06
+            ]
+          ],
+          "shape_status": "approximate_from_diagram_and_photos",
+          "sectors": 64
+        },
+        "fixture": {
+          "top_height_m": 0.35,
+          "bowl_world_xy_m": [
+            0.2,
+            0.0
+          ],
+          "half_size_m": [
+            0.18,
+            0.18
+          ],
+          "grasp_height_above_table_m": 0.05
+        },
+        "parking": {
+          "status": "experiment_ranges_not_measured",
+          "x_m": [
+            -0.025,
+            0.025
+          ],
+          "y_m": [
+            -0.025,
+            0.025
+          ],
+          "yaw_deg": [
+            -15.0,
+            15.0
+          ],
+          "evaluate_full_grid": true
+        },
+        "sensor": {
+          "pose_estimate_model": "noisy_base_frame_target_pose_not_rgb_camera",
+          "initial_error_std_m": 0.001,
+          "observation_noise_std_m": 0.001,
+          "latency_s": 0.05,
+          "camera_parent": "wrist_before_servo_004",
+          "calibrated": false
+        },
+        "task": {
+          "durations_s": [
+            1.2,
+            2.0,
+            10.0,
+            2.5,
+            2.3,
+            5.0,
+            1.0,
+            3.0,
+            1.5,
+            0.7
+          ],
+          "approach_clearance_m": 0.06,
+          "lift_m": 0.06,
+          "minimum_hold_clearance_m": 0.03,
+          "hold_s": 2.0,
+          "place_tolerance_m": 0.01,
+          "bilateral_force_n": 0.1,
+          "tilt_limit_rad": 0.2,
+          "joint_tracking_limit_rad": 0.25,
+          "timeout_s": 40.0,
+          "controller": "synchronized_joint_rate_and_evidence_gates",
+          "gate_wait_s": 3.0,
+          "gate_tracking_rad": 0.06,
+          "gate_joint_speed_rad_s": 0.12,
+          "gate_stable_s": 0.15,
+          "support_stable_s": 0.2,
+          "place_stable_s": 0.5,
+          "require_foam_grasp": false,
+          "contact_supervisor_mode": "foam_required",
+          "contact_confirmation_s": 0.05,
+          "single_contact_timeout_s": 0.15,
+          "hard_contact_timeout_s": 0.15,
+          "support_clearance_tolerance_m": 0.003,
+          "support_linear_speed_m_s": 0.02,
+          "support_angular_speed_rad_s": 0.1
+        },
+        "simulation": {
+          "dt_s": 0.001,
+          "control_dt_s": 0.05,
+          "residual_limit_m": 0.005,
+          "residual_rate_m_s": 0.03,
+          "phase_residual_limits_m": [
+            0,
+            0.005,
+            0.003,
+            0.003,
+            0.003,
+            0.002,
+            0,
+            0,
+            0,
+            0
+          ],
+          "diagnostic_window_s": 0.25
+        },
+        "ppo": {
+          "n_envs": 2,
+          "total_timesteps": 20000,
+          "learning_rate": 0.0001,
+          "n_steps": 256,
+          "batch_size": 64,
+          "n_epochs": 5,
+          "gamma": 0.995,
+          "gae_lambda": 0.95,
+          "hidden_sizes": [
+            64,
+            64
+          ],
+          "checkpoint_frequency": 10000,
+          "evaluation_frequency": 10000,
+          "log_std_init": -2.0,
+          "target_kl": 0.02,
+          "evaluation_episodes": 100,
+          "evaluation_seed": 112000
+        },
+        "deployment": {
+          "hardware_ready": false,
+          "position_interface": "bounded_joint_position_targets_no_torque_output",
+          "servo_radian_to_pulse_calibration": null,
+          "fluid_simulated": false
+        },
+        "position_servo": {
+          "integral_enabled": true,
+          "integral_gain_s_inv": 2.0,
+          "integral_limit_rad": 0.04,
+          "retain_tool_orientation": "full_pose"
+        },
+        "linked_gripper": {
+          "maximum_loop_error_m": 0.001,
+          "rack_kp_n_m": 40000.0,
+          "rack_kv_n_s_m": 40.0,
+          "rack_force_limit_n": 40.0,
+          "passive_stiffness_n_m_rad": 0.4,
+          "hinge_damping_n_m_s": 0.004,
+          "use_convex_decomposition": true,
+          "rack_range_m": [
+            -0.004,
+            0.009
+          ]
+        },
+        "compliant_grasp": {
+          "single_extra_stroke_m": 0.004,
+          "single_contact_timeout_s": 3.0,
+          "maximum_contact_extra_stroke_m": 0.008,
+          "foam_total_target_n": 16.0,
+          "rack_min_m": -0.004
+        },
+        "placement": {
+          "touch_stop_force_n": 0.5,
+          "support_search_speed_m_s": 0.002,
+          "maximum_search_depth_m": 0.008,
+          "unload_open_rate_m_s": 0.0005
+        }
+      },
+      "config_sha256": "bcf242d0f6a29ab2f713b881f169bdc275582ea78775b209ced0e9576ca8678e",
+      "model_sha256": "9f15bb7c008a886461f88e7f544b6c98c82b8d595e5688ea1e7f9c977cf90733",
+      "source_sha256": "a3f4c562b8f683ef28bab3c4aa2b1036f01b6c33fa3fdcbf656a772395d82ed7",
+      "platform": "macOS-27.3-arm64-arm-64bit",
+      "machine": "arm64",
+      "hardware_ready": false,
+      "scope": "User STEP visual geometry; CAD-pin closed-chain topology, one common rack, passive finger hinges and baked convex collision parts. Physical actuator, foam and camera parameters remain unmeasured.",
+      "model_status": {
+        "cad_geometry_valid": true,
+        "joint_axes": "candidate axes derived from CAD servo-shaft cylinders; sign/zero/range require hardware calibration",
+        "rigid_group_assignment": "motor cases/horns and camera assigned explicitly; remaining arm pieces assigned by nearest bone and require review",
+        "gripper": "four rigid finger envelopes with a single coupled radial closure; actual linkage and compliant finger motion NOT validated",
+        "mass_and_actuators": "provisional simulation parameters, not measurements",
+        "hardware_deployment_ready": false
+      },
+      "dimensions": {
+        "nq": 45,
+        "nu": 6,
+        "geoms": 1401,
+        "meshes": 522
+      },
+      "cad_parts": 41,
+      "cad_occurrences": 171,
+      "all_brep_valid": true,
+      "parking_ranges_are_measured": false,
+      "camera_rendering_or_hand_eye_calibration_included": false
+    },
+    "reasons": [],
+    "recommended_next_action": [
+      "Allow bounded arm-residual simulation training: 20k steps first, compare fixed development scenarios and guards, then consider 100k only if checks continue to pass. Do not jump directly to 300k.",
+      "Mobile evidence permits limited component experiments. Retain deterministic parking/navigation; end-to-end mobile-grasp policy training remains disabled in this package."
+    ],
+    "hardware_safety_certification": false,
+    "hardware_output_enabled": false,
+    "scope": "simulation_evidence_admission_only_not_hardware_or_deployment_certification",
+    "config_scope": "Captured configuration hashes must match. A training launcher must preserve and recheck that config hash before every stage."
+  },
+  "final_policy_guard_check": {
+    "schema_version": 1,
+    "package_generation": "mac-arm-v4",
+    "created_utc": "2026-11-20T17:27:18+00:00",
+    "arm_residual_training_allowed": true,
+    "mobile_learning_allowed": true,
+    "end_to_end_policy_training_allowed": false,
+    "training_schedule_if_allowed": [
+      20000,
+      100000
+    ],
+    "checks": {
+      "tests": {
+        "valid": true,
+        "test_count": 137,
+        "completed_ok": true,
+        "failure_marker_seen": false,
+        "skipped_tests_seen": false,
+        "log_sha256": "e6ea5317e911b7ae3cc5ec61af851a2d3a408445df31856b93eda9fa1198d737"
+      },
+      "baseline_provenance": {
+        "valid": true,
+        "record": {
+          "package_generation": "mac-arm-v4",
+          "config_sha256": "bcf242d0f6a29ab2f713b881f169bdc275582ea78775b209ced0e9576ca8678e",
+          "source_sha256": "a3f4c562b8f683ef28bab3c4aa2b1036f01b6c33fa3fdcbf656a772395d82ed7",
+          "model_sha256": "9f15bb7c008a886461f88e7f544b6c98c82b8d595e5688ea1e7f9c977cf90733"
+        }
+      },
+      "mobile_provenance": {
+        "valid": true,
+        "record": {
+          "package_generation": "mac-arm-v4",
+          "config_sha256": "bcf242d0f6a29ab2f713b881f169bdc275582ea78775b209ced0e9576ca8678e",
+          "source_sha256": "a3f4c562b8f683ef28bab3c4aa2b1036f01b6c33fa3fdcbf656a772395d82ed7",
+          "model_sha256": "9f15bb7c008a886461f88e7f544b6c98c82b8d595e5688ea1e7f9c977cf90733"
+        }
+      },
+      "baseline": {
+        "valid": true,
+        "episodes": 100,
+        "successes_from_trials": 100,
+        "success_rate_from_trials": 1.0,
+        "minimum_episodes": 100,
+        "minimum_success_rate": 0.95,
+        "serious_event_count": 0,
+        "serious_events": [],
+        "guard_evidence_complete": true,
+        "statistical_note": "An observed-rate gate is not a guarantee that population success is at least 95%."
+      },
+      "mobile": {
+        "valid": true,
+        "episodes": 20,
+        "learned_vision": true,
+        "vision_backend": "ultralytics_yolo_segmenter",
+        "metric_successes": {
+          "recognition_success": 19,
+          "parking_success": 19,
+          "precise_localization_success": 19
+        },
+        "metric_rates": {
+          "recognition_success": 0.95,
+          "parking_success": 0.95,
+          "precise_localization_success": 0.95,
+          "full_pick_place": 0.95
+        },
+        "minimum_episodes": 20,
+        "minimum_metric_rate": 0.95,
+        "serious_event_count": 0,
+        "serious_events": [],
+        "planning_mode": "deterministic_parking_and_forward_path_search"
+      }
+    },
+    "expected_provenance": {
+      "package_generation": "mac-arm-v4",
+      "package_version": "0.4.2",
+      "config": {
+        "schema_version": 4,
+        "seed": 42,
+        "model_status": "CAD_closed_chain_one_rack_unmeasured_physical_parameters",
+        "arm": {
+          "base_height_m": 0.55,
+          "joint_range_rad": [
+            -2.3,
+            2.3
+          ],
+          "torque_limits_nm": [
+            8.0,
+            8.0,
+            6.0,
+            4.0,
+            2.0
+          ],
+          "masses_kg": [
+            0.12,
+            0.18,
+            0.15,
+            0.12,
+            0.22
+          ],
+          "kp": 400.0,
+          "kv": 12.0,
+          "actuator_delay_s": [
+            0.08,
+            0.18
+          ],
+          "max_joint_velocity_rad_s": 0.7
+        },
+        "gripper": {
+          "approximation": "cad_pin_closed_chain",
+          "close_m": 0.008,
+          "force_limit_n": 40.0,
+          "foam_friction": [
+            0.5,
+            0.9
+          ],
+          "foam_time_constant_s": 0.004,
+          "foam_damping_ratio": 1.0,
+          "opening_calibrated": false,
+          "contact_preload_m": 0.0,
+          "single_contact_stop_force_n": 0.5,
+          "closure_limit_tolerance_m": 0.001,
+          "closure_sync_tolerance_m": 0.003,
+          "open_m": -0.003
+        },
+        "bowl": {
+          "total_mass_kg": 0.65,
+          "height_m": 0.06,
+          "rim_radius_m": 0.078,
+          "wall_thickness_m": 0.002,
+          "radial_profile_m": [
+            [
+              0.03,
+              0.0
+            ],
+            [
+              0.036,
+              0.008
+            ],
+            [
+              0.055,
+              0.028
+            ],
+            [
+              0.069,
+              0.047
+            ],
+            [
+              0.078,
+              0.06
+            ]
+          ],
+          "shape_status": "approximate_from_diagram_and_photos",
+          "sectors": 64
+        },
+        "fixture": {
+          "top_height_m": 0.35,
+          "bowl_world_xy_m": [
+            0.2,
+            0.0
+          ],
+          "half_size_m": [
+            0.18,
+            0.18
+          ],
+          "grasp_height_above_table_m": 0.05
+        },
+        "parking": {
+          "status": "experiment_ranges_not_measured",
+          "x_m": [
+            -0.025,
+            0.025
+          ],
+          "y_m": [
+            -0.025,
+            0.025
+          ],
+          "yaw_deg": [
+            -15.0,
+            15.0
+          ],
+          "evaluate_full_grid": true
+        },
+        "sensor": {
+          "pose_estimate_model": "noisy_base_frame_target_pose_not_rgb_camera",
+          "initial_error_std_m": 0.001,
+          "observation_noise_std_m": 0.001,
+          "latency_s": 0.05,
+          "camera_parent": "wrist_before_servo_004",
+          "calibrated": false
+        },
+        "task": {
+          "durations_s": [
+            1.2,
+            2.0,
+            10.0,
+            2.5,
+            2.3,
+            5.0,
+            1.0,
+            3.0,
+            1.5,
+            0.7
+          ],
+          "approach_clearance_m": 0.06,
+          "lift_m": 0.06,
+          "minimum_hold_clearance_m": 0.03,
+          "hold_s": 2.0,
+          "place_tolerance_m": 0.01,
+          "bilateral_force_n": 0.1,
+          "tilt_limit_rad": 0.2,
+          "joint_tracking_limit_rad": 0.25,
+          "timeout_s": 40.0,
+          "controller": "synchronized_joint_rate_and_evidence_gates",
+          "gate_wait_s": 3.0,
+          "gate_tracking_rad": 0.06,
+          "gate_joint_speed_rad_s": 0.12,
+          "gate_stable_s": 0.15,
+          "support_stable_s": 0.2,
+          "place_stable_s": 0.5,
+          "require_foam_grasp": false,
+          "contact_supervisor_mode": "foam_required",
+          "contact_confirmation_s": 0.05,
+          "single_contact_timeout_s": 0.15,
+          "hard_contact_timeout_s": 0.15,
+          "support_clearance_tolerance_m": 0.003,
+          "support_linear_speed_m_s": 0.02,
+          "support_angular_speed_rad_s": 0.1
+        },
+        "simulation": {
+          "dt_s": 0.001,
+          "control_dt_s": 0.05,
+          "residual_limit_m": 0.005,
+          "residual_rate_m_s": 0.03,
+          "phase_residual_limits_m": [
+            0,
+            0.005,
+            0.003,
+            0.003,
+            0.003,
+            0.002,
+            0,
+            0,
+            0,
+            0
+          ],
+          "diagnostic_window_s": 0.25
+        },
+        "ppo": {
+          "n_envs": 2,
+          "total_timesteps": 20000,
+          "learning_rate": 0.0001,
+          "n_steps": 256,
+          "batch_size": 64,
+          "n_epochs": 5,
+          "gamma": 0.995,
+          "gae_lambda": 0.95,
+          "hidden_sizes": [
+            64,
+            64
+          ],
+          "checkpoint_frequency": 10000,
+          "evaluation_frequency": 10000,
+          "log_std_init": -2.0,
+          "target_kl": 0.02,
+          "evaluation_episodes": 100,
+          "evaluation_seed": 112000
+        },
+        "deployment": {
+          "hardware_ready": false,
+          "position_interface": "bounded_joint_position_targets_no_torque_output",
+          "servo_radian_to_pulse_calibration": null,
+          "fluid_simulated": false
+        },
+        "position_servo": {
+          "integral_enabled": true,
+          "integral_gain_s_inv": 2.0,
+          "integral_limit_rad": 0.04,
+          "retain_tool_orientation": "full_pose"
+        },
+        "linked_gripper": {
+          "maximum_loop_error_m": 0.001,
+          "rack_kp_n_m": 40000.0,
+          "rack_kv_n_s_m": 40.0,
+          "rack_force_limit_n": 40.0,
+          "passive_stiffness_n_m_rad": 0.4,
+          "hinge_damping_n_m_s": 0.004,
+          "use_convex_decomposition": true,
+          "rack_range_m": [
+            -0.004,
+            0.009
+          ]
+        },
+        "compliant_grasp": {
+          "single_extra_stroke_m": 0.004,
+          "single_contact_timeout_s": 3.0,
+          "maximum_contact_extra_stroke_m": 0.008,
+          "foam_total_target_n": 16.0,
+          "rack_min_m": -0.004
+        },
+        "placement": {
+          "touch_stop_force_n": 0.5,
+          "support_search_speed_m_s": 0.002,
+          "maximum_search_depth_m": 0.008,
+          "unload_open_rate_m_s": 0.0005
+        }
+      },
+      "config_sha256": "bcf242d0f6a29ab2f713b881f169bdc275582ea78775b209ced0e9576ca8678e",
+      "model_sha256": "9f15bb7c008a886461f88e7f544b6c98c82b8d595e5688ea1e7f9c977cf90733",
+      "source_sha256": "a3f4c562b8f683ef28bab3c4aa2b1036f01b6c33fa3fdcbf656a772395d82ed7",
+      "platform": "macOS-27.3-arm64-arm-64bit",
+      "machine": "arm64",
+      "hardware_ready": false,
+      "scope": "User STEP visual geometry; CAD-pin closed-chain topology, one common rack, passive finger hinges and baked convex collision parts. Physical actuator, foam and camera parameters remain unmeasured.",
+      "model_status": {
+        "cad_geometry_valid": true,
+        "joint_axes": "candidate axes derived from CAD servo-shaft cylinders; sign/zero/range require hardware calibration",
+        "rigid_group_assignment": "motor cases/horns and camera assigned explicitly; remaining arm pieces assigned by nearest bone and require review",
+        "gripper": "four rigid finger envelopes with a single coupled radial closure; actual linkage and compliant finger motion NOT validated",
+        "mass_and_actuators": "provisional simulation parameters, not measurements",
+        "hardware_deployment_ready": false
+      },
+      "dimensions": {
+        "nq": 45,
+        "nu": 6,
+        "geoms": 1401,
+        "meshes": 522
+      },
+      "cad_parts": 41,
+      "cad_occurrences": 171,
+      "all_brep_valid": true,
+      "parking_ranges_are_measured": false,
+      "camera_rendering_or_hand_eye_calibration_included": false
+    },
+    "reasons": [],
+    "recommended_next_action": [
+      "Allow bounded arm-residual simulation training: 20k steps first, compare fixed development scenarios and guards, then consider 100k only if checks continue to pass. Do not jump directly to 300k.",
+      "Mobile evidence permits limited component experiments. Retain deterministic parking/navigation; end-to-end mobile-grasp policy training remains disabled in this package."
+    ],
+    "hardware_safety_certification": false,
+    "hardware_output_enabled": false,
+    "scope": "simulation_evidence_admission_only_not_hardware_or_deployment_certification",
+    "config_scope": "Captured configuration hashes must match. A training launcher must preserve and recheck that config hash before every stage."
+  },
+  "all_saved_evaluation_guards": {
+    "valid": true,
+    "run_status": "completed",
+    "source_integrity": {
+      "unchanged_during_run": true
+    },
+    "evaluations": [
+      {
+        "path": "training/mac-arm-v4.2/outputs/mac-v4.2-check-20261120-212802/train-stage1-20k/eval/19992.json",
+        "serious_event_count": 0,
+        "guard_evidence_complete": true,
+        "provenance_valid": true,
+        "evidence_valid": true,
+        "guard_config_valid": true
+      },
+      {
+        "path": "training/mac-arm-v4.2/outputs/mac-v4.2-check-20261120-212802/train-stage1-20k/eval/21504.json",
+        "serious_event_count": 0,
+        "guard_evidence_complete": true,
+        "provenance_valid": true,
+        "evidence_valid": true,
+        "guard_config_valid": true
+      },
+      {
+        "path": "training/mac-arm-v4.2/outputs/mac-v4.2-check-20261120-212802/train-stage1-20k/eval/9996.json",
+        "serious_event_count": 0,
+        "guard_evidence_complete": true,
+        "provenance_valid": true,
+        "evidence_valid": true,
+        "guard_config_valid": true
+      }
+    ],
+    "scope": "Saved development evaluations only; training-rollout fault telemetry is separate and must be retained."
+  },
+  "inference": "A scheduling decision only, not statistical evidence of learned improvement."
+}

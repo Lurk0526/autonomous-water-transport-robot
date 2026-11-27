@@ -1,0 +1,143 @@
+{
+  "version": "0.4.0",
+  "package_generation": "mac-arm-v4",
+  "validated_on": "Linux aarch64 CPU physics; actual YOLO CPU inference and EGL rendering",
+  "user_authorization": "2026-11-19 local bounded simulation, iterative repair and camera mount/search configuration authorized; formal Mac training remains on receiving M2 Pro",
+  "local_tests_passed": true,
+  "full_suite_tests": 128,
+  "full_suite_log": "audit/tests-release-final.log",
+  "supplement_tests": 16,
+  "supplement_scope": "Includes one newly added initial-observation provenance regression and 15 overlapping repairs; not 144 unique tests.",
+  "supplement_log": "audit/tests-final-sensor-provenance.log",
+  "arm_frozen_new_trials": {
+    "successes": 12,
+    "episodes": 12,
+    "seeds": [
+      99800,
+      99811
+    ],
+    "wilson95": [
+      0.7574992425007574,
+      1.0
+    ],
+    "load_kg": 0.65,
+    "max_placement_error_m": 0.00038375903802887157,
+    "max_closed_chain_error_m": 0.0004805137284288537,
+    "source_note": "Frozen snapshot before equivalent private-IK pipeline optimization and reporting-only initial-estimate fix; original source hashes retained per trial. 628 physical frames reproduced exactly after IK optimization."
+  },
+  "visual_development_repair": {
+    "successes": 3,
+    "episodes": 3,
+    "seeds": [
+      123000,
+      123002
+    ],
+    "development_only": true
+  },
+  "visual_frozen_new_trials": {
+    "successes": 3,
+    "episodes": 3,
+    "seeds": [
+      126000,
+      126002
+    ],
+    "wilson95": [
+      0.43849391955098227,
+      1
+    ],
+    "stages": {
+      "platform_localized": 1.0,
+      "parking_selected": 1.0,
+      "parked": 1.0,
+      "wrist_localized": 1.0,
+      "grasp_started": 1.0
+    },
+    "learned_vision": true,
+    "main_platform_backend": "registered_depth_plane_with_explicit_size_prior_not_semantic_network",
+    "no_truth_fallback": true
+  },
+  "sensitivity": {
+    "passed": 5,
+    "probes": 5,
+    "settings": [
+      "half-timestep",
+      "fine-bowl",
+      "minimum-friction",
+      "spring-minus20",
+      "spring-plus20"
+    ],
+    "not_a_success_rate_estimate": true
+  },
+  "ik_optimization": {
+    "seed": 99800,
+    "current_success": true,
+    "failure": null,
+    "frames": 628,
+    "same_frames": true,
+    "purpose": "Compare all physical qpos/qvel/ctrl frames with the pre-optimization frozen replay; no physics/collision relaxation."
+  },
+  "ik_micro_timing": {
+    "iterations": 300,
+    "full_forward_wall_s": 0.18302461200073594,
+    "kinematics_compos_wall_s": 0.010405945002275985,
+    "ratio": 17.588466204722863,
+    "scope": "Private IK data pipeline only, not complete simulation or MPS speedup; physical collision checks still full pipeline"
+  },
+  "workflow_seed_consistency": {
+    "checked": true,
+    "captured_arm_calls": [
+      [
+        "baseline-dev100",
+        112000
+      ],
+      [
+        "baseline-validation200",
+        113000
+      ],
+      [
+        "train-stage1-20k",
+        42
+      ],
+      [
+        "stage1-dev100",
+        112000
+      ],
+      [
+        "stage1-final-dev100",
+        112000
+      ],
+      [
+        null,
+        null
+      ],
+      [
+        "train-stage2-to100k",
+        42
+      ],
+      [
+        "stage2-dev100",
+        112000
+      ],
+      [
+        "stage2-final-dev100",
+        112000
+      ]
+    ],
+    "development_seed": 112000,
+    "validation_seed": 113000,
+    "reserved_holdout": [
+      114000,
+      114199
+    ]
+  },
+  "local_v4_PPO_training_executed": false,
+  "MPS_on_Mac_tested_locally": false,
+  "hardware_ready": false,
+  "fluid_simulated": false,
+  "limits": [
+    "Unmeasured actuator/foam/passive-joint dynamics and camera mounts",
+    "Planar bicycle vehicle with stationary physics handoff, not full-car dynamics",
+    "Rigid load includes water mass without slosh or plastic deformation",
+    "Small conditional samples do not establish 95% population or real-world reliability"
+  ]
+}

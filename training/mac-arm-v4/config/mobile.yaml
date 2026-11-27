@@ -1,0 +1,252 @@
+status: simulation_assumptions_not_measured_vehicle
+vehicle:
+  wheelbase_m: 0.22
+  width_m: 0.2
+  front_overhang_m: 0.04
+  rear_overhang_m: 0.04
+  height_m: 0.2
+  max_steer_rad: 0.6
+  footprint_margin_m: 0.025
+planning:
+  relative_target_x_m:
+  - 0.215
+  - 0.22
+  - 0.225
+  relative_target_y_m:
+  - -0.04
+  - 0.0
+  - 0.04
+  heading_offsets_deg:
+  - -25.0
+  - 0.0
+  - 25.0
+  path_sample_m: 0.01
+  max_path_length_m: 8.0
+  arm_sample_m: 0.01
+  max_joint_step_rad: 0.4
+  minimum_joint_margin_rad: 0.015
+  minimum_tcp_clearance_m: 0.006
+  target_max_sigma_m: 0.08
+  max_source_age_s: 0.5
+  max_future_s: 0.02
+  table_target_height_tolerance_m: 0.03
+  obstacles: []
+  score_weights:
+    path_length: 1.0
+    turning: 0.15
+    joint_margin: 0.15
+    clearance: 0.05
+    centering: 0.2
+  minimum_hard_finger_clearance_m: 0.003
+  coarse_workspace_status: Finite near-centre grasp candidates leave margin for the
+    unknown bowl offset on the observed platform; not a global optimum.
+arm:
+  mount_xy_yaw_m_rad:
+  - 0.32
+  - 0.0
+  - 0.0
+  joint_limits_rad:
+  - &id001
+    - -2.3
+    - 2.3
+  - *id001
+  - *id001
+  - *id001
+  - *id001
+  grasp_height_above_table_m: 0.05
+  approach_clearance_m: 0.06
+  lift_m: 0.06
+  lower_offset_m: -0.0015
+  tcp_envelope_radius_m: 0.012
+camera:
+  status: synthetic_observation_pose_not_hand_eye_calibration
+  fixed_pose_in_model:
+  - - 0.0
+    - 1.0
+    - 0.0
+    - 0.2
+  - - 1.0
+    - 0.0
+    - 0.0
+    - 0.0
+  - - 0.0
+    - 0.0
+    - -1.0
+    - 0.65
+  - - 0.0
+    - 0.0
+    - 0.0
+    - 1.0
+  horizontal_fov_deg: 80.0
+  vertical_fov_deg: 65.0
+  near_m: 0.08
+  far_m: 2.0
+  edge_margin_fraction: 0.1
+  check_phases:
+  - home
+coordinator:
+  odometry_max_age_s: 0.25
+  target_max_age_s: 0.5
+  main_max_sigma_m: 0.08
+  wrist_max_sigma_m: 0.008
+  coarse_replan_distance_m: 0.12
+  parking_position_tolerance_m: 0.008
+  parking_yaw_tolerance_rad: 0.08
+  stop_speed_m_s: 0.01
+  stop_yaw_rate_rad_s: 0.03
+  stop_dwell_s: 0.5
+  maximum_sample_gap_s: 0.2
+  wrist_after_stop_required: true
+  main_target_source: platform_search_prior
+  main_target_kind: platform_center_search_prior
+vision_model:
+  weights: assets/vision/target-bowl.pt
+  confidence: 0.5
+  imgsz: 640
+  task: single_class_target_bowl_segmentation
+  source: existing_user_target_bowl_model_no_retraining
+  main_to_wrist_domain_accuracy: not_yet_measured
+render_cameras:
+  width: 640
+  height: 480
+  main:
+    position_in_vehicle_m:
+    - 0.4
+    - 0.3
+    - 0.75
+    look_at_in_vehicle_m:
+    - 1.0
+    - 0.0
+    - 0.35
+    fovy_deg: 60.0
+  wrist:
+    nominal_workspace_target_m:
+    - 0.2
+    - 0
+    - 0.35
+    fovy_deg: 65.0
+    observation_tcp_above_plane_m: 0.14
+    mount_reference_tcp_above_plane_m: 0.095
+    mount_rpy_deg:
+    - 0.0
+    - -12.0
+    - 0.0
+    mount_position_offset_in_support_m:
+    - 0.0
+    - 0.0
+    - 0.0
+    search_offsets_m:
+    - - -0.08
+      - 0
+      - 0.14
+    - - -0.04
+      - 0
+      - 0.14
+    - - 0
+      - 0
+      - 0.14
+    - - 0
+      - -0.04
+      - 0.14
+    - - 0
+      - 0.04
+      - 0.14
+    - - -0.04
+      - -0.04
+      - 0.14
+    - - -0.04
+      - 0.04
+      - 0.14
+    - - 0
+      - -0.08
+      - 0.14
+    - - 0
+      - 0.08
+      - 0.14
+    - - 0.04
+      - 0
+      - 0.14
+    mount_position_offset_optical_m:
+    - 0.045
+    - 0.0
+    - 0.0
+  calibration_status: simulation_mount_candidates_not_real_camera_calibration
+perception:
+  min_confidence: 0.5
+  validity_s: 0.35
+  calibration_sigma_m: 0.003
+  bowl_radius_sigma_m: 0.002
+  table_height_sigma_m: 0.002
+  calibration_status: simulation_only_unmeasured_camera
+drive:
+  max_speed_m_s: 0.06
+  lookahead_m: 0.1
+  max_acceleration_m_s2: 0.2
+  max_deceleration_m_s2: 0.3
+  steering_rate_rad_s: 0.8
+  steering_time_constant_s: 0.15
+  speed_time_constant_s: 0.15
+  goal_stop_distance_m: 0.004
+  projection_search_samples: 30
+  status: simulation_assumptions_not_vehicle_measurements
+  stationary_speed_epsilon_m_s: 0.0001
+runtime:
+  control_dt_s: 0.05
+  vision_hz: 5.0
+  main_stable_frames: 3
+  wrist_stable_frames: 3
+  main_max_frame_shift_m: 0.025
+  wrist_max_frame_shift_m: 0.008
+  main_acquisition_timeout_s: 4.0
+  wrist_acquisition_timeout_s: 4.0
+  maximum_approach_s: 90.0
+  save_depth_every_n_frames: 5
+  save_rgb_every_n_frames: 5
+  vision_cpu_threads: 2
+scenario:
+  platform_world_x_m:
+  - 0.9
+  - 1.1
+  platform_world_y_m:
+  - -0.04
+  - 0.04
+  bowl_offset_on_platform_m:
+  - -0.025
+  - 0.025
+  start_x_m:
+  - -0.03
+  - 0.03
+  start_y_m:
+  - -0.02
+  - 0.02
+  start_yaw_deg:
+  - -8.0
+  - 8.0
+  platform_half_size_m:
+  - 0.18
+  - 0.18
+  status: simulation_curriculum_only_not_field_distribution
+wrist_search:
+  maximum_views: 10
+  stable_frames: 3
+  maximum_frame_shift_m: 0.008
+camera_bench:
+  parked_vehicle_xy_yaw:
+  - 0.48
+  - 0.0
+  - 0.0
+  main_observation_vehicle_xy_yaw:
+  - 0.0
+  - 0.0
+  - 0.0
+platform_perception:
+  height_range_m:
+  - 0.25
+  - 0.45
+  maximum_platform_size_m:
+  - 0.4
+  - 0.4
+  orientation_prior_yaw_rad: 0.0
+  orientation_uncertainty_rad: 0.0
+  calibration_sigma_m: 0.003
+  prior_status: simulation_task_size_and_alignment_assumptions_not_ground_truth_or_measurement

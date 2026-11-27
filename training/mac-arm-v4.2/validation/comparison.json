@@ -1,0 +1,961 @@
+{
+  "source_sha256": "a3f4c562b8f683ef28bab3c4aa2b1036f01b6c33fa3fdcbf656a772395d82ed7",
+  "kind": "Independent local MuJoCo development study, with calibrated and imperfect frozen observations",
+  "test_count": 137,
+  "physical_action_pairs_before_actuator_smoothing": [
+    {
+      "case": "center-half",
+      "before": {
+        "seed": 112000,
+        "full_success": false,
+        "reason": "waypoint_unreachable",
+        "phase": "hold",
+        "hold_s": 0.0,
+        "place_stable_s": 0.0,
+        "place_error_mm": 0.3402418654686589,
+        "peak_lift_mm": 62.96313112356366,
+        "projection_ticks": 0,
+        "source_sha256": "32201ea744f19eaa08117a4784eaba5df77cbc822c2c774648b993582dfa0c5f"
+      },
+      "after": {
+        "seed": 112000,
+        "full_success": true,
+        "reason": null,
+        "phase": "settle_place",
+        "hold_s": 2.4,
+        "place_stable_s": 0.8000000000000006,
+        "place_error_mm": 0.01970187980245739,
+        "peak_lift_mm": 63.044912262781416,
+        "projection_ticks": 48,
+        "source_sha256": "7334726608b905dfdeec1bfa3e33c1a84ac872b624325b8cd105c6b103c7ab5b"
+      },
+      "recorded_trace_identical": false
+    },
+    {
+      "case": "center-nominal",
+      "before": {
+        "seed": 112000,
+        "full_success": true,
+        "reason": null,
+        "phase": "settle_place",
+        "hold_s": 2.4,
+        "place_stable_s": 0.8000000000000006,
+        "place_error_mm": 0.019232665550808502,
+        "peak_lift_mm": 62.96313112356366,
+        "projection_ticks": 0,
+        "source_sha256": "32201ea744f19eaa08117a4784eaba5df77cbc822c2c774648b993582dfa0c5f"
+      },
+      "after": {
+        "seed": 112000,
+        "full_success": true,
+        "reason": null,
+        "phase": "settle_place",
+        "hold_s": 2.4,
+        "place_stable_s": 0.8000000000000006,
+        "place_error_mm": 0.019232665550808502,
+        "peak_lift_mm": 62.96313112356366,
+        "projection_ticks": 0,
+        "source_sha256": "7334726608b905dfdeec1bfa3e33c1a84ac872b624325b8cd105c6b103c7ab5b"
+      },
+      "recorded_trace_identical": true
+    },
+    {
+      "case": "center-residual",
+      "before": {
+        "seed": 112000,
+        "full_success": false,
+        "reason": "waypoint_unreachable",
+        "phase": "hold",
+        "hold_s": 0.0,
+        "place_stable_s": 0.0,
+        "place_error_mm": 0.3402418654686589,
+        "peak_lift_mm": 62.96313112356366,
+        "projection_ticks": 0,
+        "source_sha256": "32201ea744f19eaa08117a4784eaba5df77cbc822c2c774648b993582dfa0c5f"
+      },
+      "after": {
+        "seed": 112000,
+        "full_success": true,
+        "reason": null,
+        "phase": "settle_place",
+        "hold_s": 2.4,
+        "place_stable_s": 0.8000000000000006,
+        "place_error_mm": 0.0166165041393372,
+        "peak_lift_mm": 63.05660545860814,
+        "projection_ticks": 48,
+        "source_sha256": "7334726608b905dfdeec1bfa3e33c1a84ac872b624325b8cd105c6b103c7ab5b"
+      },
+      "recorded_trace_identical": false
+    },
+    {
+      "case": "edge-residual",
+      "before": {
+        "seed": 112000,
+        "full_success": false,
+        "reason": "waypoint_unreachable",
+        "phase": "hold",
+        "hold_s": 0.0,
+        "place_stable_s": 0.0,
+        "place_error_mm": 0.5423132864137487,
+        "peak_lift_mm": 62.93225751142473,
+        "projection_ticks": 0,
+        "source_sha256": "32201ea744f19eaa08117a4784eaba5df77cbc822c2c774648b993582dfa0c5f"
+      },
+      "after": {
+        "seed": 112000,
+        "full_success": true,
+        "reason": null,
+        "phase": "settle_place",
+        "hold_s": 2.4,
+        "place_stable_s": 0.8000000000000006,
+        "place_error_mm": 0.02282940592543097,
+        "peak_lift_mm": 63.13990700130795,
+        "projection_ticks": 48,
+        "source_sha256": "7334726608b905dfdeec1bfa3e33c1a84ac872b624325b8cd105c6b103c7ab5b"
+      },
+      "recorded_trace_identical": false
+    }
+  ],
+  "kinematic_requests": {
+    "scene_combinations": 27,
+    "cases": 2106,
+    "before_rejected": 324,
+    "after_rejected": 0,
+    "max_residual_axis_step_mm": 1.5
+  },
+  "height_development": {
+    "total": 3,
+    "screen_passes": 3,
+    "full_passes": 3,
+    "trials": [
+      {
+        "batch": "mobile-first3",
+        "seed": 120000,
+        "condition": "y-plus2-z-plus1",
+        "added_bias_model_mm": [
+          0,
+          2,
+          1
+        ],
+        "grasp_height_offset_mm": -2.0,
+        "full_pass": true,
+        "screen_failure": null,
+        "phase": "settle_place",
+        "physics_failure": null
+      },
+      {
+        "batch": "mobile-first3",
+        "seed": 120000,
+        "condition": "y-minus3-z-plus2",
+        "added_bias_model_mm": [
+          0,
+          -3,
+          2
+        ],
+        "grasp_height_offset_mm": -2.0,
+        "full_pass": true,
+        "screen_failure": null,
+        "phase": "settle_place",
+        "physics_failure": null
+      },
+      {
+        "batch": "mobile-first3",
+        "seed": 120000,
+        "condition": "recorded",
+        "added_bias_model_mm": [
+          0,
+          0,
+          0
+        ],
+        "grasp_height_offset_mm": -2.0,
+        "full_pass": true,
+        "screen_failure": null,
+        "phase": "settle_place",
+        "physics_failure": null
+      }
+    ]
+  },
+  "height_confirmation": {
+    "baseline_grasp_height_m": 0.05,
+    "candidate_grasp_height_m": 0.048,
+    "trials": [
+      {
+        "batch": "mobile-first3",
+        "seed": 120002,
+        "condition": "recorded",
+        "added_bias_model_mm": [
+          0,
+          0,
+          0
+        ],
+        "vehicle_pose": [
+          0.5304931928068095,
+          -0.009986993275821403,
+          -0.00597571480242944
+        ],
+        "baseline": {
+          "screen_pass": true,
+          "screen_failure": null,
+          "full_pass": true,
+          "phase": "settle_place",
+          "failure": null,
+          "elapsed_s": 37.15000000000003,
+          "hold_verified": true,
+          "place_error_m": 0.0001267865165943697
+        },
+        "candidate": {
+          "screen_pass": true,
+          "screen_failure": null,
+          "full_pass": true,
+          "phase": "settle_place",
+          "failure": null,
+          "elapsed_s": 36.20000000000008,
+          "hold_verified": true,
+          "place_error_m": 0.00012120795437810344
+        }
+      },
+      {
+        "batch": "mobile-first3",
+        "seed": 120002,
+        "condition": "y-plus2-z-plus1",
+        "added_bias_model_mm": [
+          0,
+          2,
+          1
+        ],
+        "vehicle_pose": [
+          0.5304931928068095,
+          -0.009986993275821403,
+          -0.00597571480242944
+        ],
+        "baseline": {
+          "screen_pass": true,
+          "screen_failure": null,
+          "full_pass": true,
+          "phase": "settle_place",
+          "failure": null,
+          "elapsed_s": 35.950000000000095,
+          "hold_verified": true,
+          "place_error_m": 0.001887829300233906
+        },
+        "candidate": {
+          "screen_pass": true,
+          "screen_failure": null,
+          "full_pass": true,
+          "phase": "settle_place",
+          "failure": null,
+          "elapsed_s": 36.75000000000005,
+          "hold_verified": true,
+          "place_error_m": 0.0018673621694682981
+        }
+      },
+      {
+        "batch": "mobile-first3",
+        "seed": 120002,
+        "condition": "y-minus3-z-plus2",
+        "added_bias_model_mm": [
+          0,
+          -3,
+          2
+        ],
+        "vehicle_pose": [
+          0.5304931928068095,
+          -0.009986993275821403,
+          -0.00597571480242944
+        ],
+        "baseline": {
+          "screen_pass": true,
+          "screen_failure": null,
+          "full_pass": false,
+          "phase": "lift",
+          "failure": "hard_contact_above_micro_tolerance",
+          "elapsed_s": 15.72200000000009,
+          "hold_verified": false,
+          "place_error_m": 0.0070066042935094455
+        },
+        "candidate": {
+          "screen_pass": true,
+          "screen_failure": null,
+          "full_pass": true,
+          "phase": "settle_place",
+          "failure": null,
+          "elapsed_s": 32.3500000000003,
+          "hold_verified": true,
+          "place_error_m": 0.0031327673605660656
+        }
+      },
+      {
+        "batch": "mobile-dev20",
+        "seed": 121000,
+        "condition": "y-plus3-z-minus2",
+        "added_bias_model_mm": [
+          0,
+          3,
+          -2
+        ],
+        "vehicle_pose": [
+          0.4377635768192831,
+          -0.001929113889108026,
+          0.029502623132890714
+        ],
+        "baseline": {
+          "screen_pass": true,
+          "screen_failure": null,
+          "full_pass": true,
+          "phase": "settle_place",
+          "failure": null,
+          "elapsed_s": 35.70000000000011,
+          "hold_verified": true,
+          "place_error_m": 0.0028058287754806825
+        },
+        "candidate": {
+          "screen_pass": true,
+          "screen_failure": null,
+          "full_pass": true,
+          "phase": "settle_place",
+          "failure": null,
+          "elapsed_s": 35.65000000000011,
+          "hold_verified": true,
+          "place_error_m": 0.0025491321402557904
+        }
+      }
+    ]
+  },
+  "v4_2_two_fresh_transient_residual_cases_before_actuator_smoothing": [
+    {
+      "seed": 140000,
+      "full_success": true,
+      "reason": null,
+      "phase": "settle_place",
+      "hold_s": 2.4,
+      "place_stable_s": 0.8000000000000006,
+      "place_error_mm": 0.99878200870661,
+      "peak_lift_mm": 65.10045661591462,
+      "projection_ticks": 0,
+      "source_sha256": "e5ef6ea0117c45fc675ffcadf154d7dd9a3416d581056b1ee5bfeee50875b3e4"
+    },
+    {
+      "seed": 140001,
+      "full_success": true,
+      "reason": null,
+      "phase": "settle_place",
+      "hold_s": 2.4,
+      "place_stable_s": 0.8000000000000006,
+      "place_error_mm": 0.8272554166994622,
+      "peak_lift_mm": 64.08761432904203,
+      "projection_ticks": 27,
+      "source_sha256": "e5ef6ea0117c45fc675ffcadf154d7dd9a3416d581056b1ee5bfeee50875b3e4"
+    }
+  ],
+  "optical_rotation_bias": {
+    "weights_sha256": "c402769dabe8f46fd69e01f76054622b15677862fd34e1825618fedc4b9073a6",
+    "scope": "One archived (originally successful) selected wrist view per episode. Offline re-inference, not physical success. Ground truth only for scoring. Perturbations are assumptions.",
+    "groups": {
+      "mobile-first3": {
+        "camera-y-+1x0.75deg": {
+          "valid_over_all": [
+            3,
+            3
+          ],
+          "median_xy_mm": 3.8867139684128915,
+          "max_xy_mm": 4.105455586561421,
+          "valid_but_over_3mm": 3
+        },
+        "camera-y--1x0.75deg": {
+          "valid_over_all": [
+            3,
+            3
+          ],
+          "median_xy_mm": 4.1773168101967615,
+          "max_xy_mm": 4.422077242703036,
+          "valid_but_over_3mm": 3
+        },
+        "dark": {
+          "valid_over_all": [
+            3,
+            3
+          ],
+          "median_xy_mm": 0.34874340736654913,
+          "max_xy_mm": 0.5197929693714599,
+          "valid_but_over_3mm": 0
+        },
+        "dark+fixed-gain": {
+          "valid_over_all": [
+            2,
+            3
+          ],
+          "median_xy_mm": 0.38592524812701556,
+          "max_xy_mm": 0.3862881919456293,
+          "valid_but_over_3mm": 0
+        },
+        "glare": {
+          "valid_over_all": [
+            1,
+            3
+          ],
+          "median_xy_mm": 0.5225112784748278,
+          "max_xy_mm": 0.5225112784748278,
+          "valid_but_over_3mm": 0
+        },
+        "original": {
+          "valid_over_all": [
+            3,
+            3
+          ],
+          "median_xy_mm": 0.14597827220400175,
+          "max_xy_mm": 0.3995948249909521,
+          "valid_but_over_3mm": 0
+        }
+      },
+      "mobile-dev20": {
+        "camera-y-+1x0.75deg": {
+          "valid_over_all": [
+            20,
+            20
+          ],
+          "median_xy_mm": 3.916188426501857,
+          "max_xy_mm": 4.2077479386596695,
+          "valid_but_over_3mm": 20
+        },
+        "camera-y--1x0.75deg": {
+          "valid_over_all": [
+            20,
+            20
+          ],
+          "median_xy_mm": 4.367256812621694,
+          "max_xy_mm": 4.487750098505332,
+          "valid_but_over_3mm": 20
+        },
+        "dark": {
+          "valid_over_all": [
+            19,
+            20
+          ],
+          "median_xy_mm": 0.27676904493807564,
+          "max_xy_mm": 0.5363208410515188,
+          "valid_but_over_3mm": 0
+        },
+        "dark+fixed-gain": {
+          "valid_over_all": [
+            17,
+            20
+          ],
+          "median_xy_mm": 0.24228544167831856,
+          "max_xy_mm": 0.33407326884787986,
+          "valid_but_over_3mm": 0
+        },
+        "glare": {
+          "valid_over_all": [
+            3,
+            20
+          ],
+          "median_xy_mm": 0.4765105820600787,
+          "max_xy_mm": 0.5114364047061486,
+          "valid_but_over_3mm": 0
+        },
+        "original": {
+          "valid_over_all": [
+            20,
+            20
+          ],
+          "median_xy_mm": 0.22828135344056993,
+          "max_xy_mm": 0.42384235271386095,
+          "valid_but_over_3mm": 0
+        }
+      }
+    }
+  },
+  "crosscheck_main_RGB_D": [
+    {
+      "group": "mobile-first3",
+      "seed": 120000,
+      "rgbd_frame": "mac-v4-check-20261119-211827-parallel/mobile-first3/episode-120000/main-platform/0039-platform.json",
+      "valid_platform": true,
+      "detections": 0,
+      "valid_centers": 0,
+      "rejections": []
+    },
+    {
+      "group": "mobile-first3",
+      "seed": 120001,
+      "rgbd_frame": "mac-v4-check-20261119-211827-parallel/mobile-first3/episode-120001/main-platform/0042-platform.json",
+      "valid_platform": true,
+      "detections": 0,
+      "valid_centers": 0,
+      "rejections": []
+    },
+    {
+      "group": "mobile-first3",
+      "seed": 120002,
+      "rgbd_frame": "mac-v4-check-20261119-211827-parallel/mobile-first3/episode-120002/main-platform/0049-platform.json",
+      "valid_platform": true,
+      "detections": 0,
+      "valid_centers": 0,
+      "rejections": []
+    }
+  ],
+  "synthetic_board_fit_and_20_archived_wrist_masks": [
+    {
+      "sign": -1,
+      "kind": "biased",
+      "n": 20,
+      "median_mm": 4.367256812621694,
+      "max_mm": 4.487750098505332
+    },
+    {
+      "sign": -1,
+      "kind": "after_board_fit",
+      "n": 20,
+      "median_mm": 0.18625094449544372,
+      "max_mm": 0.386417230438128
+    },
+    {
+      "sign": 1,
+      "kind": "biased",
+      "n": 20,
+      "median_mm": 3.916188426501857,
+      "max_mm": 4.2077479386596695
+    },
+    {
+      "sign": 1,
+      "kind": "after_board_fit",
+      "n": 20,
+      "median_mm": 0.1862509443765594,
+      "max_mm": 0.38641723130207967
+    }
+  ],
+  "simulated_combined_pressure_trials": {
+    "v4_1": [
+      {
+        "seed": 121004,
+        "optical_bias": "camera-y-+1x0.75deg",
+        "height_mm": 50,
+        "requested_hold_action": [
+          0.5,
+          -0.5,
+          0.5
+        ],
+        "bias_mm": [
+          -0.8959354367285702,
+          4.070637257076237,
+          0.0
+        ],
+        "full_pass": false,
+        "reason": "waypoint_unreachable",
+        "phase": "hold",
+        "hold_verified": false,
+        "physics_case": "two archived parked handoffs, .50 foam friction, 180 ms servo delay, 650 g physical bowl"
+      },
+      {
+        "seed": 121012,
+        "optical_bias": "camera-y--1x0.75deg",
+        "height_mm": 50,
+        "requested_hold_action": [
+          0.5,
+          -0.5,
+          0.5
+        ],
+        "bias_mm": [
+          -0.5666275658340169,
+          -4.046285202378564,
+          0.0
+        ],
+        "full_pass": false,
+        "reason": "waypoint_unreachable",
+        "phase": "hold",
+        "hold_verified": false,
+        "physics_case": "two archived parked handoffs, .50 foam friction, 180 ms servo delay, 650 g physical bowl"
+      }
+    ],
+    "v4_2_biased": [
+      {
+        "seed": 121004,
+        "optical_bias": "camera-y-+1x0.75deg",
+        "height_mm": 48,
+        "requested_hold_action": [
+          0.5,
+          -0.5,
+          0.5
+        ],
+        "bias_mm": [
+          -0.8959354367285702,
+          4.070637257076237,
+          0.0
+        ],
+        "full_pass": false,
+        "reason": "foam_contact_force_limit",
+        "phase": "lift",
+        "hold_verified": false,
+        "physics_case": "two archived parked handoffs, .50 foam friction, 180 ms servo delay, 650 g physical bowl"
+      },
+      {
+        "seed": 121012,
+        "optical_bias": "camera-y--1x0.75deg",
+        "height_mm": 48,
+        "requested_hold_action": [
+          0.5,
+          -0.5,
+          0.5
+        ],
+        "bias_mm": [
+          -0.5666275658340169,
+          -4.046285202378564,
+          0.0
+        ],
+        "full_pass": true,
+        "reason": null,
+        "phase": "settle_place",
+        "hold_verified": true,
+        "physics_case": "two archived parked handoffs, .50 foam friction, 180 ms servo delay, 650 g physical bowl"
+      }
+    ],
+    "v4_2_smoothed_using_board_fit": [
+      {
+        "package": "smooth-candidate",
+        "seed": 121004,
+        "injected_optical_rotation_deg": 0.75,
+        "grasp_height_mm": 48.0,
+        "applied_board_fit": true,
+        "xy_error_mm_only_for_scoring": 0.06861378841208404,
+        "requested_hold_action": [
+          0.5,
+          -0.5,
+          0.5
+        ],
+        "joint_command_delay_s": 0.18,
+        "friction": 0.5,
+        "payload_kg": 0.65,
+        "full_pass": true,
+        "failure": null,
+        "phase": "settle_place",
+        "hold_verified": true,
+        "place_error_mm": 0.08436477842898274,
+        "projection_count": 48
+      },
+      {
+        "package": "smooth-candidate",
+        "seed": 121012,
+        "injected_optical_rotation_deg": -0.75,
+        "grasp_height_mm": 48.0,
+        "applied_board_fit": true,
+        "xy_error_mm_only_for_scoring": 0.20099307839327493,
+        "requested_hold_action": [
+          0.5,
+          -0.5,
+          0.5
+        ],
+        "joint_command_delay_s": 0.18,
+        "friction": 0.5,
+        "payload_kg": 0.65,
+        "full_pass": true,
+        "failure": null,
+        "phase": "settle_place",
+        "hold_verified": true,
+        "place_error_mm": 0.2154745985193868,
+        "projection_count": 48
+      }
+    ]
+  },
+  "actuator_smoothing_saved_handoffs": [
+    {
+      "before": {
+        "seed": 128000,
+        "full_success": true,
+        "reason": null,
+        "phase": "settle_place",
+        "hold_s": 2.4,
+        "place_stable_s": 0.8000000000000006,
+        "place_error_mm": 0.25615009853164533,
+        "collision": null,
+        "anomaly": null,
+        "source_sha256": "e5ef6ea0117c45fc675ffcadf154d7dd9a3416d581056b1ee5bfeee50875b3e4"
+      },
+      "after": {
+        "seed": 128000,
+        "full_success": true,
+        "reason": null,
+        "phase": "settle_place",
+        "hold_s": 2.4,
+        "place_stable_s": 0.8000000000000006,
+        "place_error_mm": 0.2539529502583046,
+        "collision": null,
+        "anomaly": null,
+        "source_sha256": "a3f4c562b8f683ef28bab3c4aa2b1036f01b6c33fa3fdcbf656a772395d82ed7"
+      }
+    },
+    {
+      "before": {
+        "seed": 128001,
+        "full_success": false,
+        "reason": "foam_contact_force_limit",
+        "phase": "lift",
+        "hold_s": 0.0,
+        "place_stable_s": 0.0,
+        "place_error_mm": 0.6031079026426268,
+        "collision": null,
+        "anomaly": {
+          "kind": "foam_contact_force_limit",
+          "phase": "lift",
+          "time_s": 15.503999999996847,
+          "closure_m": [
+            0.007756354737655586
+          ],
+          "q_tracking_error_rad": 0.019866246863474546
+        },
+        "source_sha256": "e5ef6ea0117c45fc675ffcadf154d7dd9a3416d581056b1ee5bfeee50875b3e4"
+      },
+      "after": {
+        "seed": 128001,
+        "full_success": true,
+        "reason": null,
+        "phase": "settle_place",
+        "hold_s": 2.4,
+        "place_stable_s": 0.8000000000000006,
+        "place_error_mm": 0.08929812912311988,
+        "collision": null,
+        "anomaly": null,
+        "source_sha256": "a3f4c562b8f683ef28bab3c4aa2b1036f01b6c33fa3fdcbf656a772395d82ed7"
+      }
+    },
+    {
+      "before": {
+        "seed": 128002,
+        "full_success": true,
+        "reason": null,
+        "phase": "settle_place",
+        "hold_s": 2.4,
+        "place_stable_s": 0.8000000000000006,
+        "place_error_mm": 0.11647160276686017,
+        "collision": null,
+        "anomaly": null,
+        "source_sha256": "e5ef6ea0117c45fc675ffcadf154d7dd9a3416d581056b1ee5bfeee50875b3e4"
+      },
+      "after": {
+        "seed": 128002,
+        "full_success": true,
+        "reason": null,
+        "phase": "settle_place",
+        "hold_s": 2.4,
+        "place_stable_s": 0.8000000000000006,
+        "place_error_mm": 0.11759402754931995,
+        "collision": null,
+        "anomaly": null,
+        "source_sha256": "a3f4c562b8f683ef28bab3c4aa2b1036f01b6c33fa3fdcbf656a772395d82ed7"
+      }
+    }
+  ],
+  "unmodified_replay_peak_foam_n": 8.321161683083194,
+  "new_end_to_end_after_all_changes": [
+    {
+      "seed": 128003,
+      "full_success": true,
+      "reason": null,
+      "phase": "settle_place",
+      "hold_s": 2.4,
+      "place_stable_s": 0.8000000000000006,
+      "place_error_mm": 0.3966049975244688,
+      "collision": null,
+      "anomaly": null,
+      "source_sha256": "a3f4c562b8f683ef28bab3c4aa2b1036f01b6c33fa3fdcbf656a772395d82ed7"
+    }
+  ],
+  "severe_glare_search_development": {
+    "standard": [
+      {
+        "seed": 120000,
+        "old_clear_view_id": 2,
+        "valid": false,
+        "view_attempts": [
+          {
+            "id": 0,
+            "reason": "learned_mask_or_precise_pose_not_verified"
+          },
+          {
+            "id": 1,
+            "reason": "learned_mask_or_precise_pose_not_verified"
+          },
+          {
+            "id": 2,
+            "reason": "learned_mask_or_precise_pose_not_verified"
+          },
+          {
+            "id": 3,
+            "reason": "learned_mask_or_precise_pose_not_verified"
+          },
+          {
+            "id": 4,
+            "reason": "learned_mask_or_precise_pose_not_verified"
+          },
+          {
+            "id": 5,
+            "reason": "learned_mask_or_precise_pose_not_verified"
+          },
+          {
+            "id": 6,
+            "reason": "learned_mask_or_precise_pose_not_verified"
+          },
+          {
+            "id": 7,
+            "reason": "search_pose_ik_unreachable"
+          },
+          {
+            "id": 8,
+            "reason": "search_pose_ik_unreachable"
+          },
+          {
+            "id": 9,
+            "reason": "search_pose_ik_unreachable"
+          }
+        ]
+      },
+      {
+        "seed": 120001,
+        "old_clear_view_id": 2,
+        "valid": false,
+        "view_attempts": [
+          {
+            "id": 0,
+            "reason": "learned_mask_or_precise_pose_not_verified"
+          },
+          {
+            "id": 1,
+            "reason": "learned_mask_or_precise_pose_not_verified"
+          },
+          {
+            "id": 2,
+            "reason": "learned_mask_or_precise_pose_not_verified"
+          },
+          {
+            "id": 3,
+            "reason": "learned_mask_or_precise_pose_not_verified"
+          },
+          {
+            "id": 4,
+            "reason": "learned_mask_or_precise_pose_not_verified"
+          },
+          {
+            "id": 5,
+            "reason": "learned_mask_or_precise_pose_not_verified"
+          },
+          {
+            "id": 6,
+            "reason": "learned_mask_or_precise_pose_not_verified"
+          },
+          {
+            "id": 7,
+            "reason": "search_pose_ik_unreachable"
+          },
+          {
+            "id": 8,
+            "reason": "search_pose_ik_unreachable"
+          },
+          {
+            "id": 9,
+            "reason": "search_pose_ik_unreachable"
+          }
+        ]
+      },
+      {
+        "seed": 120002,
+        "old_clear_view_id": 2,
+        "valid": true,
+        "view_attempts": [
+          {
+            "id": 0,
+            "reason": "learned_mask_or_precise_pose_not_verified"
+          },
+          {
+            "id": 1,
+            "reason": "learned_mask_or_precise_pose_not_verified"
+          },
+          {
+            "id": 2,
+            "reason": null
+          }
+        ],
+        "selected_view_id": 2,
+        "xy_error_mm": 0.523312910222481
+      }
+    ],
+    "exploratory_views": [
+      {
+        "seed": 120000,
+        "old_clear_view_id": 2,
+        "extended_search_used": true,
+        "valid": false,
+        "view_attempts": [
+          {
+            "id": 0,
+            "reason": "learned_mask_or_precise_pose_not_verified"
+          },
+          {
+            "id": 1,
+            "reason": "learned_mask_or_precise_pose_not_verified"
+          },
+          {
+            "id": 2,
+            "reason": "wrist_search_transition_collision"
+          },
+          {
+            "id": 3,
+            "reason": "wrist_search_transition_collision"
+          },
+          {
+            "id": 4,
+            "reason": "learned_mask_or_precise_pose_not_verified"
+          },
+          {
+            "id": 5,
+            "reason": "learned_mask_or_precise_pose_not_verified"
+          },
+          {
+            "id": 6,
+            "reason": "learned_mask_or_precise_pose_not_verified"
+          },
+          {
+            "id": 7,
+            "reason": "learned_mask_or_precise_pose_not_verified"
+          }
+        ]
+      },
+      {
+        "seed": 120001,
+        "old_clear_view_id": 2,
+        "extended_search_used": true,
+        "valid": true,
+        "view_attempts": [
+          {
+            "id": 0,
+            "reason": null
+          }
+        ],
+        "selected_view_id": 0,
+        "xy_error_mm": 0.16249886761196666
+      },
+      {
+        "seed": 120002,
+        "old_clear_view_id": 2,
+        "extended_search_used": false,
+        "valid": true,
+        "view_attempts": [
+          {
+            "id": 0,
+            "reason": "learned_mask_or_precise_pose_not_verified"
+          },
+          {
+            "id": 1,
+            "reason": "learned_mask_or_precise_pose_not_verified"
+          },
+          {
+            "id": 2,
+            "reason": null
+          }
+        ],
+        "selected_view_id": 2,
+        "xy_error_mm": 0.523312910222481
+      }
+    ]
+  },
+  "raw_artifacts": "work/grasp-robust-20261120",
+  "hardware_or_PPO_run": false
+}

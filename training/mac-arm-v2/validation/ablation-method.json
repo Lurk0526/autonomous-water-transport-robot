@@ -1,0 +1,10 @@
+{
+  "scenarios": "40000–40199, same parking and initialization RNG across three arms",
+  "reference": "untouched v1 source/config",
+  "sync_only": "v1 with one joint-rate update replaced; no thresholds/rewards/config modified",
+  "v2": "training/mac-arm-v2; stricter event gates and placement verification",
+  "sync_source_sha256": "f0fca09926ba4f994887a471a929b65dbdc08e084b06ea49ac2ce8b708aa155f",
+  "old_statement": "self.command+=np.clip(q-self.command,-max_q,max_q)",
+  "new_statement": "delta=q-self.command\n        self.command+=delta*min(1.,max_q/max(float(np.max(np.abs(delta))),1e-12))",
+  "holdout_status": "one-time controller comparison; reserved 50000+ for later policy acceptance"
+}

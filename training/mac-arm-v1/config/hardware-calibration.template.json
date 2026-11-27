@@ -1,0 +1,21 @@
+{
+  "status": "not_calibrated_no_hardware_commands",
+  "source": "User STEP geometry is converted; these are measurements still needed before sim-to-real deployment.",
+  "joint_zero_pulses": null,
+  "joint_radians_per_pulse": null,
+  "joint_limits_and_axis_signs": null,
+  "rigid_part_grouping_confirmed": false,
+  "mg23_actuator_to_linkage_mapping": null,
+  "gripper_opening_m_vs_servo_pulse": null,
+  "joint_speed_delay_backlash": null,
+  "camera_parent": "support_before_servo_004",
+  "camera_rotates_with_004": false,
+  "camera_intrinsics_and_camera_to_support_transform": null,
+  "bowl_empty_mass_kg": null,
+  "bowl_plus_water_full_load_kg": 0.65,
+  "foam_thickness_m_measured": null,
+  "foam_compression_and_dry_wet_friction": null,
+  "payload_holding_and_slip_evidence": null,
+  "parking_error_distribution_measured": null,
+  "release_support_evidence_available_on_hardware": null
+}

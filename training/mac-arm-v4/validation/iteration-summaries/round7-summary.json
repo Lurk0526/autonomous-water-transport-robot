@@ -1,0 +1,73 @@
+[
+  {
+    "height": 0.052,
+    "is_success": false,
+    "failure_reason": "grasp_contact_missing",
+    "phase": "close",
+    "elapsed_s": 14.400000000000071,
+    "synchronous_control": {
+      "state": "establishing_opposed_contact",
+      "events": [
+        {
+          "time_s": 4.820999999999945,
+          "kind": "first_foam_contact",
+          "digit": 3,
+          "rack_m": 0.0020192754075826947
+        }
+      ],
+      "common_command_m": 0.009,
+      "independent_finger_actuators": 0,
+      "maximum_loop_error_m": 0.00031664192133626574,
+      "force_inputs": "simulation_supervision_not_real_force_sensing"
+    }
+  },
+  {
+    "height": 0.06,
+    "is_success": false,
+    "failure_reason": "grasp_contact_missing",
+    "phase": "close",
+    "elapsed_s": 14.600000000000074,
+    "synchronous_control": {
+      "state": "establishing_opposed_contact",
+      "events": [
+        {
+          "time_s": 4.856999999999957,
+          "kind": "first_foam_contact",
+          "digit": 3,
+          "rack_m": 0.0017835937361240038
+        }
+      ],
+      "common_command_m": 0.009,
+      "independent_finger_actuators": 0,
+      "maximum_loop_error_m": 0.0003678701739153898,
+      "force_inputs": "simulation_supervision_not_real_force_sensing"
+    }
+  },
+  {
+    "height": 0.068,
+    "is_success": false,
+    "failure_reason": "hard_contact_peak_limit",
+    "phase": "close",
+    "elapsed_s": 8.503999999999987,
+    "synchronous_control": {
+      "state": "stopped",
+      "events": [
+        {
+          "time_s": 5.145000000000053,
+          "kind": "first_foam_contact",
+          "digit": 3,
+          "rack_m": 0.0022013562289006482
+        },
+        {
+          "time_s": 8.504000000000726,
+          "kind": "stop",
+          "reason": "hard_contact_peak_limit"
+        }
+      ],
+      "common_command_m": 0.005816975905653038,
+      "independent_finger_actuators": 0,
+      "maximum_loop_error_m": 0.00036027027909428885,
+      "force_inputs": "simulation_supervision_not_real_force_sensing"
+    }
+  }
+]

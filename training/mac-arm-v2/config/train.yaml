@@ -1,0 +1,150 @@
+schema_version: 2
+seed: 42
+model_status: cad_geometry_candidate_kinematics_uncalibrated_contact
+arm:
+  base_height_m: 0.55
+  joint_range_rad:
+  - -2.3
+  - 2.3
+  torque_limits_nm:
+  - 8.0
+  - 8.0
+  - 6.0
+  - 4.0
+  - 2.0
+  masses_kg:
+  - 0.12
+  - 0.18
+  - 0.15
+  - 0.12
+  - 0.22
+  kp: 400.0
+  kv: 12.0
+  actuator_delay_s:
+  - 0.08
+  - 0.18
+  max_joint_velocity_rad_s: 0.7
+gripper:
+  approximation: coupled_radial_rigid_finger_envelopes
+  close_m: 0.032
+  force_limit_n: 40.0
+  foam_friction:
+  - 0.5
+  - 0.9
+  foam_time_constant_s: 0.004
+  foam_damping_ratio: 1.0
+  opening_calibrated: false
+bowl:
+  total_mass_kg: 0.65
+  height_m: 0.06
+  rim_radius_m: 0.078
+  wall_thickness_m: 0.002
+  radial_profile_m:
+  - - 0.03
+    - 0.0
+  - - 0.036
+    - 0.008
+  - - 0.055
+    - 0.028
+  - - 0.069
+    - 0.047
+  - - 0.078
+    - 0.06
+  shape_status: approximate_from_diagram_and_photos
+  sectors: 16
+fixture:
+  top_height_m: 0.35
+  bowl_world_xy_m:
+  - 0.2
+  - 0.0
+  half_size_m:
+  - 0.18
+  - 0.18
+  grasp_height_above_table_m: 0.035
+parking:
+  status: experiment_ranges_not_measured
+  x_m:
+  - -0.025
+  - 0.025
+  y_m:
+  - -0.025
+  - 0.025
+  yaw_deg:
+  - -15.0
+  - 15.0
+  evaluate_full_grid: true
+sensor:
+  pose_estimate_model: noisy_base_frame_target_pose_not_rgb_camera
+  initial_error_std_m: 0.003
+  observation_noise_std_m: 0.001
+  latency_s: 0.05
+  camera_parent: wrist_before_servo_004
+  calibrated: false
+task:
+  durations_s:
+  - 0.3
+  - 1.5
+  - 0.8
+  - 1.6
+  - 2.2
+  - 1.6
+  - 0.5
+  - 0.6
+  - 1.0
+  - 0.5
+  approach_clearance_m: 0.06
+  lift_m: 0.06
+  minimum_hold_clearance_m: 0.03
+  hold_s: 2.0
+  place_tolerance_m: 0.01
+  bilateral_force_n: 0.1
+  tilt_limit_rad: 0.2
+  joint_tracking_limit_rad: 0.25
+  timeout_s: 32.0
+  controller: synchronized_joint_rate_and_evidence_gates
+  gate_wait_s: 2.0
+  gate_tracking_rad: 0.06
+  gate_joint_speed_rad_s: 0.12
+  gate_stable_s: 0.15
+  support_stable_s: 0.2
+  place_stable_s: 0.5
+  require_foam_grasp: false
+simulation:
+  dt_s: 0.001
+  control_dt_s: 0.05
+  residual_limit_m: 0.005
+  residual_rate_m_s: 0.03
+  phase_residual_limits_m:
+  - 0
+  - 0.005
+  - 0.003
+  - 0.003
+  - 0.003
+  - 0.002
+  - 0
+  - 0
+  - 0
+  - 0
+ppo:
+  n_envs: 2
+  total_timesteps: 300000
+  learning_rate: 0.0001
+  n_steps: 256
+  batch_size: 64
+  n_epochs: 5
+  gamma: 0.995
+  gae_lambda: 0.95
+  hidden_sizes:
+  - 64
+  - 64
+  checkpoint_frequency: 10000
+  evaluation_frequency: 10000
+  log_std_init: -2.0
+  target_kl: 0.02
+  evaluation_episodes: 100
+  evaluation_seed: 30000
+deployment:
+  hardware_ready: false
+  position_interface: bounded_joint_position_targets_no_torque_output
+  servo_radian_to_pulse_calibration: null
+  fluid_simulated: false

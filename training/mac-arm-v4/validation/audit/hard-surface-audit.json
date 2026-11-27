@@ -1,0 +1,86 @@
+[
+  {
+    "trial": "round9-1",
+    "geom": "instance_148_c12_hard",
+    "part": "\u63071",
+    "force_n": 0.30343121276988017,
+    "distance_to_original_STL_surface_m": 0.00020997869779519184,
+    "original_part_point": [
+      -0.010371370137150334,
+      0.007790021682184419,
+      -0.001963939954667448
+    ]
+  },
+  {
+    "trial": "round9-1",
+    "geom": "instance_148_c20_hard",
+    "part": "\u63071",
+    "force_n": 0.9364380049293581,
+    "distance_to_original_STL_surface_m": 0.0002142738500710683,
+    "original_part_point": [
+      -0.010356077352497866,
+      0.007785726529908542,
+      -0.0028145479433889058
+    ]
+  },
+  {
+    "trial": "round9-1",
+    "geom": "instance_148_c20_hard",
+    "part": "\u63071",
+    "force_n": 0.936441187321996,
+    "distance_to_original_STL_surface_m": 0.00021427387923780503,
+    "original_part_point": [
+      -0.010356077394707086,
+      0.007785726500741805,
+      -0.002814547976872942
+    ]
+  },
+  {
+    "trial": "round12-2",
+    "geom": "instance_124_c12_hard",
+    "part": "\u63071",
+    "force_n": 0.39204905456572287,
+    "distance_to_original_STL_surface_m": 0.000200523657920261,
+    "original_part_point": [
+      -0.010321586269904003,
+      0.0077994767220593494,
+      0.0032379181217794995
+    ]
+  },
+  {
+    "trial": "round12-2",
+    "geom": "instance_124_c12_hard",
+    "part": "\u63071",
+    "force_n": 0.39204895676538887,
+    "distance_to_original_STL_surface_m": 0.0002005236570826593,
+    "original_part_point": [
+      -0.010321586270205659,
+      0.007799476722896951,
+      0.0032379181610445716
+    ]
+  },
+  {
+    "trial": "round12-2",
+    "geom": "instance_124_c20_hard",
+    "part": "\u63071",
+    "force_n": 0.470307468334686,
+    "distance_to_original_STL_surface_m": 0.00018720382833165884,
+    "original_part_point": [
+      -0.01033749297544177,
+      0.007812796551647952,
+      -0.001966851946851239
+    ]
+  },
+  {
+    "trial": "round12-2",
+    "geom": "instance_124_c20_hard",
+    "part": "\u63071",
+    "force_n": 1.0337958501357603,
+    "distance_to_original_STL_surface_m": 0.00018076200755135982,
+    "original_part_point": [
+      -0.010344975162241936,
+      0.00781923837242825,
+      -0.004416497334250428
+    ]
+  }
+]

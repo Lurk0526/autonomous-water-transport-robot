@@ -1,0 +1,35 @@
+[
+  {
+    "label": "round13-0",
+    "max_clearance_m": 0.06287801515707647,
+    "max_total_foam_n": 17.351690392451463,
+    "is_success": true,
+    "failure_reason": null,
+    "phase": "settle_place",
+    "elapsed_s": 30.7000000000003,
+    "synchronous_control": {
+      "state": "releasing",
+      "events": [
+        {
+          "time_s": 8.387000000000791,
+          "kind": "first_foam_contact",
+          "digit": 0,
+          "rack_m": 0.00444236229632584
+        },
+        {
+          "time_s": 10.375999999999689,
+          "kind": "opposed_contact_confirmed",
+          "rack_m": 0.006717544557440085,
+          "total_raw_foam_n": 8.535403405917585,
+          "required_total_foam_n": 8.0,
+          "required_opposed_finger_n": 0.5
+        }
+      ],
+      "common_command_m": -0.004,
+      "lower_support_search_m": 0.0024,
+      "independent_finger_actuators": 0,
+      "maximum_loop_error_m": 0.0005364397396650616,
+      "force_inputs": "simulation_supervision_not_real_force_sensing"
+    }
+  }
+]

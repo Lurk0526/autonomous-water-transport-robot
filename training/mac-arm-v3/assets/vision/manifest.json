@@ -1,0 +1,11 @@
+{
+  "source": "existing_user_weights_20261021",
+  "file": "target-bowl.pt",
+  "sha256": "c402769dabe8f46fd69e01f76054622b15677862fd34e1825618fedc4b9073a6",
+  "bytes": 6034020,
+  "task": "YOLO11n single-class target_bowl segmentation",
+  "new_local_inference_or_training_performed": false,
+  "actual_Mac_render_domain_accuracy": "unmeasured_until_Mac_return",
+  "main_camera_calibration": "simulation_only",
+  "wrist_camera_calibration": "simulation_only_not_real_OpenMV_calibration"
+}

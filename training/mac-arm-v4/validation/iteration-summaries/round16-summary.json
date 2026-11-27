@@ -1,0 +1,68 @@
+[
+  {
+    "label": "round16-0",
+    "max_clearance_m": 0.06332892891790326,
+    "max_total_foam_n": 14.67990486027144,
+    "is_success": true,
+    "failure_reason": null,
+    "phase": "settle_place",
+    "elapsed_s": 30.6500000000003,
+    "synchronous_control": {
+      "state": "releasing",
+      "events": [
+        {
+          "time_s": 8.400000000000784,
+          "kind": "first_foam_contact",
+          "digit": 0,
+          "rack_m": 0.0044617844649502926
+        },
+        {
+          "time_s": 10.363999999999695,
+          "kind": "opposed_contact_confirmed",
+          "rack_m": 0.006705558148337135,
+          "total_raw_foam_n": 8.57214482099568,
+          "required_total_foam_n": 8.0,
+          "required_opposed_finger_n": 0.5
+        }
+      ],
+      "common_command_m": -0.004,
+      "lower_support_search_m": 0.0025999999999999994,
+      "independent_finger_actuators": 0,
+      "maximum_loop_error_m": 0.0005037932996588424,
+      "force_inputs": "simulation_supervision_not_real_force_sensing"
+    }
+  },
+  {
+    "label": "round16-1",
+    "max_clearance_m": 0.06332892891790326,
+    "max_total_foam_n": 13.349855491933269,
+    "is_success": true,
+    "failure_reason": null,
+    "phase": "settle_place",
+    "elapsed_s": 32.3500000000003,
+    "synchronous_control": {
+      "state": "releasing",
+      "events": [
+        {
+          "time_s": 8.400000000000784,
+          "kind": "first_foam_contact",
+          "digit": 0,
+          "rack_m": 0.0044617844649502926
+        },
+        {
+          "time_s": 10.363999999999695,
+          "kind": "opposed_contact_confirmed",
+          "rack_m": 0.006705558148337135,
+          "total_raw_foam_n": 8.57214482099568,
+          "required_total_foam_n": 8.0,
+          "required_opposed_finger_n": 0.5
+        }
+      ],
+      "common_command_m": -0.004,
+      "lower_support_search_m": 0.0024999999999999996,
+      "independent_finger_actuators": 0,
+      "maximum_loop_error_m": 0.00046215124120344274,
+      "force_inputs": "simulation_supervision_not_real_force_sensing"
+    }
+  }
+]

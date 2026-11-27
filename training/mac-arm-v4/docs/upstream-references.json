@@ -1,0 +1,51 @@
+[
+  {
+    "repository": "google-deepmind/mujoco_menagerie",
+    "url": "https://github.com/google-deepmind/mujoco_menagerie",
+    "examined_head": "370c43965323c0944b433b202aac5058b5f907a9",
+    "license": "see repository per-asset license",
+    "source_code_copied": false
+  },
+  {
+    "repository": "Farama-Foundation/Gymnasium-Robotics",
+    "url": "https://github.com/Farama-Foundation/Gymnasium-Robotics",
+    "examined_head": "91f8a92916a0ca0c6032549c9964d8f4b0f68450",
+    "license": "MIT",
+    "source_code_copied": false
+  },
+  {
+    "repository": "DLR-RM/stable-baselines3",
+    "url": "https://github.com/DLR-RM/stable-baselines3",
+    "examined_head": "0cdcd200deef06b9ad0af72f6ddfb07c06c6df39",
+    "license": "MIT",
+    "source_code_copied": false
+  },
+  {
+    "repository": "ARISE-Initiative/robosuite",
+    "url": "https://github.com/ARISE-Initiative/robosuite",
+    "examined_head": "5ce6643f3092639d08f7b0f90ed1c6a84f50552c",
+    "license": "NOASSERTION",
+    "source_code_copied": false
+  },
+  {
+    "repository": "ros-industrial-attic/reuleaux",
+    "url": "https://github.com/ros-industrial-attic/reuleaux",
+    "accessed_date": "2026-11-19",
+    "use": "Reachability-based base placement concept; no source copied or runtime installed",
+    "source_code_copied": false
+  },
+  {
+    "repository": "kevinzakka/mink",
+    "url": "https://github.com/kevinzakka/mink/blob/main/examples/arm_ur5e_wrist_cam_lookat.py",
+    "accessed_date": "2026-11-19",
+    "use": "Whole-arm wrist-camera view control, task/posture/velocity constraints; not integrated as a QP dependency",
+    "source_code_copied": false
+  },
+  {
+    "repository": "robot-learning-freiburg/mobile-rl",
+    "url": "https://github.com/robot-learning-freiburg/mobile-rl",
+    "accessed_date": "2026-11-19",
+    "use": "Reference for future navigation/manipulation comparison; not implemented policy transfer",
+    "source_code_copied": false
+  }
+]
