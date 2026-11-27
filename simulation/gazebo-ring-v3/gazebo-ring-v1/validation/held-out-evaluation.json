@@ -1,0 +1,85 @@
+{
+  "model": "mlp",
+  "action_names": [
+    "target_speed_mps",
+    "target_yaw_rate_rad_s"
+  ],
+  "world_schema": "ring-cad-narrow-serial-v3",
+  "splits": {
+    "test": {
+      "samples": 400,
+      "episode_count": 4,
+      "mae": [
+        0.32441421985626223,
+        0.013572985576320206
+      ],
+      "rmse": [
+        0.7637239673745647,
+        0.026541642448670386
+      ],
+      "episode_macro_mae": [
+        0.3232758108357066,
+        0.013531303476337598
+      ],
+      "episode_macro_normalized_mae": 0.12583625643576457,
+      "episodes": [
+        {
+          "episode_id": "0bddecd1f87f4638b24cf1007e848794",
+          "scenario_group": "seed:53",
+          "layout": "right",
+          "samples": 102,
+          "mae": [
+            0.3097332973106235,
+            0.011108158802837316
+          ],
+          "rmse": [
+            0.670058364650111,
+            0.021487297710488847
+          ]
+        },
+        {
+          "episode_id": "8421a45caa884e4eb9e1f14b3b21740c",
+          "scenario_group": "seed:53",
+          "layout": "left",
+          "samples": 102,
+          "mae": [
+            0.42520540134579526,
+            0.013288904997798633
+          ],
+          "rmse": [
+            1.0222876568290222,
+            0.023396599567976847
+          ]
+        },
+        {
+          "episode_id": "aa1c9a43786a41339c0a14fd87cc0afa",
+          "scenario_group": "seed:53",
+          "layout": "slalom",
+          "samples": 102,
+          "mae": [
+            0.2918091848784802,
+            0.01828095162750733
+          ],
+          "rmse": [
+            0.6291947852295822,
+            0.03780286900951153
+          ]
+        },
+        {
+          "episode_id": "bddab17617014499bf0992f3c7a3276c",
+          "scenario_group": "seed:53",
+          "layout": "clear",
+          "samples": 94,
+          "mae": [
+            0.26635535980792757,
+            0.011447198477207108
+          ],
+          "rmse": [
+            0.6566858468813938,
+            0.01876251812214107
+          ]
+        }
+      ]
+    }
+  }
+}

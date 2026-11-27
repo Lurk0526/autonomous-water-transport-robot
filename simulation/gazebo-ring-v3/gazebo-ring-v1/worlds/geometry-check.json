@@ -1,0 +1,53 @@
+{
+  "world_schema": "ring-cad-narrow-serial-v3",
+  "seed": 0,
+  "layout": "slalom",
+  "reference_model": "AWS DeepRacer Oval Track",
+  "source_revision": "15f62e094b3d6f6753d78671f7dba3520a9dc1ff",
+  "upstream_waypoints": {
+    "waypoint_rows_including_closure": 102,
+    "zero_length_segments_skipped": 1,
+    "reference_polyline_length_m": 19.549800178858828,
+    "min_boundary_spacing_m": 0.6084589370346023,
+    "mean_boundary_spacing_m": 0.7084153344720379,
+    "max_boundary_spacing_m": 0.9389770242039654,
+    "all_three_curves_close": true,
+    "boundaries_on_opposite_sides": true
+  },
+  "gazebo_oval": {
+    "waypoint_rows_including_closure": 1007,
+    "zero_length_segments_skipped": 0,
+    "reference_polyline_length_m": 251.39686077120547,
+    "min_boundary_spacing_m": 1.0599999999999918,
+    "mean_boundary_spacing_m": 1.0599999999999987,
+    "max_boundary_spacing_m": 1.0600000000000067,
+    "all_three_curves_close": true,
+    "boundaries_on_opposite_sides": true
+  },
+  "yellow_line_width_m": 0.06,
+  "usable_width_between_inner_edges_m": 1.0,
+  "paved_width_m": 1.44,
+  "bypass_shoulder_outside_each_yellow_line_m": 0.15999999999999995,
+  "cart_cad_width_m": 0.7870490979665927,
+  "cart_scoring_width_m": 0.8,
+  "cart_wheelbase_m": 0.5781691221036587,
+  "cone_count": 5,
+  "cone_offsets_from_center_m": [
+    -0.4289817200715721,
+    0.43242843941200715,
+    -0.44278434638332137,
+    0.43111068425778953,
+    -0.44750828963742273
+  ],
+  "cone_forward_spacing_m": [
+    4.98042343283517,
+    5.264247650349279,
+    5.155286578996545,
+    5.32323049788549
+  ],
+  "one_start_finish_center_xy_m": [
+    -38.0,
+    -12.0
+  ],
+  "analytical_lap_length_m": 251.39822368615503
+}

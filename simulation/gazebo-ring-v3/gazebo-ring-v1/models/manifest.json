@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "feature_version": "ring-rgbd-v3",
+  "feature_dim": 603,
+  "world_schema": "ring-cad-narrow-serial-v3",
+  "model_hash_order": [
+    "road-4060-v1.onnx",
+    "traffic-cone.onnx"
+  ],
+  "models": {
+    "road-4060-v1.onnx": {
+      "source": "work/models/road/road-4060-v1/accelerator/model.onnx",
+      "source_checkpoint_sha256": "0d1bf26b326f46525749228c9dd80b6b01fcb9c872df015f8c9f81c4a026d18c",
+      "sha256": "5758171f26e50447eff6ceb2cdf931a59561d1afed0dffda25e1d1b9f5015ad6",
+      "opset": 17,
+      "onnx_ir_version": 8,
+      "input": {
+        "name": "images",
+        "shape": [
+          1,
+          3,
+          384,
+          512
+        ],
+        "dtype": "float32"
+      },
+      "output": {
+        "name": "logits",
+        "shape": [
+          1,
+          7,
+          96,
+          128
+        ],
+        "dtype": "float32"
+      },
+      "classes": [
+        "paved_ground",
+        "unpaved_ground",
+        "vegetation",
+        "water",
+        "rigid_obstacle",
+        "person_or_vehicle",
+        "sky"
+      ],
+      "preprocess": "RGB letterbox with ImageNet mean padding, RGB/255 then ImageNet normalization",
+      "postprocess": "Bilinear resize logits to letterboxed size, remove padding, bilinear resize to original size, argmax",
+      "export_verification": {
+        "source_report": "work/models/road/road-4060-v1/accelerator/model.onnx.json",
+        "pytorch_max_abs_logit_error": 1.33514404296875e-05,
+        "argmax_agreement": 1.0,
+        "copied_exact_source_onnx": true
+      }
+    },
+    "traffic-cone.onnx": {
+      "source": "work/ring_cones/train/weights/best.pt",
+      "source_checkpoint_sha256": "730aa9a7825d257fc2750a893ff9ce4ced8dcca21e5ae880f0574585022d17f7",
+      "sha256": "ae6313806f5ba55828a711df8cfcc5bd0db7a549899e758610739342fac90f91",
+      "opset": 17,
+      "onnx_ir_version": 8,
+      "input": {
+        "name": "images",
+        "shape": [
+          1,
+          3,
+          384,
+          384
+        ],
+        "dtype": "float32"
+      },
+      "output": {
+        "name": "output0",
+        "shape": [
+          1,
+          5,
+          3024
+        ],
+        "dtype": "float32"
+      },
+      "classes": [
+        "traffic_cone"
+      ],
+      "preprocess": "RGB letterbox with gray 114 padding, RGB/255",
+      "postprocess": "Raw center-x, center-y, width, height, class score. Confidence > 0.25; NMS IoU 0.7; restore original pixels",
+      "export": {
+        "ultralytics": "8.4.178",
+        "imgsz": 384,
+        "device": "cpu",
+        "simplify": false,
+        "dynamic": false,
+        "nms": false
+      },
+      "export_verification": {
+        "rgb_frames_compared_against_fused_pytorch": 8,
+        "max_abs_box_coordinate_error_px": 0.00089263916015625,
+        "max_abs_class_confidence_error": 1.219523255713284e-07
+      },
+      "independent_source_checkpoint_test": {
+        "source_report": "work/ring_cones/test_ahrv/size_metrics.json",
+        "input_box_height_below_16_px_matches": 0,
+        "input_box_height_below_16_px_instances": 30,
+        "confidence": 0.25,
+        "iou": 0.5
+      }
+    }
+  }
+}

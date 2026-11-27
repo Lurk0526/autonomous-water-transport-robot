@@ -1,0 +1,61 @@
+{
+  "revision": "15f62e094b3d6f6753d78671f7dba3520a9dc1ff",
+  "repository": "https://github.com/aws-deepracer-community/deepracer-simapp",
+  "files": [
+    {
+      "path": "LICENSE",
+      "git_blob_sha1": "e97bf01c50dfb20764ba2ef1b5b786fe3d547dd2",
+      "sha256": "bea1b4266f1499fa4bbb16d6e7577e6b5b53d1ef010835a9d460876022cc8722"
+    },
+    {
+      "path": "bundle/meshes/Oval_track/Oval_track.dae",
+      "git_blob_sha1": "40624cb4195f05ad64220a2656707c3099187792",
+      "sha256": "7dd332fe67e3f5dd4c110ccbef07cad5371dcef958dd5e22bca57c82826c004f"
+    },
+    {
+      "path": "bundle/meshes/Oval_track/Oval_track_collision.dae",
+      "git_blob_sha1": "b210ad5aa4613304620e0661f533fa7b28ccb542",
+      "sha256": "9b16bdfab8a612de58e0db19a30fb97d1ce97474460d66c283c39d6384e2f84d"
+    },
+    {
+      "path": "bundle/meshes/Oval_track/textures/Oval_track_centerLine.png",
+      "git_blob_sha1": "8c31caac4611de16fe91c674610a8f1d82f42fa0",
+      "sha256": "1a63929ee2d57d1b249f05286a628b8b89dee70bbfa88513485da7780ada5b75"
+    },
+    {
+      "path": "bundle/meshes/Oval_track/textures/Oval_track_field.png",
+      "git_blob_sha1": "0617dd5547903dd894a8672b401f7b6f86c5f457",
+      "sha256": "352a8b403fa7388631daead282c208e9f7faa07c016206fc4cbf715a343a6dd1"
+    },
+    {
+      "path": "bundle/meshes/Oval_track/textures/Oval_track_outerLine.png",
+      "git_blob_sha1": "d77f6f1bb4c8a44ad9c4720aa8424137f2427522",
+      "sha256": "b89ab1178825e7d6b13da73af517b5a302089f4a711b4492c03c7367cd58294d"
+    },
+    {
+      "path": "bundle/meshes/Oval_track/textures/Oval_track_road.png",
+      "git_blob_sha1": "c6e23d3514a1aefa6f08a898e8856cf874985398",
+      "sha256": "9d9c468d939bf31a6a4da577dc77654d72e32172b0df8ee83adafe7911078b69"
+    },
+    {
+      "path": "bundle/models/Oval_track/Oval_track_model.sdf",
+      "git_blob_sha1": "637e4733df61ca16f1386b6a97bf4849de8d951d",
+      "sha256": "7c5b25afe9bb7091e02eac442a67a82cf0acd0f5af68ae485de1034a016524c4"
+    },
+    {
+      "path": "bundle/models/Oval_track/model.config",
+      "git_blob_sha1": "e7b2c66481eb7a8f54e4a1cb3ac0e3166b5435fe",
+      "sha256": "f6bee5a2070dd40451a30bb00f21dcf2fec1badb210b6aff2f716ab3a5da107b"
+    },
+    {
+      "path": "bundle/routes/Oval_track.npy",
+      "git_blob_sha1": "ece3942f522738fec066679084d2878cd5931ee5",
+      "sha256": "4a6d7da40e96a753df9e36562f2044b1d7b7f4cbcfb8a373dabdd8226e068138"
+    },
+    {
+      "path": "bundle/worlds/Oval_track.world",
+      "git_blob_sha1": "0b68a7d3ffdc05f560a3b01107f7068a8e1422ed",
+      "sha256": "d45d6aba9a7e42985daf7e36d4e3759d8eae7fb9657e94b7812c7bd8f2490074"
+    }
+  ]
+}

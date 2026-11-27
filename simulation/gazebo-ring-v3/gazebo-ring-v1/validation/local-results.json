@@ -1,0 +1,2099 @@
+{
+  "world_schema": "ring-cad-narrow-serial-v3",
+  "gazebo": "Harmonic 8.15.0",
+  "host": "Linux aarch64 Jetson",
+  "geometry": {
+    "world_schema": "ring-cad-narrow-serial-v3",
+    "seed": 0,
+    "layout": "slalom",
+    "reference_model": "AWS DeepRacer Oval Track",
+    "source_revision": "15f62e094b3d6f6753d78671f7dba3520a9dc1ff",
+    "upstream_waypoints": {
+      "waypoint_rows_including_closure": 102,
+      "zero_length_segments_skipped": 1,
+      "reference_polyline_length_m": 19.549800178858828,
+      "min_boundary_spacing_m": 0.6084589370346023,
+      "mean_boundary_spacing_m": 0.7084153344720379,
+      "max_boundary_spacing_m": 0.9389770242039654,
+      "all_three_curves_close": true,
+      "boundaries_on_opposite_sides": true
+    },
+    "gazebo_oval": {
+      "waypoint_rows_including_closure": 1007,
+      "zero_length_segments_skipped": 0,
+      "reference_polyline_length_m": 251.39686077120547,
+      "min_boundary_spacing_m": 1.0599999999999918,
+      "mean_boundary_spacing_m": 1.0599999999999987,
+      "max_boundary_spacing_m": 1.0600000000000067,
+      "all_three_curves_close": true,
+      "boundaries_on_opposite_sides": true
+    },
+    "yellow_line_width_m": 0.06,
+    "usable_width_between_inner_edges_m": 1.0,
+    "paved_width_m": 1.44,
+    "bypass_shoulder_outside_each_yellow_line_m": 0.15999999999999995,
+    "cart_cad_width_m": 0.7870490979665927,
+    "cart_scoring_width_m": 0.8,
+    "cart_wheelbase_m": 0.5781691221036587,
+    "cone_count": 5,
+    "cone_offsets_from_center_m": [
+      -0.4289817200715721,
+      0.43242843941200715,
+      -0.44278434638332137,
+      0.43111068425778953,
+      -0.44750828963742273
+    ],
+    "cone_forward_spacing_m": [
+      4.98042343283517,
+      5.264247650349279,
+      5.155286578996545,
+      5.32323049788549
+    ],
+    "one_start_finish_center_xy_m": [
+      -38.0,
+      -12.0
+    ],
+    "analytical_lap_length_m": 251.39822368615503
+  },
+  "cad_measurements": "../vehicle_assets/cad-measurements.json",
+  "models": {
+    "policy_sha256": "3576e0840f325251e6b25e546c01fd3ae6be50a812fea54ed0b136301a6a3287",
+    "selected_policy": "mlp",
+    "held_out_action_metrics": "held-out-evaluation.json",
+    "vision_and_policy_controller_sha256": "ddcb767a6d62902a3dc35a1c92a21147fdde381bc602a7e0622c860b92bbf5e5"
+  },
+  "training": {
+    "raw_samples": 3205,
+    "features": 1605,
+    "scenarios": [
+      {
+        "case": "clear-31",
+        "seed": 31,
+        "layout": "clear",
+        "controller": "expert",
+        "world_sha256": "7f9157cdd98edda87edd80a591406d95b7978713805ed11c0a4de29877cd3338",
+        "policy_sha256": null,
+        "passes_race_rules": true,
+        "failures": [],
+        "lap_count": 1,
+        "lap_time_sim_s": 74.60386358382365,
+        "distance_along_route_m": 251.3982236861607,
+        "brick_progress_m": 14.0,
+        "cone_count": 0,
+        "cone_stations_and_offsets_m": [],
+        "cone_to_body_rectangle_separation_lower_bound_m": [],
+        "cone_contacts": {},
+        "cone_swept_overlaps": {},
+        "outer_pavement_violation": null,
+        "yellow_line_touches": {},
+        "illegal_yellow_line_crossing": null,
+        "start_finish_gate": {
+          "station_m": 6.0,
+          "center_x_m": -38.0,
+          "center_y_m": -12.0,
+          "heading_rad": 0.0,
+          "width_m": 1.44,
+          "vehicle_reference": "rear axle center"
+        },
+        "speed_zone_minimum_kmh": 35.63999968120375,
+        "speed_zone_gate_average_kmh": 35.63999968125722,
+        "speed_zone_measurement_max_gap_sim_s": 0.0040000000000048885,
+        "last_measured_speed_kmh": 12.599856205175872,
+        "vision_guide_observations": null,
+        "guided_policy_observations": null,
+        "rgbd_usable_frames": 605,
+        "raw_training_samples": 189
+      },
+      {
+        "case": "clear-42",
+        "seed": 42,
+        "layout": "clear",
+        "controller": "expert",
+        "world_sha256": "2966ce14d348133a8aab570599a39b0f382cae5d28999eeb906e102d203a9e3b",
+        "policy_sha256": null,
+        "passes_race_rules": true,
+        "failures": [],
+        "lap_count": 1,
+        "lap_time_sim_s": 74.62195331239005,
+        "distance_along_route_m": 251.3982236861562,
+        "brick_progress_m": 14.0,
+        "cone_count": 0,
+        "cone_stations_and_offsets_m": [],
+        "cone_to_body_rectangle_separation_lower_bound_m": [],
+        "cone_contacts": {},
+        "cone_swept_overlaps": {},
+        "outer_pavement_violation": null,
+        "yellow_line_touches": {},
+        "illegal_yellow_line_crossing": null,
+        "start_finish_gate": {
+          "station_m": 6.0,
+          "center_x_m": -38.0,
+          "center_y_m": -12.0,
+          "heading_rad": 0.0,
+          "width_m": 1.44,
+          "vehicle_reference": "rear axle center"
+        },
+        "speed_zone_minimum_kmh": 35.63999968119489,
+        "speed_zone_gate_average_kmh": 35.63999968144938,
+        "speed_zone_measurement_max_gap_sim_s": 0.0040000000000048885,
+        "last_measured_speed_kmh": 12.59972410645472,
+        "vision_guide_observations": null,
+        "guided_policy_observations": null,
+        "rgbd_usable_frames": 604,
+        "raw_training_samples": 189
+      },
+      {
+        "case": "clear-53",
+        "seed": 53,
+        "layout": "clear",
+        "controller": "expert",
+        "world_sha256": "8a136d4ae714055af8a1306f46f22fd3e55491833685561443e719384c47145c",
+        "policy_sha256": null,
+        "passes_race_rules": true,
+        "failures": [],
+        "lap_count": 1,
+        "lap_time_sim_s": 74.26605701295462,
+        "distance_along_route_m": 251.39822368616,
+        "brick_progress_m": 14.0,
+        "cone_count": 0,
+        "cone_stations_and_offsets_m": [],
+        "cone_to_body_rectangle_separation_lower_bound_m": [],
+        "cone_contacts": {},
+        "cone_swept_overlaps": {},
+        "outer_pavement_violation": null,
+        "yellow_line_touches": {},
+        "illegal_yellow_line_crossing": null,
+        "start_finish_gate": {
+          "station_m": 6.0,
+          "center_x_m": -38.0,
+          "center_y_m": -12.0,
+          "heading_rad": 0.0,
+          "width_m": 1.44,
+          "vehicle_reference": "rear axle center"
+        },
+        "speed_zone_minimum_kmh": 35.63873217701456,
+        "speed_zone_gate_average_kmh": 35.63989565870291,
+        "speed_zone_measurement_max_gap_sim_s": 0.0040000000000048885,
+        "last_measured_speed_kmh": 12.59940249233832,
+        "vision_guide_observations": null,
+        "guided_policy_observations": null,
+        "rgbd_usable_frames": 601,
+        "raw_training_samples": 188
+      },
+      {
+        "case": "clear-64",
+        "seed": 64,
+        "layout": "clear",
+        "controller": "expert",
+        "world_sha256": "637a295091ffd6138e20da90f9d6c42ff315babc05e8e1fd4fc359257d0dc982",
+        "policy_sha256": null,
+        "passes_race_rules": true,
+        "failures": [],
+        "lap_count": 1,
+        "lap_time_sim_s": 74.50546263379371,
+        "distance_along_route_m": 251.39822368615575,
+        "brick_progress_m": 14.0,
+        "cone_count": 0,
+        "cone_stations_and_offsets_m": [],
+        "cone_to_body_rectangle_separation_lower_bound_m": [],
+        "cone_contacts": {},
+        "cone_swept_overlaps": {},
+        "outer_pavement_violation": null,
+        "yellow_line_touches": {},
+        "illegal_yellow_line_crossing": null,
+        "start_finish_gate": {
+          "station_m": 6.0,
+          "center_x_m": -38.0,
+          "center_y_m": -12.0,
+          "heading_rad": 0.0,
+          "width_m": 1.44,
+          "vehicle_reference": "rear axle center"
+        },
+        "speed_zone_minimum_kmh": 35.639999681219656,
+        "speed_zone_gate_average_kmh": 35.63999967861429,
+        "speed_zone_measurement_max_gap_sim_s": 0.0040000000000048885,
+        "last_measured_speed_kmh": 12.599664948391517,
+        "vision_guide_observations": null,
+        "guided_policy_observations": null,
+        "rgbd_usable_frames": 604,
+        "raw_training_samples": 189
+      },
+      {
+        "case": "left-31",
+        "seed": 31,
+        "layout": "left",
+        "controller": "expert",
+        "world_sha256": "ab560e5ca848c80d58df2da72c84a75f50ab58942179586a84fcfff78d5139b3",
+        "policy_sha256": null,
+        "passes_race_rules": true,
+        "failures": [],
+        "lap_count": 1,
+        "lap_time_sim_s": 80.70653155423439,
+        "distance_along_route_m": 251.39822368615626,
+        "brick_progress_m": 14.0,
+        "cone_count": 4,
+        "cone_stations_and_offsets_m": [
+          [
+            19.195417220492672,
+            -0.4279278197389282
+          ],
+          [
+            24.646862001936803,
+            -0.41827025546215596
+          ],
+          [
+            29.595436889275497,
+            -0.4218084895688101
+          ],
+          [
+            35.07930241519117,
+            -0.41860124639649055
+          ]
+        ],
+        "cone_to_body_rectangle_separation_lower_bound_m": [
+          0.11121679462183195,
+          0.09992975266124049,
+          0.10337396369664839,
+          0.1000971221029309
+        ],
+        "cone_contacts": {},
+        "cone_swept_overlaps": {},
+        "outer_pavement_violation": null,
+        "yellow_line_touches": {
+          "inner": {
+            "first_touch": {
+              "sim_time_s": 3.7840000000000003,
+              "station_m": 12.95542194908344,
+              "wheel": "front_left_wheel",
+              "side": "inner",
+              "in_cone_bypass_zone": true
+            },
+            "wheels": [
+              "front_left_wheel",
+              "rear_left_wheel"
+            ],
+            "samples": 6373,
+            "allowed_samples": 6373,
+            "violating_samples": 0
+          }
+        },
+        "illegal_yellow_line_crossing": null,
+        "start_finish_gate": {
+          "station_m": 6.0,
+          "center_x_m": -38.0,
+          "center_y_m": -12.0,
+          "heading_rad": 0.0,
+          "width_m": 1.44,
+          "vehicle_reference": "rear axle center"
+        },
+        "speed_zone_minimum_kmh": 35.63999968120252,
+        "speed_zone_gate_average_kmh": 35.63999968097367,
+        "speed_zone_measurement_max_gap_sim_s": 0.0040000000000048885,
+        "last_measured_speed_kmh": 12.599699333843116,
+        "vision_guide_observations": null,
+        "guided_policy_observations": null,
+        "rgbd_usable_frames": 653,
+        "raw_training_samples": 204
+      },
+      {
+        "case": "left-42",
+        "seed": 42,
+        "layout": "left",
+        "controller": "expert",
+        "world_sha256": "25a031fbf57964447f67a4d3f830bfd864c8e118bafd8a0b65532863d2e7d329",
+        "policy_sha256": null,
+        "passes_race_rules": true,
+        "failures": [],
+        "lap_count": 1,
+        "lap_time_sim_s": 80.63194361387514,
+        "distance_along_route_m": 251.39822368615586,
+        "brick_progress_m": 14.0,
+        "cone_count": 3,
+        "cone_stations_and_offsets_m": [
+          [
+            19.97225957029322,
+            -0.4234511140980265
+          ],
+          [
+            25.259467562780728,
+            -0.44098590613823246
+          ],
+          [
+            30.659002612461325,
+            -0.44690282357278416
+          ]
+        ],
+        "cone_to_body_rectangle_separation_lower_bound_m": [
+          0.10643366754897374,
+          0.12254958383327755,
+          0.1286103929171076
+        ],
+        "cone_contacts": {},
+        "cone_swept_overlaps": {},
+        "outer_pavement_violation": null,
+        "yellow_line_touches": {
+          "inner": {
+            "first_touch": {
+              "sim_time_s": 3.9120000000000004,
+              "station_m": 13.295794198395264,
+              "wheel": "front_left_wheel",
+              "side": "inner",
+              "in_cone_bypass_zone": true
+            },
+            "wheels": [
+              "front_left_wheel",
+              "rear_left_wheel"
+            ],
+            "samples": 5868,
+            "allowed_samples": 5868,
+            "violating_samples": 0
+          }
+        },
+        "illegal_yellow_line_crossing": null,
+        "start_finish_gate": {
+          "station_m": 6.0,
+          "center_x_m": -38.0,
+          "center_y_m": -12.0,
+          "heading_rad": 0.0,
+          "width_m": 1.44,
+          "vehicle_reference": "rear axle center"
+        },
+        "speed_zone_minimum_kmh": 35.639999681221894,
+        "speed_zone_gate_average_kmh": 35.63999968143409,
+        "speed_zone_measurement_max_gap_sim_s": 0.0040000000000048885,
+        "last_measured_speed_kmh": 12.599910881573457,
+        "vision_guide_observations": null,
+        "guided_policy_observations": null,
+        "rgbd_usable_frames": 653,
+        "raw_training_samples": 204
+      },
+      {
+        "case": "left-53",
+        "seed": 53,
+        "layout": "left",
+        "controller": "expert",
+        "world_sha256": "b0edb3a3baafa1c0a6c749006f57d03cd4fd384ea2b329b8b79a24c29c2389f6",
+        "policy_sha256": null,
+        "passes_race_rules": true,
+        "failures": [],
+        "lap_count": 1,
+        "lap_time_sim_s": 80.60915303974224,
+        "distance_along_route_m": 251.39822368615546,
+        "brick_progress_m": 14.0,
+        "cone_count": 5,
+        "cone_stations_and_offsets_m": [
+          [
+            20.32394488308006,
+            -0.43034651435225024
+          ],
+          [
+            25.445302013766423,
+            -0.44860528952837286
+          ],
+          [
+            30.561330243854812,
+            -0.4408859264945716
+          ],
+          [
+            35.85261819007176,
+            -0.4456110914446804
+          ],
+          [
+            40.74847259067109,
+            -0.41943310318251487
+          ]
+        ],
+        "cone_to_body_rectangle_separation_lower_bound_m": [
+          0.1133207434728129,
+          0.13034969269460195,
+          0.12277385071824906,
+          0.12764735861203674,
+          0.10130846554302761
+        ],
+        "cone_contacts": {},
+        "cone_swept_overlaps": {},
+        "outer_pavement_violation": null,
+        "yellow_line_touches": {
+          "inner": {
+            "first_touch": {
+              "sim_time_s": 3.8840000000000003,
+              "station_m": 13.462657719267941,
+              "wheel": "front_left_wheel",
+              "side": "inner",
+              "in_cone_bypass_zone": true
+            },
+            "wheels": [
+              "front_left_wheel",
+              "rear_left_wheel"
+            ],
+            "samples": 6824,
+            "allowed_samples": 6824,
+            "violating_samples": 0
+          }
+        },
+        "illegal_yellow_line_crossing": null,
+        "start_finish_gate": {
+          "station_m": 6.0,
+          "center_x_m": -38.0,
+          "center_y_m": -12.0,
+          "heading_rad": 0.0,
+          "width_m": 1.44,
+          "vehicle_reference": "rear axle center"
+        },
+        "speed_zone_minimum_kmh": 35.63875314537244,
+        "speed_zone_gate_average_kmh": 35.63983088728738,
+        "speed_zone_measurement_max_gap_sim_s": 0.0040000000000048885,
+        "last_measured_speed_kmh": 12.599775521783153,
+        "vision_guide_observations": null,
+        "guided_policy_observations": null,
+        "rgbd_usable_frames": 653,
+        "raw_training_samples": 204
+      },
+      {
+        "case": "left-64",
+        "seed": 64,
+        "layout": "left",
+        "controller": "expert",
+        "world_sha256": "d2c7530a0157af8eaf52dc93af4aad3c674e5180129519fee54ce152f075b2d3",
+        "policy_sha256": null,
+        "passes_race_rules": true,
+        "failures": [],
+        "lap_count": 1,
+        "lap_time_sim_s": 80.75077405716196,
+        "distance_along_route_m": 251.39822368615347,
+        "brick_progress_m": 14.0,
+        "cone_count": 4,
+        "cone_stations_and_offsets_m": [
+          [
+            20.02630212479846,
+            -0.428350516843602
+          ],
+          [
+            25.353816306475736,
+            -0.4136403615752862
+          ],
+          [
+            30.583554383222104,
+            -0.439756348868327
+          ],
+          [
+            35.70276353568307,
+            -0.4435180203844017
+          ]
+        ],
+        "cone_to_body_rectangle_separation_lower_bound_m": [
+          0.11133231504818589,
+          0.09535129041072568,
+          0.1216146697318804,
+          0.12542421893156241
+        ],
+        "cone_contacts": {},
+        "cone_swept_overlaps": {},
+        "outer_pavement_violation": null,
+        "yellow_line_touches": {
+          "inner": {
+            "first_touch": {
+              "sim_time_s": 3.9400000000000004,
+              "station_m": 13.324328650218902,
+              "wheel": "front_left_wheel",
+              "side": "inner",
+              "in_cone_bypass_zone": true
+            },
+            "wheels": [
+              "front_left_wheel",
+              "rear_left_wheel"
+            ],
+            "samples": 6356,
+            "allowed_samples": 6356,
+            "violating_samples": 0
+          }
+        },
+        "illegal_yellow_line_crossing": null,
+        "start_finish_gate": {
+          "station_m": 6.0,
+          "center_x_m": -38.0,
+          "center_y_m": -12.0,
+          "heading_rad": 0.0,
+          "width_m": 1.44,
+          "vehicle_reference": "rear axle center"
+        },
+        "speed_zone_minimum_kmh": 35.63875302822892,
+        "speed_zone_gate_average_kmh": 35.63993312085496,
+        "speed_zone_measurement_max_gap_sim_s": 0.0040000000000048885,
+        "last_measured_speed_kmh": 12.599806109545295,
+        "vision_guide_observations": null,
+        "guided_policy_observations": null,
+        "rgbd_usable_frames": 653,
+        "raw_training_samples": 204
+      },
+      {
+        "case": "right-31",
+        "seed": 31,
+        "layout": "right",
+        "controller": "expert",
+        "world_sha256": "37f36f8276e6b3b8765abb6a08642161595288535f842e6e956e7ebf8f473f6a",
+        "policy_sha256": null,
+        "passes_race_rules": true,
+        "failures": [],
+        "lap_count": 1,
+        "lap_time_sim_s": 80.7645837279332,
+        "distance_along_route_m": 251.39822368615555,
+        "brick_progress_m": 14.0,
+        "cone_count": 4,
+        "cone_stations_and_offsets_m": [
+          [
+            19.195417220492672,
+            0.4279278197389282
+          ],
+          [
+            24.646862001936803,
+            0.41827025546215596
+          ],
+          [
+            29.595436889275497,
+            0.4218084895688101
+          ],
+          [
+            35.07930241519117,
+            0.41860124639649055
+          ]
+        ],
+        "cone_to_body_rectangle_separation_lower_bound_m": [
+          0.11059831892417415,
+          0.09998909630982417,
+          0.10340292667266177,
+          0.10012653801286817
+        ],
+        "cone_contacts": {},
+        "cone_swept_overlaps": {},
+        "outer_pavement_violation": null,
+        "yellow_line_touches": {
+          "outer": {
+            "first_touch": {
+              "sim_time_s": 3.8080000000000003,
+              "station_m": 12.951683336508221,
+              "wheel": "front_right_wheel",
+              "side": "outer",
+              "in_cone_bypass_zone": true
+            },
+            "wheels": [
+              "front_right_wheel",
+              "rear_right_wheel"
+            ],
+            "samples": 6374,
+            "allowed_samples": 6374,
+            "violating_samples": 0
+          }
+        },
+        "illegal_yellow_line_crossing": null,
+        "start_finish_gate": {
+          "station_m": 6.0,
+          "center_x_m": -38.0,
+          "center_y_m": -12.0,
+          "heading_rad": 0.0,
+          "width_m": 1.44,
+          "vehicle_reference": "rear axle center"
+        },
+        "speed_zone_minimum_kmh": 35.63999968121966,
+        "speed_zone_gate_average_kmh": 35.63999967621128,
+        "speed_zone_measurement_max_gap_sim_s": 0.0040000000000048885,
+        "last_measured_speed_kmh": 12.599025161490331,
+        "vision_guide_observations": null,
+        "guided_policy_observations": null,
+        "rgbd_usable_frames": 654,
+        "raw_training_samples": 204
+      },
+      {
+        "case": "right-42",
+        "seed": 42,
+        "layout": "right",
+        "controller": "expert",
+        "world_sha256": "6baf3f5747581150c9c3c4b595439712fcc025626fe3b6b0ae4772f868c2b5ea",
+        "policy_sha256": null,
+        "passes_race_rules": true,
+        "failures": [],
+        "lap_count": 1,
+        "lap_time_sim_s": 80.8284146309485,
+        "distance_along_route_m": 251.39822368615404,
+        "brick_progress_m": 14.0,
+        "cone_count": 3,
+        "cone_stations_and_offsets_m": [
+          [
+            19.97225957029322,
+            0.4234511140980265
+          ],
+          [
+            25.259467562780728,
+            0.44098590613823246
+          ],
+          [
+            30.659002612461325,
+            0.44690282357278416
+          ]
+        ],
+        "cone_to_body_rectangle_separation_lower_bound_m": [
+          0.10667215345097383,
+          0.12261484272450976,
+          0.12851117686582247
+        ],
+        "cone_contacts": {},
+        "cone_swept_overlaps": {},
+        "outer_pavement_violation": null,
+        "yellow_line_touches": {
+          "outer": {
+            "first_touch": {
+              "sim_time_s": 3.9360000000000004,
+              "station_m": 13.297386065675227,
+              "wheel": "front_right_wheel",
+              "side": "outer",
+              "in_cone_bypass_zone": true
+            },
+            "wheels": [
+              "front_right_wheel",
+              "rear_right_wheel"
+            ],
+            "samples": 5868,
+            "allowed_samples": 5868,
+            "violating_samples": 0
+          }
+        },
+        "illegal_yellow_line_crossing": null,
+        "start_finish_gate": {
+          "station_m": 6.0,
+          "center_x_m": -38.0,
+          "center_y_m": -12.0,
+          "heading_rad": 0.0,
+          "width_m": 1.44,
+          "vehicle_reference": "rear axle center"
+        },
+        "speed_zone_minimum_kmh": 35.63999968121997,
+        "speed_zone_gate_average_kmh": 35.639999681153675,
+        "speed_zone_measurement_max_gap_sim_s": 0.0040000000000048885,
+        "last_measured_speed_kmh": 12.599288797511042,
+        "vision_guide_observations": null,
+        "guided_policy_observations": null,
+        "rgbd_usable_frames": 655,
+        "raw_training_samples": 205
+      },
+      {
+        "case": "right-53",
+        "seed": 53,
+        "layout": "right",
+        "controller": "expert",
+        "world_sha256": "dd3a278de736156e72a6e11cdfa4d4ef3c6d79868a9c3347e73f4c2eded299b0",
+        "policy_sha256": null,
+        "passes_race_rules": true,
+        "failures": [],
+        "lap_count": 1,
+        "lap_time_sim_s": 80.76043331386073,
+        "distance_along_route_m": 251.3982236861601,
+        "brick_progress_m": 14.0,
+        "cone_count": 5,
+        "cone_stations_and_offsets_m": [
+          [
+            20.32394488308006,
+            0.43034651435225024
+          ],
+          [
+            25.445302013766423,
+            0.44860528952837286
+          ],
+          [
+            30.561330243854812,
+            0.4408859264945716
+          ],
+          [
+            35.85261819007176,
+            0.4456110914446804
+          ],
+          [
+            40.74847259067109,
+            0.41943310318251487
+          ]
+        ],
+        "cone_to_body_rectangle_separation_lower_bound_m": [
+          0.11333455162973305,
+          0.1301701240487715,
+          0.12260323303614018,
+          0.1274400966906574,
+          0.10109637554423584
+        ],
+        "cone_contacts": {},
+        "cone_swept_overlaps": {},
+        "outer_pavement_violation": null,
+        "yellow_line_touches": {
+          "outer": {
+            "first_touch": {
+              "sim_time_s": 3.9880000000000004,
+              "station_m": 13.46756462636418,
+              "wheel": "front_right_wheel",
+              "side": "outer",
+              "in_cone_bypass_zone": true
+            },
+            "wheels": [
+              "front_right_wheel",
+              "rear_right_wheel"
+            ],
+            "samples": 6825,
+            "allowed_samples": 6825,
+            "violating_samples": 0
+          }
+        },
+        "illegal_yellow_line_crossing": null,
+        "start_finish_gate": {
+          "station_m": 6.0,
+          "center_x_m": -38.0,
+          "center_y_m": -12.0,
+          "heading_rad": 0.0,
+          "width_m": 1.44,
+          "vehicle_reference": "rear axle center"
+        },
+        "speed_zone_minimum_kmh": 35.63999968124503,
+        "speed_zone_gate_average_kmh": 35.6399996812245,
+        "speed_zone_measurement_max_gap_sim_s": 0.0040000000000048885,
+        "last_measured_speed_kmh": 12.599111232273154,
+        "vision_guide_observations": null,
+        "guided_policy_observations": null,
+        "rgbd_usable_frames": 654,
+        "raw_training_samples": 204
+      },
+      {
+        "case": "right-64",
+        "seed": 64,
+        "layout": "right",
+        "controller": "expert",
+        "world_sha256": "3e7ea971019d2181690d03f5b172e00154408620f9a380f132994c740cb755e0",
+        "policy_sha256": null,
+        "passes_race_rules": true,
+        "failures": [],
+        "lap_count": 1,
+        "lap_time_sim_s": 80.62331012530768,
+        "distance_along_route_m": 251.39822368615364,
+        "brick_progress_m": 14.0,
+        "cone_count": 4,
+        "cone_stations_and_offsets_m": [
+          [
+            20.02630212479846,
+            0.428350516843602
+          ],
+          [
+            25.353816306475736,
+            0.4136403615752862
+          ],
+          [
+            30.583554383222104,
+            0.439756348868327
+          ],
+          [
+            35.70276353568307,
+            0.4435180203844017
+          ]
+        ],
+        "cone_to_body_rectangle_separation_lower_bound_m": [
+          0.11138989959939483,
+          0.09521012082897559,
+          0.12138164426551756,
+          0.12509888941085187
+        ],
+        "cone_contacts": {},
+        "cone_swept_overlaps": {},
+        "outer_pavement_violation": null,
+        "yellow_line_touches": {
+          "outer": {
+            "first_touch": {
+              "sim_time_s": 3.9120000000000004,
+              "station_m": 13.321096252855764,
+              "wheel": "front_right_wheel",
+              "side": "outer",
+              "in_cone_bypass_zone": true
+            },
+            "wheels": [
+              "front_right_wheel",
+              "rear_right_wheel"
+            ],
+            "samples": 6356,
+            "allowed_samples": 6356,
+            "violating_samples": 0
+          }
+        },
+        "illegal_yellow_line_crossing": null,
+        "start_finish_gate": {
+          "station_m": 6.0,
+          "center_x_m": -38.0,
+          "center_y_m": -12.0,
+          "heading_rad": 0.0,
+          "width_m": 1.44,
+          "vehicle_reference": "rear axle center"
+        },
+        "speed_zone_minimum_kmh": 35.63999968122905,
+        "speed_zone_gate_average_kmh": 35.63999967850661,
+        "speed_zone_measurement_max_gap_sim_s": 0.0040000000000048885,
+        "last_measured_speed_kmh": 12.599929020106389,
+        "vision_guide_observations": null,
+        "guided_policy_observations": null,
+        "rgbd_usable_frames": 653,
+        "raw_training_samples": 204
+      },
+      {
+        "case": "slalom-31",
+        "seed": 31,
+        "layout": "slalom",
+        "controller": "expert",
+        "world_sha256": "54ea721704670b36ef10a2c9b01cfdf7489eee27bbe578ff0213ef2e34154149",
+        "policy_sha256": null,
+        "passes_race_rules": true,
+        "failures": [],
+        "lap_count": 1,
+        "lap_time_sim_s": 80.76342797988383,
+        "distance_along_route_m": 251.39822368615495,
+        "brick_progress_m": 14.0,
+        "cone_count": 4,
+        "cone_stations_and_offsets_m": [
+          [
+            19.195417220492672,
+            0.4279278197389282
+          ],
+          [
+            24.646862001936803,
+            -0.41827025546215596
+          ],
+          [
+            29.595436889275497,
+            0.4218084895688101
+          ],
+          [
+            35.07930241519117,
+            -0.41860124639649055
+          ]
+        ],
+        "cone_to_body_rectangle_separation_lower_bound_m": [
+          0.1091790656388262,
+          0.1095512614443413,
+          0.11842653392202504,
+          0.11425704133770317
+        ],
+        "cone_contacts": {},
+        "cone_swept_overlaps": {},
+        "outer_pavement_violation": null,
+        "yellow_line_touches": {
+          "outer": {
+            "first_touch": {
+              "sim_time_s": 3.7560000000000002,
+              "station_m": 12.948049374885535,
+              "wheel": "front_right_wheel",
+              "side": "outer",
+              "in_cone_bypass_zone": true
+            },
+            "wheels": [
+              "front_right_wheel",
+              "rear_right_wheel"
+            ],
+            "samples": 2206,
+            "allowed_samples": 2206,
+            "violating_samples": 0
+          },
+          "inner": {
+            "first_touch": {
+              "sim_time_s": 7.66,
+              "station_m": 22.031480965758107,
+              "wheel": "front_left_wheel",
+              "side": "inner",
+              "in_cone_bypass_zone": true
+            },
+            "wheels": [
+              "front_left_wheel",
+              "rear_left_wheel"
+            ],
+            "samples": 2324,
+            "allowed_samples": 2324,
+            "violating_samples": 0
+          }
+        },
+        "illegal_yellow_line_crossing": null,
+        "start_finish_gate": {
+          "station_m": 6.0,
+          "center_x_m": -38.0,
+          "center_y_m": -12.0,
+          "heading_rad": 0.0,
+          "width_m": 1.44,
+          "vehicle_reference": "rear axle center"
+        },
+        "speed_zone_minimum_kmh": 35.63876520033414,
+        "speed_zone_gate_average_kmh": 35.63997375858452,
+        "speed_zone_measurement_max_gap_sim_s": 0.0040000000000048885,
+        "last_measured_speed_kmh": 12.599311931416128,
+        "vision_guide_observations": null,
+        "guided_policy_observations": null,
+        "rgbd_usable_frames": 654,
+        "raw_training_samples": 204
+      },
+      {
+        "case": "slalom-42",
+        "seed": 42,
+        "layout": "slalom",
+        "controller": "expert",
+        "world_sha256": "25622351ae74f0ea6ac60bcede0ffbfa3939e1417fceda9a66116871e1d9384d",
+        "policy_sha256": null,
+        "passes_race_rules": true,
+        "failures": [],
+        "lap_count": 1,
+        "lap_time_sim_s": 80.91993512312993,
+        "distance_along_route_m": 251.39822368615467,
+        "brick_progress_m": 14.0,
+        "cone_count": 3,
+        "cone_stations_and_offsets_m": [
+          [
+            19.97225957029322,
+            -0.4234511140980265
+          ],
+          [
+            25.259467562780728,
+            0.44098590613823246
+          ],
+          [
+            30.659002612461325,
+            -0.44690282357278416
+          ]
+        ],
+        "cone_to_body_rectangle_separation_lower_bound_m": [
+          0.10181867499023259,
+          0.1327566894615275,
+          0.14013166765725665
+        ],
+        "cone_contacts": {},
+        "cone_swept_overlaps": {},
+        "outer_pavement_violation": null,
+        "yellow_line_touches": {
+          "inner": {
+            "first_touch": {
+              "sim_time_s": 3.9440000000000004,
+              "station_m": 13.24133711092055,
+              "wheel": "front_left_wheel",
+              "side": "inner",
+              "in_cone_bypass_zone": true
+            },
+            "wheels": [
+              "front_left_wheel",
+              "rear_left_wheel"
+            ],
+            "samples": 4116,
+            "allowed_samples": 4116,
+            "violating_samples": 0
+          },
+          "outer": {
+            "first_touch": {
+              "sim_time_s": 8.012,
+              "station_m": 22.70820728744565,
+              "wheel": "front_right_wheel",
+              "side": "outer",
+              "in_cone_bypass_zone": true
+            },
+            "wheels": [
+              "front_right_wheel",
+              "rear_right_wheel"
+            ],
+            "samples": 538,
+            "allowed_samples": 538,
+            "violating_samples": 0
+          }
+        },
+        "illegal_yellow_line_crossing": null,
+        "start_finish_gate": {
+          "station_m": 6.0,
+          "center_x_m": -38.0,
+          "center_y_m": -12.0,
+          "heading_rad": 0.0,
+          "width_m": 1.44,
+          "vehicle_reference": "rear axle center"
+        },
+        "speed_zone_minimum_kmh": 35.639999681211236,
+        "speed_zone_gate_average_kmh": 35.639999681026325,
+        "speed_zone_measurement_max_gap_sim_s": 0.0040000000000048885,
+        "last_measured_speed_kmh": 12.599266629556853,
+        "vision_guide_observations": null,
+        "guided_policy_observations": null,
+        "rgbd_usable_frames": 656,
+        "raw_training_samples": 205
+      },
+      {
+        "case": "slalom-53",
+        "seed": 53,
+        "layout": "slalom",
+        "controller": "expert",
+        "world_sha256": "6ed0eedadcb14cd01a9fc36dc4a0c8a3fcac32f5f3dfe3f547f7f52784382291",
+        "policy_sha256": null,
+        "passes_race_rules": true,
+        "failures": [],
+        "lap_count": 1,
+        "lap_time_sim_s": 80.82459251399438,
+        "distance_along_route_m": 251.39822368615555,
+        "brick_progress_m": 14.0,
+        "cone_count": 5,
+        "cone_stations_and_offsets_m": [
+          [
+            20.32394488308006,
+            0.43034651435225024
+          ],
+          [
+            25.445302013766423,
+            -0.44860528952837286
+          ],
+          [
+            30.561330243854812,
+            0.4408859264945716
+          ],
+          [
+            35.85261819007176,
+            -0.4456110914446804
+          ],
+          [
+            40.74847259067109,
+            0.41943310318251487
+          ]
+        ],
+        "cone_to_body_rectangle_separation_lower_bound_m": [
+          0.10886884040066669,
+          0.14118536969004133,
+          0.13508299054849082,
+          0.1375316357881898,
+          0.11891684450475754
+        ],
+        "cone_contacts": {},
+        "cone_swept_overlaps": {},
+        "outer_pavement_violation": null,
+        "yellow_line_touches": {
+          "outer": {
+            "first_touch": {
+              "sim_time_s": 4.016,
+              "station_m": 13.465481887942069,
+              "wheel": "front_right_wheel",
+              "side": "outer",
+              "in_cone_bypass_zone": true
+            },
+            "wheels": [
+              "front_right_wheel",
+              "rear_right_wheel"
+            ],
+            "samples": 3398,
+            "allowed_samples": 3398,
+            "violating_samples": 0
+          },
+          "inner": {
+            "first_touch": {
+              "sim_time_s": 8.096,
+              "station_m": 22.95674800874382,
+              "wheel": "front_left_wheel",
+              "side": "inner",
+              "in_cone_bypass_zone": true
+            },
+            "wheels": [
+              "front_left_wheel",
+              "rear_left_wheel"
+            ],
+            "samples": 1073,
+            "allowed_samples": 1073,
+            "violating_samples": 0
+          }
+        },
+        "illegal_yellow_line_crossing": null,
+        "start_finish_gate": {
+          "station_m": 6.0,
+          "center_x_m": -38.0,
+          "center_y_m": -12.0,
+          "heading_rad": 0.0,
+          "width_m": 1.44,
+          "vehicle_reference": "rear axle center"
+        },
+        "speed_zone_minimum_kmh": 35.63999968122489,
+        "speed_zone_gate_average_kmh": 35.639999674340146,
+        "speed_zone_measurement_max_gap_sim_s": 0.0040000000000048885,
+        "last_measured_speed_kmh": 12.599402824932117,
+        "vision_guide_observations": null,
+        "guided_policy_observations": null,
+        "rgbd_usable_frames": 654,
+        "raw_training_samples": 204
+      },
+      {
+        "case": "slalom-64",
+        "seed": 64,
+        "layout": "slalom",
+        "controller": "expert",
+        "world_sha256": "cc43e09d91c6d1b53d4c07945ab6215ed7344f34dcf5f52f15bf5e7b8ab45072",
+        "policy_sha256": null,
+        "passes_race_rules": true,
+        "failures": [],
+        "lap_count": 1,
+        "lap_time_sim_s": 80.76306802543031,
+        "distance_along_route_m": 251.39822368615552,
+        "brick_progress_m": 14.0,
+        "cone_count": 4,
+        "cone_stations_and_offsets_m": [
+          [
+            20.02630212479846,
+            -0.428350516843602
+          ],
+          [
+            25.353816306475736,
+            0.4136403615752862
+          ],
+          [
+            30.583554383222104,
+            -0.439756348868327
+          ],
+          [
+            35.70276353568307,
+            0.4435180203844017
+          ]
+        ],
+        "cone_to_body_rectangle_separation_lower_bound_m": [
+          0.10694564519940719,
+          0.10139514696240681,
+          0.13330880798642775,
+          0.1290021689451586
+        ],
+        "cone_contacts": {},
+        "cone_swept_overlaps": {},
+        "outer_pavement_violation": null,
+        "yellow_line_touches": {
+          "inner": {
+            "first_touch": {
+              "sim_time_s": 3.9360000000000004,
+              "station_m": 13.323220995835264,
+              "wheel": "front_left_wheel",
+              "side": "inner",
+              "in_cone_bypass_zone": true
+            },
+            "wheels": [
+              "front_left_wheel",
+              "rear_left_wheel"
+            ],
+            "samples": 2309,
+            "allowed_samples": 2309,
+            "violating_samples": 0
+          },
+          "outer": {
+            "first_touch": {
+              "sim_time_s": 7.996,
+              "station_m": 22.771201708071565,
+              "wheel": "front_right_wheel",
+              "side": "outer",
+              "in_cone_bypass_zone": true
+            },
+            "wheels": [
+              "front_right_wheel",
+              "rear_right_wheel"
+            ],
+            "samples": 2443,
+            "allowed_samples": 2443,
+            "violating_samples": 0
+          }
+        },
+        "illegal_yellow_line_crossing": null,
+        "start_finish_gate": {
+          "station_m": 6.0,
+          "center_x_m": -38.0,
+          "center_y_m": -12.0,
+          "heading_rad": 0.0,
+          "width_m": 1.44,
+          "vehicle_reference": "rear axle center"
+        },
+        "speed_zone_minimum_kmh": 35.639999681229156,
+        "speed_zone_gate_average_kmh": 35.63999968082776,
+        "speed_zone_measurement_max_gap_sim_s": 0.0040000000000048885,
+        "last_measured_speed_kmh": 12.59979396500066,
+        "vision_guide_observations": null,
+        "guided_policy_observations": null,
+        "rgbd_usable_frames": 654,
+        "raw_training_samples": 204
+      }
+    ]
+  },
+  "geometry_guided_learned_policy": [
+    {
+      "case": "clear-134",
+      "seed": 134,
+      "layout": "clear",
+      "controller": "guided-policy",
+      "world_sha256": "25fc135f4a35d56e90f172e08fa9a851fb44b82332ccc72eb614793983150a6d",
+      "policy_sha256": "3576e0840f325251e6b25e546c01fd3ae6be50a812fea54ed0b136301a6a3287",
+      "passes_race_rules": true,
+      "failures": [],
+      "lap_count": 1,
+      "lap_time_sim_s": 70.54851864443437,
+      "distance_along_route_m": 251.39822368615643,
+      "brick_progress_m": 14.0,
+      "cone_count": 0,
+      "cone_stations_and_offsets_m": [],
+      "cone_to_body_rectangle_separation_lower_bound_m": [],
+      "cone_contacts": {},
+      "cone_swept_overlaps": {},
+      "outer_pavement_violation": null,
+      "yellow_line_touches": {},
+      "illegal_yellow_line_crossing": null,
+      "start_finish_gate": {
+        "station_m": 6.0,
+        "center_x_m": -38.0,
+        "center_y_m": -12.0,
+        "heading_rad": 0.0,
+        "width_m": 1.44,
+        "vehicle_reference": "rear axle center"
+      },
+      "speed_zone_minimum_kmh": 35.15357633190934,
+      "speed_zone_gate_average_kmh": 35.456475228838485,
+      "speed_zone_measurement_max_gap_sim_s": 0.0040000000000048885,
+      "last_measured_speed_kmh": 12.340913229857977,
+      "vision_guide_observations": {
+        "frames": 861,
+        "lane_frames": 861,
+        "cone_frames": 0,
+        "blue_trigger_frames": 1,
+        "magenta_trigger_frames": 1,
+        "left_avoidance_frames": 0,
+        "right_avoidance_frames": 0,
+        "blocked_observation_frames": 0,
+        "brick_slow_frames": 129
+      },
+      "guided_policy_observations": {
+        "learned_inferences_received": 157,
+        "learned_residual_applied_frames": 839,
+        "lane_loss_stop_frames": 0,
+        "maximum_applied_learned_age_sim_s": 0.9960000000000001,
+        "maximum_speed_residual_mps": 0.12,
+        "maximum_yaw_residual_rad_s": 0.014
+      },
+      "rgbd_usable_frames": 861,
+      "raw_training_samples": 0
+    },
+    {
+      "case": "left-131",
+      "seed": 131,
+      "layout": "left",
+      "controller": "guided-policy",
+      "world_sha256": "4705ceb032d440b4fd3f8ddeec14ec7271be9ab7e37b16ca02399d20e9523df1",
+      "policy_sha256": "3576e0840f325251e6b25e546c01fd3ae6be50a812fea54ed0b136301a6a3287",
+      "passes_race_rules": true,
+      "failures": [],
+      "lap_count": 1,
+      "lap_time_sim_s": 74.11279146612225,
+      "distance_along_route_m": 251.39822368615532,
+      "brick_progress_m": 14.0,
+      "cone_count": 3,
+      "cone_stations_and_offsets_m": [
+        [
+          19.87880780538696,
+          -0.4163283072034284
+        ],
+        [
+          24.866268254307286,
+          -0.42783799180095206
+        ],
+        [
+          30.33416333748688,
+          -0.4262275345584137
+        ]
+      ],
+      "cone_to_body_rectangle_separation_lower_bound_m": [
+        0.07999566670804059,
+        0.08698032782381845,
+        0.08197454283120498
+      ],
+      "cone_contacts": {},
+      "cone_swept_overlaps": {},
+      "outer_pavement_violation": null,
+      "yellow_line_touches": {
+        "inner": {
+          "first_touch": {
+            "sim_time_s": 4.632000000000001,
+            "station_m": 16.308021702143222,
+            "wheel": "front_left_wheel",
+            "side": "inner",
+            "in_cone_bypass_zone": true
+          },
+          "wheels": [
+            "front_left_wheel",
+            "rear_left_wheel"
+          ],
+          "samples": 3821,
+          "allowed_samples": 3821,
+          "violating_samples": 0
+        }
+      },
+      "illegal_yellow_line_crossing": null,
+      "start_finish_gate": {
+        "station_m": 6.0,
+        "center_x_m": -38.0,
+        "center_y_m": -12.0,
+        "heading_rad": 0.0,
+        "width_m": 1.44,
+        "vehicle_reference": "rear axle center"
+      },
+      "speed_zone_minimum_kmh": 35.25530647272824,
+      "speed_zone_gate_average_kmh": 35.45743821786318,
+      "speed_zone_measurement_max_gap_sim_s": 0.0040000000000048885,
+      "last_measured_speed_kmh": 11.999184714493527,
+      "vision_guide_observations": {
+        "frames": 905,
+        "lane_frames": 905,
+        "cone_frames": 168,
+        "blue_trigger_frames": 1,
+        "magenta_trigger_frames": 1,
+        "left_avoidance_frames": 99,
+        "right_avoidance_frames": 0,
+        "blocked_observation_frames": 0,
+        "brick_slow_frames": 129
+      },
+      "guided_policy_observations": {
+        "learned_inferences_received": 152,
+        "learned_residual_applied_frames": 807,
+        "lane_loss_stop_frames": 0,
+        "maximum_applied_learned_age_sim_s": 0.9960000000000001,
+        "maximum_speed_residual_mps": 0.12,
+        "maximum_yaw_residual_rad_s": 0.014
+      },
+      "rgbd_usable_frames": 905,
+      "raw_training_samples": 0
+    },
+    {
+      "case": "right-132",
+      "seed": 132,
+      "layout": "right",
+      "controller": "guided-policy",
+      "world_sha256": "f29d44fdb7ba0e6a79ee0a63f57818d6b1a9885b2d916daeb6c7957c34ac2bb4",
+      "policy_sha256": "3576e0840f325251e6b25e546c01fd3ae6be50a812fea54ed0b136301a6a3287",
+      "passes_race_rules": true,
+      "failures": [],
+      "lap_count": 1,
+      "lap_time_sim_s": 75.09652571621822,
+      "distance_along_route_m": 251.39822368615614,
+      "brick_progress_m": 14.0,
+      "cone_count": 4,
+      "cone_stations_and_offsets_m": [
+        [
+          19.845555199905455,
+          0.4471148204542516
+        ],
+        [
+          25.261317530131087,
+          0.4246698429931378
+        ],
+        [
+          30.439534659267803,
+          0.44941298215179115
+        ],
+        [
+          35.633965328655634,
+          0.413946376334354
+        ]
+      ],
+      "cone_to_body_rectangle_separation_lower_bound_m": [
+        0.10606152973583013,
+        0.08332976982550919,
+        0.10803837534019253,
+        0.06762532476729544
+      ],
+      "cone_contacts": {},
+      "cone_swept_overlaps": {},
+      "outer_pavement_violation": null,
+      "yellow_line_touches": {
+        "outer": {
+          "first_touch": {
+            "sim_time_s": 4.604,
+            "station_m": 16.263900231560413,
+            "wheel": "front_right_wheel",
+            "side": "outer",
+            "in_cone_bypass_zone": true
+          },
+          "wheels": [
+            "front_right_wheel",
+            "rear_right_wheel"
+          ],
+          "samples": 5086,
+          "allowed_samples": 5086,
+          "violating_samples": 0
+        }
+      },
+      "illegal_yellow_line_crossing": null,
+      "start_finish_gate": {
+        "station_m": 6.0,
+        "center_x_m": -38.0,
+        "center_y_m": -12.0,
+        "heading_rad": 0.0,
+        "width_m": 1.44,
+        "vehicle_reference": "rear axle center"
+      },
+      "speed_zone_minimum_kmh": 35.09955705263853,
+      "speed_zone_gate_average_kmh": 35.456559619115104,
+      "speed_zone_measurement_max_gap_sim_s": 0.0040000000000048885,
+      "last_measured_speed_kmh": 12.040217975175672,
+      "vision_guide_observations": {
+        "frames": 916,
+        "lane_frames": 916,
+        "cone_frames": 196,
+        "blue_trigger_frames": 1,
+        "magenta_trigger_frames": 1,
+        "left_avoidance_frames": 0,
+        "right_avoidance_frames": 129,
+        "blocked_observation_frames": 0,
+        "brick_slow_frames": 128
+      },
+      "guided_policy_observations": {
+        "learned_inferences_received": 157,
+        "learned_residual_applied_frames": 822,
+        "lane_loss_stop_frames": 0,
+        "maximum_applied_learned_age_sim_s": 0.9960000000000001,
+        "maximum_speed_residual_mps": 0.12,
+        "maximum_yaw_residual_rad_s": 0.014
+      },
+      "rgbd_usable_frames": 916,
+      "raw_training_samples": 0
+    },
+    {
+      "case": "slalom-133",
+      "seed": 133,
+      "layout": "slalom",
+      "controller": "guided-policy",
+      "world_sha256": "ee362d875b9794c91ecdc2abe8a0a3deee81f5d431695d76b7e0ae62d3172041",
+      "policy_sha256": "3576e0840f325251e6b25e546c01fd3ae6be50a812fea54ed0b136301a6a3287",
+      "passes_race_rules": true,
+      "failures": [],
+      "lap_count": 1,
+      "lap_time_sim_s": 76.13613936578454,
+      "distance_along_route_m": 251.39822368615444,
+      "brick_progress_m": 14.0,
+      "cone_count": 5,
+      "cone_stations_and_offsets_m": [
+        [
+          19.98421816738439,
+          0.44222020154738734
+        ],
+        [
+          25.327629099491325,
+          -0.42586986456444653
+        ],
+        [
+          30.411782969877297,
+          0.43659469643385196
+        ],
+        [
+          35.68412443373375,
+          -0.44910777408799096
+        ],
+        [
+          40.89937085640751,
+          0.44620998473977946
+        ]
+      ],
+      "cone_to_body_rectangle_separation_lower_bound_m": [
+        0.09442548364848019,
+        0.08168680544252899,
+        0.09199661192806471,
+        0.10404535681176619,
+        0.10415663269805189
+      ],
+      "cone_contacts": {},
+      "cone_swept_overlaps": {},
+      "outer_pavement_violation": null,
+      "yellow_line_touches": {
+        "outer": {
+          "first_touch": {
+            "sim_time_s": 4.656000000000001,
+            "station_m": 16.436366080704808,
+            "wheel": "front_right_wheel",
+            "side": "outer",
+            "in_cone_bypass_zone": true
+          },
+          "wheels": [
+            "front_right_wheel",
+            "rear_right_wheel"
+          ],
+          "samples": 3199,
+          "allowed_samples": 3199,
+          "violating_samples": 0
+        },
+        "inner": {
+          "first_touch": {
+            "sim_time_s": 7.688000000000001,
+            "station_m": 22.791737893008534,
+            "wheel": "front_left_wheel",
+            "side": "inner",
+            "in_cone_bypass_zone": true
+          },
+          "wheels": [
+            "front_left_wheel",
+            "rear_left_wheel"
+          ],
+          "samples": 1858,
+          "allowed_samples": 1858,
+          "violating_samples": 0
+        }
+      },
+      "illegal_yellow_line_crossing": null,
+      "start_finish_gate": {
+        "station_m": 6.0,
+        "center_x_m": -38.0,
+        "center_y_m": -12.0,
+        "heading_rad": 0.0,
+        "width_m": 1.44,
+        "vehicle_reference": "rear axle center"
+      },
+      "speed_zone_minimum_kmh": 34.9936313488336,
+      "speed_zone_gate_average_kmh": 35.455489073815244,
+      "speed_zone_measurement_max_gap_sim_s": 0.0040000000000048885,
+      "last_measured_speed_kmh": 11.732449814457901,
+      "vision_guide_observations": {
+        "frames": 929,
+        "lane_frames": 929,
+        "cone_frames": 226,
+        "blue_trigger_frames": 1,
+        "magenta_trigger_frames": 1,
+        "left_avoidance_frames": 53,
+        "right_avoidance_frames": 93,
+        "blocked_observation_frames": 0,
+        "brick_slow_frames": 130
+      },
+      "guided_policy_observations": {
+        "learned_inferences_received": 168,
+        "learned_residual_applied_frames": 908,
+        "lane_loss_stop_frames": 0,
+        "maximum_applied_learned_age_sim_s": 0.9960000000000001,
+        "maximum_speed_residual_mps": 0.12,
+        "maximum_yaw_residual_rad_s": 0.014
+      },
+      "rgbd_usable_frames": 929,
+      "raw_training_samples": 0
+    }
+  ],
+  "independent_rgbd_geometry_baseline": [
+    {
+      "case": "blocked-135",
+      "seed": 135,
+      "layout": "blocked",
+      "controller": "vision-guide",
+      "world_sha256": "377958a1632a7df0200ba90393d12f1f32a663f6bd2ce584bd127b173135f692",
+      "policy_sha256": null,
+      "passes_race_rules": false,
+      "failures": [
+        "lap_not_completed",
+        "brick_segment_not_completed",
+        "speed_zone_not_crossed",
+        "finish_gate_deadline_exceeded"
+      ],
+      "lap_count": 0,
+      "lap_time_sim_s": null,
+      "distance_along_route_m": 17.860700038221964,
+      "brick_progress_m": 0.0,
+      "cone_count": 4,
+      "cone_stations_and_offsets_m": [
+        [
+          20.275601780926507,
+          0.4351454145647627
+        ],
+        [
+          25.415068881176325,
+          0.0
+        ],
+        [
+          30.453492858892375,
+          0.42375075739952744
+        ],
+        [
+          35.86144032442375,
+          -0.41879400535070427
+        ]
+      ],
+      "cone_to_body_rectangle_separation_lower_bound_m": [
+        0.08904326519383912,
+        0.6390783966407624,
+        null,
+        null
+      ],
+      "cone_contacts": {},
+      "cone_swept_overlaps": {},
+      "outer_pavement_violation": null,
+      "yellow_line_touches": {
+        "outer": {
+          "first_touch": {
+            "sim_time_s": 4.772,
+            "station_m": 16.687172310079468,
+            "wheel": "front_right_wheel",
+            "side": "outer",
+            "in_cone_bypass_zone": true
+          },
+          "wheels": [
+            "front_right_wheel",
+            "rear_right_wheel"
+          ],
+          "samples": 1351,
+          "allowed_samples": 1351,
+          "violating_samples": 0
+        }
+      },
+      "illegal_yellow_line_crossing": null,
+      "start_finish_gate": {
+        "station_m": 6.0,
+        "center_x_m": -38.0,
+        "center_y_m": -12.0,
+        "heading_rad": 0.0,
+        "width_m": 1.44,
+        "vehicle_reference": "rear axle center"
+      },
+      "speed_zone_minimum_kmh": null,
+      "speed_zone_gate_average_kmh": null,
+      "speed_zone_measurement_max_gap_sim_s": null,
+      "last_measured_speed_kmh": 0.0,
+      "vision_guide_observations": {
+        "frames": 291,
+        "lane_frames": 291,
+        "cone_frames": 291,
+        "blue_trigger_frames": 0,
+        "magenta_trigger_frames": 0,
+        "left_avoidance_frames": 0,
+        "right_avoidance_frames": 39,
+        "blocked_observation_frames": 214,
+        "brick_slow_frames": 184
+      },
+      "guided_policy_observations": null,
+      "rgbd_usable_frames": 291,
+      "raw_training_samples": 0
+    },
+    {
+      "case": "slalom-133",
+      "seed": 133,
+      "layout": "slalom",
+      "controller": "vision-guide",
+      "world_sha256": "b64b059f24f11ece42685c0d23e9106d2e23d2e799d7dedae359b1eabc57c9a6",
+      "policy_sha256": null,
+      "passes_race_rules": true,
+      "failures": [],
+      "lap_count": 1,
+      "lap_time_sim_s": 75.62240873595809,
+      "distance_along_route_m": 251.39822368615506,
+      "brick_progress_m": 14.0,
+      "cone_count": 5,
+      "cone_stations_and_offsets_m": [
+        [
+          19.98421816738439,
+          0.44222020154738734
+        ],
+        [
+          25.327629099491325,
+          -0.42586986456444653
+        ],
+        [
+          30.411782969877297,
+          0.43659469643385196
+        ],
+        [
+          35.68412443373375,
+          -0.44910777408799096
+        ],
+        [
+          40.89937085640751,
+          0.44620998473977946
+        ]
+      ],
+      "cone_to_body_rectangle_separation_lower_bound_m": [
+        0.09455245868227255,
+        0.06743887333876347,
+        0.08865940919458004,
+        0.09740763701263686,
+        0.10029501377167538
+      ],
+      "cone_contacts": {},
+      "cone_swept_overlaps": {},
+      "outer_pavement_violation": null,
+      "yellow_line_touches": {
+        "outer": {
+          "first_touch": {
+            "sim_time_s": 4.704000000000001,
+            "station_m": 16.38950744639369,
+            "wheel": "front_right_wheel",
+            "side": "outer",
+            "in_cone_bypass_zone": true
+          },
+          "wheels": [
+            "front_right_wheel",
+            "rear_right_wheel"
+          ],
+          "samples": 3150,
+          "allowed_samples": 3150,
+          "violating_samples": 0
+        },
+        "inner": {
+          "first_touch": {
+            "sim_time_s": 7.748,
+            "station_m": 22.765107696635642,
+            "wheel": "front_left_wheel",
+            "side": "inner",
+            "in_cone_bypass_zone": true
+          },
+          "wheels": [
+            "front_left_wheel",
+            "rear_left_wheel"
+          ],
+          "samples": 1753,
+          "allowed_samples": 1753,
+          "violating_samples": 0
+        }
+      },
+      "illegal_yellow_line_crossing": null,
+      "start_finish_gate": {
+        "station_m": 6.0,
+        "center_x_m": -38.0,
+        "center_y_m": -12.0,
+        "heading_rad": 0.0,
+        "width_m": 1.44,
+        "vehicle_reference": "rear axle center"
+      },
+      "speed_zone_minimum_kmh": 35.448042104306225,
+      "speed_zone_gate_average_kmh": 35.456371190130476,
+      "speed_zone_measurement_max_gap_sim_s": 0.0040000000000048885,
+      "last_measured_speed_kmh": 12.05752758149285,
+      "vision_guide_observations": {
+        "frames": 923,
+        "lane_frames": 923,
+        "cone_frames": 226,
+        "blue_trigger_frames": 1,
+        "magenta_trigger_frames": 1,
+        "left_avoidance_frames": 53,
+        "right_avoidance_frames": 92,
+        "blocked_observation_frames": 0,
+        "brick_slow_frames": 127
+      },
+      "guided_policy_observations": null,
+      "rgbd_usable_frames": 923,
+      "raw_training_samples": 0
+    }
+  ],
+  "independent_learned_only_comparison": [
+    {
+      "case": "slalom-133",
+      "seed": 133,
+      "layout": "slalom",
+      "controller": "policy",
+      "world_sha256": "a5a1e8d9fca04d32d4c9a0bced6590bba2580b4588658e676562c470ade94364",
+      "policy_sha256": "3576e0840f325251e6b25e546c01fd3ae6be50a812fea54ed0b136301a6a3287",
+      "passes_race_rules": false,
+      "failures": [
+        "lap_not_completed",
+        "collision",
+        "brick_segment_not_completed",
+        "speed_zone_not_crossed"
+      ],
+      "lap_count": 0,
+      "lap_time_sim_s": null,
+      "distance_along_route_m": 13.433076310023964,
+      "brick_progress_m": 0.0,
+      "cone_count": 5,
+      "cone_stations_and_offsets_m": [
+        [
+          19.98421816738439,
+          0.44222020154738734
+        ],
+        [
+          25.327629099491325,
+          -0.42586986456444653
+        ],
+        [
+          30.411782969877297,
+          0.43659469643385196
+        ],
+        [
+          35.68412443373375,
+          -0.44910777408799096
+        ],
+        [
+          40.89937085640751,
+          0.44620998473977946
+        ]
+      ],
+      "cone_to_body_rectangle_separation_lower_bound_m": [
+        -0.00033562864266542536,
+        null,
+        null,
+        null,
+        null
+      ],
+      "cone_contacts": {},
+      "cone_swept_overlaps": {
+        "0": 6.844
+      },
+      "outer_pavement_violation": null,
+      "yellow_line_touches": {
+        "outer": {
+          "first_touch": {
+            "sim_time_s": 5.268000000000001,
+            "station_m": 17.134713074243297,
+            "wheel": "front_right_wheel",
+            "side": "outer",
+            "in_cone_bypass_zone": true
+          },
+          "wheels": [
+            "front_right_wheel",
+            "rear_right_wheel"
+          ],
+          "samples": 693,
+          "allowed_samples": 693,
+          "violating_samples": 0
+        }
+      },
+      "illegal_yellow_line_crossing": null,
+      "start_finish_gate": {
+        "station_m": 6.0,
+        "center_x_m": -38.0,
+        "center_y_m": -12.0,
+        "heading_rad": 0.0,
+        "width_m": 1.44,
+        "vehicle_reference": "rear axle center"
+      },
+      "speed_zone_minimum_kmh": null,
+      "speed_zone_gate_average_kmh": null,
+      "speed_zone_measurement_max_gap_sim_s": null,
+      "last_measured_speed_kmh": 8.544279458844043,
+      "vision_guide_observations": null,
+      "guided_policy_observations": null,
+      "rgbd_usable_frames": 54,
+      "raw_training_samples": 0
+    }
+  ],
+  "scoring_negative_cases": {
+    "below-30": {
+      "case": "below-30",
+      "seed": 211,
+      "layout": "clear",
+      "controller": "expert",
+      "world_sha256": "2c3a949d36efe5360c415735003eb79cc901218b1557a45e201d1a6b230b87bb",
+      "policy_sha256": null,
+      "passes_race_rules": false,
+      "failures": [
+        "speed_zone_below_30_kmh"
+      ],
+      "lap_count": 1,
+      "lap_time_sim_s": 75.88570763170101,
+      "distance_along_route_m": 251.39822368616024,
+      "brick_progress_m": 14.0,
+      "cone_count": 0,
+      "cone_stations_and_offsets_m": [],
+      "cone_to_body_rectangle_separation_lower_bound_m": [],
+      "cone_contacts": {},
+      "cone_swept_overlaps": {},
+      "outer_pavement_violation": null,
+      "yellow_line_touches": {},
+      "illegal_yellow_line_crossing": null,
+      "start_finish_gate": {
+        "station_m": 6.0,
+        "center_x_m": -38.0,
+        "center_y_m": -12.0,
+        "heading_rad": 0.0,
+        "width_m": 1.44,
+        "vehicle_reference": "rear axle center"
+      },
+      "speed_zone_minimum_kmh": 26.999967699716258,
+      "speed_zone_gate_average_kmh": 26.999999199667897,
+      "speed_zone_measurement_max_gap_sim_s": 0.0040000000000048885,
+      "last_measured_speed_kmh": 12.599843500213684,
+      "vision_guide_observations": null,
+      "guided_policy_observations": null,
+      "rgbd_usable_frames": 0,
+      "raw_training_samples": 0
+    },
+    "hard-edge": {
+      "case": "hard-edge",
+      "seed": 211,
+      "layout": "clear",
+      "controller": "straight",
+      "world_sha256": "46ca1f6bfa9bbb859cfdcad6a5aaa7908401ffada1d3c4e9fc3ec015ba28dca8",
+      "policy_sha256": null,
+      "passes_race_rules": false,
+      "failures": [
+        "lap_not_completed",
+        "pavement_boundary_crossed",
+        "yellow_boundary_violation",
+        "brick_segment_not_completed",
+        "speed_zone_not_crossed"
+      ],
+      "lap_count": 0,
+      "lap_time_sim_s": null,
+      "distance_along_route_m": 54.29839630319641,
+      "brick_progress_m": 7.298396303191836,
+      "cone_count": 0,
+      "cone_stations_and_offsets_m": [],
+      "cone_to_body_rectangle_separation_lower_bound_m": [],
+      "cone_contacts": {},
+      "cone_swept_overlaps": {},
+      "outer_pavement_violation": 16.512,
+      "yellow_line_touches": {
+        "inner": {
+          "first_touch": {
+            "sim_time_s": 15.472000000000001,
+            "station_m": 57.203689459124384,
+            "wheel": "front_left_wheel",
+            "side": "inner",
+            "in_cone_bypass_zone": false
+          },
+          "wheels": [
+            "front_left_wheel",
+            "rear_left_wheel"
+          ],
+          "samples": 181,
+          "allowed_samples": 0,
+          "violating_samples": 181
+        }
+      },
+      "illegal_yellow_line_crossing": {
+        "sim_time_s": 15.472000000000001,
+        "station_m": 57.203689459124384,
+        "wheel": "front_left_wheel",
+        "side": "inner",
+        "in_cone_bypass_zone": false
+      },
+      "start_finish_gate": {
+        "station_m": 6.0,
+        "center_x_m": -38.0,
+        "center_y_m": -12.0,
+        "heading_rad": 0.0,
+        "width_m": 1.44,
+        "vehicle_reference": "rear axle center"
+      },
+      "speed_zone_minimum_kmh": null,
+      "speed_zone_gate_average_kmh": null,
+      "speed_zone_measurement_max_gap_sim_s": null,
+      "last_measured_speed_kmh": 12.127707127100848,
+      "vision_guide_observations": null,
+      "guided_policy_observations": null,
+      "rgbd_usable_frames": 0,
+      "raw_training_samples": 0
+    },
+    "straight-collision": {
+      "case": "straight-collision",
+      "seed": 208,
+      "layout": "slalom",
+      "controller": "straight",
+      "world_sha256": "dd132f25f9244a1f54ae05940a4349bfffac0ed9752dfa348a9737d0578fe7cc",
+      "policy_sha256": null,
+      "passes_race_rules": false,
+      "failures": [
+        "lap_not_completed",
+        "collision",
+        "brick_segment_not_completed",
+        "speed_zone_not_crossed"
+      ],
+      "lap_count": 0,
+      "lap_time_sim_s": null,
+      "distance_along_route_m": 12.935673438399746,
+      "brick_progress_m": 0.0,
+      "cone_count": 4,
+      "cone_stations_and_offsets_m": [
+        [
+          19.836235850673944,
+          -0.41512221321277487
+        ],
+        [
+          25.043680950337034,
+          0.4226702319118092
+        ],
+        [
+          30.141649330683936,
+          -0.4444893104537358
+        ],
+        [
+          35.2058020703706,
+          0.4388300586499323
+        ]
+      ],
+      "cone_to_body_rectangle_separation_lower_bound_m": [
+        -0.009437593203441785,
+        null,
+        null,
+        null
+      ],
+      "cone_contacts": {},
+      "cone_swept_overlaps": {
+        "0": 4.692
+      },
+      "outer_pavement_violation": null,
+      "yellow_line_touches": {},
+      "illegal_yellow_line_crossing": null,
+      "start_finish_gate": {
+        "station_m": 6.0,
+        "center_x_m": -38.0,
+        "center_y_m": -12.0,
+        "heading_rad": 0.0,
+        "width_m": 1.44,
+        "vehicle_reference": "rear axle center"
+      },
+      "speed_zone_minimum_kmh": null,
+      "speed_zone_gate_average_kmh": null,
+      "speed_zone_measurement_max_gap_sim_s": null,
+      "last_measured_speed_kmh": 12.599999887384255,
+      "vision_guide_observations": null,
+      "guided_policy_observations": null,
+      "rgbd_usable_frames": 0,
+      "raw_training_samples": 0
+    },
+    "timeout": {
+      "case": "timeout",
+      "seed": 212,
+      "layout": "clear",
+      "controller": "expert",
+      "world_sha256": "747db4efbe4cd2811a6a79dd1ded63cd9f99753639f4d431f178a461f40e3858",
+      "policy_sha256": null,
+      "passes_race_rules": false,
+      "failures": [
+        "lap_not_completed",
+        "speed_zone_not_crossed",
+        "finish_gate_deadline_exceeded"
+      ],
+      "lap_count": 0,
+      "lap_time_sim_s": null,
+      "distance_along_route_m": 120.31351188535423,
+      "brick_progress_m": 14.0,
+      "cone_count": 0,
+      "cone_stations_and_offsets_m": [],
+      "cone_to_body_rectangle_separation_lower_bound_m": [],
+      "cone_contacts": {},
+      "cone_swept_overlaps": {},
+      "outer_pavement_violation": null,
+      "yellow_line_touches": {},
+      "illegal_yellow_line_crossing": null,
+      "start_finish_gate": {
+        "station_m": 6.0,
+        "center_x_m": -38.0,
+        "center_y_m": -12.0,
+        "heading_rad": 0.0,
+        "width_m": 1.44,
+        "vehicle_reference": "rear axle center"
+      },
+      "speed_zone_minimum_kmh": null,
+      "speed_zone_gate_average_kmh": null,
+      "speed_zone_measurement_max_gap_sim_s": null,
+      "last_measured_speed_kmh": 11.600300175166662,
+      "vision_guide_observations": null,
+      "guided_policy_observations": null,
+      "rgbd_usable_frames": 0,
+      "raw_training_samples": 0
+    }
+  },
+  "mac_validation": {
+    "offline_training_replayed_on_linux": true,
+    "macos_arm64_wheels_resolved_on_linux": true,
+    "executed_on_macos_hardware": false,
+    "perception_parity": {
+      "cases": [
+        "slalom-53",
+        "right-42",
+        "clear-31"
+      ],
+      "feature_dimension": 603,
+      "max_abs_feature_difference": 0.0,
+      "mean_abs_feature_difference": 0.0,
+      "passed": true
+    }
+  },
+  "standalone_scene_loading": {
+    "width": 320,
+    "height": 240,
+    "yellow_pixels_left": 1063,
+    "yellow_pixels_right": 1061
+  }
+}

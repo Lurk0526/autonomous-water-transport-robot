@@ -1,0 +1,11 @@
+{
+  "cases": [
+    "slalom-53",
+    "right-42",
+    "clear-31"
+  ],
+  "feature_dimension": 603,
+  "max_abs_feature_difference": 0.0,
+  "mean_abs_feature_difference": 0.0,
+  "passed": true
+}

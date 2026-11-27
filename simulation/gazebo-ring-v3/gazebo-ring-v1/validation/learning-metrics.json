@@ -1,0 +1,918 @@
+{
+  "action_names": [
+    "target_speed_mps",
+    "target_yaw_rate_rad_s"
+  ],
+  "world_schema": "ring-cad-narrow-serial-v3",
+  "feature_version": "ring-rgbd-v3",
+  "model_hashes": [
+    "5758171f26e50447eff6ceb2cdf931a59561d1afed0dffda25e1d1b9f5015ad6",
+    "ae6313806f5ba55828a711df8cfcc5bd0db7a549899e758610739342fac90f91"
+  ],
+  "depth_max_m": 24.0,
+  "feature_preprocessing": {
+    "square_root_color_occupancy": [
+      "orange",
+      "blue",
+      "cyan",
+      "magenta"
+    ]
+  },
+  "selected_policy": "mlp",
+  "selection": "auto",
+  "selection_metric": "validation episode-macro normalized MAE",
+  "split_seed": 42,
+  "splits": {
+    "train": [
+      "07ba55c0ccf34fc981b7571601517e06",
+      "149a5ce9a5f34f3aa5a4e0bf6a9cf587",
+      "160a9a2a56504023b56691dd655187d8",
+      "3e03eba2d3e94021b98583a879cce229",
+      "430466d0da4748dfa360f6a4254fcdbc",
+      "55a2ed70e57d4c6c98f169609fa4a0bc",
+      "c821f2f9ac1b4556842c205f28cbf2ff",
+      "dc1b1d333fc6431186d2adc32108dd1d"
+    ],
+    "validation": [
+      "04e47ebcf4bf4ec680e4da14bff0e0ba",
+      "1a5ff49bbd05411094c36618a3d3912e",
+      "e4c3d306e3a449d98712663898d743a9",
+      "e8343c5ae15f49f0b89492b88e50a0cf"
+    ],
+    "test": [
+      "0bddecd1f87f4638b24cf1007e848794",
+      "8421a45caa884e4eb9e1f14b3b21740c",
+      "aa1c9a43786a41339c0a14fd87cc0afa",
+      "bddab17617014499bf0992f3c7a3276c"
+    ]
+  },
+  "scenario_groups": {
+    "train": [
+      "seed:31",
+      "seed:42"
+    ],
+    "validation": [
+      "seed:64"
+    ],
+    "test": [
+      "seed:53"
+    ]
+  },
+  "action_normalization_scale": [
+    2.0021562576293945,
+    0.15000000596046448
+  ],
+  "mlp_best_epoch": 51,
+  "mlp_epochs_run": 69,
+  "models": {
+    "constant": {
+      "train": {
+        "samples": 804,
+        "episode_count": 8,
+        "mae": [
+          1.1232584181116587,
+          0.10781901979364862
+        ],
+        "rmse": [
+          2.00215358583124,
+          0.11814867601818219
+        ],
+        "episode_macro_mae": [
+          1.1217319360076836,
+          0.10778646469983316
+        ],
+        "episode_macro_normalized_mae": 0.6394191681240753,
+        "episodes": [
+          {
+            "episode_id": "07ba55c0ccf34fc981b7571601517e06",
+            "scenario_group": "seed:31",
+            "layout": "left",
+            "samples": 102,
+            "mae": [
+              1.1474770330915265,
+              0.10663120839379582
+            ],
+            "rmse": [
+              1.9848886195705393,
+              0.11520270482680993
+            ]
+          },
+          {
+            "episode_id": "149a5ce9a5f34f3aa5a4e0bf6a9cf587",
+            "scenario_group": "seed:42",
+            "layout": "clear",
+            "samples": 95,
+            "mae": [
+              1.0375931012003046,
+              0.10588975336990858
+            ],
+            "rmse": [
+              2.030026110522094,
+              0.11575986208021619
+            ]
+          },
+          {
+            "episode_id": "160a9a2a56504023b56691dd655187d8",
+            "scenario_group": "seed:31",
+            "layout": "right",
+            "samples": 102,
+            "mae": [
+              1.1492507130491967,
+              0.10608231458885997
+            ],
+            "rmse": [
+              1.989236019601581,
+              0.11490057578258031
+            ]
+          },
+          {
+            "episode_id": "3e03eba2d3e94021b98583a879cce229",
+            "scenario_group": "seed:42",
+            "layout": "right",
+            "samples": 103,
+            "mae": [
+              1.1436424810909531,
+              0.10544825804609696
+            ],
+            "rmse": [
+              1.9865147018471754,
+              0.1143363245561769
+            ]
+          },
+          {
+            "episode_id": "430466d0da4748dfa360f6a4254fcdbc",
+            "scenario_group": "seed:42",
+            "layout": "slalom",
+            "samples": 103,
+            "mae": [
+              1.161106697563986,
+              0.11039055305198558
+            ],
+            "rmse": [
+              2.0226074033187214,
+              0.1242921359100269
+            ]
+          },
+          {
+            "episode_id": "55a2ed70e57d4c6c98f169609fa4a0bc",
+            "scenario_group": "seed:31",
+            "layout": "clear",
+            "samples": 95,
+            "mae": [
+              1.0392984415355482,
+              0.10598197406844088
+            ],
+            "rmse": [
+              2.033943809611866,
+              0.11602352818607875
+            ]
+          },
+          {
+            "episode_id": "c821f2f9ac1b4556842c205f28cbf2ff",
+            "scenario_group": "seed:31",
+            "layout": "slalom",
+            "samples": 102,
+            "mae": [
+              1.1485658954171574,
+              0.1145119029736402
+            ],
+            "rmse": [
+              1.988505250935044,
+              0.1280274554314602
+            ]
+          },
+          {
+            "episode_id": "dc1b1d333fc6431186d2adc32108dd1d",
+            "scenario_group": "seed:42",
+            "layout": "left",
+            "samples": 102,
+            "mae": [
+              1.1469211251127953,
+              0.10735575310593727
+            ],
+            "rmse": [
+              1.9847327118315787,
+              0.11552703358243305
+            ]
+          }
+        ]
+      },
+      "validation": {
+        "samples": 401,
+        "episode_count": 4,
+        "mae": [
+          1.1201690670260764,
+          0.10957862933786433
+        ],
+        "rmse": [
+          1.9939266920591656,
+          0.11938283314371434
+        ],
+        "episode_macro_mae": [
+          1.1186271123718798,
+          0.10953860835511511
+        ],
+        "episode_macro_normalized_mae": 0.6444842767826806,
+        "episodes": [
+          {
+            "episode_id": "04e47ebcf4bf4ec680e4da14bff0e0ba",
+            "scenario_group": "seed:64",
+            "layout": "left",
+            "samples": 102,
+            "mae": [
+              1.1467691356060552,
+              0.10713358157697846
+            ],
+            "rmse": [
+              1.9852207836251314,
+              0.11536036685189413
+            ]
+          },
+          {
+            "episode_id": "1a5ff49bbd05411094c36618a3d3912e",
+            "scenario_group": "seed:64",
+            "layout": "slalom",
+            "samples": 102,
+            "mae": [
+              1.1513591233421774,
+              0.11566674508446571
+            ],
+            "rmse": [
+              1.9932793341685198,
+              0.1287269630646541
+            ]
+          },
+          {
+            "episode_id": "e4c3d306e3a449d98712663898d743a9",
+            "scenario_group": "seed:64",
+            "layout": "clear",
+            "samples": 95,
+            "mae": [
+              1.0302951386100367,
+              0.10724597777190961
+            ],
+            "rmse": [
+              2.015239891389491,
+              0.11651740816697598
+            ]
+          },
+          {
+            "episode_id": "e8343c5ae15f49f0b89492b88e50a0cf",
+            "scenario_group": "seed:64",
+            "layout": "right",
+            "samples": 102,
+            "mae": [
+              1.1460850519292496,
+              0.10810812898710662
+            ],
+            "rmse": [
+              1.9832757799854042,
+              0.11622264280786011
+            ]
+          }
+        ]
+      },
+      "test": {
+        "samples": 400,
+        "episode_count": 4,
+        "mae": [
+          1.1233811300992966,
+          0.11105028717778623
+        ],
+        "rmse": [
+          1.9972948962765675,
+          0.12134920953050907
+        ],
+        "episode_macro_mae": [
+          1.1217509093486522,
+          0.11101840019111844
+        ],
+        "episode_macro_normalized_mae": 0.6501970242270976,
+        "episodes": [
+          {
+            "episode_id": "0bddecd1f87f4638b24cf1007e848794",
+            "scenario_group": "seed:53",
+            "layout": "right",
+            "samples": 102,
+            "mae": [
+              1.1508011584188425,
+              0.10696128511107435
+            ],
+            "rmse": [
+              1.992140373166014,
+              0.11548335172883784
+            ]
+          },
+          {
+            "episode_id": "8421a45caa884e4eb9e1f14b3b21740c",
+            "scenario_group": "seed:53",
+            "layout": "left",
+            "samples": 102,
+            "mae": [
+              1.1414157385919608,
+              0.10816958422462146
+            ],
+            "rmse": [
+              1.973741763554246,
+              0.11631032565860897
+            ]
+          },
+          {
+            "episode_id": "aa1c9a43786a41339c0a14fd87cc0afa",
+            "scenario_group": "seed:53",
+            "layout": "slalom",
+            "samples": 102,
+            "mae": [
+              1.1545468685673732,
+              0.11951868057104886
+            ],
+            "rmse": [
+              1.9994452101539968,
+              0.13430532665264458
+            ]
+          },
+          {
+            "episode_id": "bddab17617014499bf0992f3c7a3276c",
+            "scenario_group": "seed:53",
+            "layout": "clear",
+            "samples": 94,
+            "mae": [
+              1.0402398718164323,
+              0.1094240508577291
+            ],
+            "rmse": [
+              2.025750564207979,
+              0.11806082602468747
+            ]
+          }
+        ]
+      }
+    },
+    "ridge": {
+      "train": {
+        "samples": 804,
+        "episode_count": 8,
+        "mae": [
+          0.2837346722534047,
+          0.008303579172369704
+        ],
+        "rmse": [
+          0.6028700160981733,
+          0.015653060728035663
+        ],
+        "episode_macro_mae": [
+          0.2837006699507462,
+          0.00824713022908406
+        ],
+        "episode_macro_normalized_mae": 0.09833921637742125,
+        "episodes": [
+          {
+            "episode_id": "07ba55c0ccf34fc981b7571601517e06",
+            "scenario_group": "seed:31",
+            "layout": "left",
+            "samples": 102,
+            "mae": [
+              0.2802332335827397,
+              0.007205229957060724
+            ],
+            "rmse": [
+              0.5328485609793848,
+              0.01120081339443779
+            ]
+          },
+          {
+            "episode_id": "149a5ce9a5f34f3aa5a4e0bf6a9cf587",
+            "scenario_group": "seed:42",
+            "layout": "clear",
+            "samples": 95,
+            "mae": [
+              0.2935668531217073,
+              0.004846634265452035
+            ],
+            "rmse": [
+              0.6875139632796345,
+              0.007345722939035177
+            ]
+          },
+          {
+            "episode_id": "160a9a2a56504023b56691dd655187d8",
+            "scenario_group": "seed:31",
+            "layout": "right",
+            "samples": 102,
+            "mae": [
+              0.26966828224705713,
+              0.009167328545956087
+            ],
+            "rmse": [
+              0.539953841885228,
+              0.015194405854638509
+            ]
+          },
+          {
+            "episode_id": "3e03eba2d3e94021b98583a879cce229",
+            "scenario_group": "seed:42",
+            "layout": "right",
+            "samples": 103,
+            "mae": [
+              0.2695142632549249,
+              0.009609866412062632
+            ],
+            "rmse": [
+              0.5657256171501615,
+              0.016370382256697662
+            ]
+          },
+          {
+            "episode_id": "430466d0da4748dfa360f6a4254fcdbc",
+            "scenario_group": "seed:42",
+            "layout": "slalom",
+            "samples": 103,
+            "mae": [
+              0.33051858249219873,
+              0.009924054169830712
+            ],
+            "rmse": [
+              0.7038501621102148,
+              0.020460227646646227
+            ]
+          },
+          {
+            "episode_id": "55a2ed70e57d4c6c98f169609fa4a0bc",
+            "scenario_group": "seed:31",
+            "layout": "clear",
+            "samples": 95,
+            "mae": [
+              0.2745907231381065,
+              0.00559829901015435
+            ],
+            "rmse": [
+              0.6864011558934123,
+              0.008588843997226637
+            ]
+          },
+          {
+            "episode_id": "c821f2f9ac1b4556842c205f28cbf2ff",
+            "scenario_group": "seed:31",
+            "layout": "slalom",
+            "samples": 102,
+            "mae": [
+              0.27579373121261597,
+              0.011453572866123389
+            ],
+            "rmse": [
+              0.5484816527574343,
+              0.023997611522709402
+            ]
+          },
+          {
+            "episode_id": "dc1b1d333fc6431186d2adc32108dd1d",
+            "scenario_group": "seed:42",
+            "layout": "left",
+            "samples": 102,
+            "mae": [
+              0.27571969055661966,
+              0.008172056606032556
+            ],
+            "rmse": [
+              0.5348402205174211,
+              0.01366759661005664
+            ]
+          }
+        ]
+      },
+      "validation": {
+        "samples": 401,
+        "episode_count": 4,
+        "mae": [
+          0.3619805996554748,
+          0.012819917534225147
+        ],
+        "rmse": [
+          0.7940246072044643,
+          0.025749198074560622
+        ],
+        "episode_macro_mae": [
+          0.3614518534288318,
+          0.012731170769794254
+        ],
+        "episode_macro_normalized_mae": 0.1327028795769738,
+        "episodes": [
+          {
+            "episode_id": "04e47ebcf4bf4ec680e4da14bff0e0ba",
+            "scenario_group": "seed:64",
+            "layout": "left",
+            "samples": 102,
+            "mae": [
+              0.38958022056841385,
+              0.011324804359116801
+            ],
+            "rmse": [
+              0.8584008313271497,
+              0.01758348851498798
+            ]
+          },
+          {
+            "episode_id": "1a5ff49bbd05411094c36618a3d3912e",
+            "scenario_group": "seed:64",
+            "layout": "slalom",
+            "samples": 102,
+            "mae": [
+              0.3442430613087673,
+              0.018060914906170948
+            ],
+            "rmse": [
+              0.6215568849283657,
+              0.040578549047732844
+            ]
+          },
+          {
+            "episode_id": "e4c3d306e3a449d98712663898d743a9",
+            "scenario_group": "seed:64",
+            "layout": "clear",
+            "samples": 95,
+            "mae": [
+              0.33116224815970974,
+              0.0076472489788246
+            ],
+            "rmse": [
+              0.7689300472323637,
+              0.012978628626000455
+            ]
+          },
+          {
+            "episode_id": "e8343c5ae15f49f0b89492b88e50a0cf",
+            "scenario_group": "seed:64",
+            "layout": "right",
+            "samples": 102,
+            "mae": [
+              0.3808218836784363,
+              0.013891714835064668
+            ],
+            "rmse": [
+              0.8970898834127085,
+              0.022223878510845257
+            ]
+          }
+        ]
+      },
+      "test": {
+        "samples": 400,
+        "episode_count": 4,
+        "mae": [
+          0.38525297671556474,
+          0.013464937299977464
+        ],
+        "rmse": [
+          0.8250674837298195,
+          0.026485100774182008
+        ],
+        "episode_macro_mae": [
+          0.3839522055290021,
+          0.013372623877515408
+        ],
+        "episode_macro_normalized_mae": 0.14046008650465053,
+        "episodes": [
+          {
+            "episode_id": "0bddecd1f87f4638b24cf1007e848794",
+            "scenario_group": "seed:53",
+            "layout": "right",
+            "samples": 102,
+            "mae": [
+              0.35020215604819505,
+              0.011971646598420408
+            ],
+            "rmse": [
+              0.7577530685878572,
+              0.01885780698787702
+            ]
+          },
+          {
+            "episode_id": "8421a45caa884e4eb9e1f14b3b21740c",
+            "scenario_group": "seed:53",
+            "layout": "left",
+            "samples": 102,
+            "mae": [
+              0.46962285626168343,
+              0.013538829876422681
+            ],
+            "rmse": [
+              0.9935640794505942,
+              0.022526848288594734
+            ]
+          },
+          {
+            "episode_id": "aa1c9a43786a41339c0a14fd87cc0afa",
+            "scenario_group": "seed:53",
+            "layout": "slalom",
+            "samples": 102,
+            "mae": [
+              0.39707016360525993,
+              0.019223066280805962
+            ],
+            "rmse": [
+              0.8056409540134819,
+              0.040003303627201114
+            ]
+          },
+          {
+            "episode_id": "bddab17617014499bf0992f3c7a3276c",
+            "scenario_group": "seed:53",
+            "layout": "clear",
+            "samples": 94,
+            "mae": [
+              0.3189136462008699,
+              0.00875695275441258
+            ],
+            "rmse": [
+              0.7058422148482716,
+              0.017662177740623328
+            ]
+          }
+        ]
+      }
+    },
+    "mlp": {
+      "train": {
+        "samples": 804,
+        "episode_count": 8,
+        "mae": [
+          0.18822534612162195,
+          0.004605745484727619
+        ],
+        "rmse": [
+          0.4950010232457649,
+          0.006742524664273942
+        ],
+        "episode_macro_mae": [
+          0.1888548319515741,
+          0.004590243123685846
+        ],
+        "episode_macro_normalized_mae": 0.062463670153454144,
+        "episodes": [
+          {
+            "episode_id": "07ba55c0ccf34fc981b7571601517e06",
+            "scenario_group": "seed:31",
+            "layout": "left",
+            "samples": 102,
+            "mae": [
+              0.16037829950744031,
+              0.004708624222628572
+            ],
+            "rmse": [
+              0.39362334282648265,
+              0.006295760240908805
+            ]
+          },
+          {
+            "episode_id": "149a5ce9a5f34f3aa5a4e0bf6a9cf587",
+            "scenario_group": "seed:42",
+            "layout": "clear",
+            "samples": 95,
+            "mae": [
+              0.2344262813266955,
+              0.0035142754395277925
+            ],
+            "rmse": [
+              0.6005749529245659,
+              0.00486885961327853
+            ]
+          },
+          {
+            "episode_id": "160a9a2a56504023b56691dd655187d8",
+            "scenario_group": "seed:31",
+            "layout": "right",
+            "samples": 102,
+            "mae": [
+              0.16662980995926202,
+              0.005042735879268388
+            ],
+            "rmse": [
+              0.41451182383571766,
+              0.007215862508160735
+            ]
+          },
+          {
+            "episode_id": "3e03eba2d3e94021b98583a879cce229",
+            "scenario_group": "seed:42",
+            "layout": "right",
+            "samples": 103,
+            "mae": [
+              0.18277457385387236,
+              0.0047404083171271654
+            ],
+            "rmse": [
+              0.484989381731958,
+              0.006396320834127589
+            ]
+          },
+          {
+            "episode_id": "430466d0da4748dfa360f6a4254fcdbc",
+            "scenario_group": "seed:42",
+            "layout": "slalom",
+            "samples": 103,
+            "mae": [
+              0.21326345957598639,
+              0.0042742309883887905
+            ],
+            "rmse": [
+              0.5996052118108565,
+              0.006022072109128898
+            ]
+          },
+          {
+            "episode_id": "55a2ed70e57d4c6c98f169609fa4a0bc",
+            "scenario_group": "seed:31",
+            "layout": "clear",
+            "samples": 95,
+            "mae": [
+              0.2182026649776258,
+              0.0038619614907809976
+            ],
+            "rmse": [
+              0.5839243068974105,
+              0.005650077033303487
+            ]
+          },
+          {
+            "episode_id": "c821f2f9ac1b4556842c205f28cbf2ff",
+            "scenario_group": "seed:31",
+            "layout": "slalom",
+            "samples": 102,
+            "mae": [
+              0.17056491561964446,
+              0.005542433428333835
+            ],
+            "rmse": [
+              0.44536593423222226,
+              0.008845263647855081
+            ]
+          },
+          {
+            "episode_id": "dc1b1d333fc6431186d2adc32108dd1d",
+            "scenario_group": "seed:42",
+            "layout": "left",
+            "samples": 102,
+            "mae": [
+              0.1645986507920658,
+              0.005037275223431233
+            ],
+            "rmse": [
+              0.3901211684379492,
+              0.0076586112216343975
+            ]
+          }
+        ]
+      },
+      "validation": {
+        "samples": 401,
+        "episode_count": 4,
+        "mae": [
+          0.3037766197375823,
+          0.009294925517048554
+        ],
+        "rmse": [
+          0.7165058639867117,
+          0.02141552355491848
+        ],
+        "episode_macro_mae": [
+          0.3036228763306719,
+          0.009249265421862824
+        ],
+        "episode_macro_normalized_mae": 0.10665485458904117,
+        "episodes": [
+          {
+            "episode_id": "04e47ebcf4bf4ec680e4da14bff0e0ba",
+            "scenario_group": "seed:64",
+            "layout": "left",
+            "samples": 102,
+            "mae": [
+              0.30649877412646426,
+              0.006868259745875976
+            ],
+            "rmse": [
+              0.7591797598671343,
+              0.010200596031083125
+            ]
+          },
+          {
+            "episode_id": "1a5ff49bbd05411094c36618a3d3912e",
+            "scenario_group": "seed:64",
+            "layout": "slalom",
+            "samples": 102,
+            "mae": [
+              0.2740796266817579,
+              0.014200538431075127
+            ],
+            "rmse": [
+              0.5695203995355332,
+              0.036424730770112816
+            ]
+          },
+          {
+            "episode_id": "e4c3d306e3a449d98712663898d743a9",
+            "scenario_group": "seed:64",
+            "layout": "clear",
+            "samples": 95,
+            "mae": [
+              0.29481557544909026,
+              0.006633594254794604
+            ],
+            "rmse": [
+              0.6503798807479544,
+              0.011467361988730156
+            ]
+          },
+          {
+            "episode_id": "e8343c5ae15f49f0b89492b88e50a0cf",
+            "scenario_group": "seed:64",
+            "layout": "right",
+            "samples": 102,
+            "mae": [
+              0.3390975290653752,
+              0.009294669255705587
+            ],
+            "rmse": [
+              0.8506575242753536,
+              0.015803016499681747
+            ]
+          }
+        ]
+      },
+      "test": {
+        "samples": 400,
+        "episode_count": 4,
+        "mae": [
+          0.32441421985626223,
+          0.013572985576320206
+        ],
+        "rmse": [
+          0.7637239673745647,
+          0.026541642448670386
+        ],
+        "episode_macro_mae": [
+          0.3232758108357066,
+          0.013531303476337598
+        ],
+        "episode_macro_normalized_mae": 0.12583625643576457,
+        "episodes": [
+          {
+            "episode_id": "0bddecd1f87f4638b24cf1007e848794",
+            "scenario_group": "seed:53",
+            "layout": "right",
+            "samples": 102,
+            "mae": [
+              0.3097332973106235,
+              0.011108158802837316
+            ],
+            "rmse": [
+              0.670058364650111,
+              0.021487297710488847
+            ]
+          },
+          {
+            "episode_id": "8421a45caa884e4eb9e1f14b3b21740c",
+            "scenario_group": "seed:53",
+            "layout": "left",
+            "samples": 102,
+            "mae": [
+              0.42520540134579526,
+              0.013288904997798633
+            ],
+            "rmse": [
+              1.0222876568290222,
+              0.023396599567976847
+            ]
+          },
+          {
+            "episode_id": "aa1c9a43786a41339c0a14fd87cc0afa",
+            "scenario_group": "seed:53",
+            "layout": "slalom",
+            "samples": 102,
+            "mae": [
+              0.2918091848784802,
+              0.01828095162750733
+            ],
+            "rmse": [
+              0.6291947852295822,
+              0.03780286900951153
+            ]
+          },
+          {
+            "episode_id": "bddab17617014499bf0992f3c7a3276c",
+            "scenario_group": "seed:53",
+            "layout": "clear",
+            "samples": 94,
+            "mae": [
+              0.26635535980792757,
+              0.011447198477207108
+            ],
+            "rmse": [
+              0.6566858468813938,
+              0.01876251812214107
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

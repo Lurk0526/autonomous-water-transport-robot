@@ -1,0 +1,34 @@
+[
+  {
+    "seed": 1000000,
+    "controller": "guided-policy",
+    "layout": "left",
+    "passed": true,
+    "failures": [],
+    "speed_zone_min_kmh": 34.943646289262574
+  },
+  {
+    "seed": 1000001,
+    "controller": "guided-policy",
+    "layout": "right",
+    "passed": true,
+    "failures": [],
+    "speed_zone_min_kmh": 34.94693714103088
+  },
+  {
+    "seed": 1000002,
+    "controller": "guided-policy",
+    "layout": "slalom",
+    "passed": true,
+    "failures": [],
+    "speed_zone_min_kmh": 34.89180398588516
+  },
+  {
+    "seed": 1000003,
+    "controller": "guided-policy",
+    "layout": "clear",
+    "passed": true,
+    "failures": [],
+    "speed_zone_min_kmh": 34.683922522483186
+  }
+]

@@ -1,0 +1,125 @@
+{
+  "assemblies": {
+    "成品车.SLDASM": "7bb130d7750ed02b716e758bac055564d8974f5379ee8f139f87a463e26dff56",
+    "第三版底盘.SLDASM": "8fc1dd810ae81b997fca0d48c3ffc6892d56baddb2d046a6d12909a53b0a060c",
+    "卡丁车车轮.SLDPRT": "8ad58681890be5383d79a9d71653b214ed0b9f9f0311cc9e55e3480441ff8b7d"
+  },
+  "exporter": {
+    "repository": "https://github.com/XRTC5/sldprt-export",
+    "revision": "31d3b5a9b115d9cbfc19bbf10906fcc29e8e3c57"
+  },
+  "configuration": "默认",
+  "mesh_coverage": {
+    "placed": 92,
+    "references": 107,
+    "missing_saved_mesh": 11
+  },
+  "bbox_display_m": [
+    [
+      -0.26151964791652255,
+      -0.3474536604078129,
+      -0.2804621830235693
+    ],
+    [
+      0.5374899246758623,
+      0.4395954375587799,
+      0.2109999999839733
+    ]
+  ],
+  "bbox_saved_m": [
+    [
+      -0.2997698726472204,
+      -0.3509060382856684,
+      -0.3266205630298464
+    ],
+    [
+      0.5830104702368895,
+      0.4430478154366348,
+      0.2109999999999921
+    ]
+  ],
+  "display_mesh_envelope_m": [
+    0.7990095725923849,
+    0.7870490979665927,
+    0.49146218300754263
+  ],
+  "display_mesh_width_m": 0.7870490979665927,
+  "vehicle_reference_xyz_in_chassis_m": [
+    -0.15146277007177084,
+    0.04607088857548358,
+    -0.2804621830235693
+  ],
+  "wheel_centers_in_chassis_m": [
+    {
+      "xyz": [
+        -0.15147334239265917,
+        0.39102154385295285,
+        -0.17039669280753814
+      ],
+      "instance": "悬架带车轮装配体无拉杆-2@第三版底盘/卡丁车车轮-1@悬架带车轮装配体无拉杆"
+    },
+    {
+      "xyz": [
+        -0.1514521977508825,
+        -0.2988797667019857,
+        -0.17039669280753802
+      ],
+      "instance": "悬架带车轮装配体无拉杆-1@第三版底盘/卡丁车车轮-1@悬架带车轮装配体无拉杆"
+    },
+    {
+      "xyz": [
+        0.425961788119292,
+        -0.2989078811006806,
+        -0.1703956029589994
+      ],
+      "instance": "悬架带车轮装配体1-1@第三版底盘/卡丁车车轮-1@悬架带车轮装配体1"
+    },
+    {
+      "xyz": [
+        0.42745091594448364,
+        0.391031667812339,
+        -0.17039630035446787
+      ],
+      "instance": "悬架带车轮装配体2-1@第三版底盘/卡丁车车轮-1@悬架带车轮装配体2"
+    }
+  ],
+  "wheelbase_m": 0.5781691221036587,
+  "front_track_m": 0.6899395489130196,
+  "rear_track_m": 0.6899013105549385,
+  "nominal_track_m": 0.689920429733979,
+  "wheel_radius_m": 0.11006667151583642,
+  "wheel_width_m": 0.08847666531801288,
+  "scoring_envelope": {
+    "body_half_width_m": 0.4,
+    "front_from_rear_axle_m": 0.74,
+    "rear_from_rear_axle_m": 0.15
+  },
+  "visual_meshes": {
+    "cad-frame.stl": {
+      "component": "新车架第三版",
+      "triangles": 6652,
+      "sha256": "f516e9b7566874ffce1915d44882c376c2156eedd4bb5a41ca0bc222e2649090"
+    },
+    "cad-deck.stl": {
+      "component": "亚克力板",
+      "triangles": 740,
+      "sha256": "4c158b5c984ed31cbe42d4001a4ddeebd6c4090f5dc590100589eb9475e75a8e"
+    },
+    "cad-battery.stl": {
+      "component": "电池",
+      "triangles": 7234,
+      "sha256": "13616ab0db83bfe50bd015e96404df6f77f046150d4ae59f8d3ad60e32fea4e8"
+    },
+    "cad-computer.stl": {
+      "component": "orin",
+      "triangles": 17603,
+      "sha256": "7f2448baa148a735a858d08d080bb486933cef23755cdf5131565d90ee601cf3"
+    },
+    "cad-wheel.stl": {
+      "component": "卡丁车车轮",
+      "triangles": 29874,
+      "sha256": "ffd54d2f4dfbcbdf66935ee20a556f38ddaa3196afb42c8e55b4c6c17d75e048"
+    }
+  },
+  "scope": "Read-only reconstruction of stored display tessellation and transforms. Simulated suspension, mass, limiting angles, braking, camera extrinsics and transport posture require separate calibration."
+}

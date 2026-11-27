@@ -1,0 +1,3126 @@
+<?xml version='1.0' encoding='utf-8'?>
+<sdf version="1.10">
+  <world name="ring">
+    <gravity>0 0 -9.81</gravity>
+    <physics name="4ms" type="dart">
+      <max_step_size>0.004</max_step_size>
+      <real_time_factor>1</real_time_factor>
+      <real_time_update_rate>250</real_time_update_rate>
+    </physics>
+    <plugin filename="gz-sim-physics-system" name="gz::sim::systems::Physics" />
+    <plugin filename="gz-sim-user-commands-system" name="gz::sim::systems::UserCommands" />
+    <plugin filename="gz-sim-scene-broadcaster-system" name="gz::sim::systems::SceneBroadcaster" />
+    <plugin filename="gz-sim-imu-system" name="gz::sim::systems::Imu" />
+    <plugin filename="gz-sim-contact-system" name="gz::sim::systems::Contact" />
+    <plugin filename="gz-sim-sensors-system" name="gz::sim::systems::Sensors">
+      <render_engine>ogre2</render_engine>
+    </plugin>
+    <scene>
+      <ambient>0.55 0.55 0.55 1</ambient>
+      <background>0.6 0.72 0.82 1</background>
+      <grid>false</grid>
+      <shadows>true</shadows>
+    </scene>
+    <light name="sun" type="directional">
+      <pose>0 0 45 0 0 0</pose>
+      <cast_shadows>true</cast_shadows>
+      <diffuse>0.931995933 0.931995933 0.904036055 1</diffuse>
+      <direction>-0.38 0.0563635224 -0.9</direction>
+    </light>
+    <model name="ground">
+      <static>true</static>
+      <link name="surface">
+        <collision name="ground_collision">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>260 140</size>
+            </plane>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>1.1</mu>
+                <mu2>1.1</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <visual name="verge">
+          <pose>0 0 -0.01 0 0 0</pose>
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>260 140</size>
+            </plane>
+          </geometry>
+          <material>
+            <ambient>0.24 0.32 0.2 1</ambient>
+            <diffuse>0.24 0.32 0.2 1</diffuse>
+            <specular>0.12 0.12 0.12 1</specular>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="paved_road">
+      <static>true</static>
+      <link name="surface">
+        <visual name="asphalt">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>ring_assets/asphalt.obj</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.19 0.2 0.22 1</ambient>
+            <diffuse>0.19 0.2 0.22 1</diffuse>
+            <specular>0.12 0.12 0.12 1</specular>
+            <pbr>
+              <metal>
+                <albedo_map>ring_assets/asphalt.png</albedo_map>
+                <metalness>0</metalness>
+                <roughness>0.96</roughness>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <visual name="inner_and_outer_yellow_boundaries">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>ring_assets/yellow_boundaries.obj</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.95 0.75 0.06 1</ambient>
+            <diffuse>0.95 0.75 0.06 1</diffuse>
+            <specular>0.12 0.12 0.12 1</specular>
+          </material>
+        </visual>
+        <visual name="white_road_edges">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>ring_assets/edges.obj</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.79 0.79 0.73 1</ambient>
+            <diffuse>0.79 0.79 0.73 1</diffuse>
+            <specular>0.12 0.12 0.12 1</specular>
+          </material>
+        </visual>
+        <visual name="start_finish_0">
+          <pose>-38 -12.5333333 0.009 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.18 0.16 0.004</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.9 0.9 0.85 1</ambient>
+            <diffuse>0.9 0.9 0.85 1</diffuse>
+            <specular>0.12 0.12 0.12 1</specular>
+          </material>
+        </visual>
+        <visual name="start_finish_1">
+          <pose>-38 -12.2666667 0.009 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.18 0.16 0.004</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.9 0.9 0.85 1</ambient>
+            <diffuse>0.9 0.9 0.85 1</diffuse>
+            <specular>0.12 0.12 0.12 1</specular>
+          </material>
+        </visual>
+        <visual name="start_finish_2">
+          <pose>-38 -12 0.009 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.18 0.16 0.004</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.9 0.9 0.85 1</ambient>
+            <diffuse>0.9 0.9 0.85 1</diffuse>
+            <specular>0.12 0.12 0.12 1</specular>
+          </material>
+        </visual>
+        <visual name="start_finish_3">
+          <pose>-38 -11.7333333 0.009 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.18 0.16 0.004</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.9 0.9 0.85 1</ambient>
+            <diffuse>0.9 0.9 0.85 1</diffuse>
+            <specular>0.12 0.12 0.12 1</specular>
+          </material>
+        </visual>
+        <visual name="start_finish_4">
+          <pose>-38 -11.4666667 0.009 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.18 0.16 0.004</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.9 0.9 0.85 1</ambient>
+            <diffuse>0.9 0.9 0.85 1</diffuse>
+            <specular>0.12 0.12 0.12 1</specular>
+          </material>
+        </visual>
+        <visual name="start_finish_post_-1">
+          <pose>-38 -13.12 0.53 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.14 0.14 1.06</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.9 0.9 0.85 1</ambient>
+            <diffuse>0.9 0.9 0.85 1</diffuse>
+            <specular>0.12 0.12 0.12 1</specular>
+          </material>
+        </visual>
+        <visual name="start_finish_post_1">
+          <pose>-38 -10.88 0.53 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.14 0.14 1.06</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.9 0.9 0.85 1</ambient>
+            <diffuse>0.9 0.9 0.85 1</diffuse>
+            <specular>0.12 0.12 0.12 1</specular>
+          </material>
+        </visual>
+        <visual name="speed_approach_0">
+          <pose>33 11.4666667 0.009 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.18 0.16 0.004</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.11 0.12 0.9 1</ambient>
+            <diffuse>0.11 0.12 0.9 1</diffuse>
+            <specular>0.12 0.12 0.12 1</specular>
+          </material>
+        </visual>
+        <visual name="speed_approach_1">
+          <pose>33 11.7333333 0.009 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.18 0.16 0.004</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.11 0.12 0.9 1</ambient>
+            <diffuse>0.11 0.12 0.9 1</diffuse>
+            <specular>0.12 0.12 0.12 1</specular>
+          </material>
+        </visual>
+        <visual name="speed_approach_2">
+          <pose>33 12 0.009 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.18 0.16 0.004</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.11 0.12 0.9 1</ambient>
+            <diffuse>0.11 0.12 0.9 1</diffuse>
+            <specular>0.12 0.12 0.12 1</specular>
+          </material>
+        </visual>
+        <visual name="speed_approach_3">
+          <pose>33 12.2666667 0.009 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.18 0.16 0.004</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.11 0.12 0.9 1</ambient>
+            <diffuse>0.11 0.12 0.9 1</diffuse>
+            <specular>0.12 0.12 0.12 1</specular>
+          </material>
+        </visual>
+        <visual name="speed_approach_4">
+          <pose>33 12.5333333 0.009 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.18 0.16 0.004</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.11 0.12 0.9 1</ambient>
+            <diffuse>0.11 0.12 0.9 1</diffuse>
+            <specular>0.12 0.12 0.12 1</specular>
+          </material>
+        </visual>
+        <visual name="speed_approach_post_-1">
+          <pose>33 10.88 0.53 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.14 0.14 1.06</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.11 0.12 0.9 1</ambient>
+            <diffuse>0.11 0.12 0.9 1</diffuse>
+            <specular>0.12 0.12 0.12 1</specular>
+          </material>
+        </visual>
+        <visual name="speed_approach_sign_-1">
+          <pose>33 10.88 1.18 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.08 0.6 0.64</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.11 0.12 0.9 1</ambient>
+            <diffuse>0.11 0.12 0.9 1</diffuse>
+            <specular>0.12 0.12 0.12 1</specular>
+          </material>
+        </visual>
+        <visual name="speed_approach_post_1">
+          <pose>33 13.12 0.53 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.14 0.14 1.06</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.11 0.12 0.9 1</ambient>
+            <diffuse>0.11 0.12 0.9 1</diffuse>
+            <specular>0.12 0.12 0.12 1</specular>
+          </material>
+        </visual>
+        <visual name="speed_approach_sign_1">
+          <pose>33 13.12 1.18 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.08 0.6 0.64</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.11 0.12 0.9 1</ambient>
+            <diffuse>0.11 0.12 0.9 1</diffuse>
+            <specular>0.12 0.12 0.12 1</specular>
+          </material>
+        </visual>
+        <visual name="speed_entry_0">
+          <pose>10 11.4666667 0.009 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.18 0.16 0.004</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.02 0.75 0.9 1</ambient>
+            <diffuse>0.02 0.75 0.9 1</diffuse>
+            <specular>0.12 0.12 0.12 1</specular>
+          </material>
+        </visual>
+        <visual name="speed_entry_1">
+          <pose>10 11.7333333 0.009 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.18 0.16 0.004</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.02 0.75 0.9 1</ambient>
+            <diffuse>0.02 0.75 0.9 1</diffuse>
+            <specular>0.12 0.12 0.12 1</specular>
+          </material>
+        </visual>
+        <visual name="speed_entry_2">
+          <pose>10 12 0.009 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.18 0.16 0.004</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.02 0.75 0.9 1</ambient>
+            <diffuse>0.02 0.75 0.9 1</diffuse>
+            <specular>0.12 0.12 0.12 1</specular>
+          </material>
+        </visual>
+        <visual name="speed_entry_3">
+          <pose>10 12.2666667 0.009 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.18 0.16 0.004</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.02 0.75 0.9 1</ambient>
+            <diffuse>0.02 0.75 0.9 1</diffuse>
+            <specular>0.12 0.12 0.12 1</specular>
+          </material>
+        </visual>
+        <visual name="speed_entry_4">
+          <pose>10 12.5333333 0.009 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.18 0.16 0.004</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.02 0.75 0.9 1</ambient>
+            <diffuse>0.02 0.75 0.9 1</diffuse>
+            <specular>0.12 0.12 0.12 1</specular>
+          </material>
+        </visual>
+        <visual name="speed_entry_post_-1">
+          <pose>10 10.88 0.53 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.14 0.14 1.06</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.02 0.75 0.9 1</ambient>
+            <diffuse>0.02 0.75 0.9 1</diffuse>
+            <specular>0.12 0.12 0.12 1</specular>
+          </material>
+        </visual>
+        <visual name="speed_entry_sign_-1">
+          <pose>10 10.88 1.18 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.08 0.6 0.64</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.02 0.75 0.9 1</ambient>
+            <diffuse>0.02 0.75 0.9 1</diffuse>
+            <specular>0.12 0.12 0.12 1</specular>
+          </material>
+        </visual>
+        <visual name="speed_entry_post_1">
+          <pose>10 13.12 0.53 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.14 0.14 1.06</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.02 0.75 0.9 1</ambient>
+            <diffuse>0.02 0.75 0.9 1</diffuse>
+            <specular>0.12 0.12 0.12 1</specular>
+          </material>
+        </visual>
+        <visual name="speed_entry_sign_1">
+          <pose>10 13.12 1.18 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.08 0.6 0.64</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.02 0.75 0.9 1</ambient>
+            <diffuse>0.02 0.75 0.9 1</diffuse>
+            <specular>0.12 0.12 0.12 1</specular>
+          </material>
+        </visual>
+        <visual name="speed_exit_0">
+          <pose>-10 11.4666667 0.009 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.18 0.16 0.004</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.78 0.04 0.8 1</ambient>
+            <diffuse>0.78 0.04 0.8 1</diffuse>
+            <specular>0.12 0.12 0.12 1</specular>
+          </material>
+        </visual>
+        <visual name="speed_exit_1">
+          <pose>-10 11.7333333 0.009 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.18 0.16 0.004</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.78 0.04 0.8 1</ambient>
+            <diffuse>0.78 0.04 0.8 1</diffuse>
+            <specular>0.12 0.12 0.12 1</specular>
+          </material>
+        </visual>
+        <visual name="speed_exit_2">
+          <pose>-10 12 0.009 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.18 0.16 0.004</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.78 0.04 0.8 1</ambient>
+            <diffuse>0.78 0.04 0.8 1</diffuse>
+            <specular>0.12 0.12 0.12 1</specular>
+          </material>
+        </visual>
+        <visual name="speed_exit_3">
+          <pose>-10 12.2666667 0.009 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.18 0.16 0.004</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.78 0.04 0.8 1</ambient>
+            <diffuse>0.78 0.04 0.8 1</diffuse>
+            <specular>0.12 0.12 0.12 1</specular>
+          </material>
+        </visual>
+        <visual name="speed_exit_4">
+          <pose>-10 12.5333333 0.009 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.18 0.16 0.004</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.78 0.04 0.8 1</ambient>
+            <diffuse>0.78 0.04 0.8 1</diffuse>
+            <specular>0.12 0.12 0.12 1</specular>
+          </material>
+        </visual>
+        <visual name="speed_exit_post_-1">
+          <pose>-10 10.88 0.53 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.14 0.14 1.06</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.78 0.04 0.8 1</ambient>
+            <diffuse>0.78 0.04 0.8 1</diffuse>
+            <specular>0.12 0.12 0.12 1</specular>
+          </material>
+        </visual>
+        <visual name="speed_exit_sign_-1">
+          <pose>-10 10.88 1.18 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.08 0.6 0.64</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.78 0.04 0.8 1</ambient>
+            <diffuse>0.78 0.04 0.8 1</diffuse>
+            <specular>0.12 0.12 0.12 1</specular>
+          </material>
+        </visual>
+        <visual name="speed_exit_post_1">
+          <pose>-10 13.12 0.53 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.14 0.14 1.06</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.78 0.04 0.8 1</ambient>
+            <diffuse>0.78 0.04 0.8 1</diffuse>
+            <specular>0.12 0.12 0.12 1</specular>
+          </material>
+        </visual>
+        <visual name="speed_exit_sign_1">
+          <pose>-10 13.12 1.18 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.08 0.6 0.64</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.78 0.04 0.8 1</ambient>
+            <diffuse>0.78 0.04 0.8 1</diffuse>
+            <specular>0.12 0.12 0.12 1</specular>
+          </material>
+        </visual>
+        <visual name="speed_zone_edges">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>ring_assets/speed_zone_edges.obj</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.02 0.68 0.85 1</ambient>
+            <diffuse>0.02 0.68 0.85 1</diffuse>
+            <specular>0.12 0.12 0.12 1</specular>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="brick_rough_section">
+      <static>true</static>
+      <link name="pavers">
+        <visual name="mortar_visual">
+          <pose>16 -12 0.002 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>14 1.44 0.006</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.3 0.29 0.28 1</ambient>
+            <diffuse>0.3 0.29 0.28 1</diffuse>
+            <specular>0.12 0.12 0.12 1</specular>
+          </material>
+        </visual>
+        <collision name="ridge_0_-1">
+          <pose>9.16666667 -12.36 0.00276702098 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.327333333 0.72 0.00553404196</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.88</mu>
+                <mu2>0.88</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <collision name="ridge_0_1">
+          <pose>9.16666667 -11.64 0.00297521631 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.327333333 0.72 0.00595043262</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.88</mu>
+                <mu2>0.88</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <collision name="ridge_1_-1">
+          <pose>9.5 -12.36 0.00358635035 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.327333333 0.72 0.0071727007</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.88</mu>
+                <mu2>0.88</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <collision name="ridge_1_1">
+          <pose>9.5 -11.64 0.00351897782 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.327333333 0.72 0.00703795564</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.88</mu>
+                <mu2>0.88</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <collision name="ridge_2_-1">
+          <pose>9.83333333 -12.36 0.00502569403 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.327333333 0.72 0.0100513881</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.88</mu>
+                <mu2>0.88</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <collision name="ridge_2_1">
+          <pose>9.83333333 -11.64 0.00552589997 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.327333333 0.72 0.0110517999</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.88</mu>
+                <mu2>0.88</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <collision name="ridge_3_-1">
+          <pose>10.1666667 -12.36 0.00440795549 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.327333333 0.72 0.00881591098</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.88</mu>
+                <mu2>0.88</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <collision name="ridge_3_1">
+          <pose>10.1666667 -11.64 0.00440424987 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.327333333 0.72 0.00880849973</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.88</mu>
+                <mu2>0.88</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <collision name="ridge_4_-1">
+          <pose>10.5 -12.36 0.00601086787 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.327333333 0.72 0.0120217357</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.88</mu>
+                <mu2>0.88</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <collision name="ridge_4_1">
+          <pose>10.5 -11.64 0.00729191991 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.327333333 0.72 0.0145838398</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.88</mu>
+                <mu2>0.88</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <collision name="ridge_5_-1">
+          <pose>10.8333333 -12.36 0.00853212792 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.327333333 0.72 0.0170642558</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.88</mu>
+                <mu2>0.88</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <collision name="ridge_5_1">
+          <pose>10.8333333 -11.64 0.00871645444 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.327333333 0.72 0.0174329089</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.88</mu>
+                <mu2>0.88</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <collision name="ridge_6_-1">
+          <pose>11.1666667 -12.36 0.0072255263 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.327333333 0.72 0.0144510526</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.88</mu>
+                <mu2>0.88</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <collision name="ridge_6_1">
+          <pose>11.1666667 -11.64 0.0078608587 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.327333333 0.72 0.0157217174</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.88</mu>
+                <mu2>0.88</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <collision name="ridge_7_-1">
+          <pose>11.5 -12.36 0.00681627786 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.327333333 0.72 0.0136325557</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.88</mu>
+                <mu2>0.88</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <collision name="ridge_7_1">
+          <pose>11.5 -11.64 0.00670386832 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.327333333 0.72 0.0134077366</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.88</mu>
+                <mu2>0.88</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <collision name="ridge_8_-1">
+          <pose>11.8333333 -12.36 0.00629061551 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.327333333 0.72 0.012581231</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.88</mu>
+                <mu2>0.88</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <collision name="ridge_8_1">
+          <pose>11.8333333 -11.64 0.00646936518 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.327333333 0.72 0.0129387304</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.88</mu>
+                <mu2>0.88</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <collision name="ridge_9_-1">
+          <pose>12.1666667 -12.36 0.00767655814 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.327333333 0.72 0.0153531163</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.88</mu>
+                <mu2>0.88</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <collision name="ridge_9_1">
+          <pose>12.1666667 -11.64 0.00774488764 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.327333333 0.72 0.0154897753</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.88</mu>
+                <mu2>0.88</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <collision name="ridge_10_-1">
+          <pose>12.5 -12.36 0.00438248641 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.327333333 0.72 0.00876497282</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.88</mu>
+                <mu2>0.88</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <collision name="ridge_10_1">
+          <pose>12.5 -11.64 0.00509007385 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.327333333 0.72 0.0101801477</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.88</mu>
+                <mu2>0.88</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <collision name="ridge_11_-1">
+          <pose>12.8333333 -12.36 0.00467999353 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.327333333 0.72 0.00935998706</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.88</mu>
+                <mu2>0.88</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <collision name="ridge_11_1">
+          <pose>12.8333333 -11.64 0.00506346757 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.327333333 0.72 0.0101269351</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.88</mu>
+                <mu2>0.88</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <collision name="ridge_12_-1">
+          <pose>13.1666667 -12.36 0.00585269629 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.327333333 0.72 0.0117053926</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.88</mu>
+                <mu2>0.88</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <collision name="ridge_12_1">
+          <pose>13.1666667 -11.64 0.00676515096 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.327333333 0.72 0.0135303019</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.88</mu>
+                <mu2>0.88</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <collision name="ridge_13_-1">
+          <pose>13.5 -12.36 0.00294621893 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.327333333 0.72 0.00589243787</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.88</mu>
+                <mu2>0.88</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <collision name="ridge_13_1">
+          <pose>13.5 -11.64 0.00435531109 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.327333333 0.72 0.00871062218</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.88</mu>
+                <mu2>0.88</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <collision name="ridge_14_-1">
+          <pose>13.8333333 -12.36 0.00679655385 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.327333333 0.72 0.0135931077</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.88</mu>
+                <mu2>0.88</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <collision name="ridge_14_1">
+          <pose>13.8333333 -11.64 0.00564770632 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.327333333 0.72 0.0112954126</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.88</mu>
+                <mu2>0.88</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <collision name="ridge_15_-1">
+          <pose>14.1666667 -12.36 0.00574681791 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.327333333 0.72 0.0114936358</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.88</mu>
+                <mu2>0.88</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <collision name="ridge_15_1">
+          <pose>14.1666667 -11.64 0.00590107521 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.327333333 0.72 0.0118021504</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.88</mu>
+                <mu2>0.88</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <collision name="ridge_16_-1">
+          <pose>14.5 -12.36 0.00718654648 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.327333333 0.72 0.014373093</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.88</mu>
+                <mu2>0.88</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <collision name="ridge_16_1">
+          <pose>14.5 -11.64 0.00811377274 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.327333333 0.72 0.0162275455</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.88</mu>
+                <mu2>0.88</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <collision name="ridge_17_-1">
+          <pose>14.8333333 -12.36 0.00576503184 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.327333333 0.72 0.0115300637</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.88</mu>
+                <mu2>0.88</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <collision name="ridge_17_1">
+          <pose>14.8333333 -11.64 0.00676714721 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.327333333 0.72 0.0135342944</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.88</mu>
+                <mu2>0.88</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <collision name="ridge_18_-1">
+          <pose>15.1666667 -12.36 0.00654563372 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.327333333 0.72 0.0130912674</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.88</mu>
+                <mu2>0.88</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <collision name="ridge_18_1">
+          <pose>15.1666667 -11.64 0.00597731309 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.327333333 0.72 0.0119546262</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.88</mu>
+                <mu2>0.88</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <collision name="ridge_19_-1">
+          <pose>15.5 -12.36 0.00850571563 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.327333333 0.72 0.0170114313</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.88</mu>
+                <mu2>0.88</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <collision name="ridge_19_1">
+          <pose>15.5 -11.64 0.00838102697 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.327333333 0.72 0.0167620539</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.88</mu>
+                <mu2>0.88</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <collision name="ridge_20_-1">
+          <pose>15.8333333 -12.36 0.00411699547 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.327333333 0.72 0.00823399094</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.88</mu>
+                <mu2>0.88</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <collision name="ridge_20_1">
+          <pose>15.8333333 -11.64 0.00397451688 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.327333333 0.72 0.00794903375</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.88</mu>
+                <mu2>0.88</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <collision name="ridge_21_-1">
+          <pose>16.1666667 -12.36 0.00562531332 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.327333333 0.72 0.0112506266</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.88</mu>
+                <mu2>0.88</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <collision name="ridge_21_1">
+          <pose>16.1666667 -11.64 0.00470218902 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.327333333 0.72 0.00940437804</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.88</mu>
+                <mu2>0.88</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <collision name="ridge_22_-1">
+          <pose>16.5 -12.36 0.00546800199 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.327333333 0.72 0.010936004</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.88</mu>
+                <mu2>0.88</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <collision name="ridge_22_1">
+          <pose>16.5 -11.64 0.00552626352 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.327333333 0.72 0.011052527</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.88</mu>
+                <mu2>0.88</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <collision name="ridge_23_-1">
+          <pose>16.8333333 -12.36 0.00819702476 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.327333333 0.72 0.0163940495</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.88</mu>
+                <mu2>0.88</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <collision name="ridge_23_1">
+          <pose>16.8333333 -11.64 0.00737259219 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.327333333 0.72 0.0147451844</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.88</mu>
+                <mu2>0.88</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <collision name="ridge_24_-1">
+          <pose>17.1666667 -12.36 0.00598149499 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.327333333 0.72 0.01196299</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.88</mu>
+                <mu2>0.88</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <collision name="ridge_24_1">
+          <pose>17.1666667 -11.64 0.00721205576 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.327333333 0.72 0.0144241115</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.88</mu>
+                <mu2>0.88</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <collision name="ridge_25_-1">
+          <pose>17.5 -12.36 0.00710141632 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.327333333 0.72 0.0142028326</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.88</mu>
+                <mu2>0.88</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <collision name="ridge_25_1">
+          <pose>17.5 -11.64 0.00814921499 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.327333333 0.72 0.01629843</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.88</mu>
+                <mu2>0.88</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <collision name="ridge_26_-1">
+          <pose>17.8333333 -12.36 0.0068262504 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.327333333 0.72 0.0136525008</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.88</mu>
+                <mu2>0.88</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <collision name="ridge_26_1">
+          <pose>17.8333333 -11.64 0.00740741786 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.327333333 0.72 0.0148148357</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.88</mu>
+                <mu2>0.88</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <collision name="ridge_27_-1">
+          <pose>18.1666667 -12.36 0.00406531491 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.327333333 0.72 0.00813062981</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.88</mu>
+                <mu2>0.88</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <collision name="ridge_27_1">
+          <pose>18.1666667 -11.64 0.00414788068 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.327333333 0.72 0.00829576136</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.88</mu>
+                <mu2>0.88</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <collision name="ridge_28_-1">
+          <pose>18.5 -12.36 0.00693878077 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.327333333 0.72 0.0138775615</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.88</mu>
+                <mu2>0.88</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <collision name="ridge_28_1">
+          <pose>18.5 -11.64 0.00723471667 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.327333333 0.72 0.0144694333</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.88</mu>
+                <mu2>0.88</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <collision name="ridge_29_-1">
+          <pose>18.8333333 -12.36 0.00738105335 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.327333333 0.72 0.0147621067</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.88</mu>
+                <mu2>0.88</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <collision name="ridge_29_1">
+          <pose>18.8333333 -11.64 0.00681068817 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.327333333 0.72 0.0136213763</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.88</mu>
+                <mu2>0.88</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <collision name="ridge_30_-1">
+          <pose>19.1666667 -12.36 0.00585803429 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.327333333 0.72 0.0117160686</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.88</mu>
+                <mu2>0.88</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <collision name="ridge_30_1">
+          <pose>19.1666667 -11.64 0.00456854116 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.327333333 0.72 0.00913708232</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.88</mu>
+                <mu2>0.88</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <collision name="ridge_31_-1">
+          <pose>19.5 -12.36 0.00648297936 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.327333333 0.72 0.0129659587</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.88</mu>
+                <mu2>0.88</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <collision name="ridge_31_1">
+          <pose>19.5 -11.64 0.00728231297 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.327333333 0.72 0.0145646259</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.88</mu>
+                <mu2>0.88</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <collision name="ridge_32_-1">
+          <pose>19.8333333 -12.36 0.00799816168 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.327333333 0.72 0.0159963234</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.88</mu>
+                <mu2>0.88</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <collision name="ridge_32_1">
+          <pose>19.8333333 -11.64 0.00704929489 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.327333333 0.72 0.0140985898</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.88</mu>
+                <mu2>0.88</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <collision name="ridge_33_-1">
+          <pose>20.1666667 -12.36 0.00739797913 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.327333333 0.72 0.0147959583</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.88</mu>
+                <mu2>0.88</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <collision name="ridge_33_1">
+          <pose>20.1666667 -11.64 0.00743591273 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.327333333 0.72 0.0148718255</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.88</mu>
+                <mu2>0.88</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <collision name="ridge_34_-1">
+          <pose>20.5 -12.36 0.00662876832 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.327333333 0.72 0.0132575366</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.88</mu>
+                <mu2>0.88</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <collision name="ridge_34_1">
+          <pose>20.5 -11.64 0.00731636546 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.327333333 0.72 0.0146327309</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.88</mu>
+                <mu2>0.88</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <collision name="ridge_35_-1">
+          <pose>20.8333333 -12.36 0.00589018014 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.327333333 0.72 0.0117803603</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.88</mu>
+                <mu2>0.88</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <collision name="ridge_35_1">
+          <pose>20.8333333 -11.64 0.00479886636 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.327333333 0.72 0.00959773271</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.88</mu>
+                <mu2>0.88</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <collision name="ridge_36_-1">
+          <pose>21.1666667 -12.36 0.00579763452 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.327333333 0.72 0.011595269</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.88</mu>
+                <mu2>0.88</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <collision name="ridge_36_1">
+          <pose>21.1666667 -11.64 0.0049606185 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.327333333 0.72 0.00992123699</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.88</mu>
+                <mu2>0.88</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <collision name="ridge_37_-1">
+          <pose>21.5 -12.36 0.00390844567 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.327333333 0.72 0.00781689134</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.88</mu>
+                <mu2>0.88</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <collision name="ridge_37_1">
+          <pose>21.5 -11.64 0.00376329675 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.327333333 0.72 0.00752659349</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.88</mu>
+                <mu2>0.88</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <collision name="ridge_38_-1">
+          <pose>21.8333333 -12.36 0.00744256351 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.327333333 0.72 0.014885127</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.88</mu>
+                <mu2>0.88</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <collision name="ridge_38_1">
+          <pose>21.8333333 -11.64 0.00807502463 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.327333333 0.72 0.0161500493</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.88</mu>
+                <mu2>0.88</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <collision name="ridge_39_-1">
+          <pose>22.1666667 -12.36 0.00385206157 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.327333333 0.72 0.00770412314</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.88</mu>
+                <mu2>0.88</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <collision name="ridge_39_1">
+          <pose>22.1666667 -11.64 0.0039142293 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.327333333 0.72 0.00782845859</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.88</mu>
+                <mu2>0.88</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <collision name="ridge_40_-1">
+          <pose>22.5 -12.36 0.00741492224 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.327333333 0.72 0.0148298445</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.88</mu>
+                <mu2>0.88</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <collision name="ridge_40_1">
+          <pose>22.5 -11.64 0.00761769745 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.327333333 0.72 0.0152353949</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.88</mu>
+                <mu2>0.88</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <collision name="ridge_41_-1">
+          <pose>22.8333333 -12.36 0.00208334286 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.327333333 0.72 0.00416668571</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.88</mu>
+                <mu2>0.88</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <collision name="ridge_41_1">
+          <pose>22.8333333 -11.64 0.00246156447 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.327333333 0.72 0.00492312893</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.88</mu>
+                <mu2>0.88</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <visual name="brick_tops_0">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>ring_assets/brick_tops_0.obj</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.43 0.27 0.22 1</ambient>
+            <diffuse>0.43 0.27 0.22 1</diffuse>
+            <specular>0.12 0.12 0.12 1</specular>
+          </material>
+        </visual>
+        <visual name="brick_tops_1">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>ring_assets/brick_tops_1.obj</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.52 0.32 0.25 1</ambient>
+            <diffuse>0.52 0.32 0.25 1</diffuse>
+            <specular>0.12 0.12 0.12 1</specular>
+          </material>
+        </visual>
+        <visual name="brick_tops_2">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>ring_assets/brick_tops_2.obj</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.56 0.36 0.29 1</ambient>
+            <diffuse>0.56 0.36 0.29 1</diffuse>
+            <specular>0.12 0.12 0.12 1</specular>
+          </material>
+        </visual>
+        <visual name="brick_tops_3">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>ring_assets/brick_tops_3.obj</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.48 0.34 0.3 1</ambient>
+            <diffuse>0.48 0.34 0.3 1</diffuse>
+            <specular>0.12 0.12 0.12 1</specular>
+          </material>
+        </visual>
+        <visual name="brick_tops_4">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>ring_assets/brick_tops_4.obj</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.39 0.29 0.27 1</ambient>
+            <diffuse>0.39 0.29 0.27 1</diffuse>
+            <specular>0.12 0.12 0.12 1</specular>
+          </material>
+        </visual>
+        <visual name="yellow_boundaries_over_pavers">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>ring_assets/brick_yellow_paint.obj</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.91 0.69 0.05 1</ambient>
+            <diffuse>0.91 0.69 0.05 1</diffuse>
+            <specular>0.12 0.12 0.12 1</specular>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="traffic_cone_0">
+      <static>true</static>
+      <pose>-23.4387517 -12.4289817 0 0 0 0</pose>
+      <link name="shell">
+        <collision name="base">
+          <pose>0 0 0.018 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.34 0.34 0.036</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="rubber_base">
+          <pose>0 0 0.018 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.34 0.34 0.036</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.085 0.057 0.034 1</ambient>
+            <diffuse>0.085 0.057 0.034 1</diffuse>
+            <specular>0.12 0.12 0.12 1</specular>
+          </material>
+        </visual>
+        <collision name="taper_0">
+          <pose>0 0 0.121 0 0 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.131</radius>
+              <length>0.17</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <collision name="taper_1">
+          <pose>0 0 0.28 0 0 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.093</radius>
+              <length>0.15</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <collision name="taper_2">
+          <pose>0 0 0.4375 0 0 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.056</radius>
+              <length>0.185</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name="reflective_shell_0">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>ring_assets/cone_0.obj</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.98 0.27 0.015 1</ambient>
+            <diffuse>0.98 0.27 0.015 1</diffuse>
+            <specular>0.12 0.12 0.12 1</specular>
+          </material>
+        </visual>
+        <visual name="reflective_shell_1">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>ring_assets/cone_1.obj</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.95 0.91 0.79 1</ambient>
+            <diffuse>0.95 0.91 0.79 1</diffuse>
+            <specular>0.12 0.12 0.12 1</specular>
+          </material>
+        </visual>
+        <visual name="reflective_shell_2">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>ring_assets/cone_2.obj</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.98 0.22 0.012 1</ambient>
+            <diffuse>0.98 0.22 0.012 1</diffuse>
+            <specular>0.12 0.12 0.12 1</specular>
+          </material>
+        </visual>
+        <visual name="reflective_shell_3">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>ring_assets/cone_3.obj</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.96 0.92 0.82 1</ambient>
+            <diffuse>0.96 0.92 0.82 1</diffuse>
+            <specular>0.12 0.12 0.12 1</specular>
+          </material>
+        </visual>
+        <visual name="reflective_shell_4">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>ring_assets/cone_4.obj</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.98 0.25 0.012 1</ambient>
+            <diffuse>0.98 0.25 0.012 1</diffuse>
+            <specular>0.12 0.12 0.12 1</specular>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="traffic_cone_1">
+      <static>true</static>
+      <pose>-18.4583282 -11.5675716 0 0 0 0</pose>
+      <link name="shell">
+        <collision name="base">
+          <pose>0 0 0.018 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.34 0.34 0.036</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="rubber_base">
+          <pose>0 0 0.018 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.34 0.34 0.036</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.085 0.057 0.034 1</ambient>
+            <diffuse>0.085 0.057 0.034 1</diffuse>
+            <specular>0.12 0.12 0.12 1</specular>
+          </material>
+        </visual>
+        <collision name="taper_0">
+          <pose>0 0 0.121 0 0 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.131</radius>
+              <length>0.17</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <collision name="taper_1">
+          <pose>0 0 0.28 0 0 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.093</radius>
+              <length>0.15</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <collision name="taper_2">
+          <pose>0 0 0.4375 0 0 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.056</radius>
+              <length>0.185</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name="reflective_shell_0">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>ring_assets/cone_0.obj</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.98 0.27 0.015 1</ambient>
+            <diffuse>0.98 0.27 0.015 1</diffuse>
+            <specular>0.12 0.12 0.12 1</specular>
+          </material>
+        </visual>
+        <visual name="reflective_shell_1">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>ring_assets/cone_1.obj</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.95 0.91 0.79 1</ambient>
+            <diffuse>0.95 0.91 0.79 1</diffuse>
+            <specular>0.12 0.12 0.12 1</specular>
+          </material>
+        </visual>
+        <visual name="reflective_shell_2">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>ring_assets/cone_2.obj</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.98 0.22 0.012 1</ambient>
+            <diffuse>0.98 0.22 0.012 1</diffuse>
+            <specular>0.12 0.12 0.12 1</specular>
+          </material>
+        </visual>
+        <visual name="reflective_shell_3">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>ring_assets/cone_3.obj</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.96 0.92 0.82 1</ambient>
+            <diffuse>0.96 0.92 0.82 1</diffuse>
+            <specular>0.12 0.12 0.12 1</specular>
+          </material>
+        </visual>
+        <visual name="reflective_shell_4">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>ring_assets/cone_4.obj</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.98 0.25 0.012 1</ambient>
+            <diffuse>0.98 0.25 0.012 1</diffuse>
+            <specular>0.12 0.12 0.12 1</specular>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="traffic_cone_2">
+      <static>true</static>
+      <pose>-13.1940806 -12.4427843 0 0 0 0</pose>
+      <link name="shell">
+        <collision name="base">
+          <pose>0 0 0.018 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.34 0.34 0.036</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="rubber_base">
+          <pose>0 0 0.018 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.34 0.34 0.036</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.085 0.057 0.034 1</ambient>
+            <diffuse>0.085 0.057 0.034 1</diffuse>
+            <specular>0.12 0.12 0.12 1</specular>
+          </material>
+        </visual>
+        <collision name="taper_0">
+          <pose>0 0 0.121 0 0 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.131</radius>
+              <length>0.17</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <collision name="taper_1">
+          <pose>0 0 0.28 0 0 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.093</radius>
+              <length>0.15</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <collision name="taper_2">
+          <pose>0 0 0.4375 0 0 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.056</radius>
+              <length>0.185</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name="reflective_shell_0">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>ring_assets/cone_0.obj</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.98 0.27 0.015 1</ambient>
+            <diffuse>0.98 0.27 0.015 1</diffuse>
+            <specular>0.12 0.12 0.12 1</specular>
+          </material>
+        </visual>
+        <visual name="reflective_shell_1">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>ring_assets/cone_1.obj</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.95 0.91 0.79 1</ambient>
+            <diffuse>0.95 0.91 0.79 1</diffuse>
+            <specular>0.12 0.12 0.12 1</specular>
+          </material>
+        </visual>
+        <visual name="reflective_shell_2">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>ring_assets/cone_2.obj</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.98 0.22 0.012 1</ambient>
+            <diffuse>0.98 0.22 0.012 1</diffuse>
+            <specular>0.12 0.12 0.12 1</specular>
+          </material>
+        </visual>
+        <visual name="reflective_shell_3">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>ring_assets/cone_3.obj</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.96 0.92 0.82 1</ambient>
+            <diffuse>0.96 0.92 0.82 1</diffuse>
+            <specular>0.12 0.12 0.12 1</specular>
+          </material>
+        </visual>
+        <visual name="reflective_shell_4">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>ring_assets/cone_4.obj</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.98 0.25 0.012 1</ambient>
+            <diffuse>0.98 0.25 0.012 1</diffuse>
+            <specular>0.12 0.12 0.12 1</specular>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="traffic_cone_3">
+      <static>true</static>
+      <pose>-8.03879399 -11.5688893 0 0 0 0</pose>
+      <link name="shell">
+        <collision name="base">
+          <pose>0 0 0.018 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.34 0.34 0.036</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="rubber_base">
+          <pose>0 0 0.018 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.34 0.34 0.036</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.085 0.057 0.034 1</ambient>
+            <diffuse>0.085 0.057 0.034 1</diffuse>
+            <specular>0.12 0.12 0.12 1</specular>
+          </material>
+        </visual>
+        <collision name="taper_0">
+          <pose>0 0 0.121 0 0 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.131</radius>
+              <length>0.17</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <collision name="taper_1">
+          <pose>0 0 0.28 0 0 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.093</radius>
+              <length>0.15</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <collision name="taper_2">
+          <pose>0 0 0.4375 0 0 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.056</radius>
+              <length>0.185</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name="reflective_shell_0">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>ring_assets/cone_0.obj</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.98 0.27 0.015 1</ambient>
+            <diffuse>0.98 0.27 0.015 1</diffuse>
+            <specular>0.12 0.12 0.12 1</specular>
+          </material>
+        </visual>
+        <visual name="reflective_shell_1">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>ring_assets/cone_1.obj</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.95 0.91 0.79 1</ambient>
+            <diffuse>0.95 0.91 0.79 1</diffuse>
+            <specular>0.12 0.12 0.12 1</specular>
+          </material>
+        </visual>
+        <visual name="reflective_shell_2">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>ring_assets/cone_2.obj</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.98 0.22 0.012 1</ambient>
+            <diffuse>0.98 0.22 0.012 1</diffuse>
+            <specular>0.12 0.12 0.12 1</specular>
+          </material>
+        </visual>
+        <visual name="reflective_shell_3">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>ring_assets/cone_3.obj</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.96 0.92 0.82 1</ambient>
+            <diffuse>0.96 0.92 0.82 1</diffuse>
+            <specular>0.12 0.12 0.12 1</specular>
+          </material>
+        </visual>
+        <visual name="reflective_shell_4">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>ring_assets/cone_4.obj</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.98 0.25 0.012 1</ambient>
+            <diffuse>0.98 0.25 0.012 1</diffuse>
+            <specular>0.12 0.12 0.12 1</specular>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="traffic_cone_4">
+      <static>true</static>
+      <pose>-2.7155635 -12.4475083 0 0 0 0</pose>
+      <link name="shell">
+        <collision name="base">
+          <pose>0 0 0.018 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.34 0.34 0.036</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="rubber_base">
+          <pose>0 0 0.018 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.34 0.34 0.036</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.085 0.057 0.034 1</ambient>
+            <diffuse>0.085 0.057 0.034 1</diffuse>
+            <specular>0.12 0.12 0.12 1</specular>
+          </material>
+        </visual>
+        <collision name="taper_0">
+          <pose>0 0 0.121 0 0 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.131</radius>
+              <length>0.17</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <collision name="taper_1">
+          <pose>0 0 0.28 0 0 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.093</radius>
+              <length>0.15</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <collision name="taper_2">
+          <pose>0 0 0.4375 0 0 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.056</radius>
+              <length>0.185</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name="reflective_shell_0">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>ring_assets/cone_0.obj</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.98 0.27 0.015 1</ambient>
+            <diffuse>0.98 0.27 0.015 1</diffuse>
+            <specular>0.12 0.12 0.12 1</specular>
+          </material>
+        </visual>
+        <visual name="reflective_shell_1">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>ring_assets/cone_1.obj</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.95 0.91 0.79 1</ambient>
+            <diffuse>0.95 0.91 0.79 1</diffuse>
+            <specular>0.12 0.12 0.12 1</specular>
+          </material>
+        </visual>
+        <visual name="reflective_shell_2">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>ring_assets/cone_2.obj</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.98 0.22 0.012 1</ambient>
+            <diffuse>0.98 0.22 0.012 1</diffuse>
+            <specular>0.12 0.12 0.12 1</specular>
+          </material>
+        </visual>
+        <visual name="reflective_shell_3">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>ring_assets/cone_3.obj</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.96 0.92 0.82 1</ambient>
+            <diffuse>0.96 0.92 0.82 1</diffuse>
+            <specular>0.12 0.12 0.12 1</specular>
+          </material>
+        </visual>
+        <visual name="reflective_shell_4">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>ring_assets/cone_4.obj</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.98 0.25 0.012 1</ambient>
+            <diffuse>0.98 0.25 0.012 1</diffuse>
+            <specular>0.12 0.12 0.12 1</specular>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="cart" canonical_link="base_link">
+      <static>false</static>
+      <pose>-38.8 -12 0.012 0 0 0</pose>
+      <link name="base_link">
+        <inertial>
+          <mass>21</mass>
+          <pose>0.26 0 0.29 0 0 0</pose>
+          <inertia>
+            <ixx>0.91</ixx>
+            <iyy>1.64</iyy>
+            <izz>1.96</izz>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyz>0</iyz>
+          </inertia>
+        </inertial>
+        <collision name="body_collision">
+          <pose>0.29 0 0.279 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.658 0.37 0.17</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="cad_frame_visual">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>ring_assets/cad-frame.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.23 0.38 0.48 1</ambient>
+            <diffuse>0.23 0.38 0.48 1</diffuse>
+            <specular>0.12 0.12 0.12 1</specular>
+          </material>
+        </visual>
+        <visual name="cad_deck_visual">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>ring_assets/cad-deck.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.6 0.64 0.67 1</ambient>
+            <diffuse>0.6 0.64 0.67 1</diffuse>
+            <specular>0.12 0.12 0.12 1</specular>
+          </material>
+        </visual>
+        <visual name="cad_battery_visual">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>ring_assets/cad-battery.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.1 0.12 0.15 1</ambient>
+            <diffuse>0.1 0.12 0.15 1</diffuse>
+            <specular>0.12 0.12 0.12 1</specular>
+          </material>
+        </visual>
+        <visual name="cad_computer_visual">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>ring_assets/cad-computer.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.16 0.26 0.18 1</ambient>
+            <diffuse>0.16 0.26 0.18 1</diffuse>
+            <specular>0.12 0.12 0.12 1</specular>
+          </material>
+        </visual>
+        <visual name="camera_mount">
+          <pose>0.635 0 0.497 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.09 0.09 0.085</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.13 0.14 0.15 1</ambient>
+            <diffuse>0.13 0.14 0.15 1</diffuse>
+            <specular>0.12 0.12 0.12 1</specular>
+          </material>
+        </visual>
+        <visual name="camera_housing">
+          <pose>0.667 0 0.544 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.06 0.14 0.055</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.11 0.11 0.13 1</ambient>
+            <diffuse>0.11 0.11 0.13 1</diffuse>
+            <specular>0.12 0.12 0.12 1</specular>
+          </material>
+        </visual>
+        <sensor name="imu" type="imu">
+          <always_on>true</always_on>
+          <update_rate>125</update_rate>
+          <topic>/cart/imu</topic>
+        </sensor>
+        <sensor name="contact_sensor" type="contact">
+          <topic>/cart/contacts</topic>
+          <always_on>true</always_on>
+          <update_rate>250</update_rate>
+          <contact>
+            <collision>body_collision</collision>
+            <topic>/cart/contacts</topic>
+          </contact>
+        </sensor>
+        <sensor name="rgbd" type="rgbd_camera">
+          <pose>0.68 0 0.55 0 0.1 0</pose>
+          <always_on>true</always_on>
+          <update_rate>15</update_rate>
+          <topic>/cart/camera</topic>
+          <camera name="cart_rgbd">
+            <horizontal_fov>1.4</horizontal_fov>
+            <optical_frame_id>cart_camera_optical</optical_frame_id>
+            <image>
+              <width>320</width>
+              <height>240</height>
+              <format>R8G8B8</format>
+            </image>
+            <clip>
+              <near>0.07</near>
+              <far>75</far>
+            </clip>
+            <depth_camera>
+              <clip>
+                <near>0.1</near>
+                <far>24</far>
+              </clip>
+            </depth_camera>
+          </camera>
+        </sensor>
+      </link>
+      <link name="rear_left_wheel">
+        <pose>0 0.344960215 0.110066672 0 0 0</pose>
+        <inertial>
+          <mass>0.91</mass>
+          <pose>0 0 0 0 0 0</pose>
+          <inertia>
+            <ixx>0.0057</ixx>
+            <iyy>0.0096</iyy>
+            <izz>0.0057</izz>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyz>0</iyz>
+          </inertia>
+        </inertial>
+        <collision name="tire_collision">
+          <pose>0 0 0 1.57079633 0 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.110066672</radius>
+              <length>0.0884766653</length>
+            </cylinder>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>1.15</mu>
+                <mu2>1.15</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <visual name="cad_wheel_visual">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>ring_assets/cad-wheel.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.075 0.08 0.09 1</ambient>
+            <diffuse>0.075 0.08 0.09 1</diffuse>
+            <specular>0.12 0.12 0.12 1</specular>
+          </material>
+        </visual>
+        <sensor name="contact_sensor" type="contact">
+          <topic>/cart/contacts/rear_left_wheel</topic>
+          <always_on>true</always_on>
+          <update_rate>250</update_rate>
+          <contact>
+            <collision>tire_collision</collision>
+            <topic>/cart/contacts/rear_left_wheel</topic>
+          </contact>
+        </sensor>
+      </link>
+      <joint name="rear_left_wheel_joint" type="revolute">
+        <parent>base_link</parent>
+        <child>rear_left_wheel</child>
+        <axis>
+          <xyz>0 1 0</xyz>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+            <effort>23</effort>
+            <velocity>105</velocity>
+          </limit>
+          <dynamics>
+            <damping>0.015</damping>
+          </dynamics>
+        </axis>
+      </joint>
+      <link name="rear_right_wheel">
+        <pose>0 -0.344960215 0.110066672 0 0 0</pose>
+        <inertial>
+          <mass>0.91</mass>
+          <pose>0 0 0 0 0 0</pose>
+          <inertia>
+            <ixx>0.0057</ixx>
+            <iyy>0.0096</iyy>
+            <izz>0.0057</izz>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyz>0</iyz>
+          </inertia>
+        </inertial>
+        <collision name="tire_collision">
+          <pose>0 0 0 1.57079633 0 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.110066672</radius>
+              <length>0.0884766653</length>
+            </cylinder>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>1.15</mu>
+                <mu2>1.15</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <visual name="cad_wheel_visual">
+          <pose>0 0 0 0 0 3.14159265</pose>
+          <geometry>
+            <mesh>
+              <uri>ring_assets/cad-wheel.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.075 0.08 0.09 1</ambient>
+            <diffuse>0.075 0.08 0.09 1</diffuse>
+            <specular>0.12 0.12 0.12 1</specular>
+          </material>
+        </visual>
+        <sensor name="contact_sensor" type="contact">
+          <topic>/cart/contacts/rear_right_wheel</topic>
+          <always_on>true</always_on>
+          <update_rate>250</update_rate>
+          <contact>
+            <collision>tire_collision</collision>
+            <topic>/cart/contacts/rear_right_wheel</topic>
+          </contact>
+        </sensor>
+      </link>
+      <joint name="rear_right_wheel_joint" type="revolute">
+        <parent>base_link</parent>
+        <child>rear_right_wheel</child>
+        <axis>
+          <xyz>0 1 0</xyz>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+            <effort>23</effort>
+            <velocity>105</velocity>
+          </limit>
+          <dynamics>
+            <damping>0.015</damping>
+          </dynamics>
+        </axis>
+      </joint>
+      <link name="left_knuckle">
+        <pose>0.578169122 0.344960215 0.110066672 0 0 0</pose>
+        <inertial>
+          <mass>0.3</mass>
+          <pose>0 0 0 0 0 0</pose>
+          <inertia>
+            <ixx>0.003</ixx>
+            <iyy>0.003</iyy>
+            <izz>0.003</izz>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyz>0</iyz>
+          </inertia>
+        </inertial>
+      </link>
+      <joint name="left_steering_joint" type="revolute">
+        <parent>base_link</parent>
+        <child>left_knuckle</child>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <limit>
+            <lower>-0.62</lower>
+            <upper>0.62</upper>
+            <effort>15</effort>
+            <velocity>2.2</velocity>
+          </limit>
+          <dynamics>
+            <damping>0.025</damping>
+          </dynamics>
+        </axis>
+      </joint>
+      <link name="front_left_wheel">
+        <pose>0.578169122 0.344960215 0.110066672 0 0 0</pose>
+        <inertial>
+          <mass>0.91</mass>
+          <pose>0 0 0 0 0 0</pose>
+          <inertia>
+            <ixx>0.0057</ixx>
+            <iyy>0.0096</iyy>
+            <izz>0.0057</izz>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyz>0</iyz>
+          </inertia>
+        </inertial>
+        <collision name="tire_collision">
+          <pose>0 0 0 1.57079633 0 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.110066672</radius>
+              <length>0.0884766653</length>
+            </cylinder>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>1.15</mu>
+                <mu2>1.15</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <visual name="cad_wheel_visual">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>ring_assets/cad-wheel.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.075 0.08 0.09 1</ambient>
+            <diffuse>0.075 0.08 0.09 1</diffuse>
+            <specular>0.12 0.12 0.12 1</specular>
+          </material>
+        </visual>
+        <sensor name="contact_sensor" type="contact">
+          <topic>/cart/contacts/front_left_wheel</topic>
+          <always_on>true</always_on>
+          <update_rate>250</update_rate>
+          <contact>
+            <collision>tire_collision</collision>
+            <topic>/cart/contacts/front_left_wheel</topic>
+          </contact>
+        </sensor>
+      </link>
+      <joint name="front_left_wheel_joint" type="revolute">
+        <parent>left_knuckle</parent>
+        <child>front_left_wheel</child>
+        <axis>
+          <xyz>0 1 0</xyz>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+            <effort>0</effort>
+            <velocity>105</velocity>
+          </limit>
+          <dynamics>
+            <damping>0.004</damping>
+          </dynamics>
+        </axis>
+      </joint>
+      <link name="right_knuckle">
+        <pose>0.578169122 -0.344960215 0.110066672 0 0 0</pose>
+        <inertial>
+          <mass>0.3</mass>
+          <pose>0 0 0 0 0 0</pose>
+          <inertia>
+            <ixx>0.003</ixx>
+            <iyy>0.003</iyy>
+            <izz>0.003</izz>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyz>0</iyz>
+          </inertia>
+        </inertial>
+      </link>
+      <joint name="right_steering_joint" type="revolute">
+        <parent>base_link</parent>
+        <child>right_knuckle</child>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <limit>
+            <lower>-0.62</lower>
+            <upper>0.62</upper>
+            <effort>15</effort>
+            <velocity>2.2</velocity>
+          </limit>
+          <dynamics>
+            <damping>0.025</damping>
+          </dynamics>
+        </axis>
+      </joint>
+      <link name="front_right_wheel">
+        <pose>0.578169122 -0.344960215 0.110066672 0 0 0</pose>
+        <inertial>
+          <mass>0.91</mass>
+          <pose>0 0 0 0 0 0</pose>
+          <inertia>
+            <ixx>0.0057</ixx>
+            <iyy>0.0096</iyy>
+            <izz>0.0057</izz>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyz>0</iyz>
+          </inertia>
+        </inertial>
+        <collision name="tire_collision">
+          <pose>0 0 0 1.57079633 0 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.110066672</radius>
+              <length>0.0884766653</length>
+            </cylinder>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>1.15</mu>
+                <mu2>1.15</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <visual name="cad_wheel_visual">
+          <pose>0 0 0 0 0 3.14159265</pose>
+          <geometry>
+            <mesh>
+              <uri>ring_assets/cad-wheel.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.075 0.08 0.09 1</ambient>
+            <diffuse>0.075 0.08 0.09 1</diffuse>
+            <specular>0.12 0.12 0.12 1</specular>
+          </material>
+        </visual>
+        <sensor name="contact_sensor" type="contact">
+          <topic>/cart/contacts/front_right_wheel</topic>
+          <always_on>true</always_on>
+          <update_rate>250</update_rate>
+          <contact>
+            <collision>tire_collision</collision>
+            <topic>/cart/contacts/front_right_wheel</topic>
+          </contact>
+        </sensor>
+      </link>
+      <joint name="front_right_wheel_joint" type="revolute">
+        <parent>right_knuckle</parent>
+        <child>front_right_wheel</child>
+        <axis>
+          <xyz>0 1 0</xyz>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+            <effort>0</effort>
+            <velocity>105</velocity>
+          </limit>
+          <dynamics>
+            <damping>0.004</damping>
+          </dynamics>
+        </axis>
+      </joint>
+      <plugin filename="gz-sim-ackermann-steering-system" name="gz::sim::systems::AckermannSteering">
+        <left_joint>rear_left_wheel_joint</left_joint>
+        <right_joint>rear_right_wheel_joint</right_joint>
+        <left_steering_joint>left_steering_joint</left_steering_joint>
+        <right_steering_joint>right_steering_joint</right_steering_joint>
+        <wheel_radius>0.110066672</wheel_radius>
+        <wheel_base>0.578169122</wheel_base>
+        <wheel_separation>0.68992043</wheel_separation>
+        <kingpin_width>0.68992043</kingpin_width>
+        <steering_limit>0.48</steering_limit>
+        <steer_p_gain>13</steer_p_gain>
+        <min_velocity>-2</min_velocity>
+        <max_velocity>12</max_velocity>
+        <min_acceleration>-3.6</min_acceleration>
+        <max_acceleration>2.3</max_acceleration>
+        <topic>/model/cart/cmd_vel</topic>
+        <odom_topic>/model/cart/wheel_odometry</odom_topic>
+        <tf_topic>/model/cart/wheel_tf</tf_topic>
+      </plugin>
+      <plugin filename="gz-sim-odometry-publisher-system" name="gz::sim::systems::OdometryPublisher">
+        <dimensions>3</dimensions>
+        <odom_frame>world</odom_frame>
+        <robot_base_frame>cart/base_link</robot_base_frame>
+        <odom_topic>/model/cart/odometry</odom_topic>
+        <tf_topic>/model/cart/odometry_tf</tf_topic>
+        <odom_publish_frequency>250</odom_publish_frequency>
+      </plugin>
+      <plugin filename="gz-sim-pose-publisher-system" name="gz::sim::systems::PosePublisher">
+        <publish_model_pose>true</publish_model_pose>
+        <publish_link_pose>true</publish_link_pose>
+        <use_pose_vector_msg>true</use_pose_vector_msg>
+        <update_frequency>-1</update_frequency>
+      </plugin>
+    </model>
+  </world>
+</sdf>

@@ -1,0 +1,135 @@
+{
+  "passed": true,
+  "failures": [],
+  "completed_laps": 1,
+  "crossings_sim_time_s": {
+    "start": 0.9480602780468579,
+    "brick_entry": 19.271841476028612,
+    "brick_exit": 28.585598802154166,
+    "speed_entry": 51.47981783372729,
+    "speed_exit": 53.51069695098143,
+    "finish": 75.0671575783055
+  },
+  "lap_time_s": 74.11909730025864,
+  "position_samples": 18767,
+  "lap_progress_m": 251.39822368615575,
+  "total_distance_m": 252.2711657499353,
+  "collision_contacts": {},
+  "collision_footprint_overlaps": {},
+  "first_offtrack_sim_time": null,
+  "first_wrong_way_sim_time": null,
+  "yellow_line_touches": {
+    "inner": {
+      "first_touch": {
+        "sim_time_s": 4.42,
+        "station_m": 15.833301258700232,
+        "wheel": "front_left_wheel",
+        "side": "inner",
+        "in_cone_bypass_zone": true
+      },
+      "wheels": [
+        "front_left_wheel",
+        "rear_left_wheel"
+      ],
+      "samples": 2274,
+      "allowed_samples": 2274,
+      "violating_samples": 0
+    },
+    "outer": {
+      "first_touch": {
+        "sim_time_s": 7.448,
+        "station_m": 22.180649015264876,
+        "wheel": "front_right_wheel",
+        "side": "outer",
+        "in_cone_bypass_zone": true
+      },
+      "wheels": [
+        "front_right_wheel",
+        "rear_right_wheel"
+      ],
+      "samples": 923,
+      "allowed_samples": 923,
+      "violating_samples": 0
+    }
+  },
+  "first_yellow_boundary_violation": null,
+  "tire_grounded_pose_samples": {
+    "rear_left_wheel": 17910,
+    "rear_right_wheel": 18048,
+    "front_left_wheel": 17905,
+    "front_right_wheel": 17888
+  },
+  "tire_ground_contact_max_stamp_difference_s": 0.012,
+  "start_finish_gate": {
+    "station_m": 6.0,
+    "center_x_m": -38.0,
+    "center_y_m": -12.0,
+    "heading_rad": 0.0,
+    "width_m": 1.44,
+    "vehicle_reference": "rear axle center"
+  },
+  "brick_segment_completed": true,
+  "brick_progress_m": 14.0,
+  "speed_zone_passed": true,
+  "speed_zone_samples": 510,
+  "speed_zone_min_kmh": 35.33273266396253,
+  "speed_zone_max_kmh": 35.45999150654944,
+  "speed_zone_adjacent_pose_min_kmh": 34.89180398588516,
+  "speed_zone_gate_average_kmh": 35.45262708562772,
+  "speed_zone_max_pose_gap_sim_s": 0.0040000000000048885,
+  "max_speed_kmh": 35.45999953305007,
+  "world_pose_topic": "/model/cart/pose",
+  "world_pose_expected_hz": 250.0,
+  "world_pose_observed_hz": 250.00000000000003,
+  "world_pose_max_gap_sim_s": 0.0040000000000048885,
+  "speed_source": "Planar Gazebo model displacement divided by simulated elapsed time",
+  "speed_zone_min_window_sim_s": 0.1,
+  "mode": "run",
+  "world_schema": "ring-cad-narrow-serial-v3",
+  "controller": "guided-policy",
+  "seed": 1000002,
+  "layout": "slalom",
+  "cone_count": 3,
+  "last_measured_speed_kmh": 11.887580279760378,
+  "stop_reason": "finish_gate",
+  "driving_deadline_sim_s": 100.0,
+  "runtime_error": null,
+  "gazebo_version": "Gazebo Sim, version 8.10.0",
+  "rgbd_pairs": 905,
+  "rgbd_usable_pairs": 904,
+  "rgbd_rejected_pairs": 1,
+  "depth_valid_pixels_max": 53831,
+  "rgb_surface_color_std_max": 75.33412170410156,
+  "rgb_surface_visible_fraction_max": 1.0,
+  "expert_samples": 0,
+  "commands_sent": 904,
+  "elapsed_driving_sim_time_s": 74.96,
+  "controller_family": "geometry_guided_learned_rgbd_policy",
+  "guided_policy_dropped_observations": 0,
+  "guided_policy_rejected_stale_actions": 0,
+  "guided_policy_observation_age_max_sim_s": 0.024,
+  "guided_policy_inference_mean_wall_s": 0.002240763315242966,
+  "policy_sha256": "b32f4632763f843652ba475de0dd2ef95f03c12662698c05cb859d7189a41d37",
+  "vision_guide_version": "camera-geometry-serial-v5",
+  "vision_guide_observations": {
+    "frames": 904,
+    "lane_frames": 904,
+    "cone_frames": 165,
+    "blue_trigger_frames": 1,
+    "magenta_trigger_frames": 1,
+    "left_avoidance_frames": 66,
+    "right_avoidance_frames": 26,
+    "blocked_observation_frames": 0,
+    "brick_slow_frames": 129
+  },
+  "guided_policy_observations": {
+    "learned_inferences_received": 569,
+    "learned_residual_applied_frames": 902,
+    "lane_loss_stop_frames": 0,
+    "maximum_applied_learned_age_sim_s": 0.332,
+    "maximum_speed_residual_mps": 0.12,
+    "maximum_yaw_residual_rad_s": 0.010465806124041173
+  },
+  "guided_policy_learned_dropped_observations": 333,
+  "guided_policy_weight": 0.08
+}
